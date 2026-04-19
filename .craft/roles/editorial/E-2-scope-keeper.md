@@ -1,6 +1,6 @@
 ---
 name: scope-keeper
-version: "1.0"
+version: "1.1"
 archetype: structural
 role: editorial
 status: active
@@ -45,6 +45,11 @@ expertise:
     immune system against that collapse.
 
 scope: local
+applies_to: [catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [scope, spec, amendment, drift, out-of-scope, schema]
+rubric_contribution:
+  primary: [D1]
+  secondary: []
 collaborates_with: [E-1-citation-auditor]
 
 artifacts:

@@ -1,6 +1,6 @@
 ---
 name: numeracy-checker
-version: "1.0"
+version: "1.1"
 archetype: structural
 role: editorial
 status: active
@@ -48,6 +48,11 @@ expertise:
     self-consistent.
 
 scope: local
+applies_to: [catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [capital, cost, throughput, payback, order-of-magnitude, cross-check, numeric]
+rubric_contribution:
+  primary: [D3]
+  secondary: [D4]
 collaborates_with: [E-1-citation-auditor]
 
 artifacts:

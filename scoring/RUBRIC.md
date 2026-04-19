@@ -593,7 +593,56 @@ direction, not a verdict.
 
 ---
 
-## 6. Rubric Evolution
+## 6. Aggregating Role Findings into Dimension Scores
+
+This section is **forward-looking**. Scoring is currently performed manually by a scorer
+consulting panel and editorial findings. This schema prepares for future scripted aggregation
+once tooling is in place to read role `rubric_contribution` fields automatically.
+
+### Aggregation model
+
+Each role file declares `rubric_contribution.primary` and `rubric_contribution.secondary`
+lists (added in v1.1). For each dimension D1–D6, the scorer (or future script) aggregates
+findings from all roles that contribute to that dimension:
+
+- **Primary contributors** (weight 1.0): roles whose `rubric_contribution.primary` includes
+  this dimension. These roles dominate the dimension score.
+- **Secondary contributors** (weight 0.5): roles whose `rubric_contribution.secondary`
+  includes this dimension. These roles add partial signal.
+
+### Aggregation formula (per dimension)
+
+```
+dimension_score = (sum of primary_finding × 1.0 + sum of secondary_finding × 0.5)
+                  / (count_primary × 1.0 + count_secondary × 0.5)
+```
+
+Where each `finding` is the severity-to-score mapping of the role's highest-severity finding
+for that dimension (P1 → 0–25 range; P2 → 26–50; P3 → 51–75; no finding → 76–100 implied
+unless the scorer has independent evidence otherwise).
+
+**Special case — zero primary contributors:** If a dimension has no primary contributor but
+one or more secondary contributors, the dimension score is set to the highest-severity
+secondary finding (i.e., the most critical finding wins rather than an average). This prevents
+secondary signals from inflating a dimension that has no domain owner.
+
+### Role-to-dimension mapping (from role v1.1 frontmatter)
+
+| Dimension | Primary roles | Secondary roles |
+|-----------|--------------|-----------------|
+| D1 Schema Completeness | E-2 Scope Keeper | — |
+| D2 Citation Strength | E-1 Citation Auditor | P-1 Market Economist, P-5 Historian |
+| D3 Operations Realism | P-4 Craft Practitioner, E-3 Numeracy Checker | P-6 Skeptical Funder |
+| D4 Lens-Context Rigor | P-1, P-2, P-3 (market/cooperative/civic sub-lenses) | E-3 Numeracy Checker |
+| D5 Historical Honesty | P-5 Historian | P-6 Skeptical Funder |
+| D6 Design Rationale & Differentiation | P-6 Skeptical Funder | P-1, P-2, P-3, P-4 |
+
+This table is derived directly from each role's `rubric_contribution` field. If a role file
+is updated, this table should be regenerated; the role files are the authoritative source.
+
+---
+
+## 7. Rubric Evolution
 
 ### When to raise the bar
 
@@ -641,7 +690,7 @@ the instrument that translates that pattern into a reviewable, versioned record.
 
 ---
 
-## 7. Principle-to-Dimension Coverage Map
+## 8. Principle-to-Dimension Coverage Map
 
 The table below confirms that all ten quality principles from `corpus/canon/PRINCIPLES.md`
 are covered by at least one rubric dimension. No principle is an orphan.

@@ -1,6 +1,6 @@
 ---
 name: civic-steward
-version: "1.0"
+version: "1.1"
 archetype: civic
 role: panel
 status: composite
@@ -56,6 +56,11 @@ expertise:
     a political case.
 
 scope: global
+applies_to: [spec, plan, catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [civic, municipal, tax, library, fire-department, council, budget, public-goods, zoning]
+rubric_contribution:
+  primary: [D4]
+  secondary: [D6]
 collaborates_with: [P-1-market-economist, P-2-commons-theorist, P-6-skeptical-funder]
 
 artifacts:

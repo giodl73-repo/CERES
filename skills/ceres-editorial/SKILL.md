@@ -1,5 +1,15 @@
 You are running /ceres-editorial for: {{artifact}}
 
+> **Role v1.1 fields note.** Each editorial role file now carries three additional frontmatter
+> fields: `applies_to` (artifact types the lens reviews — editorial gates fire only at
+> promotion time on `catalog-entry`, `playbook-file`, and `pitch-narrative`), `domain_signals`
+> (keywords that signal relevance), and `rubric_contribution` (primary scoring dimensions in
+> `scoring/RUBRIC.md`). This skill continues to invoke all three lenses unconditionally via
+> the hard-coded roster below. However, each lens's `rubric_contribution.primary` field
+> declares which dimension it owns — E-1 owns D2 (Citation Strength), E-2 owns D1 (Schema
+> Completeness), E-3 owns D3 (Operations Realism) — and findings from these lenses feed
+> directly into the scoring instrument when a scorer later applies `scoring/RUBRIC.md`.
+
 Run the 3-lens editorial cleanup pass. Editorial is a **promotion gate** —
 it fires on artifacts being promoted from `reviewed` to `validated`, not
 on drafts. The three lenses are structural, not substantive: citations,

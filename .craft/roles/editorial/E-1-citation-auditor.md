@@ -1,6 +1,6 @@
 ---
 name: citation-auditor
-version: "1.0"
+version: "1.1"
 archetype: structural
 role: editorial
 status: active
@@ -47,6 +47,11 @@ expertise:
     rigor' becomes an aesthetic rather than a standard.
 
 scope: local
+applies_to: [catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [source, citation, reference, cited, BLS, journal, bibliography]
+rubric_contribution:
+  primary: [D2]
+  secondary: []
 collaborates_with: [E-3-numeracy-checker]
 
 artifacts:

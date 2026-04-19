@@ -103,3 +103,81 @@ scoring step against the rubric in `scoring/RUBRIC.md`.
 
 Reviews land in `reviews/` with filenames that identify artifact,
 round, and reviewer.
+
+---
+
+## Role Frontmatter Convention (v1.1)
+
+As of v1.1, every role file carries three additional frontmatter fields.
+These fields do not change how the current skills invoke reviewers (the
+roster remains hard-coded in each skill). They prepare the role library
+for future dynamic role-discovery and composable scoring aggregation.
+
+### `applies_to`
+
+Declares the artifact types this role reviews. Allowed values mirror the
+artifact types in the tier-firing table above:
+
+```yaml
+applies_to: [spec, plan, catalog-entry, playbook-file, pitch-narrative]
+```
+
+**Panel** voices apply to all five artifact types.
+**Editorial** gates apply only at promotion time — `[catalog-entry, playbook-file, pitch-narrative]`.
+**Board** members default to `[catalog-entry]` but individual board members may override.
+
+A future `ceres-check` skill will use `applies_to` together with
+`domain_signals` to dynamically select the appropriate reviewer set for
+any given artifact, replacing the current hard-coded roster pattern.
+
+### `domain_signals`
+
+A list of keywords / substrings. When an artifact's content contains one
+or more of these signals, this role is a candidate for selection. Used by
+future dynamic-discovery tooling (RMM pattern).
+
+```yaml
+domain_signals: [market, profit, ROI, payback, revenue, competition, wage, customer, TAM, SAM]
+```
+
+Signals are not exclusive: multiple roles may fire on the same signal.
+Overlap is intentional — productive tensions require that competing
+perspectives both weigh in on the same claim.
+
+### `rubric_contribution`
+
+Declares which scoring dimensions (D1–D6 in `scoring/RUBRIC.md`) this role
+contributes to, and with what weight class:
+
+```yaml
+rubric_contribution:
+  primary: [D4]      # this role dominates scoring for these dimensions
+  secondary: [D2, D6] # this role contributes partial signal to these dimensions
+```
+
+**Primary** contributors weight 1.0 when scores are aggregated.
+**Secondary** contributors weight 0.5.
+
+This field is consumed by `scoring/RUBRIC.md`'s aggregation formula
+(see Section "Aggregating role findings into dimension scores"). It does
+not change how qualitative panel reviews are written; it maps reviewer
+findings to the numeric scoring instrument.
+
+### Placement in frontmatter
+
+These three fields are placed after `scope` and before `collaborates_with`:
+
+```yaml
+scope: local
+applies_to: [...]
+domain_signals: [...]
+rubric_contribution:
+  primary: [...]
+  secondary: [...]
+collaborates_with: [...]
+```
+
+The `scope` field's semantics are unchanged:
+- `local` — operates per-artifact
+- `workspace` — operates across multiple artifacts
+- `cross-artifact` — operates across the whole repo

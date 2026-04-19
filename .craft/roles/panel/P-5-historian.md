@@ -1,6 +1,6 @@
 ---
 name: historian
-version: "1.0"
+version: "1.1"
 archetype: historian
 role: panel
 status: composite
@@ -61,6 +61,11 @@ expertise:
     that keeps the historical claim honest.
 
 scope: global
+applies_to: [spec, plan, catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [history, historical, medieval, Song, Tokugawa, ayllu, guild, pre-industrial, precedent, culture]
+rubric_contribution:
+  primary: [D5]
+  secondary: [D2]
 collaborates_with: [P-4-craft-practitioner, P-6-skeptical-funder]
 
 artifacts:

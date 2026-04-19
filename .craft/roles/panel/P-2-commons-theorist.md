@@ -1,6 +1,6 @@
 ---
 name: commons-theorist
-version: "1.0"
+version: "1.1"
 archetype: commons
 role: panel
 status: composite
@@ -53,6 +53,11 @@ expertise:
     P-2 forces every coop claim to carry a governance spec.
 
 scope: global
+applies_to: [spec, plan, catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [cooperative, coop, commons, member, governance, Ostrom, shared, tool-library, dues]
+rubric_contribution:
+  primary: [D4]
+  secondary: [D6]
 collaborates_with: [P-1-market-economist, P-3-civic-steward]
 
 artifacts:

@@ -1,6 +1,6 @@
 ---
 name: skeptical-funder
-version: "1.0"
+version: "1.1"
 archetype: funder
 role: panel
 status: composite
@@ -55,6 +55,11 @@ expertise:
     to act on it.
 
 scope: global
+applies_to: [spec, plan, catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [funding, pitch, viability, TAM, runway, pilot, milestone, objection, risk, ask]
+rubric_contribution:
+  primary: [D6]
+  secondary: [D5]
 collaborates_with: [P-1-market-economist, P-4-craft-practitioner, P-5-historian]
 
 artifacts:

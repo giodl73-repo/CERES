@@ -1,6 +1,6 @@
 ---
 name: craft-practitioner
-version: "1.0"
+version: "1.1"
 archetype: craft
 role: panel
 status: composite
@@ -54,6 +54,11 @@ expertise:
     "this looks fine until you actually use it."
 
 scope: global
+applies_to: [spec, plan, catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [operator, throughput, maintenance, consumables, apprentice, failure, skill, workshop, hands-on]
+rubric_contribution:
+  primary: [D3]
+  secondary: [D6]
 collaborates_with: [P-5-historian, P-6-skeptical-funder]
 
 artifacts:

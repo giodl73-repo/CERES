@@ -56,6 +56,12 @@ trade: {trade-slug}
 status: active | historical | hypothetical
 status_note: >
   If historical or hypothetical, explain briefly.
+scope: local
+applies_to: [catalog-entry]  # typically, but overridable per board member
+domain_signals: []  # fill with trade-specific keywords that trigger this reviewer
+rubric_contribution:
+  primary: []   # fill with dimensions this board member dominates (e.g. [D2] for a source expert)
+  secondary: [] # fill with dimensions this board member contributes to partially
 ---
 ```
 

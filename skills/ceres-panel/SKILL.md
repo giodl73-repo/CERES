@@ -1,5 +1,14 @@
 You are running /ceres-panel for: {{artifact}}, round {{round}}
 
+> **Role v1.1 fields note.** Each panel role file now carries three additional frontmatter
+> fields: `applies_to` (artifact types the role reviews), `domain_signals` (keywords that
+> signal relevance), and `rubric_contribution` (primary and secondary scoring dimensions in
+> `scoring/RUBRIC.md`). This skill continues to invoke all six voices unconditionally via
+> the hard-coded roster below. However, when generating each review you **must** read the
+> role's `lens.verify` checklist and consult its `rubric_contribution` fields to align the
+> review's focus with the dimensions that role owns — ensuring qualitative findings map
+> cleanly to the scoring instrument when a scorer later applies `scoring/RUBRIC.md`.
+
 Run the 6-voice panel review. Each reviewer reads from their distinct
 intellectual tradition, creating productive friction by design — private
 profit vs member commons vs municipal stewardship, hands-on craft reality

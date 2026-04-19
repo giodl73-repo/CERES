@@ -1,6 +1,6 @@
 ---
 name: market-economist
-version: "1.0"
+version: "1.1"
 archetype: market
 role: panel
 status: composite
@@ -50,6 +50,11 @@ expertise:
     catalog becomes a wish list.
 
 scope: global
+applies_to: [spec, plan, catalog-entry, playbook-file, pitch-narrative]
+domain_signals: [market, profit, ROI, payback, revenue, competition, wage, customer, TAM, SAM]
+rubric_contribution:
+  primary: [D4]
+  secondary: [D2, D6]
 collaborates_with: [P-2-commons-theorist, P-3-civic-steward, P-6-skeptical-funder]
 
 artifacts:
