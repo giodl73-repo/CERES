@@ -201,6 +201,8 @@ Pass condition: **PASS**. Verdict: **win** (60 ÷ 188 = 32% of pool consumed;
 | `household_count` | Scale-derived (population × 0.40) | From `SCALES.md §2`; actual count if known |
 | `annual_public_use_hours` | Scenario input | Total open-access hours per year; required for usage-rate test |
 | `scale` | Evaluation cell | Determines cost and usage thresholds from `SCALES.md §4` |
+| `staffing_cost` | `lens_context.civic.staffing_model.wage_assumption` × `operator_fte` | When a civic facility employs a named operator, staffing cost is folded into `annual_operating_cost`; the staffing model in `lens_context.civic.staffing_model` is the authoritative source. Wage must reference `corpus/program/SCALES.md §3`. |
+| `benchmark_comparison` | `lens_context.civic.benchmark_comparison` | Referenced when assessing political defensibility of `per_household_cost`. Not a formula input; used by P-3 Civic Steward to evaluate whether the per-household cost passes the named-benchmark test. See spec §5 and §6 for authority. |
 
 ### 4.2 Outputs
 

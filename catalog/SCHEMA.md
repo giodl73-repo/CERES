@@ -1,10 +1,10 @@
 # Catalog-Entry Schema (Canonical)
 
-**Version:** 1.0
-**Date:** 2026-04-18
+**Version:** 1.1
+**Date:** 2026-04-19
 **Status:** canonical
 **Authoritative for:** all catalog entries in `catalog/<trade>/entries/`
-**Spec cross-reference:** `specs/2026-04-18-ceres-design.md` Section 5 (v0.2)
+**Spec cross-reference:** `specs/2026-04-18-ceres-design.md` Section 5 (v0.3)
 
 ---
 
@@ -153,6 +153,19 @@ apprentice_friendly: <boolean>
 # false = no practical apprentice path; succession risk MUST be named in
 #         Known Risks section (Principle 9).
 
+apprentice_path:
+  # CONDITIONAL — required when apprentice_friendly is true.
+  # Structured block documenting how skill is transmitted.
+  training_stages: <string>
+  # Description of sequential training stages with competency gates.
+  # Minimum: name the stages and describe the gate criterion at each.
+  time_to_independent_operation: <string>
+  # Estimated calendar time from zero to journeyman-level independent operation.
+  # Example: "~36 months to journeyman standard on this equipment"
+  succession_note: <string>
+  # How apprentice training is integrated into normal operations (not a separate
+  # program). Explains institutional continuity beyond one operator's career.
+
 # ── ECONOMICS ────────────────────────────────────────────────────────────────
 
 economics:
@@ -196,6 +209,20 @@ economics:
   # customer segment expected to pay the premium. Inconsistency between
   # pricing_notes and sim_params payback is a P1 E-3 finding.
 
+  industrial_baseline_price: <number>
+  # CONDITIONAL — required when lens_fit.market is `good` or `marginal`.
+  # The price of the nearest industrial-produced equivalent (same currency as
+  # this block). This is the baseline against which the artisan-production
+  # premium is measured. Must be cited. Omit when lens_fit.market is `poor`.
+
+  pricing_validation: <string>
+  # CONDITIONAL — required when market_price_per_unit is present.
+  # One-to-two sentence statement of what constitutes the evidence for the
+  # claimed market price: comparable product sales data, trade survey,
+  # comparable operator financials, or willingness-to-pay study. Must specify
+  # the evidence type — a pricing note that relies only on cost-plus reasoning
+  # is insufficient. See docs/METHODOLOGY.md for acceptable evidence standards.
+
 # ── OPERATIONS REALITY ───────────────────────────────────────────────────────
 
 operations_reality:
@@ -216,6 +243,48 @@ operations_reality:
       replacement_lead_time_days: <number>
       # Calendar days from order to installation-ready replacement.
       # Drives downtime planning and inventory decisions.
+      serviceable_by: <operator|journeyman|specialist>
+      # Who can perform the repair. Drives operating cost and downtime projections:
+      #   operator   = the regular operator can do this repair themselves
+      #   journeyman = requires a skilled tradesperson but not a specialist contractor
+      #   specialist = requires a specialist contractor; highest downtime and cost risk
+
+  maintenance_schedule:
+    # CONDITIONAL — required when operations_reality is required.
+    # Captures routine maintenance cadences that affect annual_maintenance cost
+    # and downtime_fraction credibility.
+    daily:
+      task: <string>
+      performed_by: <operator|journeyman|specialist>
+    weekly:
+      task: <string>
+      performed_by: <operator|journeyman|specialist>
+    quarterly:
+      task: <string>
+      performed_by: <operator|journeyman|specialist>
+    annual:
+      task: <string>
+      performed_by: <operator|journeyman|specialist>
+
+  startup_shutdown_overhead_per_day_min: <number>
+  # CONDITIONAL — required when operations_reality is required.
+  # Non-productive operator minutes per operating day (startup, shutdown, cleanup).
+  # This value is subtracted from max_active_hours_per_week when calculating
+  # throughput realism. Must be consistent with max_active_hours_realism_note.
+
+  max_active_hours_realism_note: <string>
+  # CONDITIONAL — required when operations_reality is required.
+  # A short statement declaring whether throughput.max_active_hours_per_week is
+  # the theoretical maximum (gross) or derated for interruptions (net). Authors
+  # must be explicit: if the figure is gross, state the derating applied in
+  # sim_params.throughput_units_equiv_per_year.
+
+  interruption_notes: <string>
+  # OPTIONAL. Prose description of typical intraday interruption patterns
+  # (customer walk-ins, tool changes, apprentice instruction) that affect
+  # single-shift throughput but are not captured in startup_shutdown_overhead.
+  # These should be folded into throughput_units_equiv_per_year per
+  # docs/METHODOLOGY.md guidance.
 
   consumables_lead_time_days: { typical: <number>, worst: <number> }
   # Lead time for routine consumable resupply.
@@ -314,6 +383,26 @@ lens_context:
     # satisfies. Non-addressed principles must be explained in Known Risks.
     # Example: [1, 2, 3, 4, 5, 6]
 
+    member_amendment_process: <string>
+    # CONDITIONAL — required when lens_context.cooperative is required.
+    # Specifies how members can change the cooperative's rules. Must include
+    # the required vote threshold and notice period.
+    # Example: "2/3 vote at annual general meeting; 30-day notice required"
+
+    legal_form: <string>
+    # CONDITIONAL — required when lens_fit.cooperative is `good`.
+    # Legal standing of the cooperative entity: registered type + jurisdiction.
+    # An unregistered cooperative lacking municipal acknowledgment is a documented
+    # commons-failure mode (Ostrom principle 7 analog).
+    # Example: "State-registered worker cooperative, LLC"
+
+    scale_fit_note: <string>
+    # CONDITIONAL — required when lens_context.cooperative is required.
+    # Confirms that governance rules are calibrated to the population scale where
+    # this entry is viable. Village vs. town norms differ significantly in
+    # feasible participation levels and enforcement capacity.
+    # Example: "Rules calibrated for town-scale; quorum infeasible at village scale"
+
   civic:
     # CONDITIONAL — required when lens_fit.civic is `good` or `marginal`.
     # A `civic: good` entry without this block is a P1 E-2 finding.
@@ -339,6 +428,48 @@ lens_context:
     budget_line: <string>
     # How capital and operating costs are funded in the municipal budget.
     # Example: "Capital via 25-year bond; operations under workforce-development or parks-and-rec line"
+
+    benchmark_comparison: <string>
+    # CONDITIONAL — required when lens_context.civic is required.
+    # Per-household annual cost of this facility compared against a named
+    # analogous civic service (library, rec center, tool library) in peer
+    # towns. Comparison must be named and cited; schema-enforced so the
+    # P-3 sign-off criterion can be verified mechanically.
+    # Example: "$2.28/hh/yr vs library at $42/hh/yr in peer towns"
+
+    staffing_model:
+      # CONDITIONAL — required when lens_context.civic is required.
+      # Staffing cost is a primary driver of per-household cost; omitting it
+      # makes cost claims unverifiable.
+      role: <string>
+      # Named staff role(s). Example: "contracted master smith + apprentice"
+      operator_fte: <number>
+      # Full-time equivalent staffing level. Example: 1.0
+      wage_assumption: <number>
+      # Annual wage in the entry's economics.currency.
+      # Must reference corpus/program/SCALES.md scale-appropriate median wage.
+      wage_source: <string>
+      # Citation for the wage figure. Must point to SCALES.md §3 or a named
+      # external source. Uncited wages are a P1 E-1 finding.
+      # Example: "corpus/program/SCALES.md §3 town-scale skilled-trades median"
+      hours: <string>
+      # Weekly hours and nature of work. Example: "40 hrs/wk production + admin"
+      hiring_notes: <string>
+      # Realism assessment of the hiring pool: geographic radius, skill
+      # availability, apprentice pipeline source.
+
+    civic_externalities:
+      # CONDITIONAL — required when lens_context.civic is required.
+      # List of at least one externality this facility generates that the
+      # market does not price. These externalities are the primary public-goods
+      # justification for civic investment over market or cooperative alternatives.
+      # Tied to the CIVIC lens pass condition in spec Section 6.
+      - <string>
+      # Example entries:
+      #   "Apprentice training pipeline: produces 1–2 journeymen per 3-year cycle"
+      #   "Emergency production capacity during supply-chain disruptions"
+      #   "Repair culture: reduces throwaway consumption of metal goods"
+      #   "Resilience anchor for downstream trades requiring metal components"
 
 # ── SIMULATION PARAMETERS ────────────────────────────────────────────────────
 
@@ -433,6 +564,10 @@ throughput:
 operator_skill_floor: journeyman
 operators_concurrent: 1-2
 apprentice_friendly: true
+apprentice_path:
+  training_stages: "Stage 1 (0–6 mo): safety, fire management, basic stock prep. Stage 2 (6–18 mo): small work, tool maintenance. Stage 3 (18–36 mo): medium work, independent production."
+  time_to_independent_operation: "~36 months to journeyman standard on this equipment"
+  succession_note: "Apprentice co-presence during production integrates skill transfer into normal operations"
 
 economics:
   currency: USD
@@ -442,7 +577,9 @@ economics:
   annual_consumables: 4200
   floor_space_rent_per_year: 4800
   market_price_per_unit: { low: 32, mid: 45, high: 70 }
-  pricing_notes: "Per small-work unit equivalent. Premium over industrial baseline (~$12) assumes direct-to-consumer and repair-work mix. Cited."
+  industrial_baseline_price: 12
+  pricing_notes: "Per small-work unit equivalent. Premium over industrial baseline ($12/unit, imported hardware-store equivalent) assumes direct-to-consumer and repair-work mix. Cited."
+  pricing_validation: "Market price evidence: ToolLibrary.org 2024 rate-card survey + direct-to-consumer repair pricing from three regional smiths; not a cost-plus residual."
 
 operations_reality:
   first_year_failures:
@@ -450,10 +587,28 @@ operations_reality:
       estimated_hours_to_failure: 1800
       replacement_cost: 1200
       replacement_lead_time_days: 21
+      serviceable_by: specialist
     - item: "Refractory lining (partial)"
       estimated_hours_to_failure: 2400
       replacement_cost: 400
       replacement_lead_time_days: 7
+      serviceable_by: operator
+  maintenance_schedule:
+    daily:
+      task: "Clean ash pan, inspect seals, check fuel line"
+      performed_by: operator
+    weekly:
+      task: "Inspect refractory lining, lubricate moving parts, calibrate temp sensor"
+      performed_by: operator
+    quarterly:
+      task: "Full refractory inspection; replace worn seals; check electrical connections"
+      performed_by: journeyman
+    annual:
+      task: "Full refurbishment: replace lining if indicated, inspect structural components"
+      performed_by: specialist
+  startup_shutdown_overhead_per_day_min: 30
+  max_active_hours_realism_note: "45 hr/wk is the theoretical ceiling; net of 30 min/day startup-shutdown overhead (5-day week), effective production hours ~41.5 hr/wk. sim_params uses the derated figure."
+  interruption_notes: "Typical intraday: customer walk-ins 2–3/day (~10 min each), tool-change setup ~15 min/switch, apprentice instruction ~20 min/day. Folded into throughput_units_equiv_per_year."
   consumables_lead_time_days: { typical: 5, worst: 30 }
   throughput_variance:
     seasonal: "Fall/winter peak for repair work; summer trough"
@@ -481,12 +636,28 @@ lens_context:
     graduated_sanctions: "Warning → $50 fine → 30-day suspension → membership review"
     conflict_resolution: "Member-elected steward arbitrates; appeal to full member vote"
     ostrom_principles_addressed: [1, 2, 3, 4, 5, 6]
+    member_amendment_process: "2/3 vote at annual general meeting; 30-day notice required; emergency 3/4 vote with 7-day notice"
+    legal_form: "State-registered worker cooperative, LLC; municipal acknowledgment on file"
+    scale_fit_note: "Rules calibrated for town-scale (2,000–15,000); quorum of 20 members infeasible at village scale — see scale_fit.village: marginal"
   civic:
     political_coalition: "Municipal workforce-development grant + small-business allies"
     council_vote_estimate: "5-2 favorable; opposition argues tax burden"
     competes_with_private: "No existing private smith in target towns; civic facility fills gap"
     governance_form: "Municipally owned; operated by contracted master smith with apprentice program"
     budget_line: "Capital via 25-year bond; operations under workforce-development or parks-and-rec line"
+    benchmark_comparison: "$2.28/hh/yr vs town library at $42/hh/yr and rec center at $68/hh/yr in peer towns — well below comparable civic services"
+    staffing_model:
+      role: "contracted master smith + apprentice (part-time)"
+      operator_fte: 1.0
+      wage_assumption: 68000
+      wage_source: "corpus/program/SCALES.md §3 town-scale skilled-trades median"
+      hours: "40 hrs/wk production + administration"
+      hiring_notes: "Journeyman-or-master smith required; hiring pool regional (100-mile radius); apprentice hired locally from workforce-development pipeline"
+    civic_externalities:
+      - "Apprentice training pipeline: produces 1–2 journeyman smiths per 3-year cycle, supplying regional repair capacity"
+      - "Emergency production capacity: forge can produce or repair critical metal components during supply-chain disruptions"
+      - "Repair culture: accessible civic forge reduces throwaway consumption of metal goods"
+      - "Resilience anchor: operational forge sustains downstream trades requiring metal components"
 
 sim_params:
   cost_mean: 28000
@@ -543,6 +714,10 @@ that condition is a P1 E-2 finding.
 | `operator_skill_floor` | Required | — |
 | `operators_concurrent` | Required | — |
 | `apprentice_friendly` | Required | — |
+| `apprentice_path` | Conditional | `apprentice_friendly` is `true` |
+| `apprentice_path.training_stages` | Conditional | `apprentice_path` is required |
+| `apprentice_path.time_to_independent_operation` | Conditional | `apprentice_path` is required |
+| `apprentice_path.succession_note` | Conditional | `apprentice_path` is required |
 | `economics` | Required | — |
 | `economics.currency` | Required | — |
 | `economics.capital_cost` | Required | — |
@@ -551,9 +726,18 @@ that condition is a P1 E-2 finding.
 | `economics.annual_consumables` | Required | — |
 | `economics.floor_space_rent_per_year` | Required | — |
 | `economics.market_price_per_unit` | Conditional | `lens_fit.market` is `good` or `marginal` |
+| `economics.industrial_baseline_price` | Conditional | `lens_fit.market` is `good` or `marginal` |
 | `economics.pricing_notes` | Conditional | `economics.market_price_per_unit` is present |
+| `economics.pricing_validation` | Conditional | `economics.market_price_per_unit` is present |
 | `operations_reality` | Conditional | Any `lens_fit` value is `good` or `marginal` |
 | `operations_reality.first_year_failures` | Conditional | `operations_reality` is required; minimum two items |
+| `operations_reality.first_year_failures[].serviceable_by` | Conditional | `operations_reality` is required; per-item |
+| `operations_reality.maintenance_schedule` | Conditional | `operations_reality` is required |
+| `operations_reality.maintenance_schedule.{daily,weekly,quarterly,annual}.task` | Conditional | `maintenance_schedule` is required |
+| `operations_reality.maintenance_schedule.{daily,weekly,quarterly,annual}.performed_by` | Conditional | `maintenance_schedule` is required |
+| `operations_reality.startup_shutdown_overhead_per_day_min` | Conditional | `operations_reality` is required |
+| `operations_reality.max_active_hours_realism_note` | Conditional | `operations_reality` is required |
+| `operations_reality.interruption_notes` | Optional | — |
 | `operations_reality.consumables_lead_time_days` | Conditional | `operations_reality` is required |
 | `operations_reality.consumables_lead_time_days.worst` | Conditional | `operations_reality` is required |
 | `operations_reality.throughput_variance` | Conditional | `operations_reality` is required |
@@ -583,12 +767,20 @@ that condition is a P1 E-2 finding.
 | `lens_context.cooperative.graduated_sanctions` | Conditional | `lens_context.cooperative` is required |
 | `lens_context.cooperative.conflict_resolution` | Conditional | `lens_context.cooperative` is required |
 | `lens_context.cooperative.ostrom_principles_addressed` | Conditional | `lens_context.cooperative` is required |
+| `lens_context.cooperative.member_amendment_process` | Conditional | `lens_context.cooperative` is required |
+| `lens_context.cooperative.legal_form` | Conditional | `lens_fit.cooperative` is `good` |
+| `lens_context.cooperative.scale_fit_note` | Conditional | `lens_context.cooperative` is required |
 | `lens_context.civic` | Conditional | `lens_fit.civic` is `good` or `marginal` |
 | `lens_context.civic.political_coalition` | Conditional | `lens_context.civic` is required |
 | `lens_context.civic.council_vote_estimate` | Conditional | `lens_context.civic` is required |
 | `lens_context.civic.competes_with_private` | Conditional | `lens_context.civic` is required |
 | `lens_context.civic.governance_form` | Conditional | `lens_context.civic` is required |
 | `lens_context.civic.budget_line` | Conditional | `lens_context.civic` is required |
+| `lens_context.civic.benchmark_comparison` | Conditional | `lens_context.civic` is required |
+| `lens_context.civic.staffing_model` | Conditional | `lens_context.civic` is required |
+| `lens_context.civic.staffing_model.wage_assumption` | Conditional | `lens_context.civic.staffing_model` is required |
+| `lens_context.civic.staffing_model.wage_source` | Conditional | `lens_context.civic.staffing_model` is required |
+| `lens_context.civic.civic_externalities` | Conditional | `lens_context.civic` is required; minimum one item |
 | `sim_params` | Required | — |
 | `sim_params.cost_mean` | Required | — |
 | `sim_params.cost_sd` | Required | — |
@@ -663,12 +855,25 @@ Definitions for fields whose meaning is not fully self-evident from their name.
 | `economics.market_price_per_unit` | The price at which the output sells in the market — not a cost-plus derivation, not a break-even price. It is a claim about what real customers will pay, and it must be argued with evidence. |
 | `economics.pricing_notes` | Must name the industrial-competitor baseline price and the customer segment that pays the premium. A pricing note that does not name the baseline is insufficient (Principle 5). |
 | `operations_reality.first_year_failures` | Components expected to fail or need partial replacement within the first 12 months of operation under normal use. Not every conceivable failure — the two or three most predictable ones based on cited service data. |
+| `operations_reality.first_year_failures[].serviceable_by` | Who can perform the repair: `operator` (regular operator, no outside help), `journeyman` (skilled tradesperson, not a specialist contractor), `specialist` (specialist contractor required — highest downtime and cost risk). Drives operating cost and downtime projections. |
+| `operations_reality.maintenance_schedule` | Routine maintenance cadences across daily, weekly, quarterly, and annual intervals. Each cadence has a `task` description and a `performed_by` designation. Drives `annual_maintenance` cost defensibility and `downtime_fraction` credibility. |
+| `operations_reality.startup_shutdown_overhead_per_day_min` | Non-productive operator minutes per operating day: warm-up, shutdown, cleanup. Subtracted from `max_active_hours_per_week` when calculating throughput realism in `sim_params`. |
+| `operations_reality.max_active_hours_realism_note` | Declares whether `throughput.max_active_hours_per_week` is the theoretical gross maximum or a net figure derated for interruptions. Required to prevent systematically optimistic throughput math. |
+| `operations_reality.interruption_notes` | Optional prose on intraday interruption patterns (walk-ins, tool changes, apprentice instruction) not captured in `startup_shutdown_overhead`. These should be folded into `throughput_units_equiv_per_year` per `docs/METHODOLOGY.md`. |
 | `operations_reality.consumables_lead_time_days.worst` | Not theoretical maximum — the 95th-percentile scenario or a documented supply-chain stress case (e.g., single supplier, overseas shipping). |
 | `operations_reality.throughput_variance.worst_month_fraction_of_average` | Fraction relative to the monthly average implied by `throughput_units_equiv_per_year / 12`. A value of 0.45 means the worst month yields 45% of that average. |
 | `lens_fit` | Author's prospective assessment of fitness before simulation runs. Not a simulation output. The simulation may confirm, contradict, or refine the author's label; discrepancies should be logged in the Iteration Log. |
 | `scale_fit` | Same prospective nature as `lens_fit`. The Tier A simulation may assign `marginal` where the author claimed `good`; that is a finding, not a schema error. |
 | `lens_context.cooperative.ostrom_principles_addressed` | Ostrom's eight design principles (Governing the Commons, 1990). Non-addressed principles signal governance gaps. Principles 7 (nested organisations) and 8 (external recognition) are often not applicable at single-cooperative scale; NA at that scale is acceptable and should be noted. |
+| `lens_context.cooperative.member_amendment_process` | How members can change the cooperative's operating rules. Must name the vote threshold and notice period. A cooperative where rules can only be changed by founders or are implicit in "standard bylaws" fails Ostrom Principle 3 (collective choice arrangements). |
+| `lens_context.cooperative.legal_form` | Registered entity type and jurisdiction. Required at `lens_fit.cooperative: good` because unregistered cooperatives lack the external recognition (Ostrom Principle 7 analog) that prevents dissolution under pressure. |
+| `lens_context.cooperative.scale_fit_note` | Confirms governance rules are calibrated to the population scale where the entry is viable. Village-scale participation quorums differ materially from town-scale; an entry should not be marked `lens_fit.cooperative: good` at a scale where its own governance rules are infeasible. |
+| `lens_context.civic.benchmark_comparison` | Per-household annual cost compared against a named, cited analogous civic service. Schema-enforced so the P-3 Civic Steward sign-off criterion is verifiable: a civic entry that does not name a benchmark cannot be assessed for political viability. |
+| `lens_context.civic.staffing_model` | Named role, FTE, wage, hours, and hiring-pool realism. Staffing is the primary variable cost driver for civic facilities; omitting it makes `per_household_cost` unverifiable. Wage must reference `corpus/program/SCALES.md` scale-appropriate median. |
+| `lens_context.civic.civic_externalities` | Public-goods externalities this facility generates that the market does not price. The primary qualitative justification for civic investment over market or cooperative alternatives. Minimum one entry required; each should be a distinct, named externality (not a paraphrase of another). |
 | `lens_context.civic.competes_with_private` | Analyzes whether a civic facility displaces an existing functioning private operator. "No existing private operator" and "existing private operator; civic fills a gap they cannot" are both acceptable answers; silence is not. |
+| `economics.industrial_baseline_price` | The price of the nearest industrial-produced equivalent per output unit. Used to compute the artisan-production premium in `pricing_notes`. Must be cited. Without a named baseline, the premium claim is unanchored. |
+| `economics.pricing_validation` | Statement of evidence type for the market price claim. Distinguishes empirical evidence (sales data, survey, comparable operator financials) from cost-plus reasoning. Required because a pricing note that does not specify its evidence type cannot be audited. |
 | `sim_params.cost_mean` | Must equal `economics.capital_cost.mid`. Discrepancy is a P1 E-3 finding. |
 | `sim_params.downtime_fraction` | Must be consistent with the `operations_reality` failure profile. A `downtime_fraction` of 0.05 with two first-year failures totaling 4+ weeks of lead time is internally inconsistent. |
 | `results` | All nine cells start null. Values written by Tier A simulation only. An entry with `status: validated` must have all nine cells populated. An entry with `status: reviewed` may have some or all cells as null (simulation has not yet run). |
@@ -689,6 +894,8 @@ P1 findings unless noted; P1 findings block promotion.
 | E1-R2 | Every field in `sim_params.*` traces to a `sources:` entry or is derivable from cited fields above with the derivation stated in Key Assumptions. | P1 |
 | E1-R3 | Every historical claim in prose traces to a `sources:` entry. | P1 |
 | E1-R4 | `market_price_per_unit`, when present, must be explicitly cited (not a residual from sim_params arithmetic). Uncited market price is a P1 finding regardless of other citations. | P1 |
+| E1-R4a | `economics.industrial_baseline_price`, when present, must be cited. `economics.pricing_validation` must specify the evidence type for market-price claims (not just cite a source). | P1 |
+| E1-R4b | `lens_context.civic.staffing_model.wage_assumption`, when present, must cite its source in `wage_source`. | P1 |
 | E1-R5 | `sources:` entries must be real, findable, and appropriate to the claim made. A source that does not exist or does not support the specific claim is worse than no source. | P1 |
 | E1-R6 | `inspirations` entries used in prose must each have a traceable source. | P2 |
 
@@ -700,8 +907,16 @@ P1 findings unless noted; P1 findings block promotion.
 | E2-R2 | All Conditional fields are present when their trigger condition is met. | P1 |
 | E2-R3 | No fields are invented outside this schema. Trade-specific extensions must be documented in `catalog/<trade>/SCHEMA.md` under the `trade_specific:` namespace. | P1 |
 | E2-R4 | `operations_reality` is present whenever any `lens_fit` value is `good` or `marginal`. | P1 |
+| E2-R4a | `operations_reality.maintenance_schedule` is present when `operations_reality` is required. Each cadence sub-key (daily, weekly, quarterly, annual) must include `task` and `performed_by`. | P1 |
+| E2-R4b | `operations_reality.startup_shutdown_overhead_per_day_min` and `operations_reality.max_active_hours_realism_note` are present when `operations_reality` is required. | P1 |
+| E2-R4c | Each item in `operations_reality.first_year_failures` includes a `serviceable_by` value of `operator`, `journeyman`, or `specialist`. | P1 |
 | E2-R5 | `lens_context.cooperative` is present whenever `lens_fit.cooperative` is `good` or `marginal`. | P1 |
+| E2-R5a | `lens_context.cooperative.member_amendment_process` and `lens_context.cooperative.scale_fit_note` are present when `lens_context.cooperative` is required. | P1 |
+| E2-R5b | `lens_context.cooperative.legal_form` is present when `lens_fit.cooperative` is `good`. | P1 |
 | E2-R6 | `lens_context.civic` is present whenever `lens_fit.civic` is `good` or `marginal`. | P1 |
+| E2-R6a | `lens_context.civic.benchmark_comparison`, `lens_context.civic.staffing_model`, and `lens_context.civic.civic_externalities` are present when `lens_context.civic` is required. | P1 |
+| E2-R6b | `lens_context.civic.staffing_model.wage_source` references `corpus/program/SCALES.md` or a named external source. An entry that states a wage without a source is a P1 E-1 finding. | P1 |
+| E2-R6c | `lens_context.civic.civic_externalities` contains at least one item. A civic entry with an empty externalities list has no public-goods justification. | P1 |
 | E2-R7 | `status: validated` is not claimed while any Required or triggered Conditional field is absent or contains a placeholder (`TBD`, `todo`, etc.). | P1 |
 | E2-R8 | `version` is greater than `0.1` only if the Iteration Log records at least one revision beyond the initial creation entry. | P2 |
 | E2-R9 | `supersedes` is non-null only if the Iteration Log records the reason for superseding the predecessor. | P2 |
@@ -717,6 +932,7 @@ P1 findings unless noted; P1 findings block promotion.
 | E3-R4 | The payback period implied by `(cost_mean + install_cost) / annual_net_revenue` is consistent with what `pricing_notes` implies. Inconsistency between stated market price and sim_params-implied payback is P1. | P1 |
 | E3-R5 | `sim_params.cost_sd` is within plausible range relative to `cost_mean` (typically `cost_sd / cost_mean` between 0.15 and 0.50 for uncertain capital estimates). | P2 |
 | E3-R6 | `sim_params.downtime_fraction` is consistent with the `operations_reality.first_year_failures` profile. A low downtime fraction with high-severity first-year failures is internally inconsistent. | P2 |
+| E3-R6a | `sim_params.throughput_units_equiv_per_year` is consistent with the derated active hours implied by `max_active_hours_per_week` minus `startup_shutdown_overhead_per_day_min` × (operating days/week). A claimed throughput that ignores the stated overhead is internally inconsistent. | P2 |
 | E3-R7 | If the entry has `results:` cells populated, cells must be internally consistent across scales and lenses (e.g., if `village_market: fail` and `small_city_market: win`, `town_market` should not be `fail` without explanation). | P2 |
 | E3-R8 | All monetary values in the same entry use the same currency (the one declared in `economics.currency`). Cross-currency mixing is P1. | P1 |
 
@@ -782,3 +998,15 @@ file).
 - 2026-04-18: v1.0 — initial canonical schema created, matching spec v0.2 Section 5.
   Includes v0.2 additions: `economics.market_price_per_unit`, `economics.pricing_notes`,
   `operations_reality` block, `lens_context.cooperative` block, `lens_context.civic` block.
+
+- 2026-04-19: v1.1 — cascade from spec v0.3 (ceres-check 12 P2 + 5 P3). New fields:
+  `economics.industrial_baseline_price` (P2 F2), `economics.pricing_validation` (P2 F1);
+  `apprentice_path` block (P3 F13);
+  `operations_reality.first_year_failures[].serviceable_by` (P2 F9),
+  `operations_reality.maintenance_schedule` (P2 F11),
+  `operations_reality.startup_shutdown_overhead_per_day_min` (P2 F12),
+  `operations_reality.max_active_hours_realism_note` (P2 F12),
+  `operations_reality.interruption_notes` optional (P3 F10);
+  `lens_context.cooperative.{member_amendment_process, legal_form, scale_fit_note}` (P2 F4/F5, P3 F3);
+  `lens_context.civic.{benchmark_comparison, staffing_model, civic_externalities}` (P2 F6/F7/F8).
+  Updated Section 4 table, Section 6 semantics, Section 7 validation rules to match.
