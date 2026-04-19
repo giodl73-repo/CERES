@@ -63,8 +63,9 @@ Research  →  Design Catalog ★  →  Evaluation Matrix  →  Simulation  → 
 CERES/
 ├── README.md
 ├── CLAUDE.md                          # project conventions
+├── specs/                             # design specs (top-level, first-class)
+├── plans/                             # implementation plans (top-level)
 ├── docs/
-│   ├── superpowers/specs/             # design specs live here
 │   ├── PIPELINE.md                    # 5-phase workflow guide
 │   ├── STYLE-GUIDE.md                 # citation & writing conventions
 │   └── METHODOLOGY.md                 # how estimates are made and defended
