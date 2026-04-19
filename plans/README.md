@@ -108,7 +108,10 @@ actual frontmatter will be the authoritative record once those files exist.
 | plan-c-catalog-smithing | Catalog — Smithing | completed | 2 | smithing | plan-a-scaffolding, plan-b-research-smithing | 15 forge catalog entries spanning repair/specialty/shared-civic niches per DECLINE-VERDICT; every entry schema-compliant per catalog/SCHEMA.md v1.1; actual niche split 8/3/2/2 (drifted from target 6/3/4/2; accepted honestly); cross-entry audit confirms 9-cell matrix coverage; ready for ceres-panel R1 and Plan D Tier A sim. |
 | plan-d-sim | Simulation and Evaluation Matrix | completed | 3 | null | plan-a-scaffolding, plan-c-catalog-smithing | Tier A comparator (Python 3.12 + pytest + PyYAML) runs all 135 evaluation cells (15 entries × 9 contexts); `results:` blocks populated in each catalog entry; SUMMARY.md aggregates findings; Tier B and C directories scaffolded with intent READMEs. |
 | plan-e-playbook | Playbook and Pitch Narrative | completed | 5 | smithing | plan-a-scaffolding, plan-b-research-smithing, plan-c-catalog-smithing, plan-d-sim | Three per-scale smithing playbooks + pitch narrative. Civic-lens diagnostic (Path A+B hybrid) resolved all-fail pattern; 13 non-civic entries correctly fail. Closes the smithing vertical slice per spec §10 DoD. Cross-artifact review: HOLD (6 P2s; no P1s); formal ceres-panel R1 on pitch pending. |
-
+| plan-f-research-baking | Research Corpus — Baking | draft | 1 | baking | plan-a-scaffolding | 4 cultural chapters for baking + REQUIREMENTS, HISTORICAL-FORMS, DECLINE-VERDICT, SOURCES — anti-romantic, P-5-Historian-grade citations. |
+| plan-g-catalog-baking | Catalog — Baking | draft | 2 | baking | plan-a-scaffolding, plan-f-research-baking | 15 baking catalog entries schema-compliant; 9-cell matrix coverage confirmed. |
+| plan-h-research-weaving | Research Corpus — Weaving | draft | 1 | weaving | plan-a-scaffolding | 4 cultural chapters for weaving + REQUIREMENTS, HISTORICAL-FORMS, DECLINE-VERDICT, SOURCES — anti-romantic, P-5-Historian-grade citations. |
+| plan-i-catalog-weaving | Catalog — Weaving | draft | 2 | weaving | plan-a-scaffolding, plan-h-research-weaving | 15 weaving catalog entries schema-compliant; 9-cell matrix coverage confirmed. |
 ---
 
 ## 4. How to Add a New Plan
