@@ -3,8 +3,9 @@
 ## Design Specification
 
 **Date:** 2026-04-18
+**Version:** 0.2 (revised 2026-04-18 after panel R1)
 **Author:** Giovanni Della-Libera + Claude Opus 4.7
-**Status:** Draft — pending author review before implementation planning
+**Status:** Draft — revised once after panel R1, pending author review before implementation planning
 
 ---
 
@@ -19,11 +20,22 @@
 
 ---
 
-## 2. Core Claim
+## 2. Working Hypothesis
 
-Local artisan production — the village baker, the town smith, the district weaver — collapsed in industrialized economies not because communities stopped needing what these trades produced, but because the equipment, scale, and organizational forms inherited from pre-industrial times no longer penciled out against industrial production. **The equipment is the constraint.** Redesign the equipment for modern contexts (energy sources, regulations, labor costs, shareability patterns), pair it with the right organizational form (market / cooperative / civic), match it to the right settlement scale, and a meaningful share of these trades becomes viable again.
+CERES's working hypothesis — to be tested, not assumed:
 
-CERES tests this claim by building a catalog of equipment designs and evaluating each design against a matrix of contexts.
+> Local artisan production in industrialized economies declined primarily because the equipment, scale, and organizational forms inherited from pre-industrial times no longer penciled out against industrial competition. Redesign the equipment for modern contexts (energy sources, regulations, labor costs, shareability patterns), pair it with the right organizational form (market / cooperative / civic), match it to the right settlement scale, and a meaningful share of these trades becomes viable again.
+
+**Falsifier.** If the historical research (Phase 1) reveals that the binding constraint was not equipment economics but one of the following, CERES must acknowledge it and adapt:
+
+- **Demand collapse** — consumers genuinely prefer industrial goods for reasons durable to price reduction (consistency, safety perception, brand trust). Equipment redesign cannot restore what was never lost.
+- **Regulatory capture** — trades were displaced by zoning, licensing, food-safety, or tax regimes that equipment redesign cannot navigate.
+- **Labor-regime dependency** — historical viability rested on household labor, apprentice servitude, or customary obligations that cannot be reproduced ethically.
+- **Supply-chain disappearance** — the upstream inputs (local grain mills, tanneries, regional steel) vanished and cannot be reconstituted at equipment scale alone.
+
+**Pivot criteria.** If any falsifier holds strongly for a given trade, CERES's analysis for that trade pivots from "here is equipment that restores viability" to "here is what would actually be required, and whether equipment is part of the answer or not." A trade where equipment is shown to be *not* the binding constraint is a finding, not a failure.
+
+CERES tests the hypothesis by building a catalog of equipment designs and evaluating each design against a matrix of contexts. The pattern of verdicts — across trades, across scales, across lenses — is the evidence for or against the hypothesis.
 
 ---
 
@@ -191,6 +203,32 @@ economics:
   annual_maintenance: 1500
   annual_consumables: 4200
   floor_space_rent_per_year: 4800
+  # Market-clearing output pricing — required for MARKET lens evaluation
+  market_price_per_unit: { low: 32, mid: 45, high: 70 }
+  pricing_notes: "Per small-work unit equivalent. Premium over industrial baseline (~$12) assumes direct-to-consumer and repair-work mix. Cited."
+
+# Operations reality — what actually breaks and what an operator's worst month looks like
+# Required for P-4 (Craft Practitioner) lens; separate from regulatory compliance.
+operations_reality:
+  first_year_failures:
+    - item: "Primary coil / heating element"
+      estimated_hours_to_failure: 1800
+      replacement_cost: 1200
+      replacement_lead_time_days: 21
+    - item: "Refractory lining (partial)"
+      estimated_hours_to_failure: 2400
+      replacement_cost: 400
+      replacement_lead_time_days: 7
+  consumables_lead_time_days: { typical: 5, worst: 30 }
+  throughput_variance:
+    seasonal: "Fall/winter peak for repair work; summer trough"
+    worst_month_fraction_of_average: 0.45
+    best_month_fraction_of_average: 1.65
+  operator_impact:
+    noise_db: 85
+    heat_exposure: "High near forge; adequate ventilation required"
+    emissions: "Particulate, CO, small amounts of SOx with coal; zero with induction"
+    physical_demand: "Moderate-heavy lifting; sustained standing"
 
 # Regulatory notes (kept terse — flag showstoppers only)
 regulatory_notes:
@@ -201,6 +239,26 @@ regulatory_notes:
 # Context fit (tri-state per axis)
 lens_fit:      { market: marginal, cooperative: good, civic: good }
 scale_fit:     { village: marginal, town: good, small_city: good }
+
+# Lens context — required supporting detail for any entry whose lens_fit is
+# `good` or `marginal` in the corresponding lens. Governance / political /
+# competitive structures that determine whether the label is earned.
+lens_context:
+  # Required when lens_fit.cooperative is good or marginal
+  cooperative:
+    membership_boundary: "Town residents + surrounding township, paid annual dues"
+    rules_source: "Bylaws; member vote to amend with 2/3 majority"
+    monitoring: "Equipment usage logged per session; monthly audit by elected steward"
+    graduated_sanctions: "Warning → $50 fine → 30-day suspension → membership review"
+    conflict_resolution: "Member-elected steward arbitrates; appeal to full member vote"
+    ostrom_principles_addressed: [1, 2, 3, 4, 5, 6]  # 7 and 8 NA at single-coop scale
+  # Required when lens_fit.civic is good or marginal
+  civic:
+    political_coalition: "Municipal workforce-development grant + small-business allies"
+    council_vote_estimate: "5-2 favorable; opposition argues tax burden"
+    competes_with_private: "No existing private smith in target towns; civic facility fills gap"
+    governance_form: "Municipally owned; operated by contracted master smith with apprentice program"
+    budget_line: "Capital via 25-year bond; operations under workforce-development or parks-and-rec line"
 
 # Machine-readable simulation parameters
 sim_params:
@@ -249,12 +307,16 @@ Dated notes as the design evolves.
 ```
 
 **Rationale for this shape:**
-- Trade-agnostic fields (footprint, economics, operator, lens_fit, scale_fit) are consistent across all trades. Simulation code is written once and works for any trade.
+- Trade-agnostic fields (footprint, economics, operator, lens_fit, scale_fit, operations_reality, lens_context) are consistent across all trades. Simulation code is written once and works for any trade.
 - Trade-specific fields (contents of `throughput`) are namespaced under consistent top-level keys.
 - `results:` block starts null and is populated by Tier A simulation output. The catalog file is its own evaluation record; no separate results database.
 - `status` + `version` + `supersedes` track iteration. Failed designs remain in the catalog marked `deprecated`, linked to what replaced them.
 - Multi-currency support: each entry declares its currency; FX conversion table (`corpus/program/CURRENCIES.md`) normalizes to a project base currency at evaluation time.
 - Regulatory notes are deliberately terse: three short lines to flag showstoppers, not a legal treatise.
+- **`market_price_per_unit`** is required for any entry with `lens_fit.market` set to `good` or `marginal` — the MARKET lens cannot evaluate without it. Uncited pricing is a P1 editorial finding.
+- **`operations_reality`** captures what the panel's Craft Practitioner (P-4) asks for and what the average-case sim_params miss: first-year failures, consumables lead time, variance / worst-month throughput, operator impact. Paper designs assume the average case; real shops die in the tail.
+- **`lens_context.cooperative`** is required for any entry with `lens_fit.cooperative` set to `good` or `marginal`. A coop label without a governance sketch is a romantic shorthand; this block forces the author to state membership, rules, monitoring, sanctions, conflict resolution, and Ostrom-principle alignment.
+- **`lens_context.civic`** is required for any entry with `lens_fit.civic` set to `good` or `marginal`. Names the political coalition, council-vote estimate, relationship to existing private operators, governance form, and municipal budget line. A civic label without a political path is a wish.
 
 ---
 
@@ -332,7 +394,57 @@ After the slice completes, subsequent trades (baking, weaving, pottery, leatherw
 
 ---
 
-## 11. Reuse From Sister Projects
+## 11. Project Success Criteria
+
+Distinct from Section 10's artifact-level definition of done, this section defines what counts as project-level success, failure, or scientific null — and commits to these criteria before Phase 1 begins, not after Phase 4 evidence arrives.
+
+### 11.1 Success — Validated Hypothesis
+
+The working hypothesis (Section 2) is validated if, across the 15 smithing catalog entries, **at least one design achieves `win` under at least one lens at at least one scale**, with all supporting fields (market_price_per_unit, operations_reality, lens_context) defensible under editorial review. A validated hypothesis produces a publishable playbook and a fundable pitch.
+
+### 11.2 Success — Scientific Null Result
+
+If the 15 entries span the realistic design space (electric / propane / coal / induction / hybrid × single-owner / shared / civic × small / medium / large footprint) and **none achieves `win` under any lens at any scale**, this is a **scientific null**, not a project failure. The project deliverable in this case is a revised pitch: "modern smithing cannot be restored by equipment redesign alone in the three-scale developed-economy context; here is what the research reveals is actually required." This outcome is publishable and valuable. CERES pre-registers acceptance of null results.
+
+### 11.3 Failure
+
+The project is a failure only if:
+
+- Fewer than 15 entries are authored, or the authored entries do not span the realistic design space; OR
+- Editorial review finds systemic citation or numeracy failures that invalidate the results; OR
+- The research corpus is too thin to evaluate the hypothesis one way or the other.
+
+Failure is a process outcome, not an evidence outcome. A rigorous null is success; a shoddy validation is failure.
+
+### 11.4 Timeline
+
+Indicative — not contractual, but committed to honestly for planning purposes:
+
+| Phase | Duration target |
+|---|---|
+| Phase 1 Research (4–6 cultures × smithing) | 4–6 weeks |
+| Phase 2 Catalog (15 forge entries, schema-complete) | 6–10 weeks |
+| Phase 3 Economic lens formalization + Tier A sim | 3–4 weeks |
+| Phase 4 Playbook + pitch first draft | 2–3 weeks |
+| **Vertical slice total** | **~4 months of focused work, ~6 months part-time** |
+
+### 11.5 Funder Archetype for the Pitch
+
+The pitch narrative (Section 9) is authored for a specific archetype and pre-registers that archetype here:
+
+- **Primary target:** civic-economic-development foundation or family office with an interest in rural / small-town economic resilience (program-related investment or grant, $250k–$2M range).
+- **Secondary target:** municipal economic-development department considering a pilot (single-town, $50k–$500k budget line).
+- **Not the target:** venture capital (CERES is not a scalable software company), retail consumer campaigns (too broad, too thin), or political campaigns (Section 13 non-goal).
+
+If the evidence points to viability only under the cooperative or civic lens, the funder archetype shifts toward foundation / municipal and away from individual philanthropy.
+
+### 11.6 World-Level Outcome
+
+Beyond the artifacts, CERES is accountable for a contribution to the question: **"What would it actually take to restore meaningful local artisan production in a town of N residents?"** A project that materially advances public and funder understanding of that question — including by decisively ruling out the equipment-centered hypothesis — has produced value. A project that produces artifacts nobody reads and nobody can act on has not.
+
+---
+
+## 12. Reuse From Sister Projects
 
 - **Chronicle (LUCIA)** — directory pattern for "many instances, consistent schema." Catalog entries mirror Chronicle's "peoples" — individual files, uniform structure. Reuse review/panel/scoring patterns.
 - **RMM (FELICE)** — `corpus/canon` + `corpus/program` framework structure. Simulation-design discipline from `corpus/program/SIMULATIONS.md`. Predictions/validation mindset.
@@ -340,7 +452,7 @@ After the slice completes, subsequent trades (baking, weaving, pottery, leatherw
 
 ---
 
-## 12. Non-Goals
+## 13. Non-Goals
 
 - **Not** real supplier BOMs, real vendor quotes, or due-diligence-grade procurement plans. Research-paper estimates only.
 - **Not** an argument that industrial production is bad. The project's claim is about restoring *optionality* and *local capacity*, not displacing industrial supply.
