@@ -2,8 +2,10 @@
 id: plan-e-playbook
 name: Playbook and Pitch Narrative — Smithing Vertical Slice
 description: Per-scale playbook files naming winning designs + pitch narrative for funders; incorporates Plan D matrix findings directly; pre-flight civic-lens diagnostic addresses the all-fail civic finding
-status: draft
-version: "1.0"
+status: completed
+completed: 2026-04-19
+last_modified: 2026-04-19
+version: "1.1"
 created: 2026-04-19
 phase: 5
 subsystem: playbook
