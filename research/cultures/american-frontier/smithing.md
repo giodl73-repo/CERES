@@ -117,7 +117,7 @@ The contrast with "restructuring" is sharp: a restructured trade changes form wh
 ## Sources
 
 1. Longfellow, Henry Wadsworth. 1841. "The Village Blacksmith." In *Ballads and Other Poems*. Cambridge, MA: John Owen. [Cited as cultural-trope marker only; not a research source.]
-2. Wallace, Anthony F.C. 1978. *Rockdale: The Growth of an American Village in the Early Industrial Age*. New York: Knopf. [Industrial and rural mill life in early American period; structural reference for household labor and supply-chain dependencies.]
+2. Wallace, Anthony F.C. 1978. *Rockdale: The Growth of an American Village in the Early Industrial Revolution*. New York: Knopf. [Industrial and rural mill life in early American period; structural reference for household labor and supply-chain dependencies.]
 3. Schlereth, Thomas J. 1991. *Victorian America: Transformations in Everyday Life, 1876–1915*. New York: HarperCollins. [Material culture reference for late-frontier period smith's context.]
 4. Atack, Jeremy, and Peter Passell. 1994. *A New Economic View of American History from Colonial Times to 1940*. 2nd ed. New York: Norton. [General American economic history; railroad economics, freight rates, manufacturing displacement.]
 5. Gordon, Robert B. 1996. *American Iron, 1607–1900*. Baltimore: Johns Hopkins University Press. [American iron and steel production and distribution; Pittsburgh networks.]
