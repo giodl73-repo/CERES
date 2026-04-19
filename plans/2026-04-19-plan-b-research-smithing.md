@@ -2,9 +2,11 @@
 id: plan-b-research-smithing
 name: Research Corpus — Smithing Vertical Slice
 description: Historical functional-requirements research for smithing across 4 anchor cultures, plus cross-cultural synthesis and decline verdict
-status: draft
-version: "1.0"
+status: completed
+version: "1.1"
 created: 2026-04-19
+completed: 2026-04-19
+last_modified: 2026-04-19
 phase: 1
 subsystem: research-corpus
 trade: smithing

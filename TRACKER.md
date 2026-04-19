@@ -12,10 +12,11 @@ Operational dashboard. Updated manually at each plan checkpoint.
 
 | Item | Value |
 |---|---|
-| Active plan | **— (Plan A complete; Plans B + D unblocked and ready to author)** |
-| Phase | Phase 0 complete; Phase 1 scaffold authored (ready to fill) |
-| Trade vertical slice | **Smithing** (Phase 1 target) |
+| Active plan | **Plan A complete; Plan B complete (2026-04-19); Plans C/D unblocked** |
+| Phase | Phase 0 complete; Phase 1 research complete for smithing |
+| Trade vertical slice | **Smithing** (Phase 1 complete; Phase 2 ready) |
 | Plan A progress | **17/17 tasks complete** |
+| Plan B progress | **complete (2026-04-19)** — 4 cultural chapters + REQUIREMENTS + HISTORICAL-FORMS + DECLINE-VERDICT + SOURCES |
 
 ---
 
@@ -24,7 +25,7 @@ Operational dashboard. Updated manually at each plan checkpoint.
 | Plan | Name | Status | Owner | ETA | Notes |
 |---|---|---|---|---|---|
 | A | Scaffolding and Framework Docs | `completed` | giodl + Claude Opus 4.7 | 2026-04-19 | All 17 tasks committed. Framework docs, schema, rubric, plans index in place. Unblocks B, C, D, E. |
-| B | Research Corpus — Smithing | `not-yet-authored` | — | TBD | Depends on A. Produces `research/trades/smithing/` + `research/cultures/*/smithing.md`. |
+| B | Research Corpus — Smithing | `completed` | giodl + Claude Sonnet 4.6 | 2026-04-19 | 4 cultural chapters (med N Europe, Song China, Tokugawa Japan, American frontier) + REQUIREMENTS + HISTORICAL-FORMS + DECLINE-VERDICT + SOURCES. Decline verdict: mixed / moderate confidence. Unblocks C. |
 | C | Catalog — Smithing (15 forge entries) | `not-yet-authored` | — | TBD | Depends on A and B. Produces `catalog/smithing/entries/*.md`. |
 | D | Economic Lens Math + Tier A Sim Code | `not-yet-authored` | — | TBD | Depends on A. Produces sim code and formalizes lens math. |
 | E | Playbook + Pitch Narrative | `not-yet-authored` | — | TBD | Depends on A, B, C, D. Produces `playbook/smithing/*.md` + `playbook/pitch/PITCH-NARRATIVE.md`. |
@@ -37,8 +38,8 @@ Status values: `in_progress` | `not-yet-authored` | `draft` | `completed` | `def
 
 | Deliverable | Target | Status |
 |---|---|---|
-| `research/trades/smithing/REQUIREMENTS.md` | written, cited | `not-started` |
-| `research/cultures/*/smithing.md` | 4–6 cultures | `not-started` |
+| `research/trades/smithing/REQUIREMENTS.md` | written, cited | `complete` |
+| `research/cultures/*/smithing.md` | 4–6 cultures | `complete` (4/4: medieval N Europe, Song China, Tokugawa Japan, American frontier) |
 | `catalog/smithing/SCHEMA.md` | finalized (trade-specific extension; base `catalog/SCHEMA.md` authored in Plan A task 15) | `not-started` |
 | `catalog/smithing/entries/*.md` | ~15 forge designs, schema-complete | `not-started` |
 | `corpus/program/ECONOMIC-LENSES.md` | three lens rules formalized (Plan A task 13 authors definitions; Plan D formalizes math) | `not-started` |
@@ -56,8 +57,7 @@ Status values: `not-started` | `in-progress` | `complete` | `blocked`
 | Artifact | Round | Status | Reviewers | Notes |
 |---|---|---|---|---|
 | `specs/2026-04-18-ceres-design.md` | R1 | **complete** | P-1 through P-6 | 6 reviews committed. Spec revised to v0.2. |
-
-No artifacts currently awaiting panel review.
+| Plan B cultural chapters (4) + synthesis docs (4) | R1 (consolidated) | **ready** | ceres-panel | Citation audit 22/24 VERIFIED, 2 PARTIAL fixed. Cross-chapter review addressed 25 findings + 3 concerns. Artifacts ready for formal ceres-panel R1 before Plan C consumes them. |
 
 ---
 
@@ -88,3 +88,4 @@ Queue empty. Board review fires on-demand for contested domain claims.
 - **2026-04-18:** Panel R1 on spec — 6 reviews committed (`reviews/R1-P*-ceres-design.md`). Cross-cutting findings: (a) schema underspecified — missing `market_price_per_unit` field, no governance-sketch block for coop entries, no political-coalition field for civic entries (P-1, P-2, P-3); (b) central claim in Section 2 stated as premise, not testable hypothesis (P-1); (c) no project-level success criterion (P-6).
 - **2026-04-18:** Spec revised to v0.2 addressing themes 1, 2-lite, 3. Changes: added `market_price_per_unit` and `pricing_notes` to schema (Section 5); added `operations_reality` block (P-4); added `lens_context.cooperative` and `lens_context.civic` conditional blocks; reframed Section 2 as "Working Hypothesis" with four named falsifiers and pivot criteria; added Section 11 "Project Success Criteria" with success / null / failure definitions, timeline, funder archetype, world-level outcome.
 - **2026-04-18:** Plan A (scaffolding) authored and execution begun. Tasks 1–3 complete: `CLAUDE.md` (project house rules), 12 directory README stubs (skeleton scaffold), `README.md` (project entry point).
+- **2026-04-19:** Plan B (research corpus smithing) complete. 4 cultural chapters (med N Europe, Song China, Tokugawa Japan, American frontier) + REQUIREMENTS + HISTORICAL-FORMS + DECLINE-VERDICT + SOURCES. Citation audit 22/24 VERIFIED, 2 PARTIAL fixed. Cross-chapter review addressed 25 findings + 3 concerns. Decline verdict: mixed with moderate confidence; catalog should target repair, specialty, and custom niches — not commodity competition.
