@@ -22,8 +22,10 @@ towns (*jokamachi*) serving as regional economic and administrative centers.
 
 The economy was primarily agrarian. Rice flowed upward as tax; manufactured goods —
 tools, weapons, and hardware — circulated through officially licensed wholesale networks
-(*ton'ya*) that the domain governments regulated closely [CITATION-NEEDED: Morris-Suzuki
-on Tokugawa merchant organization and commodity circuits]. Iron production was
+with domain-enforced distribution monopolies (*ton'ya*) that the domain governments
+regulated closely [CITATION-NEEDED: Morris-Suzuki on Tokugawa merchant organization and
+commodity circuits]. The *ton'ya* system was not a free market; it was a state-licensed
+monopoly distribution structure, a detail significant for CERES's supply-chain analysis. Iron production was
 concentrated in the Chugoku region (modern Shimane, Tottori, Hiroshima prefectures),
 where iron-sand (*satetsu*) deposits supplied a distinctive smelting industry. Fabrication
 of finished metalwork occurred across the country, from large castle-town workshops to
@@ -37,8 +39,12 @@ Tokugawa society was organized legally into four hereditary estates: samurai (*s
 farmers (*no*), craftsmen (*ko*), and merchants (*sho*) — the *shi-no-ko-sho* hierarchy.
 Smiths fell within the craftsman estate (*shokunin*). The classification was partly
 fictional — farmers also worked crafts, merchants ranked below smiths in theory but
-above them in practice — but it carried real consequences for residence rights,
-domain-level licensing, taxation, and mobility.
+above them in practice [CITATION-NEEDED: Leupp 1992 on the gap between formal merchant
+estate ranking and actual merchant economic and social power in Tokugawa cities] — but
+it carried real consequences for residence rights, domain-level licensing, taxation,
+and mobility. This gap between legal form and economic reality is significant for CERES:
+regulatory structures that formally subordinate merchants do not eliminate merchant
+economic dominance over craftsmen in practice.
 
 Within the *shokunin* estate, there was no state-mandated internal hierarchy; authority
 ran vertically through master-apprentice lineages and domain licensing rather than through
@@ -129,8 +135,10 @@ surviving sources. By analogy with comparable pre-industrial operations, a worki
 day of 6–8 active hours could produce on the order of 20–50 simple nails, 8–15
 medium hardware pieces, or 2–5 edge tools requiring hardening and finishing. These
 are order-of-magnitude estimates subject to high uncertainty; direct Tokugawa
-throughput records have not been identified [CITATION-NEEDED: any direct throughput
-records or explicit analogical source].
+throughput records have not been identified [CITATION-NEEDED: explicit analogical
+comparator required — European manorial-account data (Langdon 1986, *Horses, Oxen
+and Technological Innovation*) or a contemporary smith productivity study; the basis
+for this analogy must be stated in any downstream synthesis document].
 
 ## 5. Labor Regime
 
@@ -146,7 +154,10 @@ After indenture, a former apprentice might work as a paid assistant (*tedai*) un
 same or another master, accumulating capital and customers toward eventual independent
 establishment. Many craftsmen spent years as dependent workers; independent establishment
 required workshop space, tools, materials, and an established customer base, and some
-workers never achieved it [CITATION-NEEDED: Leupp on *tedai* and transition to mastery].
+workers never achieved it [CITATION-NEEDED: Leupp 1992 on *tedai* and blocked transition
+to mastery — this claim is likely covered in Leupp's treatment of craft-labor mobility;
+verify specific chapter/pages before promoting to full citation; this is an anti-romantic
+point about blocked upward mobility that should be a cited fact before synthesis].
 
 The *shokunin* structure differed structurally from European guild systems. There was no
 horizontal corporate body with collective admission fees, written charters, or organized
@@ -175,9 +186,15 @@ Charcoal came from mountain and forest villages through established trade routes
 Charcoal production was its own labor-intensive supply chain — woodcutting, kiln
 operation, transport — organized by specialist producers and merchants. The Tokugawa
 period saw progressive pressure on forest resources near population centers
-[CITATION-NEEDED: Morris-Suzuki on fuel supply and deforestation pressures]. Tokugawa
-smithing thus depended on two commodity networks — iron and charcoal — neither of which
-was locally autonomous; merchant supply disruptions or domain trade restrictions
+[CITATION-NEEDED: Morris-Suzuki on fuel supply and deforestation pressures in Tokugawa
+Japan]. As with medieval European charcoal supply, Tokugawa charcoal demand created
+progressive resource pressure on accessible forests; the historical form was not
+ecologically sustainable at scale in areas of concentrated demand [CITATION-NEEDED:
+Morris-Suzuki on deforestation]. This is a direct parallel to the European case
+(see medieval-northern-europe chapter §Supply Chain): pre-industrial smithing's
+charcoal dependency was an unsustainability, not a sustainable local equilibrium.
+Tokugawa smithing thus depended on two commodity networks — iron and charcoal — neither
+of which was locally autonomous; merchant supply disruptions or domain trade restrictions
 directly constrained production.
 
 Customer structure was seasonal and direct in villages (agricultural households), more
@@ -224,8 +241,12 @@ requires completion of a formal apprenticeship under a licensed master, governme
 licensing from the Agency for Cultural Affairs, and use of historically prescribed
 methods: *tamahagane* steel, traditional folding and welding, hand-forging, and
 clay-quench hardening. Modern steel substitutes do not qualify. Production quotas
-apply to licensed smiths [CITATION-NEEDED: Agency for Cultural Affairs licensing
-regulations or authoritative secondary source].
+apply to licensed smiths — exact quota figures are not cited here; the point is
+structural (quotas exist and restrict supply) rather than quantitative. The licensing
+source [CITATION-NEEDED: Agency for Cultural Affairs licensing regulations or
+authoritative secondary source — verify current quota numbers before Plan C references
+this mechanism, as exact figures determine the degree of enforced scarcity] should be
+verified for current quota numbers before Plan C references this mechanism.
 
 This is regulatory preservation through managed scarcity: the craft survives not because
 it is economically competitive at its production cost but because licensing restricts
@@ -236,19 +257,36 @@ The mechanism does not transfer to utility smithing. Hammers, nails, and agricul
 tools carry no cultural-artifact status; no licensing regime creates scarcity for them.
 The CERES-relevant finding is that **commodity utility smithing in Tokugawa Japan did
 not survive industrialization as a viable market trade**: what survived was the prestige
-subset, preserved by means external to equipment economics. This constitutes a partial
-falsifier of the working hypothesis for the commodity tier of smithing, but does not
-falsify it for the repair and custom-work tier, where the competitive dynamic was
-structurally different.
+subset, preserved by means external to equipment economics. **Verdict (canonical terms):**
+- Commodity utility smithing: `decline` — actual loss of economic role for the commodity
+  hardware tier (nails, standard agricultural tools) via price competition from Meiji
+  factory production
+- Repair and custom-work tier: `restructuring` — migration to niches where machine
+  production could not replicate quality or geographic access
+- Sword smithing: `regulatory-dissolution` of the pre-1868 market form, followed by
+  `restructuring` into a state-preserved prestige niche via `regulatory-preservation`
+  (managed scarcity through licensing)
+
+This constitutes a partial falsifier of the working hypothesis for the commodity tier
+of smithing, but does not falsify it for the repair and custom-work tier, where the
+competitive dynamic was structurally different. Task 7 must not conflate these sub-verdicts.
 
 ## 8. Functional Requirements Learned
 
-**Temperature.** A *fuigo*-fed charcoal hearth reached forge-welding temperatures
-(above 1,100°C) when driven at full blast, and sustained 800–1,000°C for shaping.
+**Temperature.** A *fuigo*-fed charcoal hearth operated in the following ranges
+[CITATION-NEEDED: temperature range data for *fuigo*-fed charcoal forges; metallurgical
+or materials-science source]:
+- *Shaping temperature*: ~800–1000°C (cherry-red heat; used for most forming operations,
+  consistent with the Europe chapter's documented range for charcoal-bellows forges)
+- *Welding temperature*: ~1100–1300°C (white heat with sparks; required for forge welding
+  and for the lamination work in edge-tool production; the *fuigo* at full blast reached
+  the lower bound of this range and above)
+- *Annealing*: ~700–750°C (used between lamination passes and during finishing operations)
+- *Heat treatment (quenching)*: ~750–850°C (quench from this range for hardening;
+  clay-quench technique in sword smithing modulates the differential hardening profile)
+
 These remain the required operating ranges for any forge targeting the utility-smith
-product range; fuel and air-delivery mechanism are implementation variables
-[CITATION-NEEDED: temperature range data for fuigo-fed charcoal forges; metallurgical
-or materials-science source].
+product range; fuel and air-delivery mechanism are implementation variables.
 
 **Throughput.** Single-smith output was modest — a precision-labor shop, not a
 volume producer. The binding constraint was skilled operator time, not capital
@@ -258,7 +296,14 @@ designed to this throughput ceiling, not commodity-production volumes.
 **Bellows principle.** The *fuigo*'s double-acting piston design is mechanically
 separable from charcoal fuel; modern motor-driven blowers provide the equivalent
 continuous air supply with lower labor input. The insight — continuous rather than
-pulsed air delivery — is transferable across fuel types.
+pulsed air delivery — is transferable across fuel types. The *fuigo*'s continuous-blast
+advantage over single-stroke European bag bellows is attested in period sources
+[CITATION-NEEDED: source attesting the continuous-blast performance advantage; note
+that the Europe chapter documents double-action box bellows as one type in northern
+Europe — European bellows were predominantly single-acting in this period but double-
+action variants existed; quantifying the temperature or throughput advantage of
+continuous-blast designs versus single-stroke designs would require experimental-
+archaeology comparison and is not resolved in the current literature consulted].
 
 **Minimum labor.** The historical forge required a master plus at least one bellows
 assistant at full production pace. Motorized air supply eliminates this minimum, but
@@ -276,6 +321,8 @@ claiming local supply-chain independence would be historically unsupported and
 operationally false.
 
 ## Sources
+
+**Source depth note:** This chapter rests on three named English-language secondary sources (Hanley 1997, Leupp 1992, Morris-Suzuki 1994). All three are well-chosen high-confidence texts, but none are Japanese-language primary sources or specialist Japanese craft-history monographs. Japanese-language primary sources (domain records, guild ordinances, workshop inventories) and specialist Japanese-language secondary literature (e.g., scholarship on *tatara* smelting, *kajiya* distribution, or *fuigo* technology) would substantially strengthen the evidentiary base. Tasks 5–8 should note this limitation: the chapter's specific claims — particularly throughput figures, forge dimensions, and bellows performance — rest on analogy and inference rather than direct Japanese documentation. This is a known gap, not an unrecognized one.
 
 1. Hanley, Susan B. *Everyday Things in Premodern Japan: The Hidden Legacy of Material
    Culture*. Berkeley: University of California Press, 1997. [Material standards,

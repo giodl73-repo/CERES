@@ -15,13 +15,13 @@ sources_count: 9
 
 The American frontier smith was not a pre-industrial artisan. This distinction matters for CERES: the frontier period that produced the "village blacksmith" image ran from roughly 1790 to 1890, by which point the industrial revolution in the United States was already several decades old. Pittsburgh was smelting iron and rolling bar stock before the first trans-Appalachian settlements had their second generation of residents. The frontier smith operated downstream of industrial production from the beginning.
 
-The organizational context was equally unlike the European guild structures documented in other CERES anchor cultures. The American labor movement of the early republic was explicitly anti-monopoly in character, and guild-style regulation of trades found no institutional foothold [CITATION-NEEDED: American anti-guild labor ideology, early republic period]. The smith was a licensed proprietor in the broadest sense: no examination board, no masterwork requirement, no guild fee. Entry into the trade required a forge, tools, and a customer base — that was the full institutional barrier. This openness meant real competition; there was no cartel pricing or enforced territorial monopoly of the European type.
+The organizational context was equally unlike the European guild structures documented in other CERES anchor cultures. The American labor movement of the early republic was explicitly anti-monopoly in character, and guild-style regulation of trades found no institutional foothold [CITATION-NEEDED: American anti-guild labor ideology, early republic — Rorabaugh, *The Craft Apprentice* (1986) may touch on this; alternatively, an early-republic labor-history specialist; this is a load-bearing structural claim and requires a citable source before synthesis]. The smith was a licensed proprietor in the broadest sense: no examination board, no masterwork requirement, no guild fee. Entry into the trade required a forge, tools, and a customer base — that was the full institutional barrier. This openness meant real competition; there was no cartel pricing or enforced territorial monopoly of the European type.
 
 What this produced was a small-business economy rather than a craft economy in the European sense. The frontier smith was a proprietor, typically operating with household labor and one or two informal apprentices, selling services and goods to a local market that was simultaneously being supplied by industrial manufacturers on an accelerating timeline.
 
 ## 2. Geographic and Period Coverage
 
-The chapter covers the trans-Appalachian frontier from the 1790s through the Old Northwest and Mississippi Valley, then the plains and western settlements through the late nineteenth century. The period 1790–1890 is not a single moment but a moving frontier: what was true of a western Pennsylvania settlement in 1800 was equally true of an eastern Kansas settlement in 1860.
+The chapter covers the trans-Appalachian frontier from the 1790s through the Old Northwest and Mississippi Valley, then the plains and western settlements through the late nineteenth century. The period 1790–1890 is not a single moment but a moving frontier: what was true of a western Pennsylvania settlement in 1800 was equally true of an eastern Kansas settlement in 1860. The sources consulted here are weighted toward the northeastern industrial context (Wallace, *Rockdale*) and the late-frontier period (Schlereth, *Victorian America*); coverage of mid-continental plains smithing is thinner and rests on structural inference rather than direct documentation of plains-specific forge conditions.
 
 The geographic diversity matters for fuel: the forested frontier east of the Mississippi was charcoal-fueled smithing. The open plains and early railroad-served settlements ran on coal as soon as rail freight made coal delivery economical. The transition from charcoal to coal tracked the railroad, not any organic shift in the smith's practices [CITATION-NEEDED: frontier fuel transition and railroad chronology]. Both fuel types appear in this chapter as materially different operational contexts within the same cultural frame.
 
@@ -39,13 +39,13 @@ The typical frontier forge was a single-room or single-bay structure, often timb
 
 In the forested east, fuel was charcoal, locally produced or purchased from charcoal burners. The transition to coal followed the railroad: rail-served communities adopted coal because it arrived in consistent supply without requiring the collier trade as an upstream dependency. Coal required a different hearth design (deeper firebox, better draft) but the transition was driven by supply economics, not technical preference [CITATION-NEEDED: coal vs. charcoal transition in American smithing; Atack and Passell on railroad and freight economics].
 
-The smith's hand tools — hammers, tongs, hardies, swages, chisels — were largely industrially produced by mid-century. The frontier smith was a user of industrial tools, not a maker of them.
+The smith's hand tools — hammers, tongs, hardies, swages, chisels — were largely industrially produced by mid-century [CITATION-NEEDED: industrial production of hand tools by mid-19th century — Gordon 1996 (*American Iron, 1607–1900*) or Hounshell 1984 (*From the American System to Mass Production*) likely covers this; verify specific coverage before promoting]. The frontier smith was a user of industrial tools, not a maker of them. This distinguishes the frontier smith structurally from the pre-industrial European or Japanese smith, who made or adapted tools as part of normal practice.
 
 ## 5. Products and Services: The Smith as Repair Business
 
 The product mix of the frontier smith is critical for understanding both the trade's historical function and its eventual decline. The dominant output categories were:
 
-**Horseshoes.** The single largest demand category for most of the nineteenth-century frontier period. Horses were the transport infrastructure. Every working horse required re-shoeing at intervals of four to six weeks under working conditions [CITATION-NEEDED: horse re-shoeing interval under working conditions, 19th century]. A frontier town with a significant horse population could sustain a smith on horseshoeing demand alone. The skill of shoeing — fitting to the individual hoof, correcting gait problems through shoe modification — was not replaceable by factory product; it required on-site skilled labor. This is the segment of the smith's trade that survived longest into the industrial era.
+**Horseshoes.** The single largest demand category for most of the nineteenth-century frontier period. Horses were the transport infrastructure. Every working horse required re-shoeing at intervals of four to six weeks under working conditions [CITATION-NEEDED: horse re-shoeing interval under working conditions, 19th century — the 4–6 week figure is broadly consistent with farriery literature; a 19th-century primary or secondary source (veterinary manual, agricultural survey) should replace this bracket before this figure is used in REQUIREMENTS.MD throughput calculations]. A frontier town with a significant horse population could sustain a smith on horseshoeing demand alone. The skill of shoeing — fitting to the individual hoof, correcting gait problems through shoe modification — was not replaceable by factory product; it required on-site skilled labor. This is the segment of the smith's trade that survived longest into the industrial era.
 
 **Wagon and agricultural implement fittings.** Wagon tires (the iron rims fitted to wooden wheels), linchpins, clevis hooks, plow shares and coulters, harrow teeth. These were a combination of new manufacture and, increasingly, repair and replacement. By mid-century, factory-produced agricultural implements (McCormick reapers, factory-made plows) were reaching the frontier market; the smith's role in this segment shifted from manufacture toward repair and modification [CITATION-NEEDED: agricultural implement industrialization; Gordon on American iron and steel industry].
 
@@ -77,13 +77,13 @@ This supply-chain dependency had practical consequences. The smith needed to pre
 
 The relationship to industrial supply was not adversarial — it was structural. The frontier smith needed Pittsburgh.
 
-## 8. Decline: A Three-Stage Sequence
+## 8. Decline or Restructuring
 
 The decline of the frontier/rural American smith represents the clearest documented decline sequence of any of the CERES anchor cultures. It occurred in three distinct stages with different causal mechanisms, and it produced actual disappearance of the economic role rather than restructuring into a different form.
 
 **Stage 1: Nail and hardware displacement (mid-nineteenth century).** Machine-cut nails were commercially available from roughly the 1790s and progressively undercut hand-wrought nail production. By the 1850s, hand-wrought nails were economically noncompetitive except in specialty applications [CITATION-NEEDED: nail manufacturing displacement timeline; Atack and Passell on American manufacturing; Gordon]. Wire nails arriving in the 1880s completed this displacement. Simultaneously, mass-produced hardware (hinges, latches, bolts, hooks) arrived through general merchandise channels. This stage displaced the smith's manufacturing work but left the repair and horseshoeing work largely intact.
 
-**Stage 2: Horseshoe demand collapse (1910s–1930s).** The automobile displaced the horse as working transport and motive power across American settlements over a roughly twenty-year period. This is the primary decline vector for the American smith's economic role. Horse populations in American cities and towns peaked around 1900 and fell sharply with automobile adoption [CITATION-NEEDED: US horse population statistics, 1900–1940; Olmstead and Rhode or similar on American agricultural animal power]. The working horse — draft animal, wagon horse, plow horse — had been the single largest demand driver for smithing services (shoeing, implement repair, vehicle fittings). Its replacement by motorized equipment did not create an equivalent repair demand for the smith: the internal combustion engine was serviced by the new mechanic trade, not by the blacksmith.
+**Stage 2: Horseshoe demand collapse (1910s–1930s).** The automobile displaced the horse as working transport and motive power across American settlements over a roughly twenty-year period. This is the primary decline vector for the American smith's economic role. Horse populations in American cities and towns peaked around 1900 and fell sharply with automobile adoption [CITATION-NEEDED: US horse population statistics, 1900–1940; Olmstead and Rhode or similar on American agricultural animal power — peak date is a load-bearing causal trigger; must be verified before Task 7 consumption]. The working horse — draft animal, wagon horse, plow horse — had been the single largest demand driver for smithing services (shoeing, implement repair, vehicle fittings). Its replacement by motorized equipment did not create an equivalent repair demand for the smith: the internal combustion engine was serviced by the new mechanic trade, not by the blacksmith.
 
 This stage was decisive. A smith in 1890 who had built a business on horseshoeing and horse-vehicle repair was operating in a demand category that would lose the majority of its market within forty years — faster than the career span of a working smith, leaving no gradual path to substitution.
 
@@ -91,26 +91,26 @@ This stage was decisive. A smith in 1890 who had built a business on horseshoein
 
 The decline was not driven by equipment economics — the forge itself was technically adequate throughout the period. It was driven by demand collapse: the working horse, which was the transport and agricultural power infrastructure, was eliminated by the automobile and replaced by equipment with entirely different maintenance requirements. This is the CERES spec Section 2 "demand collapse" falsifier in clear operation.
 
+**Verdict**: `decline` — actual loss of economic role, driven by `demand-collapse`. The working horse was eliminated by the automobile, not displaced to a different organizational form requiring a different organizational form of smithing. No `restructuring` pathway existed for the core economic function. A small specialty niche (farriery for recreational horses, decorative ironwork, artistic metalsmithing) survives as `restructuring` into a different trade in a different market — not a continuation of the economic role that sustained nineteenth-century rural smiths. Modern small-scale smithing, if viable, must operate on a different demand base than the historical precedent established.
+
+---
+
 ## 9. Functional Requirements for CERES
 
 The American frontier record contributes the following requirements to CERES:
 
-- **Temperature range:** Standard forge welding temperature (approximately 1,300°C) for horseshoe fitting and plow repair; general shaping at lower temperatures; no exotic metallurgical requirements [CITATION-NEEDED: forge welding temperature requirements].
+- **Temperature range:** Working temperature range for the frontier forge:
+  - *Shaping temperature*: ~800–1000°C (cherry-red heat; used for most forming operations including horseshoe fitting and general repair)
+  - *Welding temperature*: ~1100–1300°C (white heat with sparks; required for forge welding in plow repair and structural fabrication) [CITATION-NEEDED: forge welding temperature requirements for 19th-century American smithing]
+  - *Annealing*: ~700–750°C (softening between operations)
+  - *Heat treatment*: highly variable, ~200–850°C depending on alloy and process; less emphasis in frontier repair work than in precision edge-tool contexts
+  - Same operating range as other pre-industrial forms — fuel and bellows implementation are variables, not the temperature requirement itself.
 - **Throughput pattern:** Service-oriented, not production-oriented. Irregular throughput — bursts of shoeing, single repair jobs, occasional custom work. Not a continuous production model.
-- **Fuel flexibility:** Charcoal or coal depending on supply; transition required forge modification but was not technically prohibitive. Modern fuel substitutions (propane, induction) represent analogous supply-driven choices.
+- **Fuel flexibility:** Charcoal or coal depending on supply; transition required forge modification but was not technically prohibitive. Coal-to-charcoal (or charcoal-to-coal) transition required a deeper firebox and improved draft (see §4 Forge for physical description); not technically prohibitive but required capital modification. Modern fuel substitutions (propane, induction) represent analogous supply-driven choices.
 - **Single-operator scale:** One skilled operator with helpers, not multiple concurrent skilled operators.
+- **Forge footprint:** Typically one-bay structure, estimated 15–30 m² floor area [CITATION-NEEDED: Wallace, *Rockdale*, or equivalent frontier building-type description; consistent with the 15–40 m² range documented in the European and Japanese chapters]. This is the smallest footprint range of any CERES anchor culture and represents the minimum viable forge configuration.
 - **Repair-dominance:** Revenue from labor applied to a customer's problem, not from volume manufacture. Modern catalog entries that model manufacturing revenue are not matching this historical precedent.
 - **Industrial input dependency:** Bar iron and steel as purchased inputs, not smelted on-site. Modern equivalents are similarly dependent on commercial metal stock.
-
-## 10. Verdict for CERES: Decline or Restructuring
-
-For the mandatory decline-or-restructuring verdict required by the CERES pipeline (spec Section 4.1):
-
-**Verdict: decline.**
-
-The frontier/rural American smith's economic role experienced genuine disappearance, not restructuring. The primary demand driver — working horse maintenance and horseshoeing — was eliminated by the automobile transition, not displaced to a different organizational form. What remained of the trade after Stage 2 was a small specialty niche (farriery for recreational horses, decorative ironwork, artistic metalsmithing) that represents a different trade in a different market, not a continuation of the economic role that sustained nineteenth-century rural smiths.
-
-The contrast with "restructuring" is sharp: a restructured trade changes form while preserving economic function. The frontier smith's core function — maintaining horse-powered transport and agricultural infrastructure — ceased to be required when that infrastructure was replaced by motorized equipment. No organizational redesign or equipment update could have restored the demand base. The binding constraint was demand collapse driven by technology substitution, not equipment economics. This is the cleanest case among the CERES anchor cultures for the spec Section 2 "demand collapse" falsifier: the working hypothesis that equipment economics were the binding constraint does not hold here. Modern small-scale smithing, if viable, must operate on a different demand base than the historical precedent established.
 
 ---
 
