@@ -148,18 +148,51 @@ sim_params:
 # ── RESULTS ───────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ───────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.3063481462873668
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 44.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=44, total_annual_cost=8700
+  village_civic:
+    verdict: fail
+    primary_metric: 13.0
+    metric_name: per_household_cost
+    notes: per_hh=13.00, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.3063481462873668
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 44.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=44, total_annual_cost=8700
+  town_civic:
+    verdict: fail
+    primary_metric: 1.911764705882353
+    metric_name: per_household_cost
+    notes: per_hh=1.91, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.3063481462873668
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 44.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=44, total_annual_cost=8700
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.3611111111111111
+    metric_name: per_household_cost
+    notes: per_hh=0.36, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "research/trades/smithing/DECLINE-VERDICT.md v1.0 (2026-04-18). Horseshoeing as smithing's longest-surviving commodity niche; farriery survival via location-bound demand; Stage 2 decline mechanism (automobile displacement of working horse); specialty farriery niche persistence post-automobile."
   - ref: "catalog/smithing/SCHEMA.md v1.0 (schema_base_version 1.1). Throughput ceilings for medium_work and large_work, propane energy-source table and consumption range, operator-skill-floor definitions, first_year_failures reference list (propane regulator, anvil base)."
@@ -170,7 +203,6 @@ sources:
   - ref: "[CITATION-NEEDED: Occupational health literature on farriery physical demands — back, shoulder, and knee injury patterns in the farriery trade; general recognition in trade media but a formal epidemiological source is required for the physical_demand citation in operator_impact.]"
   - ref: "[CITATION-NEEDED: Propane forge energy consumption at farriery scale — 0.6 kg/hr is within the catalog/smithing/SCHEMA.md §2 range of 1–2 kg/hr and reflects a single-burner compact portable forge at partial operational load between heats; measured experimental value for a comparable portable farriery forge required before promotion.]"
 ---
-
 ## Summary
 
 Forge-012 is a propane-fired farriery practice: horseshoeing, trimming, and corrective hoof care for equine clientele. The entry is unique in the smithing catalog in that its primary product is not a manufactured object but a service performed on a living animal — the horse's hoof. The intended operator is a journeyman farrier certified (or certification-eligible) through the American Farrier's Association, working either as a mobile practitioner who travels a route of stables, ranches, and equine facilities, or from a small fixed shop where horse owners bring their animals. Capital requirements are the lowest of any forge entry in the catalog, reflecting the minimal forge footprint of farriery work: a portable propane forge, a portable anvil, and a set of hand tools are the full working kit. The entry serves a surviving niche that never went through the generalized smithing-trade collapse documented in the DECLINE-VERDICT: farriery persisted because horse-dependent demand was always location-bound and has continued, in reduced but stable form, into modern equine-recreational and agricultural contexts.

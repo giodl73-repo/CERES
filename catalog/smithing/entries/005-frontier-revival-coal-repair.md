@@ -178,18 +178,51 @@ sim_params:
 # ── RESULTS ───────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ───────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.2580547227809191
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 45.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=45, total_annual_cost=8820
+  village_civic:
+    verdict: fail
+    primary_metric: 10.1
+    metric_name: per_household_cost
+    notes: per_hh=10.10, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.2580547227809191
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 45.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=45, total_annual_cost=8820
+  town_civic:
+    verdict: fail
+    primary_metric: 1.4852941176470589
+    metric_name: per_household_cost
+    notes: per_hh=1.49, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.2580547227809191
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 45.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=45, total_annual_cost=8820
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.28055555555555556
+    metric_name: per_household_cost
+    notes: per_hh=0.28, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Wallace, Anthony F.C. 1978. Rockdale: The Growth of an American Village in the Early Industrial Revolution. New York: Knopf. [Structural reference for household labor and supply-chain dependencies in early American trades.]"
   - ref: "Schlereth, Thomas J. 1991. Victorian America: Transformations in Everyday Life, 1876–1915. New York: HarperCollins. [Material culture reference for late-frontier period smith's context.]"
@@ -204,7 +237,6 @@ sources:
   - ref: "[CITATION-NEEDED: coal consumption rate for single-fire coal forge at full operational load — 8 kg/hr is consistent with the catalog/smithing/SCHEMA.md §2 range of 6–10 kg/hr coal; a measured experimental value for a comparable forge configuration would strengthen the claim.]"
   - ref: "[CITATION-NEEDED: US horse population statistics, ca. 1890–1940, for decline narrative in Historical Lineage — Olmstead and Rhode, or USDA historical census series; cited as context only, not a pricing or throughput figure.]"
 ---
-
 ## Summary
 
 Forge-005 is a single-operator coal forge designed for the repair-dominant rural market. Its intended operator is a journeyman smith serving a village or small-town trade area where no industrial substitute is available for same-day, on-site repair of agricultural equipment, wagon hardware, and horseshoes. The entry tests the DECLINE-VERDICT finding that repair-dominant smithing is the historically most durable niche by placing it in the configuration closest to the actual American frontier precedent: coal-fired, low-capital, single-operator, and revenue-driven by labor applied to a customer's problem rather than by volume manufacture. The "frontier revival" label is deliberate and anti-romantic — it revives the small-business proprietor model, not the Longfellow poem.

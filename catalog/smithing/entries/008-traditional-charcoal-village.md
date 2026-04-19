@@ -178,18 +178,51 @@ sim_params:
 # ── RESULTS ───────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ───────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 0.6502610147713291
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=21139 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 33.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=33, total_annual_cost=6525
+  village_civic:
+    verdict: fail
+    primary_metric: 7.766666666666667
+    metric_name: per_household_cost
+    notes: per_hh=7.77, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 0.6502610147713291
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=21139 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 33.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=33, total_annual_cost=6525
+  town_civic:
+    verdict: fail
+    primary_metric: 1.142156862745098
+    metric_name: per_household_cost
+    notes: per_hh=1.14, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 0.6502610147713291
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=21139 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 33.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=33, total_annual_cost=6525
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.21574074074074076
+    metric_name: per_household_cost
+    notes: per_hh=0.22, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Tylecote, R.F. 1992. A History of Metallurgy. 2nd ed. London: Maney Publishing. [Charcoal fuel consumption rates, hearth configurations, bellows mechanisms across pre-industrial smithing traditions.]"
   - ref: "Needham, Joseph. 1958. The Development of Iron and Steel Technology in China. London: Newcomen Society. [Song-era iron production at village scale; fuel regimes; scale of operation.]"
@@ -205,7 +238,6 @@ sources:
   - ref: "[CITATION-NEEDED: per-visitor operating cost for comparable living-history forge demonstrations at heritage museums — needed to complete the civic benchmark_comparison for this entry; no comparable dataset identified in sources consulted.]"
   - ref: "[CITATION-NEEDED: wage survey for heritage-craft demonstrators at living-history museums — the $24,000/yr (0.5 FTE) figure is derived from the SCALES.md village skilled-trades median; a direct survey of demonstrator compensation at heritage sites would strengthen this estimate.]"
 ---
-
 ## Summary
 
 Forge-008 is a charcoal-fired, hand-bellows smithing shop aimed at a specific and narrow commercial segment: buyers who specifically require goods produced using traditional methods (charcoal fuel, hand-bellows air supply, traditional forging sequences) and are willing to pay a premium for that production method rather than for the object alone. The entry is not a general-purpose village smithy. Its low capital cost ($8,000–$20,000) is matched by low throughput (approximately 540 medium-work-equivalent units per year at full operation) and high variable costs driven by modern charcoal pricing. All three lenses rate this entry as marginal, and at all viable scales the market is thin. The entry exists in the catalog to test whether traditional-method production can sustain a commercial operation — and to document the specific constraints that make this test difficult.

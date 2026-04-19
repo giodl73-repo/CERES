@@ -581,18 +581,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.17857015307033522
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 52.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=52, total_annual_cost=10300
+  village_civic:
+    verdict: fail
+    primary_metric: 11.733333333333334
+    metric_name: per_household_cost
+    notes: per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.17857015307033522
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 52.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=52, total_annual_cost=10300
+  town_civic:
+    verdict: fail
+    primary_metric: 1.7254901960784315
+    metric_name: per_household_cost
+    notes: per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.17857015307033522
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 52.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=52, total_annual_cost=10300
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.32592592592592595
+    metric_name: per_household_cost
+    notes: per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "REQUIREMENTS.md R-06: active forging hours per day 4-8 hr across all four anchor cultures; startup/shutdown overhead 1-2 hr/day structural inference"
   - ref: "REQUIREMENTS.md R-10: small-scale forge footprint 15-40 m²; American frontier one-bay smithy (Wallace 1978 Rockdale, 15-30 m²)"
@@ -629,7 +662,6 @@ sources:
   - ref: "[CITATION-NEEDED: throughput measurement for induction-forge repair operations; experimental or operator-reported data]"
   - ref: "[CITATION-NEEDED: service life data for commercial induction forge systems; manufacturer specification or industry longevity data]"
 ---
-
 ## Summary
 
 The Induction-Modular Small Repair forge is a single-operator, electric-induction shop

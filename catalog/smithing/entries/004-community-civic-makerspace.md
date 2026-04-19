@@ -527,18 +527,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  village_coop:
+    verdict: fail
+    primary_metric: 77.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=77, total_annual_cost=15300
+  village_civic:
+    verdict: fail
+    primary_metric: 28.733333333333334
+    metric_name: per_household_cost
+    notes: per_hh=28.73, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  town_coop:
+    verdict: win
+    primary_metric: 77.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=77, total_annual_cost=15300
+  town_civic:
+    verdict: fail
+    primary_metric: 4.2254901960784315
+    metric_name: per_household_cost
+    notes: per_hh=4.23, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  small_city_coop:
+    verdict: win
+    primary_metric: 77.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=77, total_annual_cost=15300
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.7981481481481482
+    metric_name: per_household_cost
+    notes: per_hh=0.80, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "corpus/program/SCALES.md §3 — town-scale skilled-trades median wage and civic facility per-household cost benchmarks"
   - ref: "OSHA 29 CFR 1910.252(c) — hot-work and forge safety standards for public-access facilities"
@@ -554,7 +587,6 @@ sources:
   - ref: "Jacobs, Jane. 1961. The Death and Life of Great American Cities. Random House — civic infrastructure as neighborhood resilience anchor; public-goods framing for non-commercial community services"
   - ref: "[CITATION-NEEDED: Japanese shokunin apprenticeship tradition — functional training structure, state licensing history; primary academic source needed for historical lineage claims]"
 ---
-
 ## Summary
 
 The Community Civic Makerspace Forge Module (forge-004) is a town-owned supervised multi-user forge designed on the library-model of public access: residents book shifts, work under qualified supervision, and pay a modest annual access fee rather than per-session commercial rates. This entry covers the forge portion of a broader multi-craft makerspace; the overall facility would also house woodworking, textile, and other bays (out of scope here). The forge operates on an induction-electric primary system with propane backup, supports up to four simultaneous member-users under a master smith-instructor, and embeds a structured 36-month apprenticeship program as its core operating mode. It exists as a distinct catalog entry because no existing entry models the civic-public-goods case for a forge: the subsidy logic, staffing economics, political coalition, and Ostrom governance layer are not variants of a private or cooperative forge design — they require a purpose-built analysis.

@@ -716,18 +716,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 2.1254329747998146
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=37878 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 95.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=95, total_annual_cost=18867
+  village_civic:
+    verdict: fail
+    primary_metric: 18.066666666666666
+    metric_name: per_household_cost
+    notes: per_hh=18.07, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 2.1254329747998146
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=37878 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 95.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=95, total_annual_cost=18867
+  town_civic:
+    verdict: fail
+    primary_metric: 2.6568627450980395
+    metric_name: per_household_cost
+    notes: per_hh=2.66, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 2.1254329747998146
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=37878 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 95.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=95, total_annual_cost=18867
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.5018518518518519
+    metric_name: per_household_cost
+    notes: per_hh=0.50, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Ostrom, Elinor. 1990. Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press — design principles 1–8 for commons governance; Principle 7 (nested organisations) cited for tool-library network federation framing"
   - ref: "corpus/program/SCALES.md §3 — town-scale journeyman skilled-trades median wage ($52k/yr supervisor) and town/city commercial rent estimates"
@@ -752,7 +785,6 @@ sources:
   - ref: "[CITATION-NEEDED: state cooperative-corporation statute reference; NCBA CLUSA model articles; 501(c)(3) qualification criteria for tool-library organizations]"
   - ref: "[CITATION-NEEDED: seasonal utilization pattern for shared-access maker/tool facilities; academic-year demand rhythm data]"
 ---
-
 ## Summary
 
 The Tool-Library Member-Access Induction Forge (forge-015) is a member-owned cooperative providing subscription-based shared access to 3–4 induction-electric forge stations in a 30–50 m² facility within urban or suburban commercial space. Members pay annual dues and per-session booking fees; a journeyman supervisor is on-floor whenever stations are active; members work under shop protocol at their own stations. The cooperative is the primary ownership and governance vehicle. The design is the induction-electric counterpart to the coal-based shared tool-library (forge-003) and is distinguishable from the civic makerspace (forge-004) and the apprentice training cooperative (forge-009) by its consumer-cooperative structure, its lower regulatory footprint, and its target niche of urban and suburban populations where coal-forge zoning and emissions requirements would block siting entirely.

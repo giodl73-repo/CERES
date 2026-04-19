@@ -813,18 +813,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  village_coop:
+    verdict: fail
+    primary_metric: 117.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=117, total_annual_cost=23380
+  village_civic:
+    verdict: fail
+    primary_metric: 43.8
+    metric_name: per_household_cost
+    notes: per_hh=43.80, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  town_coop:
+    verdict: win
+    primary_metric: 117.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=117, total_annual_cost=23380
+  town_civic:
+    verdict: fail
+    primary_metric: 6.4411764705882355
+    metric_name: per_household_cost
+    notes: per_hh=6.44, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  small_city_coop:
+    verdict: win
+    primary_metric: 117.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=117, total_annual_cost=23380
+  small_city_civic:
+    verdict: fail
+    primary_metric: 1.2166666666666666
+    metric_name: per_household_cost
+    notes: per_hh=1.22, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "corpus/program/SCALES.md §3 — small-city skilled-trades median wage ($62k/yr for master smith instructor) and per-household civic-service cost benchmarks"
   - ref: "OSHA 29 CFR 1910.252(c) — hot-work and forge safety standards for school workshops and multi-operator hot-work environments"
@@ -851,7 +884,6 @@ sources:
   - ref: "[CITATION-NEEDED: Tokugawa-era shokunin master-apprentice licensing and za-system structure — academic source on Edo-period guild-equivalent regulation; e.g., Hauser, William B. 1974, Economic Institutional Change in Tokugawa Japan, Cambridge University Press, or equivalent primary academic source]"
   - ref: "US vocational education tradition: CTE / community-college trades programs. General framing reference: Stone, James R. III, and Morgan V. Lewis. 2012. College and Career Ready in the 21st Century: Making High School Matter. Teachers College Press — CTE program structure and workforce-outcome evidence [CITATION-NEEDED: confirm specific edition and page references for CTE outcome data]"
 ---
-
 ## Summary
 
 The Municipal Civic Training Forge (forge-011) is a school-district-owned or community-college-operated induction-electric smithing facility designed as the apprentice-pipeline engine for the surrounding private-smithing ecosystem. It occupies 80–120 m² in a CTE or vocational-education wing, serves 4–6 students concurrently under a credentialed master smith-instructor and a part-time journeyman aide, and runs on a school-schedule of approximately 25 active hours per week during the academic year. The facility's primary output is students trained per cohort — not units per year — and its commercial market performance is explicitly poor by design: it produces beginners who enter private shops, not finished goods that compete with those shops. This entry exists as a distinct catalog entry because no existing entry models the school-district civic form: the staffing economics (instructor-credentialing requirement, district salary schedule), the CTE-program budget structure (Perkins V funding, state CTE formula), the school-safety regulatory profile (induction mandated by school-setting liability), and the CTE cost-per-student benchmark comparison are all materially different from the civic makerspace (forge-004) and cooperative training forge (forge-009) entries that occupy adjacent design space.

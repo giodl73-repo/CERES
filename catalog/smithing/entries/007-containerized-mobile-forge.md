@@ -162,18 +162,51 @@ sim_params:
 # ── RESULTS ───────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ───────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 1.9361600131895156
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=25753 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 55.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=55, total_annual_cost=10933
+  village_civic:
+    verdict: fail
+    primary_metric: 17.933333333333334
+    metric_name: per_household_cost
+    notes: per_hh=17.93, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 1.9361600131895156
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=25753 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 55.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=55, total_annual_cost=10933
+  town_civic:
+    verdict: fail
+    primary_metric: 2.6372549019607843
+    metric_name: per_household_cost
+    notes: per_hh=2.64, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 1.9361600131895156
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=25753 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 55.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=55, total_annual_cost=10933
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.4981481481481481
+    metric_name: per_household_cost
+    notes: per_hh=0.50, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "research/trades/smithing/DECLINE-VERDICT.md v1.0 (2026-04-18). Location-bound repair demand as the most survivable smithing niche; mobility as demand aggregation strategy."
   - ref: "catalog/smithing/SCHEMA.md v1.0 (schema_base_version 1.1). Throughput ceilings, propane energy-source table, operator-skill-floor definitions, first_year_failures reference list."
@@ -185,7 +218,6 @@ sources:
   - ref: "[CITATION-NEEDED: rural mobile-library vs. fixed-branch cost-ratio comparison — IMLS data or state library agency study; cited as structural analog for mobile civic service cost benchmarking in benchmark_comparison.]"
   - ref: "[CITATION-NEEDED: CDL GVWR thresholds by US jurisdiction — relevant to vehicle selection and operator licensing requirement; varies by state for intrastate commercial operation.]"
 ---
-
 ## Summary
 
 Forge-007 is a mobile smithing operation: a propane-fired forge installed in a converted 20-ft intermodal container, transported by truck on a circuit of rural and village clients — farms, ranches, and homesteads. The intended operator is a journeyman smith who is also the driver, running a weekly or biweekly route rather than waiting for clients to come to a fixed shop. The entry tests a specific inversion of the DECLINE-VERDICT finding on location-bound demand: instead of a stationary smith hoping rural clients will travel to them, the smith travels to where the demand is anchored. Capital goes into the container conversion and vehicle rather than a building lease; floor-space rent is eliminated. The tradeoff is reduced throughput (travel time eats the week), vehicle operating cost, and a single-seat operation that cannot support an apprentice.

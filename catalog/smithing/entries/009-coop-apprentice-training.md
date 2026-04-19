@@ -710,18 +710,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 4.123283042653022
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=24054 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 124.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=124, total_annual_cost=24700
+  village_civic:
+    verdict: fail
+    primary_metric: 32.46666666666666
+    metric_name: per_household_cost
+    notes: per_hh=32.47, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 4.123283042653022
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=24054 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 124.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=124, total_annual_cost=24700
+  town_civic:
+    verdict: fail
+    primary_metric: 4.7745098039215685
+    metric_name: per_household_cost
+    notes: per_hh=4.77, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 4.123283042653022
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=24054 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 124.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=124, total_annual_cost=24700
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.9018518518518518
+    metric_name: per_household_cost
+    notes: per_hh=0.90, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Ostrom, Elinor. 1990. Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press — design principles 1–8 for commons governance; Principle 7 (nested organisations) cited for federation framing"
   - ref: "corpus/program/SCALES.md §3 — small-city skilled-trades median wage ($62k/yr master smith instructor) and town-scale commercial rent estimates"
@@ -745,7 +778,6 @@ sources:
   - ref: "[CITATION-NEEDED: state cooperative-corporation statute reference; NCBA CLUSA model worker-cooperative articles]"
   - ref: "[CITATION-NEEDED: seasonal throughput pattern for training-facility apprenticeship programs — academic-year cycle data]"
 ---
-
 ## Summary
 
 The Co-op Apprentice Training Forge (forge-009) is a member-owned cooperative training facility whose primary output is journeyman-certified smiths, not commercial product. The cooperative is funded through paid-subscription member dues, discounted apprentice dues, and ancillary sales of apprentice-made specialty and artistic pieces; the master instructor is a worker-member receiving a cooperative stipend. The facility operates a coal-plus-induction hybrid floor — coal for forge-welding practice requiring temperatures not reliably achieved by standard induction units, induction for precision heat-treatment training — across 60–100 m² of multi-station space serving 4–8 concurrent apprentices under a master instructor and 1–2 journeyman assistants. This entry is distinct from forge-003 (shared tool-library) and forge-004 (civic makerspace) because it models the cooperative as employer and trainer simultaneously: the apprentice is a dues-paying worker-member, the instructor holds a stipend-funded ownership stake, and the governance structure is formally calibrated to Ostrom's design principles for a worker cooperative rather than a civic facility with cooperative-analogous access rules.

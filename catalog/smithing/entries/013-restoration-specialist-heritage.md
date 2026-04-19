@@ -828,18 +828,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.4154027021310452
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 117.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=117, total_annual_cost=23264
+  village_civic:
+    verdict: fail
+    primary_metric: 27.666666666666668
+    metric_name: per_household_cost
+    notes: per_hh=27.67, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.4154027021310452
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 117.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=117, total_annual_cost=23264
+  town_civic:
+    verdict: fail
+    primary_metric: 4.068627450980392
+    metric_name: per_household_cost
+    notes: per_hh=4.07, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.4154027021310452
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 117.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=117, total_annual_cost=23264
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.7685185185185186
+    metric_name: per_household_cost
+    notes: per_hh=0.77, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "research/trades/smithing/REQUIREMENTS.md R-01 through R-24 (functional requirements: temperature envelopes R-01–R-05, throughput R-06–R-07, fuel regimes R-08–R-09, footprint R-10, operator skill R-13–R-15, R-17–R-19, product-category matrix R-22–R-23)"
   - ref: "catalog/smithing/SCHEMA.md v1.0 (schema_base_version 1.1) §2 (energy sources: coal, propane, induction parameters and capability notes), §3 (operator skill floor, master tier), §4 (first_year_failures reference list: blower motor, propane regulator, induction coil), §5 (Group A repair-focused guidance)"
@@ -867,7 +900,6 @@ sources:
   - ref: "Ffoulkes, Charles. 1912. The Armourer and His Craft from the XIth to the XVIth Century. London: Methuen. (Medieval European architectural metalwork context; guild structure; functional role of architectural ironwork in historic buildings)"
   - ref: "Salzman, L.F. 1952. Building in England Down to 1540: A Documentary History. Oxford: Clarendon Press. (Documentary evidence for architectural ironwork in medieval English buildings; functional-decorative integration as economic logic)"
 ---
-
 ## Summary
 
 Forge-013 is a master-floor multi-fuel restoration forge — coal, propane, and induction — designed to serve historic-building restoration and architectural-hardware repair for heritage-preservation clients: historic-district property owners, preservation societies, museums, and municipal heritage programs. It is the CERES catalog's purpose-built entry for the preservation-niche survival pathway identified in the DECLINE-VERDICT: specialty plus restoration work, insulated from commodity competition by regulatory requirements and technical non-substitutability. The shop operates with coal for period-authentic work (some Secretary-of-Interior-standards projects require coal-fired production for building-inspector or preservation-society approval), propane for routine restoration repair, and induction for precision heat treatment across all project types. This three-fuel configuration is not redundancy or comfort — it is a client-requirement driver that makes the shop technically capable of serving the full spectrum of preservation projects. The market lens is good (premium pricing for period-authentic work at 5–22.5× industrial baseline); the civic lens is good (municipal historic-preservation grants and public-building restoration contracts); the cooperative lens is poor and is omitted. Primary scale fit is small-city, where historic districts and institutional preservation clients provide a viable project pipeline for a full-time master restoration smith.

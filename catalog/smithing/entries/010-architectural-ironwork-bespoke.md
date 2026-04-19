@@ -685,18 +685,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.882864459408322
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 134.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=134, total_annual_cost=26750
+  village_civic:
+    verdict: fail
+    primary_metric: 28.26666666666667
+    metric_name: per_household_cost
+    notes: per_hh=28.27, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.882864459408322
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 134.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=134, total_annual_cost=26750
+  town_civic:
+    verdict: fail
+    primary_metric: 4.1568627450980395
+    metric_name: per_household_cost
+    notes: per_hh=4.16, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.882864459408322
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 134.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=134, total_annual_cost=26750
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.7851851851851852
+    metric_name: per_household_cost
+    notes: per_hh=0.79, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "research/trades/smithing/REQUIREMENTS.md R-01 through R-24 (functional requirements: temperature envelopes R-01–R-05, throughput R-06–R-07, fuel regimes R-08–R-09, footprint R-10, operator skill R-13–R-15, R-17–R-19, product-category matrix R-22–R-23)"
   - ref: "catalog/smithing/SCHEMA.md v1.0 (schema_base_version 1.1) §2 (energy sources, propane and induction parameters), §3 (operator skill floor, master tier), §4 (first_year_failures reference list), §5 (Group B specialty/custom guidance)"
@@ -718,7 +751,6 @@ sources:
   - ref: "[CITATION-NEEDED: architectural ironwork shop capital cost — equipment-category pricing synthesis; no formal industry survey identified; figures are structural estimates]"
   - ref: "US EIA Weekly Retail Heating Oil and Propane Prices. US Energy Information Administration. https://www.eia.gov/petroleum/heatingoilpropane/ (propane price proxy at $2.40/kg; access date: 2026-04-18)"
 ---
-
 ## Summary
 
 Forge-010 is a master-floor propane-and-induction forge designed for bespoke architectural ironwork: custom gates, railings, stair rails, fireplace tools, and one-off hardware for general contractors and high-end residential clients in a small-city market. The entry tests the DECLINE-VERDICT finding that premium-market segmentation is the primary survival mechanism for specialty artisan production against industrial competition — this is the purest test of that claim in the smithing catalog. The operator is a master smith with design capability, fabrication skill, and client-management competency; work ranges from a single decorative bracket ($150–$800) to a full 3-metre gate commission (60+ hours of production time). The market lens is good at small-city scale; cooperative and civic lenses are marginal, achievable only under specific conditions. This entry is not a hobbyist design and not a volume-production design: it is a boutique architectural practice running on craft expertise and a premium pricing position that no industrial supplier can match.

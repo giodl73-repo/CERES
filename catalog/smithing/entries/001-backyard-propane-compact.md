@@ -471,18 +471,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 0.20286244105935808
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=18913 vs median=48000)
+  village_coop:
+    verdict: win
+    primary_metric: 15.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=15, total_annual_cost=2830
+  village_civic:
+    verdict: fail
+    primary_metric: 2.52
+    metric_name: per_household_cost
+    notes: per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 0.20286244105935808
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=18913 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 15.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=15, total_annual_cost=2830
+  town_civic:
+    verdict: fail
+    primary_metric: 0.37058823529411766
+    metric_name: per_household_cost
+    notes: per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 0.20286244105935808
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=18913 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 15.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=15, total_annual_cost=2830
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.07
+    metric_name: per_household_cost
+    notes: per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "REQUIREMENTS.md R-01 through R-24, research/trades/smithing/REQUIREMENTS.md"
   - ref: "catalog/smithing/SCHEMA.md v1.0 §2 (throughput), §3 (skill floor), §4 (first_year_failures reference list)"
@@ -497,7 +530,6 @@ sources:
   - ref: "[CITATION-NEEDED: propane forge consumption rate experimental measurement — REQUIREMENTS §4 placeholder #6; smithing SCHEMA §2 propane row]"
   - ref: "[CITATION-NEEDED: US commodity hardware pricing 2023–2024 — industrial baseline comparison; widely available but formal citation pending]"
 ---
-
 ## Summary
 
 The Backyard Propane Compact (forge-001) is a minimum-capital, single-operator propane forge suited to hobbyist and entry-level artisan use in a garage or shed footprint of approximately 8–12 m². It is designed to test the lower viability boundary of the smithing catalog: can a minimal-capital entry produce economically viable outcomes? The answer this entry is structured to demonstrate is that minimum-viable-entry is not automatically viable. At part-time throughput (15–20 active hours per week), village-scale demand, and a market lens that cannot clear the $48,000/yr village median wage threshold, the entry lands at market-poor and cooperative-marginal. It exists in the catalog not as a recommended design but as the calibration point for the viability floor, establishing what the entry-level economics actually look like before more capable designs are evaluated against the same framework.

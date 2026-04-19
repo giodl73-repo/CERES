@@ -743,18 +743,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.672607485957268
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 99.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=99, total_annual_cost=19800
+  village_civic:
+    verdict: fail
+    primary_metric: 22.46666666666667
+    metric_name: per_household_cost
+    notes: per_hh=22.47, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.672607485957268
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 99.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=99, total_annual_cost=19800
+  town_civic:
+    verdict: fail
+    primary_metric: 3.3039215686274512
+    metric_name: per_household_cost
+    notes: per_hh=3.30, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.672607485957268
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 99.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=99, total_annual_cost=19800
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.6240740740740741
+    metric_name: per_household_cost
+    notes: per_hh=0.62, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "REQUIREMENTS.md R-06: active forging hours per day 4–8 hr across all four anchor cultures; startup/shutdown overhead structural inference"
   - ref: "REQUIREMENTS.md R-10: small-scale forge footprint 15–40 m²; multi-station bladesmith shop inference"
@@ -801,7 +834,6 @@ sources:
   - ref: "[CITATION-NEEDED: light-industrial commercial rent per m² in small-city US markets, 2024; CoStar, LoopNet, or local broker data]"
   - ref: "[CITATION-NEEDED: bladesmith-specific contracted wage data; American Bladesmith Society or similar trade organization salary survey]"
 ---
-
 ## Summary
 
 The Induction Bladesmith is a master-operated, 40 m² single-operator shop targeting the premium direct-to-consumer custom knife market: chef knives, outdoor blades, and kitchen cutlery at $200–$800 per piece. It is distinguished from other smithing-catalog entries by its combination of induction-electric heat source (for precise heat-treatment temperature control) with a small propane alcove (for forge-welding steps), its master-level skill floor, and its specialty-dominant product mix (80% specialty, 15% artistic, 5% repair). The entry was created because the DECLINE-VERDICT for general smithing survival explicitly carves out the specialty and premium direct-to-consumer segment as viable: factory knives at $30 industrial baseline do not replicate made-to-order geometry, chosen steel, or maker relationship. The catalog addresses this viable niche in forge-006 rather than subsume it under the repair-dominant entries (forge-002, forge-005) or the cooperative/civic entries (forge-003, forge-004). The target customer is a premium-kitchen, outdoor, or collector buyer who has opted out of the commodity knife market.

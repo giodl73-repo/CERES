@@ -525,18 +525,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 0.4063671933959525
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=16666 vs median=48000)
+  village_coop:
+    verdict: win
+    primary_metric: 15.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=15, total_annual_cost=2900
+  village_civic:
+    verdict: fail
+    primary_metric: 4.866666666666667
+    metric_name: per_household_cost
+    notes: per_hh=4.87, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 0.4063671933959525
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=16666 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 15.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=15, total_annual_cost=2900
+  town_civic:
+    verdict: fail
+    primary_metric: 0.7156862745098039
+    metric_name: per_household_cost
+    notes: per_hh=0.72, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 0.4063671933959525
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=16666 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 15.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=15, total_annual_cost=2900
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.13518518518518519
+    metric_name: per_household_cost
+    notes: per_hh=0.14, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "REQUIREMENTS.md R-06: active forging hours per day 4-8 hr across all four anchor cultures; startup/shutdown overhead 1-2 hr/day structural inference"
   - ref: "REQUIREMENTS.md R-07: seasonal throughput variance; agricultural seasonality in all four cultures; repair-dominant trough patterns"
@@ -565,7 +598,6 @@ sources:
   - ref: "[CITATION-NEEDED: survey of hobbyist/micro-operator home-forge layout dimensions and footprint data, 2024]"
   - ref: "[CITATION-NEEDED: throughput variance data for part-time hobbyist/micro-operator metalwork businesses; maker-community survey or Etsy seller financial data, 2024]"
 ---
-
 ## Summary
 
 The Electric-Induction Gig Repair Micro is the minimum-capital entry point in the smithing

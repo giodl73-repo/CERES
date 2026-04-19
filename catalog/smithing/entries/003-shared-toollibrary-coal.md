@@ -463,18 +463,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.43593767629832497
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 60.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=60, total_annual_cost=11860
+  village_civic:
+    verdict: fail
+    primary_metric: 13.666666666666666
+    metric_name: per_household_cost
+    notes: per_hh=13.67, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.43593767629832497
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 60.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=60, total_annual_cost=11860
+  town_civic:
+    verdict: fail
+    primary_metric: 2.0098039215686274
+    metric_name: per_household_cost
+    notes: per_hh=2.01, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.43593767629832497
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 60.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=60, total_annual_cost=11860
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.3796296296296296
+    metric_name: per_household_cost
+    notes: per_hh=0.38, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Ostrom, Elinor. 1990. Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press."
     # Supports cooperative governance structure; Ostrom design principles 1–8 applied in lens_context.cooperative.
@@ -489,7 +522,6 @@ sources:
   - ref: "CITATION-NEEDED: Coal forge startup and shutdown time; operator survey or guild documentation. Supports: operations_reality.startup_shutdown_overhead_per_day_min = 45."
   - ref: "CITATION-NEEDED: Survey of private smith density in US/EU towns 2,000–15,000 population. Supports: lens_context.civic.competes_with_private claim of gap-filling."
 ---
-
 ## Summary
 
 The Shared Tool-Library Coal Forge (forge-003) is a medium-footprint, member-booked
