@@ -1,5 +1,5 @@
 ---
-updated: 2026-04-18
+updated: 2026-04-19
 ---
 
 # CERES — Status Dashboard
@@ -12,10 +12,10 @@ Operational dashboard. Updated manually at each plan checkpoint.
 
 | Item | Value |
 |---|---|
-| Active plan | **Plan A — Scaffolding and Framework Docs** |
-| Phase | Phase 0 (infrastructure) |
+| Active plan | **— (Plan A complete; Plans B + D unblocked and ready to author)** |
+| Phase | Phase 0 complete; Phase 1 scaffold authored (ready to fill) |
 | Trade vertical slice | **Smithing** (Phase 1 target) |
-| Plan A progress | Tasks 1–3 complete; Tasks 4–17 pending |
+| Plan A progress | **17/17 tasks complete** |
 
 ---
 
@@ -23,7 +23,7 @@ Operational dashboard. Updated manually at each plan checkpoint.
 
 | Plan | Name | Status | Owner | ETA | Notes |
 |---|---|---|---|---|---|
-| A | Scaffolding and Framework Docs | `in_progress` | giodl | 2026-04-18 est. | Frontmatter `status: draft`; tasks 1–3 committed. Blocks B, C, D, E. |
+| A | Scaffolding and Framework Docs | `completed` | giodl + Claude Opus 4.7 | 2026-04-19 | All 17 tasks committed. Framework docs, schema, rubric, plans index in place. Unblocks B, C, D, E. |
 | B | Research Corpus — Smithing | `not-yet-authored` | — | TBD | Depends on A. Produces `research/trades/smithing/` + `research/cultures/*/smithing.md`. |
 | C | Catalog — Smithing (15 forge entries) | `not-yet-authored` | — | TBD | Depends on A and B. Produces `catalog/smithing/entries/*.md`. |
 | D | Economic Lens Math + Tier A Sim Code | `not-yet-authored` | — | TBD | Depends on A. Produces sim code and formalizes lens math. |

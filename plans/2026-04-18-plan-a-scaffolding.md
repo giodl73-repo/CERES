@@ -2,7 +2,8 @@
 id: plan-a-scaffolding
 name: Scaffolding and Framework Docs
 description: Non-trade-specific infrastructure every downstream plan depends on
-status: draft
+status: completed
+completed: 2026-04-19
 version: "1.0"
 created: 2026-04-18
 phase: 0
