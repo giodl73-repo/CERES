@@ -82,7 +82,7 @@ different reasons.
 **What actually declined:** Commodity hardware production — hand-forged nails, standard
 fasteners, hinges, and bolts — was displaced in all four cultures, in all cases by
 industrial price competition. In northern Europe, Birmingham hardware factories undercut
-hand-forged nails by factors of three to ten [medieval-northern-europe §8]. In Meiji
+hand-forged nails by factors of three to ten [DECLINE-VERDICT.md §2.1]. In Meiji
 Japan, industrial rolling mills displaced the utility blacksmith's commodity output within
 two decades of industrialization [Morris-Suzuki 1994]. On the American frontier, cut-nail
 and wire-nail machinery eliminated the manufacturing revenue stream by the 1880s [Atack
@@ -249,13 +249,14 @@ in a village, town, or small city equally.
 
 The cooperative lens measures whether the feasible member pool at a given scale exceeds
 the break-even member count for a given design. The feasible pool is estimated at 2.5%
-of settlement population [corpus/program/SCALES.md §5].
+of settlement population at village and town scale; 2.0% at small-city scale to reflect
+higher urban alternative-activity density [corpus/program/SCALES.md §5].
 
-| Scale | Population Midpoint | Feasible Member Pool | Cooperative Wins |
-|---|---|---|---|
-| village | 1,250 | ~31 | 2 of 15 |
-| town | 8,500 | ~213 | 15 of 15 |
-| small city | 45,000 | ~900 | 15 of 15 |
+| Scale | Population Midpoint | Participation Rate | Feasible Member Pool | Cooperative Wins |
+|---|---|---|---|---|
+| village | 1,250 | 2.5% | ~31 | 2 of 15 |
+| town | 8,500 | 2.5% | ~213 | 15 of 15 |
+| small city | 45,000 | 2.0% | ~900 | 15 of 15 |
 
 At village scale (pool ~31), only forge-001 and forge-014 clear cooperative viability —
 both require only 15 break-even members. Every other design requires more members than
@@ -544,7 +545,8 @@ estimates from secondary sources and historical analogues — the same quality s
 as a peer-reviewed economic history paper. [CITATION-NEEDED] placeholders in the
 catalog mark where specific claims need source verification; they are a transparency
 mechanism, not an admission that numbers are fabricated. The DECLINE-VERDICT carries
-30 verified references with 6 remaining citation-needed gaps in specific sub-claims;
+30 verified references with 6 remaining citation-needed gaps in specific sub-claims
+(verify count against DECLINE-VERDICT §6/Sources before external distribution);
 those gaps do not affect the overall mixed verdict.
 
 The pilot's purpose is to replace these estimates with operating data. When forge-005

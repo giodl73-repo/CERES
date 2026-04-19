@@ -32,7 +32,7 @@ implementation sketch for featured designs.
 - Population midpoint used in simulation: 8,500 (range 2,000–15,000)
 - Household count at midpoint: ~3,400 (population × 0.40)
 - Feasible coop member pool: ~213 (8,500 × 2.5%)
-- Market lens wage threshold: $56,000 / yr
+- Market lens wage threshold: $56,000 / yr [SCALES.md §3]
 - Civic lens per-household cost ceiling: $100 / yr
 
 **Lens-win counts**
@@ -147,7 +147,8 @@ operations rather than segregating it into a separate program.
 
 **Civic-compatibility note.** Forge-003's per_hh cost at town scale is $2.01 vs. the
 $100 threshold — it would clear civic if re-authored with annual_public_use_hours and
-a lens_context.civic block. A municipal-partnership structure (cooperative operates,
+a lens_context.civic block. (This would require a Plan F catalog revision to forge-003;
+it is not a current civic win.) A municipal-partnership structure (cooperative operates,
 municipality contributes facility or capital) is viable without converting the entity
 to a civic facility.
 

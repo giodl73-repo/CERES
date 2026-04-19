@@ -116,8 +116,8 @@ demand.
 farrier; energy: propane 0.6 kg/hr; payback 0.31 yr)
 
 Village scale is this design's primary habitat: `scale_fit.village: good`, `lens_fit.market:
-good`. Farriery is the one smithing niche that never went through industrial displacement
-because you cannot ship a horse's feet to a factory [DECLINE-VERDICT §2.4]. At village
+good`. Farriery persisted because the service is physically location-bound — a structural
+characteristic the historical record documents consistently [DECLINE-VERDICT §5]. At village
 scale in a horse-keeping rural area, a mobile farrier serving a route of 80–120 horses
 within a 30-mile radius is a self-sustaining single-operator practice. The 0.31-year
 payback reflects the low capital ($22,000 for a mobile kit), recurring appointment-based

@@ -30,7 +30,7 @@ implementation sketch, and constraints.
 | Lens | Winners | Fails | Notes |
 |---|---|---|---|
 | market | 7 of 15 | 8 | Same 7 as every scale; market viability is capital-driven, not population-driven |
-| cooperative | 15 of 15 | 0 | Every entry clears; feasible pool 900 members vs break-even 77–134 |
+| cooperative | 15 of 15 | 0 | Every entry clears; feasible pool 900 members vs break-even 15–124 |
 | civic | 2 of 15 | 13 | forge-004 ($0.80/hh/yr) and forge-011 ($1.22/hh/yr); 13 non-civic designs fail correctly |
 
 **Total: 24 wins across 45 cells.** No other scale achieves this. Town produces 24 wins
@@ -51,12 +51,12 @@ find their most favorable operating context here.
 
 | Entry | Name | Capital (mid) | Payback (yrs) | Notes |
 |---|---|---|---|---|
-| forge-002 | Induction-Modular Small Repair | $42,000 | 0.67 | Repair-dominant; lowest specialty capital |
-| forge-003 | Shared Tool-Library Coal Forge | $28,000 | 0.88 | Coop-eligible too; lowest capital among coal designs |
+| forge-002 | Induction-Modular Small Repair | $42,000 | 0.18 | Repair-dominant; lowest specialty capital |
+| forge-003 | Shared Tool-Library Coal Forge | $28,000 | 0.44 | Coop-eligible too; lowest capital among coal designs |
 | forge-005 | Frontier-Revival Coal Repair Forge | $22,000 | 0.35 | Fastest payback in the catalog |
 | forge-006 | Induction Bladesmith | $70,000 | 0.67 | Specialty-primary; small-city is the target scale |
 | forge-010 | Architectural Ironwork Bespoke | $95,000 | 0.88 | Custom gates/railings; contractor market requires small-city density |
-| forge-012 | Farriery Specialist Propane | $22,000 | 0.88 | Mobile-capable; serves regional farriery demand |
+| forge-012 | Farriery Specialist Propane | $22,000 | 0.31 | Mobile-capable; serves regional farriery demand |
 | forge-013 | Restoration Heritage Forge | $75,000 | 0.42 | Heritage-district and contractor client base; small-city-primary |
 
 The payback calculation is scale-invariant; all seven win at village and town too. What
@@ -103,13 +103,14 @@ break-even member count falls below 900.
 
 | Entry range | Break-even members | Feasible pool | Margin |
 |---|---|---|---|
-| Lowest (forge-004, forge-011) | 77–117 | 900 | 87–89% margin |
+| Lowest (forge-001, forge-014) | 15 | 900 | 98% margin |
 | Highest (forge-009) | 124 | 900 | 86% margin |
 
-The cooperative lens does not differentiate entries at small-city scale — all 15 pass
-with abundant margin. Differentiation among coop designs should be made on the basis
-of governance model, capital requirements, and operational fit, not on whether they
-can reach break-even.
+Break-even member counts range from 15 (forge-001, forge-014) to 124 (forge-009) across
+all 15 entries; the feasible pool of 900 clears all with margin. The cooperative lens
+does not differentiate entries at small-city scale — all 15 pass with abundant margin.
+Differentiation among coop designs should be made on the basis of governance model,
+capital requirements, and operational fit, not on whether they can reach break-even.
 
 ### Cooperative richness
 
@@ -400,7 +401,7 @@ The DECLINE-VERDICT finding (mixed: repair and specialty niches persist; commodi
 smithing does not) applies here as at every scale. All 7 market-win designs target
 repair, specialty, or custom niches. Any operator who targets commodity hardware
 production is entering a market segment industrial production dominates on price,
-consistency, and availability. Small-city scale does not change that finding.
+consistency, and availability [DECLINE-VERDICT.md §5]. Small-city scale does not change that finding.
 
 ---
 
