@@ -505,7 +505,7 @@ lens_context:
       - "Apprentice training pipeline: integrates 1-2 apprentices per 3-year cycle into normal operations, producing journeyman-level repair capacity for the regional market"
       - "Repair culture: accessible civic forge reduces throwaway consumption of metal implements, tools, and hardware — a measurable public goods externality where market-rate repair pricing deters individual investment in repair"
       - "Supply-chain resilience: a locally operated forge provides emergency fabrication and repair capacity for municipal and agricultural equipment during commercial supply-chain disruptions"
-      - "Skills preservation: maintains working forge competency in the community, preventing the knowledge-pipeline gap that results when all local smithing capacity disappears"
+      - "Skills preservation: maintains working forge competency in the community; where all local smithing capacity has already been lost, the civic forge reestablishes the baseline from which apprentice training can resume"
 
 # ── SIMULATION PARAMETERS ────────────────────────────────────────────────────
 

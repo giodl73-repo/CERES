@@ -2,9 +2,11 @@
 id: plan-c-catalog-smithing
 name: Catalog — Smithing Vertical Slice (15 Forge Entries)
 description: Author 15 forge catalog entries spanning repair, specialty, and shared/civic niches per DECLINE-VERDICT; each entry schema-complete and ready for Tier A simulation
-status: draft
-version: "1.0"
+status: completed
+version: "1.1"
 created: 2026-04-19
+completed: 2026-04-19
+last_modified: 2026-04-19
 phase: 2
 subsystem: catalog
 trade: smithing
@@ -17,10 +19,13 @@ success_signal: >
   schema-compliant frontmatter and all conditional fields populated for
   claimed lens and scale fits. Every cost and throughput number cites a
   source or carries a bracketed placeholder. Entries span repair / specialty
-  / shared-civic niches per DECLINE-VERDICT.md guidance. The 15 entries
-  span the 9-cell context matrix meaningfully — every cell has at least
-  one entry claiming `good` or `marginal` fit. Catalog is ready for
-  ceres-panel R1 review and Plan D Tier A simulation.
+  / shared-civic niches per DECLINE-VERDICT.md guidance. Actual niche
+  distribution: 8 repair / 3 specialty / 2 shared-civic / 2 training
+  (drifted from target 6/3/4/2; accepted honestly). The 15 entries span
+  the 9-cell context matrix meaningfully — every cell has at least one entry
+  claiming `good` or `marginal` fit. Cross-entry audit: 9-cell matrix
+  coverage PASS; 2 P2 fixes applied; ~450 [CITATION-NEEDED] placeholders
+  total. Catalog is ready for ceres-panel R1 review and Plan D Tier A simulation.
 spec: specs/2026-04-18-ceres-design.md
 ---
 

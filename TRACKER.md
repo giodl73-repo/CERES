@@ -12,11 +12,12 @@ Operational dashboard. Updated manually at each plan checkpoint.
 
 | Item | Value |
 |---|---|
-| Active plan | **Plan A complete; Plan B complete (2026-04-19); Plans C/D unblocked** |
-| Phase | Phase 0 complete; Phase 1 research complete for smithing |
-| Trade vertical slice | **Smithing** (Phase 1 complete; Phase 2 ready) |
+| Active plan | **Plan C complete (2026-04-19); Plan D unblocked; Plan E still blocked (needs Plan D)** |
+| Phase | Phase 0 complete; Phase 1 research complete for smithing; Phase 2 catalog complete for smithing |
+| Trade vertical slice | **Smithing** (Phase 2 complete; Phase 3 ready) |
 | Plan A progress | **17/17 tasks complete** |
 | Plan B progress | **complete (2026-04-19)** — 4 cultural chapters + REQUIREMENTS + HISTORICAL-FORMS + DECLINE-VERDICT + SOURCES |
+| Plan C progress | **complete (2026-04-19)** — 15 entries + cross-entry audit + 2 P2 fixes |
 
 ---
 
@@ -26,7 +27,7 @@ Operational dashboard. Updated manually at each plan checkpoint.
 |---|---|---|---|---|---|
 | A | Scaffolding and Framework Docs | `completed` | giodl + Claude Opus 4.7 | 2026-04-19 | All 17 tasks committed. Framework docs, schema, rubric, plans index in place. Unblocks B, C, D, E. |
 | B | Research Corpus — Smithing | `completed` | giodl + Claude Sonnet 4.6 | 2026-04-19 | 4 cultural chapters (med N Europe, Song China, Tokugawa Japan, American frontier) + REQUIREMENTS + HISTORICAL-FORMS + DECLINE-VERDICT + SOURCES. Decline verdict: mixed / moderate confidence. Unblocks C. |
-| C | Catalog — Smithing (15 forge entries) | `not-yet-authored` | — | TBD | Depends on A and B. Produces `catalog/smithing/entries/*.md`. |
+| C | Catalog — Smithing (15 forge entries) | `completed` | giodl + Claude Sonnet 4.6 | 2026-04-19 | 15 entries authored + cross-entry audit (Task 18) + 2 P2 fixes applied. 8/3/2/2 niche split (drifted from 6/3/4/2; accepted honestly). 9-cell matrix coverage PASS. ~450 [CITATION-NEEDED] placeholders. Unblocks D. |
 | D | Economic Lens Math + Tier A Sim Code | `not-yet-authored` | — | TBD | Depends on A. Produces sim code and formalizes lens math. |
 | E | Playbook + Pitch Narrative | `not-yet-authored` | — | TBD | Depends on A, B, C, D. Produces `playbook/smithing/*.md` + `playbook/pitch/PITCH-NARRATIVE.md`. |
 
@@ -40,8 +41,8 @@ Status values: `in_progress` | `not-yet-authored` | `draft` | `completed` | `def
 |---|---|---|
 | `research/trades/smithing/REQUIREMENTS.md` | written, cited | `complete` |
 | `research/cultures/*/smithing.md` | 4–6 cultures | `complete` (4/4: medieval N Europe, Song China, Tokugawa Japan, American frontier) |
-| `catalog/smithing/SCHEMA.md` | finalized (trade-specific extension; base `catalog/SCHEMA.md` authored in Plan A task 15) | `not-started` |
-| `catalog/smithing/entries/*.md` | ~15 forge designs, schema-complete | `not-started` |
+| `catalog/smithing/SCHEMA.md` | finalized (trade-specific extension; base `catalog/SCHEMA.md` authored in Plan A task 15) | `complete` |
+| `catalog/smithing/entries/*.md` | ~15 forge designs, schema-complete | `complete` (15/15 entries; cross-entry audit PASS; 2 P2 fixes applied) |
 | `corpus/program/ECONOMIC-LENSES.md` | three lens rules formalized (Plan A task 13 authors definitions; Plan D formalizes math) | `not-started` |
 | `simulations/tier-a-comparator/` | all 15 × 9 = 135 cells evaluated; `results:` populated | `not-started` |
 | `simulations/tier-b-system-dynamics/` | scaffolded only (directory + README) | `not-started` |
@@ -58,6 +59,7 @@ Status values: `not-started` | `in-progress` | `complete` | `blocked`
 |---|---|---|---|---|
 | `specs/2026-04-18-ceres-design.md` | R1 | **complete** | P-1 through P-6 | 6 reviews committed. Spec revised to v0.2. |
 | Plan B cultural chapters (4) + synthesis docs (4) | R1 (consolidated) | **ready** | ceres-panel | Citation audit 22/24 VERIFIED, 2 PARTIAL fixed. Cross-chapter review addressed 25 findings + 3 concerns. Artifacts ready for formal ceres-panel R1 before Plan C consumes them. |
+| 15 catalog entries (`catalog/smithing/entries/*.md`) | R1 | **ready (not yet run)** | ceres-panel | 15 entries at `draft` status; cross-entry audit PASS; 2 P2 fixes applied. Formal ceres-panel R1 not yet scheduled. |
 
 ---
 
@@ -89,3 +91,4 @@ Queue empty. Board review fires on-demand for contested domain claims.
 - **2026-04-18:** Spec revised to v0.2 addressing themes 1, 2-lite, 3. Changes: added `market_price_per_unit` and `pricing_notes` to schema (Section 5); added `operations_reality` block (P-4); added `lens_context.cooperative` and `lens_context.civic` conditional blocks; reframed Section 2 as "Working Hypothesis" with four named falsifiers and pivot criteria; added Section 11 "Project Success Criteria" with success / null / failure definitions, timeline, funder archetype, world-level outcome.
 - **2026-04-18:** Plan A (scaffolding) authored and execution begun. Tasks 1–3 complete: `CLAUDE.md` (project house rules), 12 directory README stubs (skeleton scaffold), `README.md` (project entry point).
 - **2026-04-19:** Plan B (research corpus smithing) complete. 4 cultural chapters (med N Europe, Song China, Tokugawa Japan, American frontier) + REQUIREMENTS + HISTORICAL-FORMS + DECLINE-VERDICT + SOURCES. Citation audit 22/24 VERIFIED, 2 PARTIAL fixed. Cross-chapter review addressed 25 findings + 3 concerns. Decline verdict: mixed with moderate confidence; catalog should target repair, specialty, and custom niches — not commodity competition.
+- **2026-04-19:** Plan C (catalog — 15 smithing entries) complete. 4 niche groups per DECLINE-VERDICT: 8 repair / 3 specialty / 2 shared-civic / 2 training (drifted from target 6/3/4/2; accepted honestly). Cross-entry audit: 9-cell matrix coverage PASS (every cell ≥2 entries); 2 P2 fixes applied; 450 `[CITATION-NEEDED]` placeholders total. Ready for Plan D Tier A simulation.

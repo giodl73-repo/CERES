@@ -52,12 +52,14 @@ throughput:
     commodity: 5
     specialty: 25
     artistic: 0
-    # Note: 40% of active hours are devoted to training-output work (student projects
-    # not sold commercially). This non-revenue share is not a named product_mix category
-    # in the schema but is reflected in the depressed throughput rates and sim_params.
-    # The repair + commodity + specialty columns sum to 60 (the productive share); the
-    # remaining 40 is training overhead folded into throughput_units_equiv_per_year.
-    # Sum of listed categories: 30 + 5 + 25 + 0 = 60. See Key Assumptions for derivation.
+    training_output: 40
+    # training_output extension follows the pattern used in forge-009, forge-011, and
+    # forge-015. 40% of active hours are devoted to training-output work (student projects
+    # not sold commercially); adding this named field brings the sum to 100.
+    # Sum: 30 + 5 + 25 + 0 + 40 = 100. The productive share (repair + commodity +
+    # specialty = 60%) drives revenue calculations; training_output hours are reflected
+    # in the depressed throughput rates and the product-mix weighting in sim_params.
+    # See Key Assumptions for derivation.
 
 # ── OPERATOR PROFILE ─────────────────────────────────────────────────────────
 

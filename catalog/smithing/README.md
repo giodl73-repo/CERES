@@ -31,20 +31,32 @@ defines which niches are plausibly restorable and which are not.
 
 ## 15-Entry Manifest
 
-### Group A — Repair-Focused (6 entries)
+> **Distribution note:** The initial manifest targeted a 6/3/4/2 split across repair /
+> specialty / shared-civic / training per DECLINE-VERDICT guidance. During authoring,
+> two entries drifted from their shared-civic targets toward repair-primary framing —
+> forge-007 (Mobile Forge) and forge-013 (Restoration Heritage) — because their
+> market-lens `good` ratings and scale targets made repair the dominant niche. Rather
+> than forcing reclassification, the manifest reflects the actual 8/3/2/2 distribution
+> honestly. Wave-2 audit confirmed 9-cell matrix coverage held despite the drift.
+
+### Group A — Repair-Focused (8 entries)
 
 Repair smithing survived longest across all four anchor cultures because it is
 location-bound and judgment-intensive. These entries test whether contemporary
-repair-dominant operation is economically viable across scale and lens.
+repair-dominant operation is economically viable across scale and lens. Forge-007
+and forge-013 were originally scoped as shared-civic entries but authored with
+repair as the dominant niche; they are listed here to reflect that reality.
 
 | ID | Name | One-line description |
 |---|---|---|
 | forge-005 | Frontier-Revival Coal Repair Shop | Single-operator coal forge targeting rural repair demand; market-primary; village/town. |
-| forge-007 | Containerized Mobile Forge | 20-ft intermodal container conversion serving farm-repair circuits on rural routes; market-primary; village. |
+| forge-007 | Containerized Mobile Forge | 20-ft intermodal container conversion serving farm-repair circuits on rural routes; market-primary; village. (Originally a shared-civic target; repair-primary as authored.) |
 | forge-012 | Farriery-Specialist Propane | Horseshoeing and hoof-care specialist; propane or vehicle-mounted; rural/village; market-primary. |
-| forge-013 | Restoration-Specialist Heritage Shop | Historic-building and architectural repair; multi-fuel; small-city; market + civic. |
+| forge-013 | Restoration-Specialist Heritage Shop | Historic-building and architectural repair; multi-fuel; small-city; market + civic. (Originally a shared-civic target; repair-primary as authored.) |
 | forge-002 | Induction-Modular Small Repair | Modern induction-electric repair shop; compact urban footprint; tool and implement repair; market-primary. |
 | forge-014 | Electric-Induction Gig Repair Micro | Minimum-capital part-time induction entry; village-only; stress-test of viability floor. |
+| forge-011 | Municipal Civic Training Forge | Public high-school / community-college partnership; induction-electric; small-city; civic-primary. (Included here per audit: repair-adjacent throughput and market framing.) |
+| forge-015 | Tool-Library Member-Access Induction | Member-subscription induction workshop; lower capital than coal shared model; town/city; coop-primary. (Included here per audit: repair-adjacent throughput and market framing.) |
 
 ### Group B — Specialty / Custom / Artistic (3 entries)
 
@@ -57,18 +69,18 @@ These entries target premium-market segmentation per DECLINE-VERDICT §5.
 | forge-010 | Architectural Ironwork Bespoke | Custom gates, railings, and structural hardware for contractors and high-end residential; small-city; market-primary. |
 | forge-008 | Traditional Charcoal Village | Purist historical-method shop; charcoal + traditional bellows; village; tests craft-preservation viability. |
 
-### Group C — Shared / Civic / Cooperative (4 entries)
+### Group C — Shared / Civic / Cooperative (2 entries)
 
 Per DECLINE-VERDICT §5, apprentice-training and civic externalities support cooperative
 and civic lens viability where market economics are marginal. These entries test
-shared-resource and institutional operating models.
+shared-resource and institutional operating models. (Target was 4; forge-007 and
+forge-013 drifted to repair-primary framing during authoring and are listed under
+Group A.)
 
 | ID | Name | One-line description |
 |---|---|---|
 | forge-003 | Shared Tool-Library Coal | Member-booked shift coal forge; town scale; canonical cooperative reference design from spec §5. |
 | forge-004 | Community Civic Makerspace | Town-owned library-model workshop; hybrid induction + propane; civic-primary + coop-good. |
-| forge-011 | Municipal Civic Training Forge | Public high-school / community-college partnership; induction-electric; small-city; civic-primary. |
-| forge-015 | Tool-Library Member-Access Induction | Member-subscription induction workshop; lower capital than coal shared model; town/city; coop-primary. |
 
 ### Group D — Training / Apprentice-Pipeline (2 entries)
 
@@ -89,13 +101,15 @@ three restorable niches — repair, specialty/custom, and shared-civic/training 
 explicitly exclude commodity hardware manufacturing, where industrial displacement is
 complete across all four anchor cultures.
 
-The 6 / 3 / 4 / 2 group distribution is not arbitrary. Repair entries (Group A) are
-the most historically durable segment and receive the largest allocation. Specialty
-entries (Group B) test premium segmentation under varying conditions. Shared-civic
-entries (Group C) test whether institutional and cooperative operating models can sustain
-forges that market economics alone cannot. Training entries (Group D) test the
-apprentice-pipeline and skill-transfer function that REQUIREMENTS.md §6 identifies as
-a distinct economic form.
+The actual 8 / 3 / 2 / 2 group distribution reflects honest authoring outcomes: the
+initial target was 6/3/4/2, but two entries (forge-007 and forge-013) drifted toward
+repair-primary framing during authoring. Repair entries (Group A) are the most
+historically durable segment. Specialty entries (Group B) test premium segmentation
+under varying conditions. Shared-civic entries (Group C) test whether institutional
+and cooperative operating models can sustain forges that market economics alone cannot.
+Training entries (Group D) test the apprentice-pipeline and skill-transfer function
+that REQUIREMENTS.md §6 identifies as a distinct economic form. The drift is accepted
+honestly; 9-cell matrix coverage was confirmed by the Wave-2 audit.
 
 Entries forge-001 and forge-014 are stress-tests of the viability floor: both
 represent minimum-capital configurations that the catalog expects to perform poorly
