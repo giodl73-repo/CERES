@@ -17,8 +17,10 @@ required field produces a failed or silently incorrect evaluation cell. The pros
 are human-evaluated by the panel voice and editorial gate system. If this schema changes,
 the version number below must be bumped, all existing entries must be re-validated against
 the new version, and a corresponding amendment to `specs/2026-04-18-ceres-design.md`
-Section 5 must be filed. The spec and this file are kept in lock-step; neither is
-authoritative over the other in isolation.
+Section 5 must be filed. The spec is the primary authority on project scope; this file is the primary
+authority on field-level schema detail. When they conflict, a spec amendment
+is required (see Section 9). Both are kept in lock-step; divergence in either
+direction triggers an amendment, not a silent override.
 
 ---
 
@@ -752,7 +754,8 @@ trade_specific:
   anvil_weight_kg: 150
 ```
 
-See `catalog/smithing/SCHEMA.md` for the full smithing extension.
+See `catalog/smithing/SCHEMA.md` for the full smithing extension. *(Not yet created;
+created in Plan C when the smithing vertical slice reaches catalog-entry authoring.)*
 
 ---
 

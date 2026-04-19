@@ -192,9 +192,9 @@ the dimension aggregate table.
 | D1 Schema Completeness | E-2 | — | {pass count}/{total verify items for this dim} |
 | D2 Citation Strength   | E-1 | P-1, P-5 | ... |
 | D3 Operations Realism  | E-3 | P-4 | ... |
-| D4 Market Viability    | P-1 | P-2, P-6 | ... |
-| D5 Commons Fit         | P-2 | P-3 | ... |
-| D6 Civic Value         | P-3 | P-1, P-5 | ... |
+| D4 Lens-Context Rigor                 | P-1, P-2, P-3 | E-3 | ... |
+| D5 Historical Honesty                 | P-5 | P-6 | ... |
+| D6 Design Rationale and Differentiation | P-6 | P-1, P-2, P-3, P-4 | ... |
 ```
 
 Only include dimensions where at least one selected role contributes.

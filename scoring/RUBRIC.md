@@ -632,7 +632,7 @@ secondary signals from inflating a dimension that has no domain owner.
 |-----------|--------------|-----------------|
 | D1 Schema Completeness | E-2 Scope Keeper | — |
 | D2 Citation Strength | E-1 Citation Auditor | P-1 Market Economist, P-5 Historian |
-| D3 Operations Realism | P-4 Craft Practitioner, E-3 Numeracy Checker | P-6 Skeptical Funder |
+| D3 Operations Realism | P-4 Craft Practitioner, E-3 Numeracy Checker | — |
 | D4 Lens-Context Rigor | P-1, P-2, P-3 (market/cooperative/civic sub-lenses) | E-3 Numeracy Checker |
 | D5 Historical Honesty | P-5 Historian | P-6 Skeptical Funder |
 | D6 Design Rationale & Differentiation | P-6 Skeptical Funder | P-1, P-2, P-3, P-4 |

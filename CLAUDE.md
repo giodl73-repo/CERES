@@ -28,18 +28,18 @@ First-class top-level directories. Never use `docs/superpowers/...` paths.
 | `specs/` | Design specifications. Current: `specs/2026-04-18-ceres-design.md`. |
 | `plans/` | Implementation plans. Current: `plans/2026-04-18-plan-a-scaffolding.md`. |
 | `research/` | Phase 1 — functional requirements extracted from historical forms, organized by culture and trade. *(upcoming)* |
-| `catalog/` | Phase 2 — THE STAR. One markdown file per equipment design. Canonical schema per trade in `catalog/<trade>/SCHEMA.md`. *(upcoming)* |
-| `corpus/` | Framework material: `corpus/canon/` (theory, glossary, principles) and `corpus/program/` (lens math, scales, FX table, validation rules). *(upcoming)* |
+| `catalog/` | Phase 2 — THE STAR. One markdown file per equipment design. Canonical schema in `catalog/SCHEMA.md`; trade-specific extensions in `catalog/<trade>/SCHEMA.md` (not yet created; see Plan C). |
+| `corpus/` | Framework material: `corpus/canon/` (theory, glossary, principles) and `corpus/program/` (lens math, scales, FX table, validation rules). |
 | `simulations/` | Phase 4 — layered Tier A (scenario comparator), Tier B (system dynamics), Tier C (agent-based). *(upcoming)* |
 | `playbook/` | Phase 5 — per-trade, per-scale winning-designs files and pitch narrative. *(upcoming)* |
 | `.craft/` | Review organization. Role definitions in `.craft/roles/`. See Section 5. |
 | `agents/` | Chronicle-pattern agent definitions. *(upcoming)* |
 | `skills/` | Reusable pipeline skills. See Section 6. |
 | `reviews/` | Panel and editorial review outputs. Filenames identify artifact, round, and reviewer. |
-| `scoring/` | Quality rubric (`scoring/RUBRIC.md`). *(upcoming)* |
+| `scoring/` | Quality rubric (`scoring/RUBRIC.md`). |
 | `sources/` | Raw citations and images. *(upcoming)* |
-| `TRACKER.md` | Project-level progress tracking. *(upcoming)* |
-| `docs/` | Pipeline, style-guide, and methodology docs (`docs/PIPELINE.md`, `docs/STYLE-GUIDE.md`, `docs/METHODOLOGY.md`). *(upcoming)* |
+| `TRACKER.md` | Project-level progress tracking. |
+| `docs/` | Pipeline, style-guide, and methodology docs (`docs/PIPELINE.md`, `docs/STYLE-GUIDE.md`, `docs/METHODOLOGY.md`). |
 
 ---
 
@@ -57,16 +57,16 @@ First-class top-level directories. Never use `docs/superpowers/...` paths.
 
 - **Markdown with YAML frontmatter** for all catalog entries and plans. Simulation code
   ingests catalog frontmatter directly — malformed YAML breaks the pipeline.
-- **Match existing patterns.** Read `catalog/SCHEMA.md` (upcoming) before authoring any
+- **Match existing patterns.** Read `catalog/SCHEMA.md` before authoring any
   catalog entry. Trade-specific fields are defined in `catalog/<trade>/SCHEMA.md`. Read
   an existing entry before authoring the next one.
 - **Don't invent schema fields.** If a new trade-agnostic field is needed, amend
-  `catalog/SCHEMA.md` (upcoming) and document the change. Trade-specific fields go in
+  `catalog/SCHEMA.md` and document the change. Trade-specific fields go in
   `catalog/<trade>/SCHEMA.md`. Silent additions break simulation ingestion.
 - **Status lifecycle:** `draft` → `reviewed` → `validated` → (`deprecated` | `superseded`).
   Deprecated entries stay in the catalog, linked to what replaced them.
 - **Multi-currency:** declare `currency:` in every entry. FX conversion uses
-  `corpus/program/CURRENCIES.md` (upcoming). Do not normalize manually.
+  `corpus/program/CURRENCIES.md`. Do not normalize manually.
 
 ---
 
@@ -100,10 +100,12 @@ Skills operationalize the review tiers. Each lives in `skills/<name>/SKILL.md`.
 | `skills/ceres-panel/` | Panel — run 6-voice review on any CERES artifact |
 | `skills/ceres-editorial/` | Editorial — promotion gate from `reviewed` to `validated`; citation / scope / numeracy pass (panel review must come first) |
 | `skills/ceres-board/` | Board — trade-specific domain expert review on a contested claim |
+| `skills/ceres-check/` | Cross-tier fast audit — structured findings table; complements panel; can run at any stage |
 
 Additional authoring and orchestration skills are planned for Phase 2
 (`ceres-catalog-entry`, `ceres-sim-tier-a`, `ceres-playbook`, `ceres-pitch`,
-`ceres-promote`, `ceres-e2e`). See `skills/README.md`.
+`ceres-promote`, `ceres-e2e`). See `skills/ceres-check/SKILL.md` for fast-audit
+usage guidance. *(A `skills/README.md` index is not yet created; see Plan B.)*
 
 ---
 

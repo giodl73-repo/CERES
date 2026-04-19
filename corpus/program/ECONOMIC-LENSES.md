@@ -84,13 +84,7 @@ MARKET passes if:
   AND operator_take_home ≥ scale_appropriate_median_wage
 ```
 
-`scale_appropriate_median_wage` values (from `SCALES.md §3`):
-
-| Scale | Median wage threshold |
-|---|---|
-| Village | $48,000 / yr |
-| Town | $56,000 / yr |
-| Small city | $62,000 / yr |
+`scale_appropriate_median_wage` — see `corpus/program/SCALES.md §3` for values by scale.
 
 Both sub-conditions must hold. A design that pays back in 5 years but leaves the
 operator below the median wage is not a viable market business; a design that pays
@@ -171,15 +165,8 @@ COOPERATIVE passes if:
   break_even_members ≤ feasible_member_pool
 ```
 
-`feasible_member_pool` values (from `SCALES.md §5`):
-
-| Scale | Participation rate | Pool at scale midpoint |
-|---|---|---|
-| Village (pop ~1,000) | 2.5 % | 25 members |
-| Town (pop ~7,500) | 2.5 % | 188 members |
-| Small city (pop ~40,000) | 2.0 % | 800 members |
-
-The feasible pool for a specific evaluation uses the actual population if known;
+`feasible_member_pool` — see `corpus/program/SCALES.md §5` for participation rates and
+pool sizes by scale. The feasible pool for a specific evaluation uses the actual population if known;
 otherwise the scale midpoint. Floor constraint: pool is never less than 10 members
 (per `SCALES.md §5.5`).
 
@@ -232,13 +219,7 @@ CIVIC passes if:
   AND hours_of_use_per_capita ≥ usage_rate_threshold
 ```
 
-Per-household cost thresholds (from `SCALES.md §4`):
-
-| Scale | Cost ceiling |
-|---|---|
-| Village | $120 / household / yr |
-| Town | $100 / household / yr |
-| Small city | $80 / household / yr |
+Per-household cost thresholds — see `corpus/program/SCALES.md §4` for values by scale.
 
 Usage-rate thresholds are defined per-entry in the simulation scenario (the spec
 does not prescribe a universal number; minimum viable usage is context-dependent).
@@ -373,16 +354,18 @@ The following are intentionally deferred to Plan D (simulation code):
 
 ## Appendix A: Threshold Cross-Reference
 
-For convenience, all threshold values defined in `corpus/program/SCALES.md` that
-are consumed by these formulas, listed with their authoritative source location.
+**`corpus/program/SCALES.md` is the authoritative source for all numeric threshold
+values. The values below are a convenience reference only; if they diverge from
+`SCALES.md`, `SCALES.md` governs.**
 
-| Lens | Parameter | Village | Town | Small city | Defined in |
-|---|---|---|---|---|---|
-| MARKET | Scale-appropriate median wage | $48,000/yr | $56,000/yr | $62,000/yr | `SCALES.md §3` |
-| CIVIC | Per-household cost ceiling | $120/hh/yr | $100/hh/yr | $80/hh/yr | `SCALES.md §4` |
-| COOPERATIVE | Participation rate | 2.5 % | 2.5 % | 2.0 % | `SCALES.md §5` |
-| COOPERATIVE | Feasible pool (at midpoint pop) | 25 | 188 | 800 | `SCALES.md §5` |
-| COOPERATIVE | Floor constraint (min pool) | 10 | 10 | 10 | `SCALES.md §5.5` |
+| Lens | Parameter | Defined in |
+|---|---|---|
+| MARKET | Scale-appropriate median wage | `SCALES.md §3` |
+| CIVIC | Per-household cost ceiling | `SCALES.md §4` |
+| COOPERATIVE | Participation rate | `SCALES.md §5` |
+| COOPERATIVE | Feasible pool (at midpoint pop) | `SCALES.md §5` |
+| COOPERATIVE | Floor constraint (min pool) | `SCALES.md §5.5` |
 
-These values are **illustrative anchors** per `SCALES.md`. They must be refined
-before any simulation run is promoted from `draft` to `validated`.
+For the actual numeric values, read `corpus/program/SCALES.md` directly. Values
+there are **illustrative anchors** that must be refined before any simulation run
+is promoted from `draft` to `validated`.

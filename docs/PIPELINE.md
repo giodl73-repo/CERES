@@ -48,8 +48,8 @@ invoked only when Tier A/B flag a need. Artifacts: `simulations/tier-*/`.
 **Phase 5 — Playbook + Pitch** distills the evaluation results into actionable
 plans and a funder narrative. Per-trade, per-context playbook files identify the
 top 3–5 winning designs, supply an implementation sketch, and state open risks.
-The pitch narrative frames the whole project for funders: what was lost, what the
-research found, and what a pilot program would cost. Artifacts:
+The pitch narrative frames the whole project for funders: what changed when local
+production declined, what the research found, and what a pilot program would cost. Artifacts:
 `playbook/<trade>/<scale>.md` and `playbook/pitch/PITCH-NARRATIVE.md`.
 
 ---
@@ -149,6 +149,25 @@ An artifact is cleared only if all three lenses return `pass` or
 
 Reviews land in `reviews/CLEAN-E{N}-{lens}-{artifact-slug}.md`. Invoke via
 `/ceres-editorial` (see `skills/ceres-editorial/SKILL.md`).
+
+### ceres-check (cross-tier fast audit — any stage)
+
+`ceres-check` (`skills/ceres-check/SKILL.md`) is not a separate review tier; it is a
+structured cross-tier checklist tool available at any stage of the pipeline. It
+dynamically selects applicable roles from the role library, runs each role's
+`lens.verify` checklist against the artifact, and produces a findings table with
+severity codes.
+
+Use it for:
+
+- Pre-promotion fast audits (before triggering a full editorial pass).
+- Targeted scans on a single concern (e.g., citations only: `scope filter:citation`).
+- Quick structural health checks on drafts before a full panel run.
+
+`ceres-check` complements `ceres-panel` — panel does deep qualitative first-person
+reviews; `ceres-check` produces a structured findings table. Use both in sequence for
+a complete review. See `skills/ceres-check/SKILL.md` for the "When to Use ceres-check
+vs. ceres-panel" guidance table.
 
 ### Board (per-trade — on demand)
 

@@ -21,6 +21,11 @@ Terms are listed alphabetically. Each entry is 1–3 sentences.
 
 ## A
 
+**Applies_to** — a YAML frontmatter field in every role file (`.craft/roles/**/*.md`)
+listing the artifact types that role is eligible to review: one or more of `spec`,
+`plan`, `catalog-entry`, `playbook-file`, `pitch-narrative`. The `ceres-check` skill
+reads this field to filter roles by artifact type before running its checklist.
+
 **Anchor culture** — one of the 4–6 historical cultures (medieval Northern Europe,
 Song-era China, Tokugawa Japan, Islamic Golden Age, Andean ayllu, American frontier)
 whose documented production forms serve as the primary research basis for extracting
@@ -82,6 +87,12 @@ Ostrom principles addressed; the label without this governance sketch is a P-2
 Commons Theorist critique and an editorial hold.
 
 ## D
+
+**Domain_signals** — a YAML frontmatter field in every role file listing
+keyword strings that indicate an artifact is in that role's domain of expertise
+(e.g., `["market", "payback", "ROI", "wage"]` for P-1 Market Economist). The
+`ceres-check` skill counts how many domain signals appear in the artifact's content
+to compute a relevance score used to prioritize which roles are most applicable.
 
 **Demand collapse** — one of the four pre-registered falsifiers for CERES's working
 hypothesis. Demand collapse holds when consumers prefer industrial goods for reasons
@@ -218,8 +229,8 @@ payback ≤ 8 years; an entry claiming `market: win` with an implied payback abo
 threshold is a P1 internal contradiction (E-3).
 
 **Pitch narrative** — the single white-paper-style document (`playbook/pitch/PITCH-NARRATIVE.md`)
-framing the CERES project for funders: the problem (what was lost when local
-production collapsed), the approach (catalog-driven design, evaluation matrix,
+framing the CERES project for funders: the problem (what changed when local
+production declined), the approach (catalog-driven design, evaluation matrix,
 simulation), the findings (winning patterns, failure modes, structural insights), and
 the ask (pilot program outline, funding envelope, milestones). The pitch cites the
 catalog and playbook as evidence and does not generate claims independently.
@@ -246,6 +257,15 @@ promotion gate is editorial-only. Three or more open P1 findings from any single
 editorial reviewer hold the entry.
 
 ## R
+
+**Rubric_contribution** — a YAML frontmatter field in every role file (v1.1+) with
+two sub-fields: `primary` (a list of dimension IDs, e.g. `[D4]`) and `secondary`
+(a list of dimension IDs, e.g. `[D2, D6]`). Primary dimensions are weighted at
+1.0x when aggregating role findings into a rubric dimension score; secondary
+dimensions are weighted at 0.5x. The `ceres-check` skill uses this field to
+build the Dimension Aggregate table. The authoritative mapping is in
+`scoring/RUBRIC.md` Section 6, but the role files are the canonical source;
+the RUBRIC table is derived from them.
 
 **Regulatory capture** — one of the four pre-registered falsifiers for CERES's working
 hypothesis. This falsifier holds when trades were displaced primarily by zoning,

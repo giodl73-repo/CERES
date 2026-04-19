@@ -43,12 +43,9 @@ Felix, another of Giovanni's pets. CERES continues the pattern.
 | Implementation plans | [`plans/`](plans/) | Active |
 | Review roles | [`.craft/roles/`](.craft/roles/) | Active |
 | Pipeline skills | [`skills/`](skills/) | Active |
-| Local-production framework | [`corpus/canon/THEORY.md`](corpus/canon/THEORY.md) | Upcoming |
-| Catalog entry schema | [`catalog/SCHEMA.md`](catalog/SCHEMA.md) | Upcoming |
-| Progress tracker | [`TRACKER.md`](TRACKER.md) | Upcoming |
-
-`corpus/canon/THEORY.md`, `catalog/SCHEMA.md`, and `TRACKER.md` are
-created later in Plan A and do not exist yet.
+| Local-production framework | [`corpus/canon/THEORY.md`](corpus/canon/THEORY.md) | Active |
+| Catalog entry schema | [`catalog/SCHEMA.md`](catalog/SCHEMA.md) | Active |
+| Progress tracker | [`TRACKER.md`](TRACKER.md) | Active |
 
 ---
 

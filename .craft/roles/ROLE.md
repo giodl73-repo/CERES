@@ -71,7 +71,7 @@ investor-deck polish.
 | [P-5](panel/P-5-historian.md) | The Historian | Historical realism, anti-romanticism, anti-anachronism |
 | [P-6](panel/P-6-skeptical-funder.md) | The Skeptical Funder | Check-writer rigor, strongest-objection surfacing |
 
-### Editorial (permanent — validation gate)
+### Editorial (permanent — promotion gate)
 | ID | Name | Lens |
 |----|------|------|
 | [E-1](editorial/E-1-citation-auditor.md) | The Citation Auditor | Every number sourced; no hand-waves |

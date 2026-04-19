@@ -136,6 +136,13 @@ Every entry that earns `validated` status should satisfy all ten principles. Ent
 
 ## Cross-Reference: Principles, Panel Voices, and Editorial Gates
 
+**Note on column meanings:** "Primary Panel Voice" indicates which panel reviewer raises
+the principal substantive concern for this principle during qualitative review. "Primary
+Editorial Gate" indicates which editorial reviewer controls the numeric rubric dimension
+score and issues the mechanically enforced finding. These are different functions: a panel
+voice may own the substantive debate while an editorial gate owns the score. See
+`scoring/RUBRIC.md` Section 6 for the dimension-level ownership table.
+
 | # | Principle | Primary Panel Voice | Primary Editorial Gate |
 |---|---|---|---|
 | 1 | Schema-complete | — | E-2 Scope Keeper |

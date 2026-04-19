@@ -368,7 +368,7 @@ Thresholds are defined in `corpus/program/SCALES.md` per scale (village/town/sma
 For each file: top 3–5 winning designs, one-line "why it wins here," implementation sketch (pilot → staffing → capex timeline → revenue ramp), capital ask, open risks.
 
 **Pitch narrative** (`playbook/pitch/PITCH-NARRATIVE.md`).
-Single white-paper-style document: the problem (what was lost when local production collapsed, what it costs communities); the approach (catalog-driven design + evaluation matrix + simulation); what we learned (winning patterns, failure modes, structural insights); the ask (pilot program outline, funding envelope, measurable milestones). Pitch cites the catalog and playbook as evidence.
+Single white-paper-style document: the problem (what changed when local production declined, what it costs communities); the approach (catalog-driven design + evaluation matrix + simulation); what we learned (winning patterns, failure modes, structural insights); the ask (pilot program outline, funding envelope, measurable milestones). Pitch cites the catalog and playbook as evidence.
 
 ---
 
