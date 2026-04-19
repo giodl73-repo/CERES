@@ -3,9 +3,9 @@
 ## Design Specification
 
 **Date:** 2026-04-18
-**Version:** 0.2 (revised 2026-04-18 after panel R1)
+**Version:** 0.3 (revised 2026-04-19 after ceres-check on v0.2)
 **Author:** Giovanni Della-Libera + Claude Opus 4.7
-**Status:** Draft — revised once after panel R1, pending author review before implementation planning
+**Status:** Draft — revised twice; v0.3 addresses 12 P2 + 5 P3 findings from ceres-check; pending author review before implementation planning
 
 ---
 
@@ -50,6 +50,7 @@ CERES tests the hypothesis by building a catalog of equipment designs and evalua
 | Economic lenses | Three parallel evaluation frames: **market** (private profit), **cooperative / commons** (member-funded), **civic** (municipal, library-model). Same catalog entry evaluated three ways. |
 | Simulation approach | Layered. **Tier A** — scenario comparator (runs every cell). **Tier B** — system dynamics (town-as-system, inter-trade dependencies). **Tier C** — agent-based (targeted questions only). |
 | Execution approach | **Vertical slice.** Drive smithing/forge end-to-end first (research → catalog → sim → playbook). Prove the pipeline. Then replicate pattern for other trades. |
+| Smithing as template | Smithing was selected as the first-slice trade because it is an equipment-tractable, regulatory-light trade with strong historical precedent — a deliberately accessible first case. Whether the pipeline pattern generalises to harder trades (weaving with fibre-supply complexity, pottery with kiln permitting, baking and food trades with health-code and licensing overhead) is **itself a finding of the project**, not an assumption. The vertical slice proves the pipeline exists; a second-trade attempt is required to test its generalisability. |
 
 ---
 
@@ -63,7 +64,7 @@ Research  →  Design Catalog ★  →  Evaluation Matrix  →  Simulation  → 
    └──────────── feedback loop: failed designs revised and re-evaluated ──────┘
 ```
 
-- **Research (Phase 1)** — extract *functional requirements* from historical forms. What must a forge do? Temperature range, throughput, fuel options, mobility, operator skill floor. History gives the requirements spec, not the design.
+- **Research (Phase 1)** — extract *functional requirements* from historical forms. What must a forge do? Temperature range, throughput, fuel options, mobility, operator skill floor. History gives the requirements spec, not the design. Each trade's `research/trades/<trade>/REQUIREMENTS.md` must explicitly adjudicate a **decline-or-restructuring verdict** — one of `decline | restructuring | displacement | ambiguous` — with a one-paragraph justification. This step prevents the research from defaulting to a "decline" framing when the historical record may show restructuring (local production moved form, not disappeared). The verdict is required before a trade's catalog entries can move to `reviewed` status.
 - **Design Catalog (Phase 2) — the star.** Per trade, 20–40 equipment variants spanning different design tradeoffs (size, capital cost, energy source, throughput, specialization, shareability, skill floor). Each entry = one markdown file with structured frontmatter.
 - **Evaluation Matrix (Phase 3)** — every catalog entry evaluated under 9 contexts (3 scales × 3 lenses).
 - **Simulation (Phase 4)** — the engine that runs the evaluation matrix. Tier A produces the 9 results per entry. Tier B answers systemic questions Tier A cannot. Tier C is reserved for specific targeted questions.
@@ -194,6 +195,10 @@ throughput:
 operator_skill_floor: journeyman
 operators_concurrent: 1-2
 apprentice_friendly: true
+apprentice_path:                    # Required prose sub-fields when apprentice_friendly: true
+  training_stages: "Stage 1 (0–6 mo): safety, fire management, basic stock prep. Stage 2 (6–18 mo): small work, tool maintenance. Stage 3 (18–36 mo): medium work, independent production. Competency gates at each stage."
+  time_to_independent_operation: "~36 months to journeyman standard on this equipment"
+  succession_note: "Forge is designed for apprentice co-presence during production; skill transfer is built into normal operations, not a separate program"
 
 # Economics (order-of-magnitude, cited; multi-currency aware)
 economics:
@@ -205,7 +210,9 @@ economics:
   floor_space_rent_per_year: 4800
   # Market-clearing output pricing — required for MARKET lens evaluation
   market_price_per_unit: { low: 32, mid: 45, high: 70 }
-  pricing_notes: "Per small-work unit equivalent. Premium over industrial baseline (~$12) assumes direct-to-consumer and repair-work mix. Cited."
+  industrial_baseline_price: 12   # USD/unit; named industrial-alternative price. Required when lens_fit.market is good or marginal. Must be cited.
+  pricing_notes: "Per small-work unit equivalent. Premium over industrial baseline ($12/unit, e.g. imported hardware-store equivalent) assumes direct-to-consumer and repair-work mix. Cited."
+  pricing_validation: "Market price evidence: comparable community-forge rate cards (ToolLibrary.org 2024 survey) + direct-to-consumer repair pricing from three regional smiths; willingness-to-pay supported by cited survey data, not cost-plus residual."
 
 # Operations reality — what actually breaks and what an operator's worst month looks like
 # Required for P-4 (Craft Practitioner) lens; separate from regulatory compliance.
@@ -215,11 +222,29 @@ operations_reality:
       estimated_hours_to_failure: 1800
       replacement_cost: 1200
       replacement_lead_time_days: 21
+      serviceable_by: specialist   # operator | journeyman | specialist
     - item: "Refractory lining (partial)"
       estimated_hours_to_failure: 2400
       replacement_cost: 400
       replacement_lead_time_days: 7
+      serviceable_by: operator     # refractory patching is operator-trainable
+  maintenance_schedule:
+    daily:
+      task: "Clean ash pan, inspect seals, check fuel line"
+      performed_by: operator
+    weekly:
+      task: "Inspect refractory lining, lubricate moving parts, calibrate temp sensor"
+      performed_by: operator
+    quarterly:
+      task: "Full refractory inspection; replace worn seals; check electrical connections"
+      performed_by: journeyman
+    annual:
+      task: "Full refurbishment: replace lining if indicated, inspect structural components"
+      performed_by: specialist
+  startup_shutdown_overhead_per_day_min: 30  # minutes/day of non-productive operator time
+  max_active_hours_realism_note: "45 hr/wk is the theoretical shift-hours ceiling; net of 30 min/day startup-shutdown overhead across a 5-day week, effective active production hours are approximately 41.5 hr/wk. sim_params.throughput_units_equiv_per_year uses the derated figure."
   consumables_lead_time_days: { typical: 5, worst: 30 }
+  interruption_notes: "Optional. Typical intraday interruptions: customer walk-ins (~2–3 per day, 10 min avg), tool-change setup (~15 min per major work-type switch), apprentice instruction (~20 min/day when apprentice is present). These micro-interruptions are separate from startup_shutdown_overhead and should be folded into throughput_units_equiv_per_year estimates per METHODOLOGY.md guidance."
   throughput_variance:
     seasonal: "Fall/winter peak for repair work; summer trough"
     worst_month_fraction_of_average: 0.45
@@ -252,6 +277,9 @@ lens_context:
     graduated_sanctions: "Warning → $50 fine → 30-day suspension → membership review"
     conflict_resolution: "Member-elected steward arbitrates; appeal to full member vote"
     ostrom_principles_addressed: [1, 2, 3, 4, 5, 6]  # 7 and 8 NA at single-coop scale
+    member_amendment_process: "2/3 vote at annual general meeting; 30-day notice required for agenda items; emergency amendments by 3/4 vote with 7-day notice"
+    legal_form: "State-registered worker cooperative, LLC; municipal acknowledgment on file"
+    scale_fit_note: "Rules calibrated for town-scale (2,000–15,000); participation quorum of 20 members is achievable at this scale but would be infeasible at village scale — see scale_fit.village: marginal"
   # Required when lens_fit.civic is good or marginal
   civic:
     political_coalition: "Municipal workforce-development grant + small-business allies"
@@ -259,6 +287,19 @@ lens_context:
     competes_with_private: "No existing private smith in target towns; civic facility fills gap"
     governance_form: "Municipally owned; operated by contracted master smith with apprentice program"
     budget_line: "Capital via 25-year bond; operations under workforce-development or parks-and-rec line"
+    benchmark_comparison: "$2.28/hh/yr vs town library at $42/hh/yr and rec center at $68/hh/yr — well below comparable civic services; cost-per-beneficiary comparable when adjusted for specialized-user fraction"
+    staffing_model:
+      role: "contracted master smith + apprentice (part-time)"
+      operator_fte: 1.0
+      wage_assumption: 68000   # USD/yr; references SCALES.md scale-appropriate median skilled-trades wage
+      wage_source: "corpus/program/SCALES.md §3 town-scale skilled-trades median"
+      hours: "40 hrs/wk production + administration"
+      hiring_notes: "Journeyman-or-master smith required; hiring pool is regional (100-mile radius typical); apprentice hired locally from workforce-development pipeline"
+    civic_externalities:
+      - "Apprentice training pipeline: produces 1–2 journeyman smiths per 3-year cycle, supplying regional repair capacity"
+      - "Emergency production capacity: forge can produce or repair critical metal components (brackets, fittings, tools) during supply-chain disruptions"
+      - "Repair culture: accessible civic forge reduces throwaway consumption of metal goods; repair-economy externality unpriced by market"
+      - "Resilience anchor: operational forge sustains downstream trades (leatherwork needs rivets, carpentry needs hardware, masonry needs metal anchors)"
 
 # Machine-readable simulation parameters
 sim_params:
@@ -313,10 +354,10 @@ Dated notes as the design evolves.
 - `status` + `version` + `supersedes` track iteration. Failed designs remain in the catalog marked `deprecated`, linked to what replaced them.
 - Multi-currency support: each entry declares its currency; FX conversion table (`corpus/program/CURRENCIES.md`) normalizes to a project base currency at evaluation time.
 - Regulatory notes are deliberately terse: three short lines to flag showstoppers, not a legal treatise.
-- **`market_price_per_unit`** is required for any entry with `lens_fit.market` set to `good` or `marginal` — the MARKET lens cannot evaluate without it. Uncited pricing is a P1 editorial finding.
-- **`operations_reality`** captures what the panel's Craft Practitioner (P-4) asks for and what the average-case sim_params miss: first-year failures, consumables lead time, variance / worst-month throughput, operator impact. Paper designs assume the average case; real shops die in the tail.
-- **`lens_context.cooperative`** is required for any entry with `lens_fit.cooperative` set to `good` or `marginal`. A coop label without a governance sketch is a romantic shorthand; this block forces the author to state membership, rules, monitoring, sanctions, conflict resolution, and Ostrom-principle alignment.
-- **`lens_context.civic`** is required for any entry with `lens_fit.civic` set to `good` or `marginal`. Names the political coalition, council-vote estimate, relationship to existing private operators, governance form, and municipal budget line. A civic label without a political path is a wish.
+- **`market_price_per_unit`** is required for any entry with `lens_fit.market` set to `good` or `marginal` — the MARKET lens cannot evaluate without it. Uncited pricing is a P1 editorial finding. `pricing_notes` must name the industrial-competitor baseline price (see `economics.industrial_baseline_price` when `lens_fit.market` is `good` or `marginal`).
+- **`operations_reality`** captures what the panel's Craft Practitioner (P-4) asks for and what the average-case sim_params miss: first-year failures (each with a `serviceable_by` value — `operator | journeyman | specialist`), a `maintenance_schedule` object with `performed_by` per cadence, `startup_shutdown_overhead_per_day_min` (non-productive operator minutes deducted when calculating throughput realism), `max_active_hours_realism_note` (declares whether the claimed `max_active_hours_per_week` is gross or derated), consumables lead time, variance / worst-month throughput, and operator impact. Paper designs assume the average case; real shops die in the tail.
+- **`lens_context.cooperative`** is required for any entry with `lens_fit.cooperative` set to `good` or `marginal`. A coop label without a governance sketch is a romantic shorthand; this block forces the author to state membership, rules, monitoring, sanctions, conflict resolution, Ostrom-principle alignment, `member_amendment_process` (how rules can be changed), `legal_form` (registered entity status), and `scale_fit_note` (whether the governance rules are calibrated to the population size where this entry is viable).
+- **`lens_context.civic`** is required for any entry with `lens_fit.civic` set to `good` or `marginal`. Names the political coalition, council-vote estimate, relationship to existing private operators, governance form, municipal budget line, `benchmark_comparison` (per-household annual cost vs. a named analogous civic service such as library or rec center), `staffing_model` (named role, wage referencing `corpus/program/SCALES.md`, FTE, hours, and hiring-pool realism), and `civic_externalities` (list of public-goods externalities the facility generates that the market does not price). A civic label without a political path and a cost benchmark is a wish; without an externalities list it cannot justify civic investment over alternatives.
 
 ---
 
@@ -335,7 +376,7 @@ Each lens scores the same catalog entry with a different viability rule. Formula
 - Pass condition: break-even member count ≤ feasible member pool at that scale
 
 **CIVIC lens** (municipal, library / fire-department model)
-- Inputs: capital amortized over municipal lifespan (25–40 years), tax cost per resident, public use hours
+- Inputs: capital amortized over municipal lifespan (25–40 years), tax cost per resident, public use hours; `lens_context.civic.staffing_model` (staffing cost incorporated in annual_operating_cost when civic facility employs an operator); `lens_context.civic.benchmark_comparison` (referenced when evaluating whether the per-household cost is politically defensible relative to peer services)
 - Outputs: per-household annual cost, hours-of-use per capita
 - Pass condition: per-household cost ≤ threshold AND usage rate ≥ threshold
 
@@ -369,6 +410,8 @@ For each file: top 3–5 winning designs, one-line "why it wins here," implement
 
 **Pitch narrative** (`playbook/pitch/PITCH-NARRATIVE.md`).
 Single white-paper-style document: the problem (what changed when local production declined, what it costs communities); the approach (catalog-driven design + evaluation matrix + simulation); what we learned (winning patterns, failure modes, structural insights); the ask (pilot program outline, funding envelope, measurable milestones). Pitch cites the catalog and playbook as evidence.
+
+**Competitive response prompt (required section in pitch narrative, Phase 5).** The pitch must address the most plausible incumbent counter-move: if a local smithing cooperative or civic forge demonstrates viability, what is the most likely response from existing industrial or regional supply chains? (Price undercutting? Supply-chain lock-in of consumables? Regulatory lobbying?) Authors are not required to resolve this question in the design spec, but Phase 5 pitch authors must address it explicitly as a stress-test of the pitch narrative's durability.
 
 ---
 
@@ -406,12 +449,15 @@ The working hypothesis (Section 2) is validated if, across the 15 smithing catal
 
 If the 15 entries span the realistic design space (electric / propane / coal / induction / hybrid × single-owner / shared / civic × small / medium / large footprint) and **none achieves `win` under any lens at any scale**, this is a **scientific null**, not a project failure. The project deliverable in this case is a revised pitch: "modern smithing cannot be restored by equipment redesign alone in the three-scale developed-economy context; here is what the research reveals is actually required." This outcome is publishable and valuable. CERES pre-registers acceptance of null results.
 
+**Second-trade generalisability finding.** If smithing validates CERES's method but a second-trade attempt exposes a systemic issue — for example, food-safety regulation makes a Plan-C viability path for baking unworkable across all scales and organizational forms — that outcome is a **finding worth publishing**, not a project failure. The project should name that finding explicitly ("the CERES pipeline works for equipment-tractable trades; food-code trades require a regulatory-reform precondition outside the scope of equipment redesign"), update the working hypothesis accordingly, and continue. A finding that delimits the method's scope is a contribution. See Section 3 Smithing-as-template row for the related scope decision.
+
 ### 11.3 Failure
 
 The project is a failure only if:
 
 - Fewer than 15 entries are authored, or the authored entries do not span the realistic design space; OR
 - Editorial review finds systemic citation or numeracy failures that invalidate the results; OR
+- **Systematic editorial review failure:** 3 or more P1 findings per entry across more than half the catalog triggers a methodology-halt review before continuing. Continuing to produce entries without resolving a systemic methodological weakness is itself a failure mode; OR
 - The research corpus is too thin to evaluate the hypothesis one way or the other.
 
 Failure is a process outcome, not an evidence outcome. A rigorous null is success; a shoddy validation is failure.
