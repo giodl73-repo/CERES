@@ -4,7 +4,8 @@ name: Scaffolding and Framework Docs
 description: Non-trade-specific infrastructure every downstream plan depends on
 status: completed
 completed: 2026-04-19
-version: "1.0"
+last_modified: 2026-04-19
+version: "1.1"
 created: 2026-04-18
 phase: 0
 subsystem: scaffolding
@@ -607,6 +608,33 @@ Run these checks before declaring Plan A complete:
 - [ ] `TRACKER.md` reflects Plan A's actual state (completed when done).
 - [ ] `plans/README.md` frontmatter schema matches this plan's frontmatter.
 - [ ] Spec is unchanged (this plan implements, not amends, the spec).
+
+## Retrospective: Risks and Assumptions (added 2026-04-19 per P-6 audit)
+
+Plan A is complete (17/17 tasks). This section records what P-6 would have raised at kickoff had it been solicited then. Future plans should open their own equivalent section at authoring time, not retrospectively.
+
+### Risks and Objections
+
+- **Spec stability risk.** The working hypothesis, schema fields, and lens definitions were all live in spec v0.2 during execution. Any mid-plan spec change would have invalidated multiple in-flight tasks simultaneously (SCHEMA.md, ECONOMIC-LENSES.md, SCALES.md at minimum).
+- **Schema-divergence risk.** Plans B/C/D/E depend on fields defined in `catalog/SCHEMA.md`. If those fields were revised after downstream authors had already drafted entries against the v1.0 schema, silent divergence would accumulate.
+- **Authoring-heavy scope risk.** 17 markdown files dispatched as subagent tasks creates cost and consistency pressure. Each file is authored in a separate context; cross-file coherence depends on self-review checklists, not a shared working memory.
+- **Premature lock-in risk.** Framework docs authored in one pass may encode early decisions (e.g., field names, threshold values) that would have benefited from iterative refinement against real catalog entries.
+
+### Failure Modes (contingency paths)
+
+- **If spec revises mid-plan:** stop all in-flight tasks, re-ingest the revised spec section, diff against already-authored files, update affected files, then resume. The spec-amendment pathway in `docs/PIPELINE.md` governs this.
+- **If schema divergence is discovered** (e.g., Plan C entry schema does not match Plan A canonical): treat as a spec-amendment trigger — open a short amendment, update `catalog/SCHEMA.md`, and re-validate affected entries. Do not patch entries silently.
+- **If authoring cost spirals:** switch to reduced-review mode (one self-review pass instead of two), batch commits by logical group rather than one per task, and defer polish to a v1.1 pass after all tasks are drafted.
+- **If premature lock-in surfaces:** use the v1.1-style refactor pattern (as applied to `.craft/roles/` when RMM's dynamic-discovery pattern informed a role revision) — add fields, bump the schema version, document migration steps in the schema changelog.
+
+### Assumptions Now Made Explicit
+
+- Spec v0.2 was stable for Plan A's entire duration. This held — no mid-execution spec changes occurred.
+- `catalog/SCHEMA.md` is the canonical base schema; trade-specific extensions in `catalog/<trade>/SCHEMA.md` add fields under `trade_specific:` and never override or rename base fields.
+- Plans B/C/D/E will adopt the frontmatter convention documented in `plans/README.md` (Task 17 output); they do not define their own competing frontmatter conventions.
+- Chronicle/RMM/Marathon patterns will continue to inform CERES evolution (e.g., the v1.1 role refactor absorbed RMM's dynamic-discovery and Marathon's weighted-axes insights). Future spec amendments should cite which sibling-project pattern they are absorbing and why.
+
+---
 
 ## Handoff
 
