@@ -33,6 +33,7 @@ First-class top-level directories. Never use `docs/superpowers/...` paths.
 | `simulations/` | Phase 4 — layered Tier A (scenario comparator), Tier B (system dynamics), Tier C (agent-based). *(upcoming)* |
 | `playbook/` | Phase 5 — per-trade, per-scale winning-designs files and pitch narrative. *(upcoming)* |
 | `.craft/` | Review organization. Role definitions in `.craft/roles/`. See Section 5. |
+| `agents/` | Chronicle-pattern agent definitions. *(upcoming)* |
 | `skills/` | Reusable pipeline skills. See Section 6. |
 | `reviews/` | Panel and editorial review outputs. Filenames identify artifact, round, and reviewer. |
 | `scoring/` | Quality rubric (`scoring/RUBRIC.md`). *(upcoming)* |
@@ -56,11 +57,12 @@ First-class top-level directories. Never use `docs/superpowers/...` paths.
 
 - **Markdown with YAML frontmatter** for all catalog entries and plans. Simulation code
   ingests catalog frontmatter directly — malformed YAML breaks the pipeline.
-- **Match existing patterns.** Read `catalog/smithing/SCHEMA.md` (upcoming) before
-  authoring any catalog entry. Read an existing entry before authoring the next one.
-- **Don't invent schema fields.** If the schema needs a new field, amend
-  `catalog/<trade>/SCHEMA.md` explicitly and document the change. Silent additions break
-  simulation ingestion.
+- **Match existing patterns.** Read `catalog/SCHEMA.md` (upcoming) before authoring any
+  catalog entry. Trade-specific fields are defined in `catalog/<trade>/SCHEMA.md`. Read
+  an existing entry before authoring the next one.
+- **Don't invent schema fields.** If a new trade-agnostic field is needed, amend
+  `catalog/SCHEMA.md` (upcoming) and document the change. Trade-specific fields go in
+  `catalog/<trade>/SCHEMA.md`. Silent additions break simulation ingestion.
 - **Status lifecycle:** `draft` → `reviewed` → `validated` → (`deprecated` | `superseded`).
   Deprecated entries stay in the catalog, linked to what replaced them.
 - **Multi-currency:** declare `currency:` in every entry. FX conversion uses
@@ -74,9 +76,9 @@ Role definitions: `.craft/roles/ROLE.md`
 
 | Tier | Voices | When |
 |---|---|---|
-| **Panel** (`panel/`) | 6 permanent — P-1 Market Economist, P-2 Commons Theorist, P-3 Civic Steward, P-4 Craft Practitioner, P-5 Historian, P-6 Skeptical Funder | Every artifact: spec, plan, catalog entry, playbook file, pitch narrative |
-| **Editorial** (`editorial/`) | 3 permanent — E-1 Citation Auditor, E-2 Scope Keeper, E-3 Numeracy Checker | Validation gate: required before any artifact advances to `validated` |
-| **Board** (`board/`) | Per-trade domain experts, assembled on demand | Expert claims needing domain defense; not permanent |
+| **Panel** (`.craft/roles/panel/`) | 6 permanent — P-1 Market Economist, P-2 Commons Theorist, P-3 Civic Steward, P-4 Craft Practitioner, P-5 Historian, P-6 Skeptical Funder | Every artifact: spec, plan, catalog entry, playbook file, pitch narrative |
+| **Editorial** (`.craft/roles/editorial/`) | 3 permanent — E-1 Citation Auditor, E-2 Scope Keeper, E-3 Numeracy Checker | Validation gate: required before any artifact advances to `validated` |
+| **Board** (`.craft/roles/board/`) | Per-trade domain experts, assembled on demand | Expert claims needing domain defense; not permanent |
 
 The six panel voices create deliberate friction across the core productive
 tensions of local-production economics (profit vs. commons, commons vs.
@@ -96,7 +98,7 @@ Skills operationalize the review tiers. Each lives in `skills/<name>/SKILL.md`.
 | Skill | Tier |
 |---|---|
 | `skills/ceres-panel/` | Panel — run 6-voice review on any CERES artifact |
-| `skills/ceres-editorial/` | Editorial — citation / scope / numeracy pass before `validated` |
+| `skills/ceres-editorial/` | Editorial — promotion gate from `reviewed` to `validated`; citation / scope / numeracy pass (panel review must come first) |
 | `skills/ceres-board/` | Board — trade-specific domain expert review on a contested claim |
 
 Additional authoring and orchestration skills are planned for Phase 2
