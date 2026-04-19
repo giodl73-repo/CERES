@@ -44,7 +44,7 @@ what the chapters establish.
 |---|---|---|---|---|
 | **Hearth form** | Bowl-shaped depression in masonry or clay; open-hearth design; self-standing or lean-to structure | Large-scale: blast furnace with tuyere; village-scale: clay or stone open hearth | Clay hearth (*ro*) on wooden or stone platform within a wood-and-earth workshop (*kaji-ya*); compact | Single-room or single-bay timber-framed structure; open hearth; design modified for coal when rail supply arrived |
 | **Hearth size** | Floor area ~20–40 m² (whole forge structure) [CITATION-NEEDED: archaeological evidence, England/Low Countries] | Large ironworks: industrial-scale furnace complex; village forge: minimal capital installation, dimensions unspecified in sources | ~15–40 m² workshop footprint [CITATION-NEEDED: forge dimensions from historical archaeology or ethnographic record] | ~15–30 m² estimated; smallest footprint of the four anchor cultures [CITATION-NEEDED: Wallace, *Rockdale*, or equivalent] |
-| **Bellows type** | Bag bellows (attested in northern European iconography); double-action box bellows possible but pre-1500 attestation requires confirmation [CITATION-NEEDED: northern European iconographic evidence]; treadle variants where attested | Village-scale: hand- or foot-operated bellows; large ironworks: hydraulic (waterwheel-driven) bellows by Northern Song period [Needham 1965, vol. IV pt. 2] | *Fuigo*: double-acting wooden box with sliding piston; both push and pull strokes supply air, producing continuous blast [CITATION-NEEDED: technical description of *fuigo* mechanism] | Hand-operated or foot-operated bellows; no documented water-power use in typical frontier forges; same functional principle as European types |
+| **Bellows type** | Bag bellows (attested); double-action box bellows possible but unconfirmed before ca. 1500 — see Placeholder #26 in `research/trades/smithing/SOURCES.md`; treadle variants where attested | Village-scale: hand- or foot-operated bellows; large ironworks: hydraulic (waterwheel-driven) bellows by Northern Song period [Needham 1965, vol. IV pt. 2] | *Fuigo*: double-acting wooden box with sliding piston; both push and pull strokes supply air, producing continuous blast [CITATION-NEEDED: technical description of *fuigo* mechanism — see Placeholder #19 in SOURCES.md] | Hand-operated or foot-operated bellows; no documented water-power use in typical frontier forges; same functional principle as European types |
 | **Anvil mass** | ~30–150 kg; beak-type horn anvil with hardened-steel face on iron body (principal capital asset of the forge) [CITATION-NEEDED: medieval anvil weights and forms, English or German sources] | Village-scale: large iron mass or stone anvil; large ironworks operated with cast-iron infrastructure rather than individual hand-forging anvils | Mass unspecified in sources; consistent with other pre-industrial utility forge forms by analogy | Largely industrially produced by mid-century; anvil mass consistent with European utility-forge range; specific weights not recorded in sources consulted [CITATION-NEEDED: Gordon 1996 or equivalent] |
 | **Auxiliary tools** | No documented water-power in typical guild or village forge; trip hammers attested in some larger medieval mills [CITATION-NEEDED: trip hammers in medieval English metalwork] | Large ironworks: hydraulic trip hammers and continuous water-powered bellows; village-scale: hand tools only [Needham 1965, vol. IV pt. 2; Hartwell 1962] | No water-power in documented utility smithing; hand tools only; *tatara* furnace (sword-smith context) uses forced-air but not hydraulic power | No water-power; hand and foot tools only; smith's tools were largely industrially manufactured by mid-19th century [CITATION-NEEDED: Gordon 1996; Hounshell 1984] |
 | **Fuel** | Charcoal (dominant through this period); coal not significant in English blacksmithing until late medieval and early modern period [CITATION-NEEDED: charcoal vs. coal transition, 14th–16th c.; Wrigley 2010] | Village-scale: charcoal or locally available coal depending on geography; large ironworks: coal and coke by 10th–11th century Northern Song [Hartwell 1962]; charcoal remained dominant in southern China [CITATION-NEEDED: deforestation and fuel pressure in Southern Song] | Charcoal (*sumi*); coal use minimal due to lack of mining infrastructure and distribution networks [CITATION-NEEDED: Morris-Suzuki on Tokugawa fuel supply] | Charcoal in forested east; coal in rail-served communities; transition followed railroad, not technical preference [CITATION-NEEDED: frontier fuel transition and railroad chronology] |
@@ -127,8 +127,8 @@ Section 2.
 
 | Product category | Medieval N. Europe | Song China | Tokugawa Japan | American Frontier |
 |---|---|---|---|---|
-| **Commodity hardware (nails, fasteners)** | Present; significant urban sideline; nail production was labor-intensive and partly delegated to apprentices and specialist nailers; displaced by Birmingham hardware trade from late 18th century [CITATION-NEEDED: Birmingham nail trade] | Present; nails and construction brackets at village and large-scale levels; cast iron nails feasible at large-scale | Present (*kugi*) at village and castle-town level; commodity tier | Present but declining from ca. 1790s; machine-cut nails commercially available from 1790s onward; wire nails from 1880s completed displacement [CITATION-NEEDED: Atack and Passell on American manufacturing] |
-| **Tools (agricultural, trade)** | Dominant output: plowshares, coulters, mattocks, hoes, scythes, sickle blades, adzes; repair predominated over new production for most smiths [Langdon 1986] | Agricultural tools: significant state procurement and distribution function; state distributed plowshares to farming households as deliberate agrarian investment [CITATION-NEEDED: Song state agricultural tool distribution] | Agricultural tools dominant (*kuwa*, *kama*, weeding knives); carpentry tools as higher-value segment requiring differential hardness (laminated steel-to-iron) [CITATION-NEEDED: *kajiya* distribution and carpenter-tool production] | Agricultural implement fittings (plow shares, coulters, harrow teeth); by mid-century role shifted toward repair and modification as McCormick-type factory implements arrived [CITATION-NEEDED: Gordon on American iron and steel] |
+| **Commodity hardware (nails, fasteners)** | Present; significant urban sideline; nail production was labor-intensive and partly delegated to apprentices and specialist nailers [CITATION-NEEDED: Birmingham nail trade] | Present; nails and construction brackets at village and large-scale levels; cast iron nails feasible at large-scale | Present (*kugi*) at village and castle-town level; commodity tier | Present in the period studied; displacement timeline is addressed in DECLINE-VERDICT.md §2.4 [CITATION-NEEDED: Atack and Passell on American manufacturing] |
+| **Tools (agricultural, trade)** | Dominant output: plowshares, coulters, mattocks, hoes, scythes, sickle blades, adzes; repair predominated over new production for most smiths [Langdon 1986] | Agricultural tools: significant state procurement and distribution function; state distributed plowshares to farming households as deliberate agrarian investment [CITATION-NEEDED: Song state agricultural tool distribution] | Agricultural tools dominant (*kuwa*, *kama*, weeding knives); carpentry tools as higher-value segment requiring differential hardness (laminated steel-to-iron) [CITATION-NEEDED: *kajiya* distribution and carpenter-tool production] | Agricultural implement fittings (plow shares, coulters, harrow teeth); factory-implement displacement timeline is addressed in DECLINE-VERDICT.md §2.4 [CITATION-NEEDED: Gordon on American iron and steel] |
 | **Repair work (horseshoes, wagon parts, tool maintenance)** | Dominant economic function for rural smiths; horseshoes were most frequent single product in documented forge accounts; repair was non-discretionary demand [Langdon 1986; Swanson 1989] | Repair present at village scale; large ironworks did not perform individual repair — that was a village-tier function; repair was geographically local by nature [Elvin 1973] | Repair structurally embedded as major revenue stream; Tokugawa rural households repaired rather than replaced implements, making repair a persistent demand [Hanley 1997] | Dominant output by the 1850s–1890s; horseshoe demand was the single largest revenue category; wagon tires, linchpins, clevis hooks; service-business model rather than manufacturing [CITATION-NEEDED: Schlereth 1991] |
 | **Specialty / artistic / armory** | Weapons and armor in distinct guild structures concentrated in specific towns (Solingen); village smith did not produce weapons [CITATION-NEEDED: armorer guild separation from blacksmith guild, Rhineland] | State-monopoly weapons production; private military arms production regulated and often prohibited; weapons were a major output of state ironworks [CITATION-NEEDED: Song state control of weapons-grade iron] | Sword smiths (*katana-kaji*): small prestige-market specialists, not the economic template; constituted minority of all smiths; regulated and licensed separately [Leupp 1992] | No documented specialty armory in frontier smithy context; ornamental ironwork and bespoke metalwork as a minority revenue stream |
 
@@ -203,7 +203,9 @@ Song's geography, not a transferable model.
 
 ### Universal to Smithing (across all four cultures)
 
-The following features are attested in all four anchor cultures without exception:
+The following features are attested in all four anchor cultures without exception.
+REQUIREMENTS.md R-01 through R-24 encode these universals as the catalog entry
+specification; this section is the descriptive record they were abstracted from.
 
 - **Forced-air combustion.** Every forge used some mechanism to deliver air above
   ambient pressure to the fire. This was not culturally contingent; it was a physical
@@ -256,7 +258,11 @@ The following features are attested in all four anchor cultures without exceptio
   in northern Europe, hereditary *jianghu* registration in Song China, *detchi-boko*
   indenture in Japan, informal apprentice practice in the American frontier. Each
   culture found a different institutional mechanism for the same economic function:
-  labor below market cost.
+  labor below market cost. The universal finding (household labor as an uncosted
+  structural input) is the falsifier-relevant constraint for modern catalog entries —
+  see REQUIREMENTS.md §6 on the labor-regime falsifier; the contingent institutional
+  forms (guild indenture vs. *jianghu* vs. *detchi-boko*) are historically significant
+  but do not individually constrain modern design.
 
 - **State involvement.** Song China had the deepest and most direct state involvement,
   including state ownership of large ironworks, administrative labor assignment, and
@@ -335,7 +341,7 @@ Brief one-row summaries per culture. Deeper analysis is deferred to
 
 | Culture | Decline pattern (summary) | Canonical verdict |
 |---|---|---|
-| **Medieval N. Europe** | Commodity hardware (nails, standard fittings) lost to Birmingham trade and factory production; rural repair smithing persisted until horse-drawn agriculture collapsed in late 19th–early 20th c.; guild-controlled urban smithing eroded earlier through proto-industrial competition; specialty/custom niches survived [CITATION-NEEDED: Birmingham nail trade and price collapse; persistence of rural smithing into 19th c.] | `mixed` — combining `demand-collapse` (rural repair tied to horse agriculture), `decline` (commodity hardware), and `restructuring` (specialty niches) |
+| **Medieval N. Europe** | Commodity hardware (nails, standard fittings) lost to Birmingham trade and factory production; rural repair smithing persisted until horse-drawn agriculture collapsed in late 19th–early 20th c.; guild-controlled urban smithing eroded earlier through proto-industrial competition; specialty/custom niches survived [CITATION-NEEDED: Birmingham nail trade and price collapse; persistence of rural smithing into 19th c.] | `mixed` — per-segment: commodity hardware = `decline`; rural repair tied to horse agriculture = `demand-collapse`; specialty/custom niches = `restructuring`. See DECLINE-VERDICT.md §2.1 for full analysis. |
 | **Song China** | Mongol invasion (completed 1279) destroyed northern ironworks infrastructure and depopulated iron-producing regions; Yuan dynasty reorganized demand priorities; large-scale organizational form dissolved when state demand anchor was eliminated; village-scale smithing continued as restructuring [Hartwell 1962; Elvin 1973] | Large-scale tier: `demand-collapse` + `regulatory-dissolution`; village tier: `restructuring` |
 | **Tokugawa Japan** | Meiji Restoration (1868) abolished estate system; 1876 sword-ban (*haitōrei*) destroyed samurai-class sword market by decree; commodity utility smithing (nails, standard agricultural tools) declined via Meiji factory competition by 1890s–1910s; repair and custom-work tier restructured into surviving niches; sword smithing underwent `regulatory-dissolution` then state-managed `restructuring` into licensed cultural preservation [Morris-Suzuki 1994; CITATION-NEEDED: Beasley, *The Meiji Restoration*] | Commodity tier: `decline`; repair/custom tier: `restructuring`; sword smithing: `regulatory-dissolution` + `restructuring` (regulatory preservation) |
 | **American Frontier** | Stage 1 (mid-19th c.): nail and hardware manufacturing displaced; Stage 2 (1910s–1930s): horseshoe demand collapsed with automobile displacement of working horses [CITATION-NEEDED: US horse population statistics, 1900–1940]; Stage 3 (1930s onward): repair niche eroded by service stations and hardware retail; clearest documented `decline` sequence of any anchor culture | `decline` driven by `demand-collapse` (working horse eliminated by automobile) |
@@ -350,11 +356,12 @@ sharpest documented divergences in form across the four anchor cultures.
 **Divergence 1: Scale of production.** The range of production scales within the anchor
 set is extreme. Song China's large-scale state ironworks operated at output levels
 Hartwell compared (with documented uncertainty) to early 18th-century Britain [Hartwell
-1962; scale caveat carried from Song chapter]. The American frontier smith was a
-single-operator repair business operating in a town of hundreds of residents. These are
-not different points on the same scale; they are different organizational forms entirely.
-Any synthesis that posits a single "pre-industrial smithing" template suppresses this
-divergence.
+1962; scale caveat: tonnage figures are order-of-magnitude estimates; von Glahn 2016 is
+the required verification source before these figures can be treated as confirmed]. The
+American frontier smith was a single-operator repair business operating in a town of
+hundreds of residents. These are not different points on the same scale; they are
+different organizational forms entirely. Any synthesis that posits a single "pre-industrial
+smithing" template suppresses this divergence.
 
 **Divergence 2: Fuel type and energy source.** Song China's large-scale ironworks used
 coal and coke from the 10th–11th century; Japanese utility smiths used charcoal
@@ -381,9 +388,9 @@ labor through corvée and *jianghu* registration, and state procurement as a pri
 demand driver for agricultural tools [Hartwell 1962; Elvin 1973]. Medieval Europe's
 guild states regulated market entry but did not own production or create demand. Tokugawa
 Japan used estate classification and domain licensing. The American frontier had minimal
-state involvement. The CERES working hypothesis is implicitly tested against a
-market-demand context; the Song case shows that historical large-scale viability required
-a state demand anchor that market demand alone could not supply.
+state involvement. For the analytical implications of this divergence for CERES viability
+assessments, see DECLINE-VERDICT.md §2.2 and §5 (large-capacity demand-anchor
+requirement).
 
 **Divergence 5: Weapons-production relationship.** As detailed in Section 4, each
 culture handled the integration of weapons production into smithing through a structurally
@@ -406,8 +413,11 @@ listed below. Full bibliography is deferred to `research/trades/smithing/SOURCES
 2. Hartwell, Robert. 1967. "A Cycle of Economic Change in Imperial China: Coal and Iron
    in Northeast China, 750–1350." *Journal of the Economic and Social History of the
    Orient* 10(1): 102–159.
-3. Needham, Joseph. 1958. *Science and Civilisation in China*, vol. IV. Cambridge:
-   Cambridge University Press.
+3. Needham, Joseph. 1965. *Science and Civilisation in China*, vol. IV pt. 2:
+   *Physics and Physical Technology — Mechanical Engineering*. Cambridge University
+   Press. [NOTE: an earlier version of this sources list cited "1958, vol. IV" — that
+   is an error corrected here; the relevant content is in Vol. IV Part 2, published
+   1965.]
 4. Elvin, Mark. 1973. *The Pattern of the Chinese Past*. Stanford: Stanford University
    Press.
 5. Ogilvie, Sheilagh. 2019. *The European Guilds: An Economic Analysis*. Princeton

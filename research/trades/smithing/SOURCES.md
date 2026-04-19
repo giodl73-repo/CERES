@@ -12,7 +12,9 @@ derived_from:
   - research/trades/smithing/REQUIREMENTS.md
   - research/trades/smithing/HISTORICAL-FORMS.md
   - research/trades/smithing/DECLINE-VERDICT.md
-verified_source_count: 26
+verified_source_count: 22
+partial_source_count: 2
+unverified_high_confidence_source_count: 2
 placeholder_count: 58
 ---
 
@@ -40,7 +42,7 @@ Confidence tiers:
 |---|---|---|
 | de Vries, Jan. 2008. *The Industrious Revolution: Consumer Behavior and the Household Economy, 1650 to the Present*. Cambridge University Press. | **VERIFIED** | Household labor regimes and domestic economy as structural framework. NOTE: covers 1650-to-present; used in medieval chapter as an extended structural argument backward. Medieval-specific evidence still required. |
 | Mokyr, Joel. 1990. *The Lever of Riches: Technological Creativity and Economic Progress*. Oxford University Press. | **VERIFIED** | Industrialization mechanisms; why industrial production displaced craft trades; agricultural mechanization timeline. |
-| Mokyr, Joel. 2002. *The Gifts of Athena: Historical Origins of the Knowledge Economy*. Princeton University Press. | **VERIFIED** | Pre-industrial technical knowledge and its economic context; background for guild and craft-knowledge claims. |
+| Mokyr, Joel. 2002. *The Gifts of Athena: Historical Origins of the Knowledge Economy*. Princeton University Press. | **VERIFIED** | Pre-industrial technical knowledge and its economic context; background for guild and craft-knowledge claims. NOTE: This source does not appear as an inline citation in any of the four synthesis documents (REQUIREMENTS.md, HISTORICAL-FORMS.md, DECLINE-VERDICT.md, SOURCES.md) or in the four cultural chapters beyond the medieval-northern-europe chapter's sources section. It is carried here as an anticipated background citation for guild and craft-knowledge arguments. If Plan C authorship does not cite it directly, consider removing from the synthesis bibliography at that stage. |
 | Pomeranz, Kenneth. 2000. *The Great Divergence: China, Europe, and the Making of the Modern World Economy*. Princeton University Press. | **VERIFIED** | Comparative framework for Chinese vs. European economic trajectories; Song and Ming context. Does not focus on iron specifically. |
 
 ---
@@ -130,10 +132,17 @@ These are sources named in `[CITATION-NEEDED: ...]` entries with enough bibliogr
 | PARTIAL | 2 |
 | UNVERIFIED-BUT-HIGH-CONFIDENCE | 2 |
 | Named-in-placeholders (PLACEHOLDER awaiting verification) | 4 + 1 regulatory doc |
-| **Total distinct named sources** | **26 named + ~58 fully unidentified placeholders** |
+| **Total distinct named sources (any verification status)** | **26** |
+| **Fully unidentified placeholder topics** | **~58** |
+
+**Frontmatter accuracy note:** `verified_source_count: 22` reflects VERIFIED sources only.
+PARTIAL and UNVERIFIED-BUT-HIGH-CONFIDENCE sources are tracked separately as
+`partial_source_count: 2` and `unverified_high_confidence_source_count: 2`.
+These are not VERIFIED sources; they require the corrections and checks noted below
+before being promoted.
 
 Note on PARTIAL corrections required before Plan C:
-1. **Needham**: Change all instances of `Needham 1958, vol. IV` to `Needham 1965, vol. IV pt. 2` across all seven documents.
+1. **Needham**: Change all instances of `Needham 1958, vol. IV` to `Needham 1965, vol. IV pt. 2` across all seven documents. **Status:** Corrected in all synthesis documents (REQUIREMENTS.md §11, HISTORICAL-FORMS.md §9 item 3, DECLINE-VERDICT.md §6 item 20) — propagation complete.
 2. **Wallace**: Change subtitle in `research/cultures/american-frontier/smithing.md` Sources entry #2 from "Early Industrial Age" to "Early Industrial Revolution."
 
 ---
@@ -141,6 +150,8 @@ Note on PARTIAL corrections required before Plan C:
 ## Placeholder Audit
 
 The author's verification queue. Every `[CITATION-NEEDED: ...]` placeholder across the seven Plan B documents is listed here. Rows are sorted by urgency: items blocking downstream Plan C synthesis appear first; items needed for polish only appear last.
+
+**Deduplication methodology:** Placeholder topics are deduplicated across all occurrences. A single research gap that appears multiple times inline across documents and/or in sources lists is counted once in this table. The four cultural chapters alone contained approximately 117 inline placeholder lines (47 + 19 + 32 + 19); these have been collapsed to 58 distinct citation gaps by merging multiple occurrences of the same underlying gap. The row count here represents distinct gaps, not total placeholder occurrences. Items 1 and 3, though arising from different document contexts, represent the same underlying research action (read von Glahn 2016 against Hartwell's figures) and are both retained here to ensure both document-context fixes are tracked separately — see item 3's note.
 
 **Urgency key:**
 - **P1-BLOCKING** — synthesis cannot proceed without this; Plan C catalog entries will mistate facts or carry unacceptable uncertainty if this remains unresolved
@@ -152,7 +163,7 @@ The author's verification queue. Every `[CITATION-NEEDED: ...]` placeholder acro
 |---|---|---|---|---|---|
 | 1 | Hartwell tonnage comparison: Northern Song iron output "comparable to early 18th-century British output" | No cross-check of Hartwell's specific figures against current scholarship | von Glahn 2016 (already VERIFIED; needs targeted read) | chn §Smith's Place; REQUIREMENTS.md §3; DECLINE-VERDICT §2.2 | **P1-BLOCKING** |
 | 2 | US horse population peak ca. 1900 and decline curve through 1940 | No primary or secondary statistical source cited for the peak date and decline rate | Olmstead & Rhode agricultural history series; USDA historical census of agriculture | afr §8; DECLINE-VERDICT §2.4 | **P1-BLOCKING** |
-| 3 | von Glahn 2016 verification of Hartwell tonnage (appears as its own placeholder) | Listed as a blocking dependency in REQUIREMENTS.md §3 and DECLINE-VERDICT | von Glahn 2016 ch. on Song and Yuan iron | REQUIREMENTS.md §3; DECLINE-VERDICT §2.2 | **P1-BLOCKING** (same as #1; deduplicated) |
+| 3 | von Glahn 2016 verification of Hartwell tonnage — specifically as a blocking dependency named in REQUIREMENTS.md §3 | Same underlying research action as #1 (read von Glahn 2016 against Hartwell's figures) but arises in a different document context and requires a separate textual fix in REQUIREMENTS.md §3's caveat box once resolved | von Glahn 2016 ch. on Song and Yuan iron | REQUIREMENTS.md §3; DECLINE-VERDICT §2.2 | **P1-BLOCKING** (same research action as #1; fix #1 context in song-china chapter AND fix #3 context in REQUIREMENTS.md §3 separately) |
 | 4 | Archaeometallurgy/experimental-archaeology temperature measurements confirming pre-industrial forge operating ranges (800–1000°C shaping, 1100–1300°C welding) | No experimental source cited for the temperature ranges that underpin every R-0x requirement | Tylecote 1992 appendix; Crew & Crew experimental archaeology; Journal of Archaeological Science | mne §Forge; mne §Functional Requirements; REQUIREMENTS.md §2 | **P1-BLOCKING** |
 | 5 | Medieval forge throughput — manorial-account data; Langdon 1986 primary check | Horseshoe and plowshare output figures in mne and REQUIREMENTS.md are author estimates; not drawn from Langdon | Langdon 1986 (already VERIFIED — locate the manorial-account data in the text) | mne §Products; mne §Functional Requirements; REQUIREMENTS.md §3 | **P1-BLOCKING** |
 | 6 | Charcoal forge thermal output (kWh per active hour) — cited as ~5–8 kWh in mne §Functional Requirements | This figure is flagged as "MUST BE SOURCED OR REMOVED BEFORE REQUIREMENTS.MD CITES IT" | Experimental-archaeology measurement; Tylecote 1992; or remove the figure | mne §Functional Requirements | **P1-BLOCKING** |
@@ -215,6 +226,8 @@ The author's verification queue. Every `[CITATION-NEEDED: ...]` placeholder acro
 
 The following items from the Placeholder Audit should be resolved before Plan C authorship begins. Each is listed with the reason it is load-bearing for synthesis.
 
+**Sequencing note for researchers:** Items 1+3 (von Glahn verification of Hartwell tonnage) can be resolved in a single targeted read of von Glahn 2016 if the reader marks both the Song iron-output discussion and the Yuan transition section simultaneously. Items 4+5 (archaeometallurgy temperature confirmation and charcoal kWh figure) can potentially be resolved in the same specialist literature search — Tylecote 1992 appendix and the Crew & Crew experimental archaeology program address both questions. Batching these searches saves research time.
+
 | Priority | Item | Why It Blocks Plan C |
 |---|---|---|
 | 1 | **von Glahn 2016 verification of Hartwell tonnage** (Placeholders #1 / #3) | Every Plan C large-capacity catalog entry that draws on Song-era scale claims must carry the Hartwell tonnage caveat *or* cite a resolved verification. Until von Glahn 2016 is read against Hartwell's specific figures, the caveat cannot be lifted and the scale claim cannot be made with confidence. This is the single most recurring mandatory caveat across all seven documents. |
@@ -232,9 +245,11 @@ The following items from the Placeholder Audit should be resolved before Plan C 
 
 - [x] All 7 source documents scanned
 - [x] Deduplicated — no source appears twice; sources spanning multiple documents consolidated to single entry
-- [x] Frontmatter counts accurate: 26 distinct named sources (22 VERIFIED + 2 PARTIAL + 2 UNVERIFIED-BUT-HIGH-CONFIDENCE + 4 probable-but-unverified named in placeholders — total 30 including those; `verified_source_count: 26` reflects named sources with any verification status); 58 placeholder audit rows
+- [x] Frontmatter counts accurate: `verified_source_count: 22` (VERIFIED only); `partial_source_count: 2`; `unverified_high_confidence_source_count: 2`; 26 total distinct named sources with any verification status; 58 placeholder audit rows
+- [x] Deduplication methodology documented in Placeholder Audit preamble
 - [x] Every `[CITATION-NEEDED: ...]` in the 7 docs has a row in the placeholder audit
-- [x] Verification priority lists synthesis-blocking items first
+- [x] Verification priority lists synthesis-blocking items first, with sequencing note
 - [x] Confidence tiers match `reviews/CHECK-plan-b-citations.md` where applicable
 - [x] No `docs/superpowers/...` paths
 - [x] No new fabricated citations introduced
+- [x] Needham 1965 correction propagation complete across all synthesis documents (HISTORICAL-FORMS.md §9 item 3 corrected)

@@ -9,7 +9,8 @@ derived_from:
   - research/cultures/song-china/smithing.md
   - research/cultures/tokugawa-japan/smithing.md
   - research/cultures/american-frontier/smithing.md
-sources_count: 28
+sources_count: 24
+placeholder_count: 4
 ---
 
 # Smithing: Cross-Cultural Functional Requirements
@@ -59,40 +60,11 @@ degrading its properties.
 
 ### How each culture achieved the temperature envelope
 
-**Charcoal + hand bellows (all four cultures at village/small scale).** Without
-forced air, a charcoal hearth reaches approximately 700°C — adequate for annealing
-but insufficient for shaping. Bellows-forced air raises the temperature to the
-900–1100°C shaping range and, at full blast, into the welding range
-[CITATION-NEEDED: charcoal forge thermal output with and without bellows, experimental
-archaeology source; see also medieval-northern-europe chapter §Forge].
-
-**Coal + bellows (Song-era China large ironworks, American frontier post-railroad,
-19th-century industrial Europe).** Coal with forced air achieves the same
-temperature envelope as charcoal. The Song transition from charcoal to coal in
-northern China ironworks is documented from the 10th–11th centuries [Hartwell 1962].
-The American frontier transition from charcoal to coal followed railroad freight
-economics, not technical preference [Atack and Passell 1994].
-
-**Hydraulic bellows (Song China large ironworks only).** Waterwheel-driven bellows
-provided continuous forced air without relying on hand labor, sustaining high
-temperatures across long production runs [Needham 1965, vol. IV pt. 2].
-
-**Fuigo double-acting piston bellows (Tokugawa Japan).** The *fuigo*'s double-acting
-piston delivered continuous blast on both push and pull strokes, unlike single-action
-European bag bellows that delivered air only on the compression stroke
-[CITATION-NEEDED: technical description of *fuigo* mechanism; Tokugawa chapter §3].
-Both designs achieved the required temperature ranges; the *fuigo* provided more
-continuous airflow per operator effort.
-
-**Divergence note.** The double-acting piston bellows (fuigo) was standard in
-Tokugawa Japan. The medieval European record shows bag bellows as the dominant type,
-with double-action box bellows appearing in later periods; its use in northern Europe
-specifically before ca. 1500 is not firmly established [CITATION-NEEDED: medieval
-bellows types, northern European iconographic evidence]. The Song ironworks used
-hydraulic bellows at large scale. All three designs achieved the same temperature
-requirements; the divergence is in air-delivery mechanism, not functional outcome.
-Modern motor-driven blowers provide the functional equivalent of any of these designs
-with lower labor input.
+For how each culture physically achieved these temperatures — bellows mechanisms,
+fuel types, hearth forms, and the specific forced-air systems used across the four
+anchor cultures — see `research/trades/smithing/HISTORICAL-FORMS.md` Table 1
+(Physical Forge Characteristics by Culture). The requirement here is the temperature
+envelope itself; the implementation forms are forms-document territory.
 
 ---
 
@@ -112,7 +84,9 @@ reasoning or from structural analogy across comparable operations.
 | Tokugawa Japan | Simple nails | 20–50 | 6–8 | Analogical estimate [CITATION-NEEDED: Tokugawa chapter §4 analogical comparator note] |
 | Tokugawa Japan | Medium hardware | 8–15 | 6–8 | Same |
 | Tokugawa Japan | Edge tools (with hardening) | 2–5 | 6–8 | Same |
-| American frontier | Horseshoes (fitting) | Irregular; bursty | 4–8 | Structural inference; chapter 4 §9 |
+| American frontier | Horseshoes (fitting) | *Irregular; bursty* — see note | 4–8 | Structural inference; chapter 4 §9 |
+
+**Note on the American frontier row.** The frontier entry carries a qualitative descriptor ("Irregular; bursty") rather than a numeric estimate, because the frontier repair-shop model was demand-driven rather than production-scheduled. This row is not comparable to the numeric rows above; a Plan C `sim_params` author cannot apply the same throughput-per-day reasoning to it. The frontier row documents the production *pattern* (reactive, event-driven horseshoeing and repair) rather than a per-unit output rate. Any catalog entry modeled on the frontier form must use a separate throughput-modeling approach.
 
 **Realistic active forging time.** All four cultures indicate 4–8 hours of actual
 active forging per day. Remaining time is consumed by: fire management and fuel
@@ -122,6 +96,15 @@ supported by the historical record and would overstate throughput in catalog
 `sim_params` [CITATION-NEEDED: working-hours evidence for small-scale forge
 operation; Swanson 1989 for medieval English craft; structural inference supported
 by all four chapters' operational descriptions].
+
+**Throughput floor — structural caveat.** The product-specific figures above are
+author estimates from product-weight and heating-cycle reasoning. The historical
+record provides no verified throughput upper or lower bound for most product
+categories. Placeholder #5 in `research/trades/smithing/SOURCES.md` (Langdon 1986
+manorial-account data) is the primary verification path and remains unresolved.
+Until that placeholder is closed, `sim_params.throughput_units_equiv_per_year`
+values in Plan C catalog entries must carry a high-uncertainty flag and must not
+be stated as sourced figures.
 
 **Seasonal pattern.** Throughput was not uniform across the year. Rural smithing
 in all four cultures peaked before planting (tool preparation) and after harvest
@@ -192,6 +175,15 @@ to transport in those regions [Hartwell 1962]. The American frontier transition
 followed railroad freight economics [Atack and Passell 1994]. Neither transition
 implies charcoal inferiority; both reflect local supply-chain economics.
 
+**Modern analog.** This anti-romantic point extends to contemporary practice:
+modern propane forges and induction forges represent equally valid supply-driven
+fuel choices, not deviations from "authentic" practice. The historical pattern
+is that forge operators used the most economical fuel available in their supply
+context; that reasoning applies unchanged today. Plan C catalog entries that use
+propane or electric heat are following the same supply-economics logic as the
+Song China coal transition — not departing from historical precedent (see
+STYLE-GUIDE §4.2).
+
 ---
 
 ## 5. Physical Envelope
@@ -231,8 +223,12 @@ Typical pre-industrial beak anvils ranged from approximately 30–150 kg of iron
 steel. The anvil requires a substantial base — a dense hardwood stump, masonry, or
 steel stand — to transmit hammer force into the work rather than into the structure.
 Anvil base mass matters for energy efficiency: a light or resonant base dissipates
-hammer energy as vibration. Modern equivalent: same functional requirement; modern
-anvils are typically 50–200 kg cast or forged steel on a dense base.
+hammer energy as vibration rather than transmitting it into the work, wasting operator
+effort and accelerating fatigue. The functional failure mode is progressive: an
+undersized base reduces effective blow force per strike, requiring more heats per piece
+and extending total forging time — the equivalent of working at a systematically lower
+skill ceiling. Modern equivalent: same functional requirement; modern anvils are
+typically 50–200 kg cast or forged steel on a dense base.
 
 ### Auxiliary infrastructure
 
@@ -242,8 +238,9 @@ requirements, not optional additions:
 - **Quench trough (slack tub).** Water supply at close range for heat treatment and
   for quenching incidental fires. Present in every forge configuration documented.
 - **Fuel storage.** Charcoal or coal storage adjacent to (but not inside) the forge
-  for fire-safety reasons. Charcoal could not be stored indefinitely; working
-  inventory of 1–3 days' fuel was typical.
+  for fire-safety reasons. Working fuel inventory must be maintained on-site; the
+  quantity and storage form are implementation variables addressed in
+  `research/trades/smithing/HISTORICAL-FORMS.md` Table 1.
 - **Stock storage.** Bar iron and steel stored adjacent to the forge. In all four
   cultures the smith purchased bar stock rather than smelting; storage for incoming
   stock and outgoing finished goods is a required functional area.
@@ -264,7 +261,7 @@ requirements, not optional additions:
 | Routine repair (horseshoe fitting, simple bends, basic tool sharpening) | Journeyman | Requires formed judgment, not just procedure |
 | Standard production (nails, hardware, agricultural tools) | Journeyman | Consistent quality requires experience |
 | Precision edge-tool making (laminated blades, differential hardening) | Master | Tokugawa Japan chapter §4 documents this as a distinct skill tier |
-| Forge welding | Journeyman to master | Requires temperature judgment and quick execution |
+| Forge welding | Journeyman to master | Requires temperature *judgment* (not just temperature achievement): the junction must be held in a narrow window (~1100–1300°C) at the right instant and struck immediately — sustained time at peak without striking burns the iron; delayed striking misses the window. This time-pressure-at-temperature constraint is distinct from the general temperature requirement in §2. |
 | Bespoke fabrication (custom fittings, structural metalwork) | Master | Requires problem-solving under novel constraints |
 
 Routine repair work — the segment that persisted longest in all four cultures —
@@ -297,11 +294,17 @@ This is a significant divergence documented in Section 11.
 | American frontier | Informal; private indenture or paid assistant | Shorter, variable | No formal examination; high skill variance across trade [CITATION-NEEDED: American apprenticeship, Rorabaugh 1986] |
 
 **Minimum pipeline for succession.** A functional forge targeting repair and bespoke
-work requires a minimum 3-year apprentice pipeline to sustain operator succession
-[medieval-northern-europe chapter §Functional Requirements Learned]. Apprentice
-co-presence during production was structurally built into normal operations across
-all four cultures, not a separate training program. Plan C catalog entries claiming
-`apprentice_friendly: true` must populate the `apprentice_path` sub-fields.
+work requires a multi-year apprentice pipeline to sustain operator succession.
+Duration differed substantially by culture: 3–7 years in European guild indenture
+contexts [medieval-northern-europe chapter §Functional Requirements Learned]; shorter
+and variable in American frontier proprietorship; formalized multi-year master-apprentice
+(*detchi-boko*) in Tokugawa Japan; multi-tier state registration (*jianghu*) in Song
+China. The 3-year minimum cited in prior versions derived solely from the European
+guild model and does not apply uniformly across all four cultures. Apprentice
+co-presence during production was structurally built into normal operations across all
+four cultures, not a separate training program. Plan C catalog entries claiming
+`apprentice_friendly: true` must populate the `apprentice_path` sub-fields and specify
+the cultural apprenticeship model being followed.
 
 **Labor-regime falsifier.** Historical per-unit economics incorporated household
 labor (spouse, children at bellows and stock handling) and indenture-basis apprentice
@@ -350,12 +353,12 @@ applies to any Plan C catalog entry at large capacity.
 Four product categories appear consistently across all four anchor cultures, with
 distinct throughput, skill, and market characteristics.
 
-| Category | Throughput profile | Skill floor | Industrial displacement | Survived? |
+| Category | Throughput profile | Skill floor | Industrial displacement | Survived? [canonical verdict] |
 |---|---|---|---|---|
-| **Commodity hardware** (nails, fasteners, standard fittings) | High-volume, repetitive | Journeyman to apprentice | Displaced first and most completely — cut nails from 1790s (US), wire nails from 1880s; factory hinges/bolts mid-19th century | No — actual revenue loss in all 4 cultures |
-| **Agricultural and trade tools** (hoes, plowshares, chisels, plane blades) | Medium volume; mix of new manufacture and repair | Journeyman to master (edge tools) | Partial — factory production undercut standard tools but edge-tool quality lagged (Tokugawa Japan precision segment); repair and custom fitting persisted | Partial — new manufacture displaced; repair persisted |
-| **Repair and maintenance** (horseshoe fitting, wagon parts, implement maintenance) | Irregular/bursty; labor-intensive per unit | Journeyman | Survived longest in all 4 cultures — repair is inherently location-bound, requires on-site judgment, not replicable by factory product | Yes — longest-surviving segment in every culture |
-| **Specialty / artistic / armory** (swords, ornamental ironwork, bespoke structural metalwork) | Low volume; high skill; high margin | Master | Partially displaced; sword smithing in Japan survived via regulatory preservation (government licensing, production quotas) [CITATION-NEEDED: Agency for Cultural Affairs sword-smith licensing; Tokugawa chapter §7] | Partial — only via regulatory or niche-market mechanisms |
+| **Commodity hardware** (nails, fasteners, standard fittings) | High-volume, repetitive | Journeyman to apprentice | Displaced first and most completely — cut nails from 1790s (US), wire nails from 1880s; factory hinges/bolts mid-19th century | No — actual revenue loss in all 4 cultures [`decline`] |
+| **Agricultural and trade tools** (hoes, plowshares, chisels, plane blades) | Medium volume; mix of new manufacture and repair | Journeyman to master (edge tools) | Partial — factory production undercut standard tools but edge-tool quality lagged (Tokugawa Japan precision segment); repair and custom fitting persisted | Partial — new manufacture [`decline`]; repair persisted [`restructuring`] |
+| **Repair and maintenance** (horseshoe fitting, wagon parts, implement maintenance) | Irregular/bursty; labor-intensive per unit | Journeyman | Survived longest in all 4 cultures — repair is inherently location-bound, requires on-site judgment, not replicable by factory product | Yes — longest-surviving segment in every culture; eventual disappearance in most cultures was `demand-collapse` (working horse eliminated), not displacement |
+| **Specialty / artistic / armory** (swords, ornamental ironwork, bespoke structural metalwork) | Low volume; high skill; high margin | Master | Partially displaced; sword smithing in Japan survived via regulatory preservation (government licensing, production quotas) [CITATION-NEEDED: Agency for Cultural Affairs sword-smith licensing; Tokugawa chapter §7] | Partial — only via `regulatory-dissolution` then `restructuring` (Japan sword smithing) or premium niche-market `restructuring` (ornamental ironwork) |
 
 **Repair-dominance implication for Plan C.** The repair and maintenance category
 survived longest in all four cultures because it is location-bound, judgment-intensive,
@@ -371,6 +374,15 @@ better-supported historical baseline [American frontier chapter §5 and §9].
 This table is the direct handoff to Plan C catalog authorship. Every catalog entry
 for a smithing-trade forge must address each row or explicitly state inapplicability.
 
+**Caveat on R-01 through R-05 (temperature requirements):** The temperature values
+in these rows are inferred from the documented operating requirements of the processes
+performed (process-physics inference) and are consistent across all four chapters.
+They are not directly measured from pre-industrial forge documentation. The
+archaeometallurgy and experimental-archaeology source that would confirm these ranges
+empirically is tracked as Placeholder #4 in `research/trades/smithing/SOURCES.md`
+and remains unverified. Plan C catalog entries that cite these requirements should
+note that the values are process-physics inferences pending experimental confirmation.
+
 | # | Requirement | Historical value(s) | Modern-equivalent expectation for Plan C entries |
 |---|---|---|---|
 | R-01 | Minimum shaping temperature | ~800°C (cherry-red) — consistent across all 4 cultures | Forge must sustain ≥800°C at the work zone during active operation |
@@ -378,11 +390,11 @@ for a smithing-trade forge must address each row or explicitly state inapplicabi
 | R-03 | Annealing temperature | ~700–750°C | Achievable by any forge that reaches R-01; no separate requirement |
 | R-04 | Heat treatment range | ~200–850°C (variable by process) | Temperature controllability in this range; quench infrastructure (water supply, slack tub) required |
 | R-05 | Temperature control, not just peak | Overheating destroys work; judgment-based in pre-industrial context | Modern catalog entries must specify temperature monitoring method (pyrometer, visual indicator, other) |
-| R-06 | Active forging hours per day | 4–8 hours across all 4 cultures; not 10–12 | `max_active_hours_per_week` must reflect realistic active time after setup, shutdown, and non-production overhead; `operations_reality.startup_shutdown_overhead_per_day_min` field required |
+| R-06 | Active forging hours per day | 4–8 hours across all 4 cultures; not 10–12; implied startup/shutdown overhead estimated at 1–2 hours/day from operational descriptions across all four chapters (fire-building, tool preparation, shutdown and ash-management) [CITATION-NEEDED: explicit forge working-hours data, Swanson 1989 or equivalent; structural inference from all four chapters] | `max_active_hours_per_week` must reflect realistic active time after setup, shutdown, and non-production overhead; `operations_reality.startup_shutdown_overhead_per_day_min` field required; historical baseline for overhead: 1–2 hours/day |
 | R-07 | Seasonal throughput variance | Agricultural seasonality in all 4 cultures; "bursty" on frontier | `throughput_variance.seasonal` field must be populated; worst-month fraction required |
 | R-08 | Fuel type | Charcoal (all cultures, small scale); coal/coke (Song China large scale; American frontier post-railroad); wood (fallback only) | State fuel type explicitly; document sulfur-management approach if coal; document supply-chain for charcoal |
 | R-09 | Forced-air delivery | Bellows (hand or foot) in all 4 cultures; hydraulic at Song large scale | Modern electric blower, propane burner air circuit, or equivalent; specify delivery mechanism and its failure modes |
-| R-10 | Forge footprint | 15–40 m² across all small-scale forms; large ironworks at different scale | Declare `footprint_m2`; explain if below 15 m² (minimal config) or above 40 m² (expanded) |
+| R-10 | Forge footprint | 15–40 m² across all small-scale forms; note: 15 m² lower bound = American frontier minimum (smallest viable single-operator config); 40 m² upper bound = medieval European full-featured guild forge; these are different scale contexts, not an undifferentiated range; large ironworks at different scale entirely | Declare `footprint_m2`; entries at 15 m² represent the minimum viable configuration (frontier single-operator analogy); entries at 40 m² represent a full-featured shop; explain if below 15 m² (minimal config) or above 40 m² (expanded) |
 | R-11 | Ceiling height minimum | ~2.5 m for combustion-gas clearance | Declare `ceiling_min_m`; flag if space is below 2.5 m |
 | R-12 | Ventilation | Mandatory; combustion gases require extraction | Declare `ventilation` field; specify extraction method; note regulatory requirement [OSHA 29 CFR 1910.252(c)] |
 | R-13 | Anvil base mass | 30–150 kg pre-industrial anvil on dense base; base mass critical for energy efficiency | Specify anvil mass (kg) and base type; justify if below 50 kg for medium or heavy work |
@@ -391,7 +403,7 @@ for a smithing-trade forge must address each row or explicitly state inapplicabi
 | R-16 | Bar stock supply chain | Regional purchase in all 4 cultures; no smelting on-site | State source of bar iron/steel; no entry may claim supply-chain autonomy without explicit documentation |
 | R-17 | Operator skill floor | Repair work: journeyman minimum; precision edge tools: master | Declare `operator_skill_floor`; specify which operations are within scope |
 | R-18 | Concurrent operators | 1 smith + 0–2 assistants at small scale; more at large scale | Declare `operators_concurrent`; state whether motorized air eliminates bellows-assistant requirement |
-| R-19 | Apprentice path | 3-year minimum pipeline in all 4 cultures for succession | If `apprentice_friendly: true`, populate all `apprentice_path` sub-fields per schema |
+| R-19 | Apprentice path | 3-year minimum pipeline reflects the European guild indenture model (3–7 years formal indenture [medieval-northern-europe chapter §Functional Requirements Learned]); not a universal figure: American frontier used shorter and variable informal apprenticeships; Tokugawa Japan used multi-year *detchi-boko* indenture without standardized duration; Song China used multi-tier state registration (*jianghu*) rather than time-bound apprenticeship. The 3-year figure is a conservative minimum for the repair-dominant segment in guild-structured contexts | If `apprentice_friendly: true`, populate all `apprentice_path` sub-fields per schema; specify which cultural model is being followed (European guild: 3–7 years; Japanese *detchi-boko*: multi-year non-standardized; American frontier: shorter and variable; Song state: registration-based) |
 | R-20 | Labor-regime adjustment | Historical costs incorporated household and indenture labor not at market wage | State explicitly whether cost estimates assume market-wage labor throughout; historical figures must be upward-adjusted if not |
 | R-21 | Demand anchor (large-capacity only) | Song China: state procurement was load-bearing; consumer markets insufficient alone | For entries at large capacity: state demand anchor and quantify minimum viable demand |
 | R-22 | Product category scope | See §8 matrix; repair dominates survival across all 4 cultures | State product mix scope; if manufacture-focused, document departure from repair-dominant historical baseline |

@@ -73,9 +73,15 @@ Guild-controlled urban smithing in major Rhineland and Flemish towns eroded earl
 still, through the penetration of proto-industrial putting-out systems and unincorporated
 suburban craftsmen from the sixteenth and seventeenth centuries [medieval-northern-europe
 §8; Epstein 1998]. This institutional erosion preceded and was partly independent of
-technological competition. Specialty niches — ornamental ironwork, farriery, bespoke
-toolmaking — retained craft-shop form into the twentieth century because they resisted
-standardization on economic grounds [medieval-northern-europe §8].
+technological competition. **Evidence gap:** Epstein 1998 provides background context
+for guild institutional erosion generally; the specific Rhineland and Flemish timing
+claim (16th–17th century guild decline in metalwork towns) lacks a dedicated source.
+Placeholder #58 in SOURCES.md (guild decline in Rhineland metalwork towns) remains
+unresolved. Plan C entries citing this specific sub-trajectory should treat the timing
+claim as structurally plausible but not yet source-verified. Specialty niches —
+ornamental ironwork, farriery, bespoke toolmaking — retained craft-shop form into the
+twentieth century because they resisted standardization on economic grounds
+[medieval-northern-europe §8].
 
 The chapter's own verdict label — `mixed` — is confirmed here. Conflating these three
 trajectories into either "smithing declined" or "smithing restructured" would misrepresent
@@ -101,9 +107,13 @@ changes; Hartwell 1962 and general Yuan economic history sources].
 
 This is `demand-collapse` in the canonical sense: the demand for the large-scale
 organizational form's output — state-mediated bulk procurement at industrial volume —
-ceased because the state procuring it ceased. The Ming dynasty rebuilt iron production
-at a smaller average scale with greater reliance on private operations [CITATION-NEEDED:
-Ming iron industry structure]; the pre-Song large-scale form was not reconstituted.
+ceased because the state procuring it ceased. The sources consulted here do not directly
+address Ming iron production levels; post-Yuan reconstruction scale and form remain an
+open question. The general inference — that the pre-Song large-scale organizational form
+was not reconstituted, and that Ming production was reorganized at a smaller average
+scale with greater private-sector involvement — is structurally consistent with the
+evidence but requires dedicated verification [CITATION-NEEDED: Ming iron industry
+structure; von Glahn 2016 recommended as primary verification source].
 
 Village-scale smithing continued as a separate smaller form throughout this disruption.
 Its demand base — local repair, agricultural tool maintenance, household hardware — was
@@ -282,6 +292,16 @@ verification]. The repair-segment restructuring claim rests on survival evidence
 (the segment persisted) rather than on detailed economic documentation of its
 post-industrial form.
 
+**Lowest-confidence sub-claim:** The repair-segment restructuring pathway is the
+lowest-confidence sub-claim in this verdict. The historical record confirms the
+segment's persistence (it outlasted commodity hardware displacement) but does not
+provide detailed economic documentation of what that restructured form looked like
+post-industrialization — revenue structure, customer base, pricing, or how smiths
+navigated the transition. Plan C catalog entries endorsing repair-dominant operation
+as a viable model should note that the historical basis is survival evidence, not
+documented post-industrial economics. This gap is significant because repair-dominant
+entries are the primary category this verdict endorses.
+
 **On the spec §2 falsifiers:** The evidence engages each of the four falsifiers.
 
 - *Demand collapse* holds strongly for the commodity-hardware segment and for the
@@ -309,6 +329,18 @@ post-industrial form.
   bar steel is industrially available worldwide. Unlike a tannery or grain mill, the
   upstream input for a forge (commercial steel stock) has not disappeared. The
   supply-chain falsifier is weaker for smithing than it would be for some other trades.
+
+- *Capital formation* — a fifth constraint not in the original spec §2 falsifiers —
+  is relevant to the startup scenario. Historical forges were capitalized through guild
+  admission fees, household accumulation, and patron investment, all of which carried
+  lower capital cost and different debt-service structures than modern commercial
+  lending. A modern smith starting a repair/specialty forge needs to capitalize the
+  forge at modern equipment prices (estimated $18,000–$45,000 for a functional
+  repair/specialty shop) under modern lending conditions. This does not falsify the
+  viability claim — ongoing economics for a capitalized forge can be viable — but
+  it affects the break-even timeline for new entrants without accumulated capital or
+  institutional backing. Plan C entries for repair/specialty forges should address
+  the capitalization pathway, not assume it.
 
 **The working hypothesis is not falsified for smithing overall, but is category-constrained.**
 The equipment-economics hypothesis is most relevant to the restructured niches —
@@ -356,7 +388,13 @@ defined.
 - *Trade-education and apprentice-training contexts* — civic or cooperative forges
   oriented toward skill transfer and workforce development rather than production
   economics. These are viable under the civic lens (spec §2) even if market-lens
-  economics are marginal, as documented in REQUIREMENTS.md §6 and spec §5.
+  economics are marginal, as documented in REQUIREMENTS.md §6 and spec §5. **Civic
+  viability condition:** this category's viability depends on a municipality or
+  institution committing the apprenticeship slots and workshop hours — this is not
+  an assumed demand condition. Plan C entries targeting this segment must specify
+  the institutional partner and demand threshold; an entry that describes civic
+  viability without naming the demand source is making an unsupported "if we build
+  it they will come" assumption.
 
 **Categories probably not restorable via equipment redesign:**
 
@@ -393,8 +431,8 @@ manufacturing should carry an explicit `## Known risks` note acknowledging the a
 demand trajectory documented in this verdict and stating what market condition the
 entry depends on to overcome it. Reviewers should use this verdict document to check
 whether an entry's targeted product category is plausibly restorable; if an entry
-implicitly assumes commodity competitiveness without justification, that is a P1
-editorial finding.
+implicitly assumes commodity competitiveness without justification, that is a substantive
+flaw requiring correction before the entry can advance.
 
 ---
 
