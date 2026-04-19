@@ -217,8 +217,7 @@ sources:
   - ref: "[CITATION-NEEDED: DOT 49 CFR Part 173 LP-gas transport threshold quantities and NFPA 58 storage rules — regulatory requirement cited in regulatory_notes; entries should verify current regulatory threshold before field deployment.]"
   - ref: "[CITATION-NEEDED: rural mobile-library vs. fixed-branch cost-ratio comparison — IMLS data or state library agency study; cited as structural analog for mobile civic service cost benchmarking in benchmark_comparison.]"
   - ref: "[CITATION-NEEDED: CDL GVWR thresholds by US jurisdiction — relevant to vehicle selection and operator licensing requirement; varies by state for intrastate commercial operation.]"
----
-## Summary
+---## Summary
 
 Forge-007 is a mobile smithing operation: a propane-fired forge installed in a converted 20-ft intermodal container, transported by truck on a circuit of rural and village clients — farms, ranches, and homesteads. The intended operator is a journeyman smith who is also the driver, running a weekly or biweekly route rather than waiting for clients to come to a fixed shop. The entry tests a specific inversion of the DECLINE-VERDICT finding on location-bound demand: instead of a stationary smith hoping rural clients will travel to them, the smith travels to where the demand is anchored. Capital goes into the container conversion and vehicle rather than a building lease; floor-space rent is eliminated. The tradeoff is reduced throughput (travel time eats the week), vehicle operating cost, and a single-seat operation that cannot support an apprentice.
 

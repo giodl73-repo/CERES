@@ -833,8 +833,7 @@ sources:
   - ref: "[CITATION-NEEDED: service life data for commercial induction forge systems and heat-treat ovens; manufacturer specification or industry longevity data]"
   - ref: "[CITATION-NEEDED: light-industrial commercial rent per m² in small-city US markets, 2024; CoStar, LoopNet, or local broker data]"
   - ref: "[CITATION-NEEDED: bladesmith-specific contracted wage data; American Bladesmith Society or similar trade organization salary survey]"
----
-## Summary
+---## Summary
 
 The Induction Bladesmith is a master-operated, 40 m² single-operator shop targeting the premium direct-to-consumer custom knife market: chef knives, outdoor blades, and kitchen cutlery at $200–$800 per piece. It is distinguished from other smithing-catalog entries by its combination of induction-electric heat source (for precise heat-treatment temperature control) with a small propane alcove (for forge-welding steps), its master-level skill floor, and its specialty-dominant product mix (80% specialty, 15% artistic, 5% repair). The entry was created because the DECLINE-VERDICT for general smithing survival explicitly carves out the specialty and premium direct-to-consumer segment as viable: factory knives at $30 industrial baseline do not replicate made-to-order geometry, chosen steel, or maker relationship. The catalog addresses this viable niche in forge-006 rather than subsume it under the repair-dominant entries (forge-002, forge-005) or the cooperative/civic entries (forge-003, forge-004). The target customer is a premium-kitchen, outdoor, or collector buyer who has opted out of the commodity knife market.
 

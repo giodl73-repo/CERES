@@ -237,8 +237,7 @@ sources:
   - ref: "[CITATION-NEEDED: specific US regulatory thresholds for charcoal combustion emissions at village/rural scale; OSHA 29 CFR 1910.252(c) cited for hot-work ventilation; local air-quality district particulate thresholds vary by jurisdiction.]"
   - ref: "[CITATION-NEEDED: per-visitor operating cost for comparable living-history forge demonstrations at heritage museums — needed to complete the civic benchmark_comparison for this entry; no comparable dataset identified in sources consulted.]"
   - ref: "[CITATION-NEEDED: wage survey for heritage-craft demonstrators at living-history museums — the $24,000/yr (0.5 FTE) figure is derived from the SCALES.md village skilled-trades median; a direct survey of demonstrator compensation at heritage sites would strengthen this estimate.]"
----
-## Summary
+---## Summary
 
 Forge-008 is a charcoal-fired, hand-bellows smithing shop aimed at a specific and narrow commercial segment: buyers who specifically require goods produced using traditional methods (charcoal fuel, hand-bellows air supply, traditional forging sequences) and are willing to pay a premium for that production method rather than for the object alone. The entry is not a general-purpose village smithy. Its low capital cost ($8,000–$20,000) is matched by low throughput (approximately 540 medium-work-equivalent units per year at full operation) and high variable costs driven by modern charcoal pricing. All three lenses rate this entry as marginal, and at all viable scales the market is thin. The entry exists in the catalog to test whether traditional-method production can sustain a commercial operation — and to document the specific constraints that make this test difficult.
 

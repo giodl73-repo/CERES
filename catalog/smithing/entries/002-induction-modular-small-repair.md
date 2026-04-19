@@ -661,8 +661,7 @@ sources:
   - ref: "[CITATION-NEEDED: induction coil mean-time-to-failure data for commercial forge applications; manufacturer service data or experimental measurement]"
   - ref: "[CITATION-NEEDED: throughput measurement for induction-forge repair operations; experimental or operator-reported data]"
   - ref: "[CITATION-NEEDED: service life data for commercial induction forge systems; manufacturer specification or industry longevity data]"
----
-## Summary
+---## Summary
 
 The Induction-Modular Small Repair forge is a single-operator, electric-induction shop
 designed for the tool and implement repair segment in town and small-city settings. Its
