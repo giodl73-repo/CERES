@@ -564,7 +564,7 @@ results:
     verdict: fail
     primary_metric: -1.0
     metric_name: payback_years
-    notes: annual_gross_margin <= 0; payback never recoverable
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
   village_coop:
     verdict: fail
     primary_metric: 77.0
@@ -579,7 +579,7 @@ results:
     verdict: fail
     primary_metric: -1.0
     metric_name: payback_years
-    notes: annual_gross_margin <= 0; payback never recoverable
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
   town_coop:
     verdict: win
     primary_metric: 77.0
@@ -594,7 +594,7 @@ results:
     verdict: fail
     primary_metric: -1.0
     metric_name: payback_years
-    notes: annual_gross_margin <= 0; payback never recoverable
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
   small_city_coop:
     verdict: win
     primary_metric: 77.0
@@ -619,7 +619,8 @@ sources:
   - ref: "[CITATION-NEEDED: industrial hardware baseline price for small forged-equivalent items — hardware-store commodity pricing survey]"
   - ref: "Jacobs, Jane. 1961. The Death and Life of Great American Cities. Random House — civic infrastructure as neighborhood resilience anchor; public-goods framing for non-commercial community services"
   - ref: "[CITATION-NEEDED: Japanese shokunin apprenticeship tradition — functional training structure, state licensing history; primary academic source needed for historical lineage claims]"
----## Summary
+---
+## Summary
 
 The Community Civic Makerspace Forge Module (forge-004) is a town-owned supervised multi-user forge designed on the library-model of public access: residents book shifts, work under qualified supervision, and pay a modest annual access fee rather than per-session commercial rates. This entry covers the forge portion of a broader multi-craft makerspace; the overall facility would also house woodworking, textile, and other bays (out of scope here). The forge operates on an induction-electric primary system with propane backup, supports up to four simultaneous member-users under a master smith-instructor, and embeds a structured 36-month apprenticeship program as its core operating mode. It exists as a distinct catalog entry because no existing entry models the civic-public-goods case for a forge: the subsidy logic, staffing economics, political coalition, and Ostrom governance layer are not variants of a private or cooperative forge design — they require a purpose-built analysis.
 

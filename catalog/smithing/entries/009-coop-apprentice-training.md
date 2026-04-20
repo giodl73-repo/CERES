@@ -777,7 +777,8 @@ sources:
   - ref: "[CITATION-NEEDED: regional master smith wage survey — confirm $62,000/yr small-city estimate; BLS or regional trade data]"
   - ref: "[CITATION-NEEDED: state cooperative-corporation statute reference; NCBA CLUSA model worker-cooperative articles]"
   - ref: "[CITATION-NEEDED: seasonal throughput pattern for training-facility apprenticeship programs — academic-year cycle data]"
----## Summary
+---
+## Summary
 
 The Co-op Apprentice Training Forge (forge-009) is a member-owned cooperative training facility whose primary output is journeyman-certified smiths, not commercial product. The cooperative is funded through paid-subscription member dues, discounted apprentice dues, and ancillary sales of apprentice-made specialty and artistic pieces; the master instructor is a worker-member receiving a cooperative stipend. The facility operates a coal-plus-induction hybrid floor — coal for forge-welding practice requiring temperatures not reliably achieved by standard induction units, induction for precision heat-treatment training — across 60–100 m² of multi-station space serving 4–8 concurrent apprentices under a master instructor and 1–2 journeyman assistants. This entry is distinct from forge-003 (shared tool-library) and forge-004 (civic makerspace) because it models the cooperative as employer and trainer simultaneously: the apprentice is a dues-paying worker-member, the instructor holds a stipend-funded ownership stake, and the governance structure is formally calibrated to Ostrom's design principles for a worker cooperative rather than a civic facility with cooperative-analogous access rules.
 

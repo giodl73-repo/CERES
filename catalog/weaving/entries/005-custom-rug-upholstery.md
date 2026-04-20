@@ -642,18 +642,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 3.274323546344272
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=10256 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 96.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=96, total_annual_cost=19120
+  village_civic:
+    verdict: fail
+    primary_metric: 24.433333333333334
+    metric_name: per_household_cost
+    notes: per_hh=24.43, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 3.274323546344272
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=10256 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 96.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=96, total_annual_cost=19120
+  town_civic:
+    verdict: fail
+    primary_metric: 3.5931372549019605
+    metric_name: per_household_cost
+    notes: per_hh=3.59, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 3.274323546344272
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=10256 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 96.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=96, total_annual_cost=19120
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.6787037037037037
+    metric_name: per_household_cost
+    notes: per_hh=0.68, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/weaving/SCHEMA.md v1.0 §1: throughput block structure; meters_per_day ranges by pattern complexity; max_active_hours_per_week guidance for studio weaver; product_mix field definitions"
   - ref: "catalog/weaving/SCHEMA.md v1.0 §2: electric-lighting-only energy source definition; 1–5 kWh/day consumption range"
@@ -682,7 +715,6 @@ sources:
   - ref: "Scandinavian rya and röllakan flat-weave tradition: general reference — Davison, Marguerite Porter. 1967. A Handweaver's Pattern Book. Swarthmore. (Flat-weave and knotted-pile rug structures informing the design space of custom rug weaving; functional inheritance of natural-wool pile and geometric patterning) [CITATION-NEEDED: economic history source for Scandinavian flat-weave rug production as commercial cottage industry]"
   - ref: "Handweavers Guild of America. https://weavespindye.org/ (US studio-weaver community; primary professional network for custom rug and upholstery fabric market-rate data; referenced for orientation on market pricing; formal rate-card data CITATION-NEEDED)"
 ---
-
 ## Summary
 
 The Custom Rug & Upholstery Studio is a journeyman-operated, town-scale studio producing custom area rugs and upholstery fabric for interior designers and homeowners. It occupies 40–70 m² (55 m² representative), uses electric-lighting-only energy, and operates two or three rug frame looms alongside a 4-shaft floor loom for upholstery cloth. It is the only weaving-catalog entry targeting the furnishing-textile segment — rugs and upholstery fabric for residential and commercial interiors — which sits at the intersection of craft-market premium pricing and a real B2B channel (interior designers as specifying buyers). The entry was created because this niche survives the DECLINE-VERDICT's market test: custom rugs and upholstery cloth are commoditized at the mass-market end ($25/m²) but command genuine premiums ($80–$450/m²) for custom dimensions, natural fiber, and specified colorways that industrial production cannot deliver to order. The entry also captures the weaving trade's strongest repair-analog: rug restoration and reweaving — a service with no commodity substitute, directly analogous to the smithing repair niche.

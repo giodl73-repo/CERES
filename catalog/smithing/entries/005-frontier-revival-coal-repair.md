@@ -236,7 +236,8 @@ sources:
   - ref: "[CITATION-NEEDED: rural repair-service rate surveys — no direct smithing repair-pricing survey identified; figure inferred from structural analogy to rural auto-repair and farm-equipment service rates in thin-market rural contexts. Requires a direct survey of operating rural smiths before promotion to reviewed.]"
   - ref: "[CITATION-NEEDED: coal consumption rate for single-fire coal forge at full operational load — 8 kg/hr is consistent with the catalog/smithing/SCHEMA.md §2 range of 6–10 kg/hr coal; a measured experimental value for a comparable forge configuration would strengthen the claim.]"
   - ref: "[CITATION-NEEDED: US horse population statistics, ca. 1890–1940, for decline narrative in Historical Lineage — Olmstead and Rhode, or USDA historical census series; cited as context only, not a pricing or throughput figure.]"
----## Summary
+---
+## Summary
 
 Forge-005 is a single-operator coal forge designed for the repair-dominant rural market. Its intended operator is a journeyman smith serving a village or small-town trade area where no industrial substitute is available for same-day, on-site repair of agricultural equipment, wagon hardware, and horseshoes. The entry tests the DECLINE-VERDICT finding that repair-dominant smithing is the historically most durable niche by placing it in the configuration closest to the actual American frontier precedent: coal-fired, low-capital, single-operator, and revenue-driven by labor applied to a customer's problem rather than by volume manufacture. The "frontier revival" label is deliberate and anti-romantic — it revives the small-business proprietor model, not the Longfellow poem.
 

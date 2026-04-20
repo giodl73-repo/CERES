@@ -105,7 +105,7 @@ def write_results(entry_path, results: dict) -> None:
         new_lines = lines + [results_block + "\n"]
 
     new_frontmatter = "".join(new_lines)
-    new_text = "---\n" + new_frontmatter + "---" + body_str
+    new_text = "---\n" + new_frontmatter + "---\n" + body_str
     path.write_text(new_text, encoding="utf-8")
 
 

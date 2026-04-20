@@ -605,18 +605,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.18854238406607363
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 76.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=76, total_annual_cost=15100
+  village_civic:
+    verdict: fail
+    primary_metric: 21.8
+    metric_name: per_household_cost
+    notes: per_hh=21.80, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.18854238406607363
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 76.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=76, total_annual_cost=15100
+  town_civic:
+    verdict: fail
+    primary_metric: 3.2058823529411766
+    metric_name: per_household_cost
+    notes: per_hh=3.21, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.18854238406607363
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 76.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=76, total_annual_cost=15100
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.6055555555555555
+    metric_name: per_household_cost
+    notes: per_hh=0.61, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/baking/SCHEMA.md v1.0 §1: throughput block structure; loaves/day ranges; E-3 cross-check guidance; baking schema base"
   - ref: "catalog/baking/SCHEMA.md v1.0 §2: electric-deck energy consumption 3-8 kWh/batch; electric-deck temperature ceiling 230-290°C"
@@ -643,7 +676,6 @@ sources:
   - ref: "[CITATION-NEEDED: service life data for commercial electric deck ovens; manufacturer specification or commercial kitchen equipment longevity survey]"
   - ref: "[CITATION-NEEDED: commercial kitchen or light-commercial rental rate per m² in US village and town markets; CoStar, LoopNet, or shared-kitchen aggregator (The Food Corridor, Kitchen United) data, 2024]"
 ---
-
 ## Summary
 
 Bake-001 is a single-operator, naturally-leavened artisan micro-bakery producing sourdough bread for direct-to-consumer and farmers-market sale at village and town scale. Its distinguishing characteristics are: (1) electric deck oven as primary heat source — eliminating combustion permits while delivering the thermal mass and deck-bake crust quality required for premium sourdough; (2) a market-primary revenue model priced at $5-$12/loaf against an industrial baseline of $3; (3) explicit declaration of industrial-flour dependency (no mill ownership) consistent with the DECLINE-VERDICT mill-dependency falsifier; and (4) a journeyman-baker skill floor matching the fermentation-judgment requirement for sourdough management. This entry targets the operator who wants to run a full-time artisan bakery at village or town scale and asks whether that operator can clear $48,000/year in net operator income — the answer at mid-case pricing ($8/loaf, 115 loaves/day) is affirmatively yes, with gross revenue of approximately $236,000 against operating costs of approximately $12,700/year in cash outlays, leaving substantial room for operator wages before capital recovery. The binding constraints are regulatory (commercial kitchen licensing), skill (fermentation judgment takes 3+ years to form), and market relationship (the premium segment is real but bounded).

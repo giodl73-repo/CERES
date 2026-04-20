@@ -410,18 +410,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  village_coop:
+    verdict: fail
+    primary_metric: 95.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=95, total_annual_cost=18960
+  village_civic:
+    verdict: fail
+    primary_metric: 29.2
+    metric_name: per_household_cost
+    notes: per_hh=29.20, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  town_coop:
+    verdict: win
+    primary_metric: 95.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=95, total_annual_cost=18960
+  town_civic:
+    verdict: fail
+    primary_metric: 4.294117647058823
+    metric_name: per_household_cost
+    notes: per_hh=4.29, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  small_city_coop:
+    verdict: win
+    primary_metric: 95.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=95, total_annual_cost=18960
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.8111111111111111
+    metric_name: per_household_cost
+    notes: per_hh=0.81, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "American Indian Arts and Crafts Board (AIACB). 2024. 'Authentic Native American Art Pricing Guidelines.' U.S. Department of the Interior. [Navajo textile gallery price benchmarks; IACA compliance requirements.]"
   - ref: "Fair Trade Federation. 2024. Member Survey: Handwoven Textile Pricing, Andean and Southeast Asian traditions. [Wholesale and retail price ranges for traditional woven textiles from cooperative producers.]"
@@ -440,7 +473,6 @@ sources:
   - ref: "[CITATION-NEEDED: per-visitor economic impact data for working cultural-heritage studios — cited as civic externality; no direct comparable survey identified; heritage-tourism impact studies at living-history sites provide structural analogues but no weaving-specific data found.]"
 
 ---
-
 ## Summary
 
 Weave-006 is a cross-cultural template entry for a studio operated by a master practitioner of a specific cultural textile tradition — Navajo rug weaving, Andean backstrap-loom textiles, Hmong pa ndau, Nishijin-influenced supplementary-weft cloth, Welsh wool weaving, or an equivalent tradition. It is not a generic "ethnic weaving" entry: it is a template that requires instantiation with a named tradition, a specific community context, and a defined operator identity before the civic and market arguments can be fully evaluated. This distinction is stated here and must not be lost in implementation. The specific cultural context determines the primary equipment (backstrap loom, upright frame loom, floor loom, dobby loom), fiber type and sourcing regime, spatial footprint, capital cost, throughput rate, and the cultural-authority structure that governs the cooperative and civic lenses. Template parameter ranges span backstrap-loom simplicity ($8,000 capital, 20 m² footprint) to multi-shaft floor-loom sophistication ($50,000, 45 m²). Authors adapting this template must update `loom_type`, `footprint_m2`, `capital_cost`, `fiber_source_declaration`, `humidity_control_required`, and `throughput.meters_per_day` to match the specific tradition and must cite tradition-specific pricing data to support the market_price_per_unit claim at reviewed status.

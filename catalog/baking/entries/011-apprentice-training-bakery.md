@@ -1060,18 +1060,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: fail
+    primary_metric: 221.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=221, total_annual_cost=44125
+  village_civic:
+    verdict: win
+    primary_metric: 71.76
+    metric_name: per_household_cost
+    notes: per_hh=71.76, threshold=120, hrs/capita=4.944 vs threshold=0.15
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: fail
+    primary_metric: 221.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=221, total_annual_cost=44125
+  town_civic:
+    verdict: win
+    primary_metric: 10.552941176470588
+    metric_name: per_household_cost
+    notes: per_hh=10.55, threshold=100, hrs/capita=0.727 vs threshold=0.15
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 221.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=221, total_annual_cost=44125
+  small_city_civic:
+    verdict: fail
+    primary_metric: 1.9933333333333334
+    metric_name: per_household_cost
+    notes: per_hh=1.99, threshold=80, hrs/capita=0.137 vs threshold=0.15
 sources:
   - ref: "corpus/program/SCALES.md §3 — small-city skilled-trades median wage; pastry-chef-master instructor wage reference at $70k/yr; per-household civic cost benchmarks"
   - ref: "corpus/program/SCALES.md §4.2 — public library per-capita operating cost benchmark (IMLS FY2021 national median $40-55/capita); civic cost threshold reference"
@@ -1110,7 +1143,6 @@ sources:
   - ref: "[CITATION-NEEDED: US supermarket sourdough bread shelf pricing survey, 2024; IRI or Nielsen retail-scanner data for sourdough bread category; $3.50/loaf industrial baseline estimate]"
   - ref: "[CITATION-NEEDED: commercial kitchen floor-space rent at $110/m²/yr for town-scale light-commercial; SCALES.md §4 commercial rent estimate confirmation]"
 ---
-
 ## Summary
 
 Bake-011 is an electric-deck apprentice training bakery whose primary output is journeyman-baker-certified graduates, not commercial bread. The facility simultaneously produces real bread for sale and trains 2-3 apprentices per cohort through a 36-42 month curriculum structured around progressive responsibility in a live production environment. It operates under either a worker-cooperative governance model (analogous to forge-009) or a CTE/vocational-program civic model (analogous to forge-011), depending on the operating entity; in both cases the pastry-chef-master instructor is the organizational core and the apprenticeship pipeline is the public-goods justification. The facility occupies 50-80 m² of multi-station commercial kitchen space, uses a three-deck electric oven for clean regulatory posture and consistent pedagogy, and purchases commodity flour from standard distributors. The entry's defining characteristic is its anti-romantic framing: training bakeries are workforce infrastructure, not a revival of artisanal craft for its own sake. The bread is real, the training is rigorous, and the facility's value is measured in journeyman graduates and food-service employer placements, not in the romance of sourdough culture.

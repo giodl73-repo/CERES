@@ -774,18 +774,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.38534747588441726
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 89.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=89, total_annual_cost=17607
+  village_civic:
+    verdict: fail
+    primary_metric: 24.666666666666668
+    metric_name: per_household_cost
+    notes: per_hh=24.67, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.38534747588441726
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 89.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=89, total_annual_cost=17607
+  town_civic:
+    verdict: fail
+    primary_metric: 3.627450980392157
+    metric_name: per_household_cost
+    notes: per_hh=3.63, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.38534747588441726
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 89.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=89, total_annual_cost=17607
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.6851851851851852
+    metric_name: per_household_cost
+    notes: per_hh=0.69, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/baking/SCHEMA.md v1.0 §1: throughput block structure and loaves/day ranges; E-3 cross-check guidance"
   - ref: "catalog/baking/SCHEMA.md v1.0 §2: electric-deck energy source 3-8 kWh/batch; capability description"
@@ -810,7 +843,6 @@ sources:
   - ref: "[CITATION-NEEDED: commercial kitchen and light-commercial rental rate per m² in immigrant-community commercial districts; CoStar, LoopNet, or local broker data, 2024]"
   - ref: "[CITATION-NEEDED: ethnic specialty bakery floor area and layout data by product type; trade survey or operator interviews]"
 ---
-
 ## Summary
 
 Bake-008 is a template pattern for a bakery that serves a specific diasporic or immigrant community's bread tradition — the baker serves a market that already exists. Examples include a German-heritage rye and pumpernickel bakery serving an Eastern European immigrant community, an Ethiopian injera producer serving a local Ethiopian diaspora, a South Asian naan and flatbread bakery, or a Mexican panadería producing pan dulce for a Mexican-immigrant neighborhood. The design challenge this entry solves is authoring a single catalog entry that is generic enough to apply to all such traditions while remaining specific enough to be useful: the schema fields use an electric-deck oven as the baseline (the most versatile commercial baking platform covering flatbreads, enriched breads, and pastry), footprint and capital ranges are set at the 20-45 m² and $18,000-$65,000 levels that span the tradition spectrum, and the Key Assumptions and prose sections document where tradition-specific parameters will differ. The market is primary: an ethnic specialty bakery succeeds or fails on whether the diasporic community it targets is large enough, concentrated enough, and underserved enough to sustain the business. The civic and cooperative lenses are marginal: they apply only in specific gap situations where the market has failed to serve a real community need.

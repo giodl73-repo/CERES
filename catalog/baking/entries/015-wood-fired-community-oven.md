@@ -899,18 +899,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: win
+    primary_metric: 17.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=17, total_annual_cost=3257
+  village_civic:
+    verdict: fail
+    primary_metric: 6.7
+    metric_name: per_household_cost
+    notes: per_hh=6.70, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: win
+    primary_metric: 17.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=17, total_annual_cost=3257
+  town_civic:
+    verdict: fail
+    primary_metric: 0.9852941176470589
+    metric_name: per_household_cost
+    notes: per_hh=0.99, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 17.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=17, total_annual_cost=3257
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.18611111111111112
+    metric_name: per_household_cost
+    notes: per_hh=0.19, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "corpus/program/SCALES.md §2 — village scale parameters; household count multiplier (0.40); village mid-point 2,000 residents; town mid-point 7,500 residents"
   - ref: "corpus/program/SCALES.md §3 — village-scale skilled-trades compensation reference; town-scale skilled-trades median wage; basis for fire-keeper partial-FTE wage assumption"
@@ -944,7 +977,6 @@ sources:
   - ref: "[CITATION-NEEDED: park pavilion installation cost benchmark; NRPA survey or municipal parks capital project data; label: inferred]"
   - ref: "[CITATION-NEEDED: masonry dome oven service life; Wing and Scott 1999 or European heritage oven documentation; maintenance requirements for 30-50 year lifespan; label: inferred]"
 ---
-
 ## Summary
 
 Bake-015 is a shared masonry dome wood-fired oven — the *forno comunitario* or *four banal* in its modern voluntary form — operated as a community commons on collectively held land at village or town scale. It is not a production bakery. Users bring their own dough; the oven provides heat, community, and tradition. A journeyman fire-keeper manages the firing cycle, sequences thermal batches, and coordinates community participants through the oven queue. The oven charges a small use-fee (cooperative model) or is free (civic model) and is funded by membership dues, wood donations, or a modest civic budget line. At the village scale where it is most at home, the community oven is simultaneously civic infrastructure, cultural gathering place, food education venue, and resilience asset — categories that market economics does not price and therefore does not supply. Its defining constraint is throughput: 40 loaves per firing day at 2 firings per week is not a commercial production volume. That constraint is its identity, not its failure.

@@ -818,18 +818,51 @@ sim_params:
   # rather than any single loom's replacement cycle.
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.7295719844357976
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 170.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=170, total_annual_cost=33900
+  village_civic:
+    verdict: fail
+    primary_metric: 35.6
+    metric_name: per_household_cost
+    notes: per_hh=35.60, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.7295719844357976
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 170.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=170, total_annual_cost=33900
+  town_civic:
+    verdict: fail
+    primary_metric: 5.235294117647059
+    metric_name: per_household_cost
+    notes: per_hh=5.24, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.7295719844357976
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 170.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=170, total_annual_cost=33900
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.9888888888888889
+    metric_name: per_household_cost
+    notes: per_hh=0.99, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Ostrom, Elinor. 1990. Governing the Commons. Cambridge University Press — design principles for cooperative and commons governance; all eight principles applied in lens_context.cooperative"
   - ref: "Chandler, Deborah. 1995 (rev. 2009). Learning to Weave. Interweave Press — floor-loom throughput ranges at twill complexity, warping overhead time estimates, and loom operation fundamentals"
@@ -849,7 +882,6 @@ sources:
   - ref: "[CITATION-NEEDED: SCALES.md §3 small-city economic-development spending benchmark — $5–$25/hh/yr range for small-business development grants requires confirmation from municipal budget survey]"
   - ref: "Lancashire weaving shed cooperative tradition (19th–20th century UK) — production-loom cooperative precedent; weaver-owned collective production sheds; see Historical Lineage [CITATION-NEEDED: primary historical source on Lancashire cooperative weaving shed structure and governance, e.g., Farnie 1979, The English Cotton Industry and the World Market, Oxford UP]"
 ---
-
 ## Summary
 
 The Production Weaving Cooperative (weave-013) is a worker-owned multi-loom facility housing 6–8 floor-loom-4shaft units operated by an equal number of journeyman-weaver member-owners, producing wholesale specialty cloth for B2B and retail channels at a scale of 1,000–3,000 meters per year. It is the production-scale anchor of the weaving catalog: where earlier Group C entries (weave-009, weave-010) model civic and educational access, and where weave-012 models apprentice training, weave-013 models whether a worker-cooperative structure can generate sufficient shared-overhead economies and production volume to support living-wage member incomes from handwoven cloth in a world where industrial fabric costs $12/m. The entry is small-city primary, cooperative lens good, market lens good with strong qualification: viability is contingent on sustaining the $100/m mid wholesale price point for specialty cloth, which in turn requires credible B2B buyer relationships and a non-commodity product positioning. The cooperative primary structure is not incidental — it is the design's economic mechanism, spreading fixed overhead (rent, HVAC, warping station, showroom, governance) across 7 members and enabling each to specialize within the production division rather than duplicating setup costs as solo operators.

@@ -175,18 +175,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.3998407798208116
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 110.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=110, total_annual_cost=21975
+  village_civic:
+    verdict: fail
+    primary_metric: 23.633333333333333
+    metric_name: per_household_cost
+    notes: per_hh=23.63, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.3998407798208116
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 110.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=110, total_annual_cost=21975
+  town_civic:
+    verdict: fail
+    primary_metric: 3.475490196078431
+    metric_name: per_household_cost
+    notes: per_hh=3.48, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.3998407798208116
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 110.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=110, total_annual_cost=21975
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.6564814814814814
+    metric_name: per_household_cost
+    notes: per_hh=0.66, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Handweavers Guild of America, Member Studio Survey 2023 — income and pricing data for professional studio weavers [CITATION-NEEDED: confirm publication and access]"
   - ref: "Textile Society of America, Marketplace Pricing Documentation 2024 — handwoven cloth per-meter rates [CITATION-NEEDED: confirm publication and access]"
@@ -197,7 +230,6 @@ sources:
   - ref: "research/trades/weaving/REQUIREMENTS.md — throughput ranges, loom capability, operator skill definitions, footprint guidance"
   - ref: "research/trades/weaving/DECLINE-VERDICT.md — niche targeting guidance; fiber-sourcing falsifier; commodity-cloth exclusion criteria"
 ---
-
 ## Summary
 
 The Natural Fiber Fashion Atelier (weave-004) is a single-operator or two-person DTC studio in which a master-weaver functions simultaneously as designer, producer, and brand. The output is handwoven garment-grade fabric — primarily twill-structure cloth in wool, silk, or fine-linen colorways — sold directly to consumers via studio sales and e-commerce, or wholesale to boutiques with verified provenance-sourcing policies. This entry is distinct from weave-001 (Tapestry Atelier, art-object output) and weave-003 (Architectural Textile Studio, large-format B2B output): it addresses the gap between those specialties and the commodity-yardage sector. Its economic viability depends entirely on the weaver's ability to build and maintain a direct customer relationship that supports a 20-40x premium over imported industrial cloth.

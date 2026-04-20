@@ -926,18 +926,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: fail
+    primary_metric: 250.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=250, total_annual_cost=49900
+  village_civic:
+    verdict: win
+    primary_metric: 51.8
+    metric_name: per_household_cost
+    notes: per_hh=51.80, threshold=120, hrs/capita=3.200 vs threshold=0.15
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: fail
+    primary_metric: 250.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=250, total_annual_cost=49900
+  town_civic:
+    verdict: win
+    primary_metric: 7.617647058823529
+    metric_name: per_household_cost
+    notes: per_hh=7.62, threshold=100, hrs/capita=0.471 vs threshold=0.15
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 250.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=250, total_annual_cost=49900
+  small_city_civic:
+    verdict: fail
+    primary_metric: 1.4388888888888889
+    metric_name: per_household_cost
+    notes: per_hh=1.44, threshold=80, hrs/capita=0.089 vs threshold=0.15
 sources:
   - ref: "corpus/program/SCALES.md §2 — town scale parameters; household count multiplier (0.40); civic cost threshold at town scale"
   - ref: "corpus/program/SCALES.md §3 — town-scale skilled-trades median wage $56,000/yr; facility-coordinator wage reference"
@@ -966,7 +999,6 @@ sources:
   - ref: "[CITATION-NEEDED: US shared commercial kitchen cooperative formation data; Kitchen Table Coop, La Cocina, Hot Bread Kitchen, or equivalent incubator kitchen program evaluations and member economics]"
   - ref: "[CITATION-NEEDED: state cooperative-corporation statute citations by jurisdiction; California Corporations Code §§12200-12604; Minnesota Statutes §308B; equivalent state cooperative-corporation law]"
 ---
-
 ## Summary
 
 Bake-012 is a cooperative-owned shared commercial kitchen: members book oven time for their own cottage-food, catering, and meal-prep businesses at a compliant commercial facility none of them could afford to build or license independently. The facility houses three to four commercial electric deck ovens, proofing cabinets, a spiral mixer, and multiple independent prep stations in approximately 80 m² of cooperative-leased floor space. The primary purpose is compliance-cost sharing: commercial kitchen licensing runs $5,000-15,000/yr in most US jurisdictions, and the capital investment in a code-compliant multi-oven facility is $55,000-165,000. By pooling these costs across 20-50 member-businesses, the cooperative converts a prohibitive per-business barrier into a manageable shared overhead of ~$150-600/year in dues plus $15-25/hr booking fees. This entry is structurally distinct from bake-010 (Civic Neighborhood Bakery): bake-010 is a publicly-owned food-access and training service with an instructor supervising community members; bake-012 is a member-owned cooperative of independent operators who share infrastructure and license but run their own businesses. The instructor is absent; members self-operate. The cooperative does not sell bread; its members do.

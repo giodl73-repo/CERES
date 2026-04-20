@@ -231,18 +231,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 5.139637955892559
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=4411 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 139.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=139, total_annual_cost=27740
+  village_civic:
+    verdict: fail
+    primary_metric: 44.166666666666664
+    metric_name: per_household_cost
+    notes: per_hh=44.17, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 5.139637955892559
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=4411 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 139.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=139, total_annual_cost=27740
+  town_civic:
+    verdict: fail
+    primary_metric: 6.495098039215686
+    metric_name: per_household_cost
+    notes: per_hh=6.50, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 5.139637955892559
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=4411 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 139.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=139, total_annual_cost=27740
+  small_city_civic:
+    verdict: fail
+    primary_metric: 1.2268518518518519
+    metric_name: per_household_cost
+    notes: per_hh=1.23, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Handweavers Guild of America 2024 member survey — yardage pricing for natural-dye specialty cloth (internal survey; available to HGA members)"
   - ref: "USDA Economic Research Service, Wool and Mohair: Supply, Utilization, and Price Statistics, 2023 — industrial wool cloth baseline pricing"
@@ -254,7 +287,6 @@ sources:
   - ref: "Ostrom, Elinor, 1990, Governing the Commons, Cambridge University Press — cooperative governance design principles"
 
 ---
-
 ## Summary
 
 The Heritage Wool / Natural-Dye Workshop (weave-002) is a master-weaver studio producing luxury textile yardage using local heritage-breed fleece and botanical dyes. It targets independent clothing designers, bespoke interior-textile buyers, and direct retail customers who pay a substantial premium for documented provenance, traditional technique, and ecological production. The studio occupies 35–55 m2 of climate-controlled space, operates a floor-loom-4shaft as its primary production equipment, and maintains a direct supply relationship with one or more heritage-breed sheep farmers as a defining structural feature. It is distinct from commodity artisan weaving by the combination of fiber provenance declaration, dye-source transparency, and the irreducibly high skill floor (master-weaver) required to execute twill and derivative structures in fine heritage-breed wool. The entry is primarily evaluated on the market lens; cooperative and civic fits are marginal, with the civic angle anchored in cultural-heritage preservation and agricultural-biodiversity externalities rather than public-service delivery.

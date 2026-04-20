@@ -379,18 +379,51 @@ sim_params:
 # ── RESULTS ───────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ───────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.4827688651218063
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 158.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=158, total_annual_cost=31567
+  village_civic:
+    verdict: fail
+    primary_metric: 41.766666666666666
+    metric_name: per_household_cost
+    notes: per_hh=41.77, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: marginal
+    primary_metric: 0.4827688651218063
+    metric_name: payback_years
+    notes: wage_verdict=marginal (take_home=64720 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 158.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=158, total_annual_cost=31567
+  town_civic:
+    verdict: fail
+    primary_metric: 6.1421568627450975
+    metric_name: per_household_cost
+    notes: per_hh=6.14, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: marginal
+    primary_metric: 0.4827688651218063
+    metric_name: payback_years
+    notes: wage_verdict=marginal (take_home=64720 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 158.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=158, total_annual_cost=31567
+  small_city_civic:
+    verdict: fail
+    primary_metric: 1.1601851851851852
+    metric_name: per_household_cost
+    notes: per_hh=1.16, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/baking/SCHEMA.md v1.0 (schema_base_version 1.1, 2026-04-19). Baking throughput block, convection-electric energy-source definition, pastry-chef-master skill-floor definition, Group B author guidance for bake-009."
   - ref: "catalog/SCHEMA.md v1.1 (2026-04-19). Base schema: all required fields, conditional triggers, validation rules, sim_params cross-check conventions."
@@ -406,7 +439,6 @@ sources:
   - ref: "Mintz, Sidney W. 1985. Sweetness and Power: The Place of Sugar in Modern History. Viking. — historical grounding for sugar-confectionery as elite cultural form; Victorian wedding cake origins."
   - ref: "Freeman, June. 2004. The Making of the Modern Kitchen. Berg Publishers. — background on Victorian confectionery trade and celebration-cake commercial emergence."
 ---
-
 ## Summary
 
 Bake-009 is a custom celebration cake studio operated by one to two practitioners at the pastry-chef-master skill level. The studio produces bespoke cakes for weddings, milestone birthdays, and corporate events on a lead-time order model: clients book 4-12 weeks in advance, pay a deposit at consultation, and receive a one-of-a-kind product that cannot be substituted from any industrial source on short notice. The defining economic characteristic is high per-unit value ($150-$900 per order) and low throughput (5-20 orders per week at peak, near zero in the Q1 dead period), generating revenue that is lumpy, seasonal, and dependent on sustained client-relationship management. The studio targets a small-city market, where the resident population and its event calendar (weddings, corporate milestones, affluent birthday clients) are large enough to sustain 400 orders per year at premium pricing without a population density that brings in large national competitors. This is not an accessible or community-oriented entry: it occupies the premium custom market that survived industrial consolidation precisely because industrial producers cannot replicate the design-consultation and cake-artistry experience at affordable scale.

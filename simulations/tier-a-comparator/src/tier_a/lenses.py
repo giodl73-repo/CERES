@@ -51,7 +51,16 @@ def market_lens(entry: dict, scale: str, scales: dict) -> LensResult:
     downtime = params.get("downtime_fraction", 0.0)
     effective_units = throughput * (1.0 - downtime)
 
-    market_price = econ["market_price_per_unit"]["mid"]
+    # Entries with lens_fit.market: poor legitimately omit market_price_per_unit
+    mpu = econ.get("market_price_per_unit")
+    if not mpu or mpu.get("mid", 0) == 0:
+        return LensResult(
+            verdict="fail",
+            primary_metric=-1.0,
+            metric_name="payback_years",
+            notes="market_price_per_unit absent or zero; entry not designed for market lens",
+        )
+    market_price = mpu["mid"]
     variable_cost_per_unit = params.get("variable_cost_per_unit", 0.0)
 
     annual_revenue = effective_units * market_price

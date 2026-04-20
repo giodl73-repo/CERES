@@ -199,18 +199,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: fail
+    primary_metric: 125.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=125, total_annual_cost=24900
+  village_civic:
+    verdict: fail
+    primary_metric: 28.2
+    metric_name: per_household_cost
+    notes: per_hh=28.20, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: win
+    primary_metric: 125.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=125, total_annual_cost=24900
+  town_civic:
+    verdict: fail
+    primary_metric: 4.147058823529412
+    metric_name: per_household_cost
+    notes: per_hh=4.15, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 125.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=125, total_annual_cost=24900
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.7833333333333333
+    metric_name: per_household_cost
+    notes: per_hh=0.78, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Langdon, John. 2004. Mills in the Medieval Economy: England, 1300–1540. Oxford University Press. [Mill ownership, capacity, and upstream dependency — load-bearing for mill-dependency falsifier framing.]"
   - ref: "Kaplan, Steven L. 1984. Provisioning Paris: Merchants and Millers in the Grain and Flour Trade during the Eighteenth Century. Cornell University Press. [French grain-and-bread supply chain; cooperative and guild baking structures.]"
@@ -223,7 +256,6 @@ sources:
   - ref: "[CITATION-NEEDED: per-household food-access program costs in peer towns — needed for civic lens benchmark_comparison; municipal budget documents or USDA food-access program per-household data required before promotion.]"
   - ref: "[CITATION-NEEDED: cooperative grain-share bakery operating precedents — contemporary examples (e.g., grain CSA with baking access programs, cooperative flour-share bakery models in the U.S. or Europe) needed to ground capital-cost and operating-cost estimates; no direct historical precedent exists at this specific integration level.]"
 ---
-
 ## Summary
 
 The Community Grain-Share Bakery (bake-003) is a cooperative-corporation bakery designed around a direct grain-supply-chain integration: member farms contribute grain to a contracted local mill, the mill delivers flour to the bakery coop, and members earn baking-session credits proportional to their grain contributions. It is not a market-facing business in the primary sense — its output flows to members, not retail customers — though surplus production may be sold locally. The design exists as a distinct catalog entry because it is the most direct test of the DECLINE-VERDICT mill-dependency falsifier: rather than treating commercial flour as a given input (the baseline for most other baking entries), bake-003 explicitly constructs the local-mill relationship that the falsifier identifies as the binding upstream constraint. If this model is viable, it demonstrates that the falsifier can be managed, not merely assumed away. It is designed for town-to-small-city scale where member density justifies the organizational overhead of coop governance, session booking, and grain-credit accounting, and where a local mill partner at viable delivery distance exists.

@@ -194,18 +194,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.5368832779559345
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 132.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=132, total_annual_cost=26225
+  village_civic:
+    verdict: fail
+    primary_metric: 30.566666666666666
+    metric_name: per_household_cost
+    notes: per_hh=30.57, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.5368832779559345
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 132.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=132, total_annual_cost=26225
+  town_civic:
+    verdict: fail
+    primary_metric: 4.495098039215686
+    metric_name: per_household_cost
+    notes: per_hh=4.50, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.5368832779559345
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 132.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=132, total_annual_cost=26225
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.8490740740740741
+    metric_name: per_household_cost
+    notes: per_hh=0.85, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Morris-Suzuki, Tessa. 1994. The Technological Transformation of Japan. Cambridge University Press. [Tokugawa and Meiji textile technology; Jacquard adoption in Nishijin; draw-boy elimination — primary historical reference for Japanese-loom lineage claims]"
   - ref: "Leupp, Gary P. 1992. Servants, Shophands, and Laborers in the Cities of Tokugawa Japan. Princeton University Press. [Nishijin labor regime; detchi-boko apprenticeship; ton'ya merchant control — primary reference for Nishijin organizational form]"
@@ -218,7 +251,6 @@ sources:
   - ref: "research/trades/weaving/DECLINE-VERDICT.md — niche targeting; fiber-sourcing falsifier; Nishijin restructuring pathway and its conditions; commodity-cloth exclusion criteria"
   - ref: "[CITATION-NEEDED: imported Japanese-aesthetic fabric wholesale price — textile importer or wholesale marketplace data, 2024-2025; load-bearing for industrial_baseline_price claim]"
 ---
-
 ## Summary
 
 The Japanese-Style Textile Studio (weave-008) is a master-weaver studio producing Japanese-aesthetic cloth using an 8-shaft floor loom with a dobby attachment — mon-weave repeat patterns, geometric structures derived from kasuri-adjacent spacing logic, and simple warp-manipulation ikat effects achievable without a draw loom. The entry is calibrated for a small-city market-primary model: one to two operators, a studio footprint of 30-50 m², Japanese-spun silk thread, Tencel, and fine cotton sourced as industrial yarn. It is distinct from every other entry in the weaving catalog: weave-001 (Tapestry) produces art objects; weave-004 (Fashion Atelier) produces garment yardage in Western aesthetic traditions; weave-006 (Traditional Revival) is a civic-primary heritage entry for named indigenous traditions. Weave-008 is the only entry occupying the Japanese-aesthetic luxury-yardage niche, and it is designed as a modern-adaptation entry — not a historical recreation. Its economic viability rests on a premium 15x over imported industrial Japanese-print fabric, supported by handwoven provenance, custom pattern, and access to a small but deep Western luxury market for Japanese-aesthetic cloth.

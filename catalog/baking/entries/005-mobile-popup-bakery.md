@@ -222,18 +222,51 @@ sim_params:
 # ── RESULTS ───────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ───────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: marginal
+    primary_metric: 0.8832512018758949
+    metric_name: payback_years
+    notes: wage_verdict=marginal (take_home=42613 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 74.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=74, total_annual_cost=14662
+  village_civic:
+    verdict: fail
+    primary_metric: 21.9
+    metric_name: per_household_cost
+    notes: per_hh=21.90, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 0.8832512018758949
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=42613 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 74.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=74, total_annual_cost=14662
+  town_civic:
+    verdict: fail
+    primary_metric: 3.2205882352941178
+    metric_name: per_household_cost
+    notes: per_hh=3.22, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 0.8832512018758949
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=42613 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 74.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=74, total_annual_cost=14662
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.6083333333333333
+    metric_name: per_household_cost
+    notes: per_hh=0.61, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/baking/SCHEMA.md v1.0 (schema_base_version 1.1, 2026-04-19). Baking throughput block structure, convection-electric energy-source definition, operator skill-floor definitions, first_year_failures reference list, Group A author guidance for bake-005."
   - ref: "catalog/SCHEMA.md v1.1 (2026-04-19). Base schema: all required fields, conditional triggers, validation rules, and sim_params cross-check conventions."
@@ -246,7 +279,6 @@ sources:
   - ref: "[CITATION-NEEDED: farmers-market booth fee ranges — supporting context for regulatory_notes farmers-market membership cost; ranges vary widely by market ($25–$100/day or $200–$800/season for most US regional markets; USDA AMS 2023 market survey data cited as approximate source).]"
   - ref: "[CITATION-NEEDED: 19th-century travelling market baker precedent — secondary social history sources documenting itinerant bread sellers at rural markets and fairs in Britain and North America; no single consolidated academic source identified at time of authoring.]"
 ---
-
 ## Summary
 
 Bake-005 is a solo mobile bakery: an operator who pre-bakes at home (or a licensed commissary kitchen) the night before a market event, then loads the product into a cargo van and sells direct at farmers markets, community events, and pop-up locations on a 2–3-day-per-week circuit. The defining characteristic is the elimination of the commercial lease: capital goes into the van, oven, and generator rather than a fixed premises, and floor-space rent is zero. The entry targets village and rural-town markets where a permanent storefront cannot be supported by the resident population alone but a twice-weekly market presence captures the dispersed artisan-bread demand in the catchment area. It is the baking analog to forge-007 (Containerized Mobile Forge): the production capacity goes to where the customers aggregate rather than waiting for customers to come to a fixed address. Unlike forge-007, the mobile baker pre-produces inventory before the event rather than performing custom work on-site; the van is a delivery and selling platform, not a production platform.

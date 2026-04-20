@@ -597,7 +597,8 @@ sources:
   - ref: "[CITATION-NEEDED: service life data for consumer-grade tabletop induction forge units; manufacturer specification or consumer-electronics longevity analog, 2024]"
   - ref: "[CITATION-NEEDED: survey of hobbyist/micro-operator home-forge layout dimensions and footprint data, 2024]"
   - ref: "[CITATION-NEEDED: throughput variance data for part-time hobbyist/micro-operator metalwork businesses; maker-community survey or Etsy seller financial data, 2024]"
----## Summary
+---
+## Summary
 
 The Electric-Induction Gig Repair Micro is the minimum-capital entry point in the smithing
 catalog — a tabletop induction forge operated part-time from a home garage or shed by a

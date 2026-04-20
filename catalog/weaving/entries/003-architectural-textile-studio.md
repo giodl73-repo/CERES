@@ -795,18 +795,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 1.903096389260364
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=32964 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 225.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=225, total_annual_cost=44860
+  village_civic:
+    verdict: fail
+    primary_metric: 59.93333333333334
+    metric_name: per_household_cost
+    notes: per_hh=59.93, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 1.903096389260364
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=32964 vs median=56000)
+  town_coop:
+    verdict: fail
+    primary_metric: 225.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=225, total_annual_cost=44860
+  town_civic:
+    verdict: fail
+    primary_metric: 8.813725490196079
+    metric_name: per_household_cost
+    notes: per_hh=8.81, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 1.903096389260364
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=32964 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 225.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=225, total_annual_cost=44860
+  small_city_civic:
+    verdict: fail
+    primary_metric: 1.664814814814815
+    metric_name: per_household_cost
+    notes: per_hh=1.66, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/weaving/SCHEMA.md v1.0 (schema_base_version 1.1) §1 (throughput block structure, meters_per_day ranges by pattern complexity), §2 (energy_source enumeration, electric-lighting-only), §3 (loom_type floor-loom-8shaft, warp width ranges, operator floor), §4 (humidity_control_required, natural-fiber implications), §5 (operator_skill_floor: master-weaver, weave-003 requirement), §6 (fiber_source_declaration: industrial-yarn-purchased), §7 (first_year_failures reference list: warp beam ratchet, climate-control, dobby mechanism), §8 (Group A guidance for weave-003: market_price_per_unit, industrial_baseline_price, master-weaver requirement)"
   - ref: "catalog/SCHEMA.md v1.1 (2026-04-19) — base schema, all required fields, validation rules, conditional triggers, lens_context requirements, sim_params cross-checks"
@@ -824,7 +857,6 @@ sources:
   - ref: "Larsen, Jack Lenor, and Mildred Constantine. 1981. The Art Fabric: Mainstream. Van Nostrand Reinhold. (Survey of large-scale architectural textile commissions in 20th-century institutional and commercial interiors; functional inheritance of Bauhaus approach in US practice)"
   - ref: "[CITATION-NEEDED: Nordic tapestry and Scandinavian flat-weave monumental-commission tradition — specific archival or trade source for Scandinavian architectural textile tradition pending identification; functional precedent cited from practitioner literature]"
 ---
-
 ## Summary
 
 Weave-003 is a master-weaver studio producing large-scale handwoven textiles for architectural installation: lobby panels, acoustic baffles, curtain walls, and corporate and hospitality commission work. The entry occupies the architectural end of the weaving catalog — the niche where handwoven textile becomes building infrastructure, analogous to forge-010 (Architectural Ironwork Bespoke) in the smithing catalog. The studio operates at the B2B end of the market, selling primarily to general contractors, interior designers, and institutional clients (universities, hospitals, civic buildings) who specify bespoke textile installations in signature spaces. The output is not decorative fabric: it is performance textile — fire-rated, acoustically specified, custom-designed for a particular architectural context — that no commercial mill produces to specification. Unit value is high ($650/m² mid-price vs. $40/m² industrial baseline), volume is low (180 m²/yr from a single-operator studio), and the client relationship is B2B commission, not retail. Capital requirement ($30,000–$110,000) is primarily driven by wide-format floor looms and the humidity-control system required for multi-fiber specialty work. The entry is viable at small-city scale under the market lens; cooperative and civic lenses are poor and marginal respectively, consistent with the premium-B2B market logic.

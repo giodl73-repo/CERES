@@ -722,18 +722,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 0.09580838323353294
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=8286 vs median=48000)
+  village_coop:
+    verdict: win
+    primary_metric: 6.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=6, total_annual_cost=1153
+  village_civic:
+    verdict: fail
+    primary_metric: 1.6533333333333333
+    metric_name: per_household_cost
+    notes: per_hh=1.65, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 0.09580838323353294
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=8286 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 6.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=6, total_annual_cost=1153
+  town_civic:
+    verdict: fail
+    primary_metric: 0.24313725490196078
+    metric_name: per_household_cost
+    notes: per_hh=0.24, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 0.09580838323353294
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=8286 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 6.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=6, total_annual_cost=1153
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.045925925925925926
+    metric_name: per_household_cost
+    notes: per_hh=0.05, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/weaving/SCHEMA.md v1.0 §1: throughput block structure; meters_per_day ranges for rigid-heddle (1–4 m/day) as reference; backstrap throughput at lower end; max_active_hours_per_week guidance"
   - ref: "catalog/weaving/SCHEMA.md v1.0 §2: electric-lighting-only energy source definition; near-zero energy for hand-operated loom studios in residential context"
@@ -758,7 +791,6 @@ sources:
   - ref: "Andean backstrap weaving tradition: Andean highlands backstrap tradition (Bolivia, Peru, Ecuador) uses a near-identical loom form for fine alpaca and wool cloth; functional precedent for body-tension technique and warp-width norms. [CITATION-NEEDED: primary ethnographic source for Andean backstrap weaving economics and throughput; CAWC or similar NGO documentation preferred]"
   - ref: "Tourist-adjacent cultural heritage piece-work: ILO and NGO documentation of below-minimum-wage piece-work in Guatemalan and Mexican backstrap-weaving communities serving tourist and export markets; primary evidence for the anti-romanticism note in this entry. [CITATION-NEEDED: ILO SECTOR / ITC-ILO reports on artisan craft wages in Central America; NGO monitoring data from fair-trade weaving cooperatives]"
 ---
-
 ## Summary
 
 The Backstrap Home Studio is the absolute minimum-capital entry in the CERES weaving catalog: a single operator, a single backstrap loom, a home corner, and purchased yarn. Capital cost is $200–$2,500 — the lowest in the catalog. Footprint is 3–8 m² of floor space, no installation required. This entry exists to establish the economic floor: what is the minimum investment at which a weaving operation can produce saleable cloth, and can that floor clear a living wage at part-time village scale? The expected answer is: barely not. At mid price realization ($80/m), 140 m/yr output, and 560 hr/yr of operator time, gross revenue is $11,200/yr against a variable cost and overhead of approximately $2,800/yr (consumables $700, maintenance $100, floor space imputed $300, capital amortization $53). Net before labor: ~$8,400/yr. At 560 hr/yr of labor, that implies $15/hr before tax — at or slightly below the SCALES minimum-wage threshold for a village-scale operator depending on jurisdiction. But mid-price realization ($80/m) requires consistent direct-to-consumer sales at craft-fair or Etsy pricing; low-price realization ($30/m) yields only $4,200/yr gross revenue, well below subsistence. This entry is marginal on the market lens under favorable assumptions and fails under conservative ones. Its purpose in the catalog is exactly this documentation: the floor is here, and the floor does not reliably clear minimum wage at part-time village scale.

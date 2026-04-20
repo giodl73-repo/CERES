@@ -633,18 +633,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: fail
+    primary_metric: 119.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=119, total_annual_cost=23800
+  village_civic:
+    verdict: fail
+    primary_metric: 16.8
+    metric_name: per_household_cost
+    notes: per_hh=16.80, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: win
+    primary_metric: 119.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=119, total_annual_cost=23800
+  town_civic:
+    verdict: fail
+    primary_metric: 2.4705882352941178
+    metric_name: per_household_cost
+    notes: per_hh=2.47, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 119.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=119, total_annual_cost=23800
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.4666666666666667
+    metric_name: per_household_cost
+    notes: per_hh=0.47, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "corpus/program/SCALES.md §3 — small-city-scale skilled-trades median wage and civic facility per-household cost benchmarks"
   - ref: "Ostrom, Elinor. 1990. Governing the Commons. Cambridge University Press — cooperative governance design principles"
@@ -661,7 +694,6 @@ sources:
   - ref: "Scandinavian textile studio collective model — European shared-studio precedent for professional-tier craft infrastructure; functional inheritance of booking-system governance and equipment-access model [CITATION-NEEDED: primary source on Nordic textile cooperative studio models]"
   - ref: "NYC garment district production cooperative model — functional precedent for shared high-value equipment access in commercial fashion production context [CITATION-NEEDED: academic or trade documentation of NYC garment-district cooperative production models]"
 ---
-
 ## Summary
 
 The Artist-Designer Collaboration Studio (weave-015) is a professional-tier shared floor-loom studio providing equipment access to working artist-weavers and fashion designers who need production-capable 8-shaft floor looms but cannot or will not commit the $25,000–$90,000 required to own and maintain equivalent equipment individually. The studio operates on a member-subscription model: professional weavers and designers pay $1,500–$3,000/yr for booking access to a bank of 4–5 floor-loom-8shaft units, shared warping infrastructure, and climate-controlled workspace. Revenue is member subscriptions supplemented by off-hours equipment rental to non-members. The facility itself produces no commercial output; members' own work — fashion yardage, art textiles, garments, tapestry — remains theirs to sell or license under their own commercial identity. A master-weaver supervisor (fractional FTE, ~0.4) provides equipment-safety oversight and peer-consultation at intake assessment; the studio is not a teaching facility. Governance is cooperative with documented Ostrom-compliant bylaws, skill-based membership admission, digital booking, and a graduated-sanctions framework that includes an IP and attribution clause as a core governance element. Target scale is small city; viable under cooperative lens, marginal under civic, poor under market.

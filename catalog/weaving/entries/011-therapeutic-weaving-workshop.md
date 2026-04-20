@@ -668,18 +668,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: fail
+    primary_metric: 48.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=48, total_annual_cost=9450
+  village_civic:
+    verdict: fail
+    primary_metric: 18.9
+    metric_name: per_household_cost
+    notes: per_hh=18.90, threshold=120, hrs/capita=0.000 vs threshold=0.15
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: win
+    primary_metric: 48.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=48, total_annual_cost=9450
+  town_civic:
+    verdict: fail
+    primary_metric: 2.7794117647058822
+    metric_name: per_household_cost
+    notes: per_hh=2.78, threshold=100, hrs/capita=0.000 vs threshold=0.15
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 48.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=48, total_annual_cost=9450
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.525
+    metric_name: per_household_cost
+    notes: per_hh=0.53, threshold=80, hrs/capita=0.000 vs threshold=0.15
 sources:
   - ref: "corpus/program/SCALES.md §2–4 — small-city scale parameters, per-household civic cost threshold ($80/hh/yr), and median wage ($62,000/yr)"
   - ref: "Ostrom, Elinor. 1990. Governing the Commons. Cambridge University Press — governance principles (cited for civic MOU structure, not cooperative lens)"
@@ -698,7 +731,6 @@ sources:
   - ref: "[CITATION-NEEDED: IMLS Public Library Survey FY 2021 — small-city (15,000–75,000 population) library operating expenditure per household; $40–55/hh/yr estimate requires confirmation against PLS data]"
   - ref: "US Census Bureau, American Community Survey 5-year estimates (2018–2022), Table B25010 — average household size and household count derivation for scale parameters"
 ---
-
 ## Summary
 
 The Therapeutic Weaving Workshop (weave-011) is a small-city civic facility designed as cost-effective occupational therapy infrastructure, not as a craft amenity. The facility operates 6–8 rigid-heddle looms at ADA-accessible workstation heights, partnered with a hospital or regional rehabilitation center that provides occupational therapist co-facilitation, clinical referrals, and outcome documentation. The city contributes the weaving instructor, loom infrastructure, and space; the clinical partner contributes the OT protocol and co-facilitator staff time. The resulting session cost — roughly $20–40/hr at group rate for the therapeutic weaving component — is dramatically more affordable than individual clinical OT billing at $150–300/hr, which is the program's public-goods justification. The facility targets small-city scale only; village and town scales lack the hospital partnership infrastructure and referral volume to sustain the model. It is evaluated exclusively under the civic lens: market and cooperative lenses are both poor fits for a program serving rehabilitation patients and disabled adults who cannot pay market-clearing prices for what they need.

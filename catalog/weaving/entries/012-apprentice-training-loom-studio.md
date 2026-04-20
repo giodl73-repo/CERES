@@ -1006,18 +1006,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  village_coop:
+    verdict: fail
+    primary_metric: 89.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=89, total_annual_cost=17620
+  village_civic:
+    verdict: fail
+    primary_metric: 21.4
+    metric_name: per_household_cost
+    notes: per_hh=21.40, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  town_coop:
+    verdict: win
+    primary_metric: 89.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=89, total_annual_cost=17620
+  town_civic:
+    verdict: fail
+    primary_metric: 3.1470588235294117
+    metric_name: per_household_cost
+    notes: per_hh=3.15, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  small_city_coop:
+    verdict: win
+    primary_metric: 89.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=89, total_annual_cost=17620
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.5944444444444444
+    metric_name: per_household_cost
+    notes: per_hh=0.59, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/weaving/SCHEMA.md v1.0 §1: throughput block structure; meters_per_day ranges by loom type and pattern complexity; max_active_hours_per_week guidance (30–40 hr/wk ceiling for full-time weaver); product_mix field definitions including instruction_open_studio as dominant category for cooperative/civic training entries"
   - ref: "catalog/weaving/SCHEMA.md v1.0 §2: electric-lighting-only energy source; humidity-control note — HVAC energy exceeds loom energy in humidity-controlled studios; 10–25 kWh/day for climate control"
@@ -1054,7 +1087,6 @@ sources:
   - ref: "[CITATION-NEEDED: sound level at operator position for multi-loom floor-loom weaving studio; label: inferred from general knowledge of hand-loom noise levels]"
   - ref: "[CITATION-NEEDED: commercial room rental per m²/yr for town/small-city light-commercial space; CoStar or SCALES.md §4; label: inferred]"
 ---
-
 ## Summary
 
 The Apprentice Training Loom Studio (weave-012) is a member-owned cooperative training facility whose primary output is journeyman-certified weavers, not commercial cloth. The cooperative is funded through paid-subscription member dues, discounted apprentice dues, and ancillary sales of apprentice-made training cloth; the master weaver-instructor is a worker-member receiving a cooperative stipend. The facility operates a multi-tier loom floor — rigid-heddle looms for Stage 1 beginners, 4-shaft floor looms for Stage 2 journeyman candidates, and 8-shaft floor looms for Stage 3 master-class work — across 50–80 m² of climate-controlled studio space serving 4–8 concurrent apprentices under a master weaver-instructor and 1–2 journeyman assistants. This entry is the weaving analog of forge-009 (Co-op Apprentice Training Forge): it models the cooperative as employer and trainer simultaneously, with the apprentice as dues-paying worker-member, the instructor in a stipend-funded ownership stake, and governance calibrated to Ostrom's design principles for a worker cooperative. Anti-romanticism: this is industrial-skills training for the luxury/specialty weaving market, not cultural transmission. The economic purpose is producing weavers who can be employed or self-employed in the specialty textile sector identified in DECLINE-VERDICT as the viable artisan niche — a sector that cannot be supplied by casual hobbyists or weekend workshop graduates.

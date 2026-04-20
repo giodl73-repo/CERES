@@ -258,18 +258,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.6321417652616262
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 355.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=355, total_annual_cost=70867
+  village_civic:
+    verdict: fail
+    primary_metric: 102.86666666666667
+    metric_name: per_household_cost
+    notes: per_hh=102.87, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.6321417652616262
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: fail
+    primary_metric: 355.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=355, total_annual_cost=70867
+  town_civic:
+    verdict: fail
+    primary_metric: 15.127450980392158
+    metric_name: per_household_cost
+    notes: per_hh=15.13, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.6321417652616262
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 355.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=355, total_annual_cost=70867
+  small_city_civic:
+    verdict: fail
+    primary_metric: 2.8574074074074076
+    metric_name: per_household_cost
+    notes: per_hh=2.86, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "USDA Economic Research Service, retail bakery product price data [CITATION-NEEDED — replace with specific ERS report or USDA NASS dairy/wheat price series URL and access date]"
   - ref: "Specialty Food Association, 'State of the Specialty Food Industry 2024,' pastry and confection channel section [CITATION-NEEDED — replace with SFA report URL and access date]"
@@ -280,7 +313,6 @@ sources:
   - ref: "research/trades/baking/DECLINE-VERDICT.md — niche targeting, flour sourcing guidance, specialty confection positioning"
   - ref: "catalog/baking/SCHEMA.md v1.0 — baking throughput structure, energy_source enumeration (combi-steam notes), flour_source_declaration field, operator_skill_floor definitions"
 ---
-
 ## Summary
 
 bake-006 is a specialty pastry operation producing classical French viennoiserie — croissants, pain au chocolat, danish, and pâte-à-choux confection (éclairs, cream puffs) — at premium retail pricing in a small-city market. It is the catalog's representative of the highest skill-floor, highest per-unit-margin, lowest throughput segment of artisan baking. The defining equipment is a commercial combi-steam oven, which is not optional: integral steam injection during the first minutes of baking is what produces the characteristic shatter, honeycomb crumb, and layering of properly executed laminated doughs. This entry exists as a distinct catalog item because the economics, skill requirements, failure modes, and market conditions of viennoiserie production are categorically different from all other baking entries — different from sourdough bread (different technique, equipment, and buyer psychology), from wholesale supply (different channel and volume), and from celebration cake (different product structure and event dependency). The market lens is primary; cooperative and civic lenses are poor.

@@ -844,18 +844,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.23473936487543356
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 46.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=46, total_annual_cost=9160
+  village_civic:
+    verdict: fail
+    primary_metric: 11.566666666666666
+    metric_name: per_household_cost
+    notes: per_hh=11.57, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.23473936487543356
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 46.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=46, total_annual_cost=9160
+  town_civic:
+    verdict: fail
+    primary_metric: 1.7009803921568627
+    metric_name: per_household_cost
+    notes: per_hh=1.70, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.23473936487543356
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 46.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=46, total_annual_cost=9160
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.3212962962962963
+    metric_name: per_household_cost
+    notes: per_hh=0.32, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "research/cultures/american-frontier/weaving.md §3: four-shaft and eight-shaft floor loom specifications; itinerant professional weaver model; coverlet production as primary specialty niche; draft-sheet inventory as professional catalog"
   - ref: "research/cultures/american-frontier/weaving.md §7–§8: restructuring of professional coverlet-weaving trade; industrial competition context; skilled-labor reproduction failure as terminal mechanism"
@@ -896,7 +929,6 @@ sources:
   - ref: "[CITATION-NEEDED: professional coverlet-weaving specialization and persistence into mid-19th century; U.S.-specific textile-history source; Hood 2003 covers Ontario as adjacent comparative; label: structurally inferred per HISTORICAL-FORMS.md]"
   - ref: "[CITATION-NEEDED: Jacquard adoption timeline in American professional hand-weaving, mid-19th century; textile-history monograph or museum collection study; Smithsonian American History collection coverlet holdings documentation; label: structurally inferred]"
 ---
-
 ## Summary
 
 The Coverlet & Americana Revival Studio is a journeyman-operated, single-operator studio producing hand-woven overshot coverlets and Jacquard-style table linens in the American frontier commission tradition. It operates in 20–35 m² (27 m² representative) on a 4-shaft floor loom using commercial wool yarns, serving residential commission buyers and craft-market customers at town and village scale. It is the only weaving-catalog entry targeting the American overshot-coverlet tradition as its primary market identity — a niche that survived industrial competition on the frontier precisely because its product (custom-patterned, named-draft, natural-wool commissioned bed covering) was non-fungible against factory cloth. The entry tests the modern version of the itinerant-weaver commercial model in a fixed-studio form: can a permanent studio weaver at journeyman level, using the same draft-sheet inventory approach the frontier professional used, sustain a commission business at village-to-town scale? The capital requirement ($8,000–$18,000 mid) is lower than any other multi-shaft weaving entry in the catalog, making this the accessible entry point for the American textile revival category.

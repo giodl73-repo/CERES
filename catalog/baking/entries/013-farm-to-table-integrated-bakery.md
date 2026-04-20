@@ -891,18 +891,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.8051424382069543
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 109.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=109, total_annual_cost=21750
+  village_civic:
+    verdict: fail
+    primary_metric: 35.1
+    metric_name: per_household_cost
+    notes: per_hh=35.10, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.8051424382069543
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 109.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=109, total_annual_cost=21750
+  town_civic:
+    verdict: fail
+    primary_metric: 5.161764705882353
+    metric_name: per_household_cost
+    notes: per_hh=5.16, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: marginal
+    primary_metric: 0.8051424382069543
+    metric_name: payback_years
+    notes: wage_verdict=marginal (take_home=71464 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 109.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=109, total_annual_cost=21750
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.975
+    metric_name: per_household_cost
+    notes: per_hh=0.97, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "corpus/program/SCALES.md §2 — village scale parameters (500-2,000 residents; household multiplier 0.40); town scale parameters (2,000-15,000 residents); civic cost thresholds"
   - ref: "corpus/program/SCALES.md §3 — village-scale and town-scale skilled-trades wage benchmarks; owner-operator income ranges"
@@ -933,7 +966,6 @@ sources:
   - ref: "[CITATION-NEEDED: rural economic development impact of farm-value-added processing; USDA Economic Research Service farm income diversification studies; rural economic development literature on artisan food production]"
   - ref: "[CITATION-NEEDED: masonry dome oven capacity per interior diameter; contemporary farm-bakery operator throughput data; batch size per m² of oven floor area]"
 ---
-
 ## Summary
 
 Bake-013 is an on-farm artisan bakery built around two integrated assets: a wood-fired masonry dome oven and a co-located small stone grain mill. Together they close the grain-to-loaf loop that every other baking catalog entry leaves open. Grain grown or sourced from the adjacent farm is milled on-site to flour, then baked the same day in a wood-fired hearth that produces the crust character and crumb structure no electric or gas deck oven can replicate. The result is a bakery with the highest price-realization potential in the catalog — farm-direct wood-fired artisan bread commanding a $14 mid-price versus $12 for the best comparable electric-deck entry — combined with a food-system resilience story (grain-to-loaf without industrial mill dependency) that is genuinely distinctive rather than a marketing claim. The bakery is sized for village and town scale (40 loaves per day, 1-2 operators, 25-45 m² footprint), serves the farm market and civic lenses equally well, and carries a 30-year lifespan in its primary masonry asset. Anti-romanticism is required: the stone mill is a capital investment with real maintenance burden and a 21-day lead time for parts; the masonry oven requires 2-4 hours of firing management before the first loaf loads; and the combined operator skill requirement (journeyman baker + stone mill operator + farm grain coordinator) is the highest of any artisan bread entry in the catalog.

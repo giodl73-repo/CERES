@@ -597,18 +597,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 0.221004243281471
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=8890 vs median=48000)
+  village_coop:
+    verdict: win
+    primary_metric: 9.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=9, total_annual_cost=1750
+  village_civic:
+    verdict: fail
+    primary_metric: 3.2333333333333334
+    metric_name: per_household_cost
+    notes: per_hh=3.23, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 0.221004243281471
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=8890 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 9.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=9, total_annual_cost=1750
+  town_civic:
+    verdict: fail
+    primary_metric: 0.4754901960784314
+    metric_name: per_household_cost
+    notes: per_hh=0.48, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 0.221004243281471
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=8890 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 9.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=9, total_annual_cost=1750
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.08981481481481482
+    metric_name: per_household_cost
+    notes: per_hh=0.09, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/baking/SCHEMA.md v1.0 §1: throughput block structure; loaves/day ranges for home/micro (10-40); E-3 cross-check guidance"
   - ref: "catalog/baking/SCHEMA.md v1.0 §2: convection-electric energy consumption 2-5 kWh/batch; temperature ceiling 160-230°C; Dutch-oven steam workaround"
@@ -633,7 +666,6 @@ sources:
   - ref: "[CITATION-NEEDED: prosumer convection oven lifespan under semi-commercial baking use; general appliance longevity literature or manufacturer specification]"
   - ref: "[CITATION-NEEDED: empirical throughput data for home-kitchen convection-oven bread production at 2-3 sessions/wk; home baker survey or cottage-food operator financial records]"
 ---
-
 ## Summary
 
 Bake-014 is the minimum-capital stress-test entry for the baking catalog: a part-time home-kitchen or apartment-based micro-bakery producing 20-50 loaves per week using a domestic or prosumer convection-electric oven, selling under state cottage-food laws at farmers markets, neighborhood direct-sale, or via social-media DTC channels. Its defining characteristics are: (1) zero installation cost — the domestic kitchen is the entire infrastructure; (2) capital cost of $500-$5,000, an order of magnitude below any commercial baking entry; (3) binding revenue ceiling imposed by cottage-food law ($25,000-$50,000/year in most US states), not by market demand or throughput capacity; (4) part-time operation only — this is a second-income supplement, not a livelihood; and (5) market viability that is genuinely marginal, not disguised as promising. This entry documents the "home baker selling on Instagram" phenomenon honestly: the income is real, the premium is real, the platform dependency is real, and the ceiling is real. It does not restore a local food system; it exploits a consumer-preference niche enabled by social media and DTC logistics.

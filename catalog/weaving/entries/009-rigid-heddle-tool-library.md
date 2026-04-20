@@ -901,18 +901,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: win
+    primary_metric: 22.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=22, total_annual_cost=4225
+  village_civic:
+    verdict: win
+    primary_metric: 3.65
+    metric_name: per_household_cost
+    notes: per_hh=3.65, threshold=120, hrs/capita=1.664 vs threshold=0.1
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: win
+    primary_metric: 22.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=22, total_annual_cost=4225
+  town_civic:
+    verdict: win
+    primary_metric: 0.5367647058823529
+    metric_name: per_household_cost
+    notes: per_hh=0.54, threshold=100, hrs/capita=0.245 vs threshold=0.1
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 22.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=22, total_annual_cost=4225
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.10138888888888889
+    metric_name: per_household_cost
+    notes: per_hh=0.10, threshold=80, hrs/capita=0.046 vs threshold=0.1
 sources:
   - ref: "catalog/weaving/SCHEMA.md v1.0 §1: throughput block structure; meters_per_day ranges for rigid-heddle (1–4 m/day); max_active_hours_per_week guidance; product_mix field definitions including instruction_open_studio as dominant category for cooperative entries"
   - ref: "catalog/weaving/SCHEMA.md v1.0 §2: electric-lighting-only energy source definition; 1–5 kWh/day consumption range; note on minimal energy for hand-operated loom studios"
@@ -940,7 +973,6 @@ sources:
   - ref: "US Tool Library Network: tool library model precedent — community-owned shared tool access; cooperative governance; dues-funded operations; lowest-capital shared-resource model applicable to craft equipment. https://localtools.org/ [CITATION-NEEDED: specific operational data from fiber-arts or craft tool libraries within US tool-library network]"
   - ref: "Scandinavian folkhögskola weaving room tradition: Swedish and Nordic folk high schools (folkhögskola) have maintained shared weaving rooms with multiple rigid-heddle and floor looms available to enrolled students as a standard educational resource since the 19th century; functional precedent for shared-loom access in a non-commercial community-education context. [CITATION-NEEDED: academic source for folkhögskola weaving-room model as shared craft infrastructure; label: historical-lineage precedent]"
 ---
-
 ## Summary
 
 The Rigid Heddle Tool-Library is the minimum-viable entry for weaving access in the CERES catalog. It provides shared access to 6–10 rigid-heddle looms through a cooperative membership model, requiring no prior weaving experience, no personal capital outlay by the user, and no specialized space or infrastructure. Capital cost ($3,000–$15,000) is the lowest in the weaving catalog and below the cost of a single quality floor loom. The entry exists for the community-access, therapeutic, and educational demand — the same demand that sustains public libraries, tool libraries, and sewing rooms — not for commercial production. It is cooperative-primary: the organizational form is a natural fit for a shared-equipment, dues-funded, volunteer-maintained facility. Civic hosting (library annex, community-center room) is possible but secondary. Per-household cost at town scale ($0.53/hh/yr) is below every comparable civic craft amenity. The defining design decision is the rigid-heddle loom: not because it produces more or better cloth than a floor loom, but because its 3-hour entry barrier and $300–$800 unit cost make shared institutional ownership practical at a scale that floor-loom tool libraries cannot achieve.

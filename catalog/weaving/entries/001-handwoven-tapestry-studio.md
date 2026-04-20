@@ -346,18 +346,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  village_coop:
+    verdict: fail
+    primary_metric: 115.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=115, total_annual_cost=22950
+  village_civic:
+    verdict: fail
+    primary_metric: 26.7
+    metric_name: per_household_cost
+    notes: per_hh=26.70, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  town_coop:
+    verdict: win
+    primary_metric: 115.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=115, total_annual_cost=22950
+  town_civic:
+    verdict: fail
+    primary_metric: 3.926470588235294
+    metric_name: per_household_cost
+    notes: per_hh=3.93, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: annual_gross_margin <= 0; payback never recoverable
+  small_city_coop:
+    verdict: win
+    primary_metric: 115.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=115, total_annual_cost=22950
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.7416666666666667
+    metric_name: per_household_cost
+    notes: per_hh=0.74, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "Bythell, Duncan. 1969. The Handloom Weavers: A Study in the English Cotton Industry during the Industrial Revolution. Cambridge University Press. [Handloom weaver displacement and wage-decline data — cited in weaving DECLINE-VERDICT.md §2.1]"
   - ref: "Strasser, Susan. 1982. Never Done: A History of American Housework. Pantheon Books. [Household labor economics and adoption of factory goods — cited in weaving DECLINE-VERDICT.md §2.4]"
@@ -373,7 +406,6 @@ sources:
   - ref: "[CITATION-NEEDED: measured tapestry labor hours per m² — studio production records or practitioner survey. Required for labor_hours_per_unit E-1 compliance.]"
   - ref: "[CITATION-NEEDED: loom lifespan data — manufacturer documentation or practitioner survey. Required for lifespan_years E-1 compliance.]"
 ---
-
 ## Summary
 
 The Handwoven Tapestry Studio is a direct-to-consumer and commission-based handwoven

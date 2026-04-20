@@ -840,18 +840,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: fail
+    primary_metric: 84.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=84, total_annual_cost=16700
+  village_civic:
+    verdict: win
+    primary_metric: 31.64
+    metric_name: per_household_cost
+    notes: per_hh=31.64, threshold=120, hrs/capita=6.656 vs threshold=0.15
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: win
+    primary_metric: 84.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=84, total_annual_cost=16700
+  town_civic:
+    verdict: win
+    primary_metric: 4.652941176470589
+    metric_name: per_household_cost
+    notes: per_hh=4.65, threshold=100, hrs/capita=0.979 vs threshold=0.15
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 84.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=84, total_annual_cost=16700
+  small_city_civic:
+    verdict: win
+    primary_metric: 0.8788888888888889
+    metric_name: per_household_cost
+    notes: per_hh=0.88, threshold=80, hrs/capita=0.185 vs threshold=0.15
 sources:
   - ref: "corpus/program/SCALES.md §2 — town scale parameters; household count multiplier (0.40); civic cost threshold $100/hh/yr at town scale"
   - ref: "corpus/program/SCALES.md §3 — town-scale skilled-trades median wage $56,000/yr; journeyman baker-instructor wage reference at $52-56k/yr per spec requirement"
@@ -883,7 +916,6 @@ sources:
   - ref: "[CITATION-NEEDED: empirical throughput data for civic or community bakery model; operator financial data or community food program evaluation studies]"
   - ref: "[CITATION-NEEDED: French boulangerie sociale tradition — functional description of municipally-supported neighborhood bread access programs in France; academic or policy source on French bread access policy and boulangerie sociale historical precedents]"
 ---
-
 ## Summary
 
 Bake-010 is a municipally-owned neighborhood bakery operating on the library-model of civic access: town residents book supervised baking sessions, participate in nutrition education programs, and receive access to quality bread produced by a journeyman baker-instructor — all at civic-service pricing rather than market rates. The facility houses a commercial two-deck electric oven, proofing cabinet, spiral mixer, and two supervised member workstations in approximately 52 m² of town-owned floor space. Its defining characteristic is its civic-primary orientation: the facility exists not to generate commercial revenue but to address food security in under-served neighborhoods, build a local apprentice pipeline for journeyman bakers, preserve cultural baking traditions, and provide nutrition education. It is the baking equivalent of forge-004 (Community Civic Makerspace), translated from metalworking to food production. The per-household municipal cost at town scale (~$14-16/hh/yr net) is approximately one-fifth of public library per-household cost and comparable to or below community meal program costs — making it politically viable at the town council level when the food-equity case is clearly presented.

@@ -771,18 +771,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.3511497459309094
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 140.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=140, total_annual_cost=27967
+  village_civic:
+    verdict: fail
+    primary_metric: 43.46666666666666
+    metric_name: per_household_cost
+    notes: per_hh=43.47, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.3511497459309094
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: win
+    primary_metric: 140.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=140, total_annual_cost=27967
+  town_civic:
+    verdict: fail
+    primary_metric: 6.3921568627450975
+    metric_name: per_household_cost
+    notes: per_hh=6.39, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.3511497459309094
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 140.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=140, total_annual_cost=27967
+  small_city_civic:
+    verdict: fail
+    primary_metric: 1.2074074074074073
+    metric_name: per_household_cost
+    notes: per_hh=1.21, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "catalog/baking/SCHEMA.md v1.0 §1: throughput block structure; confection throughput_variance 0.35-0.55 worst, 1.30-1.80 best; E-3 cross-check guidance"
   - ref: "catalog/baking/SCHEMA.md v1.0 §2: hybrid-wood-electric energy source definition; temperature ceiling; regulatory posture; consumption notes"
@@ -815,7 +848,6 @@ sources:
   - ref: "[CITATION-NEEDED: municipal arts and cultural programming per-household cost survey, US peer towns, 2024; National Assembly of State Arts Agencies or Municipal Finance Officers Association data]"
   - ref: "[CITATION-NEEDED: Japanese confection (wagashi) apprenticeship curriculum and time-to-mastery documentation; Japanese confectionery industry organization (全国和菓子協会, Zenkoku Wagashi Kyokai) or Japanese culinary training program documentation]"
 ---
-
 ## Summary
 
 Bake-007 is a specialist Japanese-style wagashi confection studio producing mochi, manjū, nerikiri, and yokan at town or small-city scale, targeting premium gift and specialty retail markets. Its distinguishing characteristics are: (1) hybrid-wood-electric energy configuration — commercial electric steamer and hot plate array as primary production equipment, with an optional wood-fired steamer retained for specific product lines and operational resilience; (2) a market-primary revenue model priced at $3-$15/piece against an industrial import baseline of $1.50/piece; (3) pastry-chef-master skill floor, reflecting the genuine technical requirement for nerikiri sculpting, mochi texture management, and anko production at commercial quality; and (4) explicit declaration of specialty-ingredient dependency (industrial-purchased, not locally milled) consistent with the DECLINE-VERDICT mill-dependency falsifier. This entry targets operators with verified wagashi technique who want to access premium gift and cultural markets; it is not a general-purpose confection studio that happens to offer wagashi as one product line. The binding constraints are skill (pastry-chef-master floor with wagashi specialization is a genuinely scarce qualification in the US market), market size (the addressable premium gift and diaspora customer segment is bounded and requires a town or small-city setting to sustain 130 pieces/day), and supply chain (specialty ingredients have long worst-case lead times that require working-capital inventory buffers). The civic lens is marginal and depends on the presence of a Japanese or AAPI cultural organization partnership to provide governance credibility and community accountability.

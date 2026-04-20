@@ -521,7 +521,8 @@ sources:
   - ref: "CITATION-NEEDED: Refractory lining service life data for intermittently-operated coal forges. Supports: operations_reality.first_year_failures[1] (refractory lining partial spalling)."
   - ref: "CITATION-NEEDED: Coal forge startup and shutdown time; operator survey or guild documentation. Supports: operations_reality.startup_shutdown_overhead_per_day_min = 45."
   - ref: "CITATION-NEEDED: Survey of private smith density in US/EU towns 2,000–15,000 population. Supports: lens_context.civic.competes_with_private claim of gap-filling."
----## Summary
+---
+## Summary
 
 The Shared Tool-Library Coal Forge (forge-003) is a medium-footprint, member-booked
 cooperative forge operating on coal with propane backup. It is designed for a town-scale

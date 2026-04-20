@@ -645,18 +645,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  village_coop:
+    verdict: fail
+    primary_metric: 57.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=57, total_annual_cost=11220
+  village_civic:
+    verdict: fail
+    primary_metric: 21.46666666666667
+    metric_name: per_household_cost
+    notes: per_hh=21.47, threshold=120, hrs/capita=0.000 vs threshold=0.15
+  town_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  town_coop:
+    verdict: win
+    primary_metric: 57.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=57, total_annual_cost=11220
+  town_civic:
+    verdict: fail
+    primary_metric: 3.1568627450980395
+    metric_name: per_household_cost
+    notes: per_hh=3.16, threshold=100, hrs/capita=0.000 vs threshold=0.15
+  small_city_market:
+    verdict: fail
+    primary_metric: -1.0
+    metric_name: payback_years
+    notes: market_price_per_unit absent or zero; entry not designed for market lens
+  small_city_coop:
+    verdict: win
+    primary_metric: 57.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=57, total_annual_cost=11220
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.5962962962962963
+    metric_name: per_household_cost
+    notes: per_hh=0.60, threshold=80, hrs/capita=0.000 vs threshold=0.15
 sources:
   - ref: "corpus/program/SCALES.md §3 — town-scale skilled-trades median wage and civic facility per-household cost benchmarks"
   - ref: "Ostrom, Elinor. 1990. Governing the Commons. Cambridge University Press — design principles for cooperative and commons governance"
@@ -674,7 +707,6 @@ sources:
   - ref: "Jacobs, Jane. 1961. The Death and Life of Great American Cities. Random House — civic infrastructure as neighborhood social-capital anchor; public-goods framing for non-commercial community services"
   - ref: "Danish Folk High School Movement (Grundtvig tradition) — functional precedent for community skills education in civic institutional form; see Historical Lineage for anti-romantic treatment [CITATION-NEEDED: primary academic source on folkhøjskole textile tradition]"
 ---
-
 ## Summary
 
 The Community Fiber Arts Center (weave-010) is a town-owned supervised multi-loom workshop designed on the library model of civic access: residents book sessions, work under qualified supervision on their own projects or through structured instruction, and pay a modest annual fee rather than per-session commercial rates. The facility houses four floor-loom-4shaft units as its primary production equipment, supplemented by rigid-heddle stations for beginners, a dyeing alcove, and warping infrastructure. It is staffed by a journeyman-weaver supervisor with an optional part-time assistant-instructor. The facility targets town and small-city scale and is viable under both cooperative and civic lenses; market lens is poor because the facility does not produce for commercial sale. The primary civic justification is fourfold: textile education and apprenticeship, therapeutic weaving access (occupational-therapy partnership), community gathering as a documented social-cohesion mechanism, and cultural preservation of traditional weaving knowledge. weave-010 is the fiber arts analog of forge-004 (Community Civic Makerspace), purpose-built to model the civic public-goods case for a fiber arts facility that no cooperative or market-lens entry addresses.

@@ -209,18 +209,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: win
+    primary_metric: 0.34232444410483687
+    metric_name: payback_years
+    notes: ''
+  village_coop:
+    verdict: fail
+    primary_metric: 469.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=469, total_annual_cost=93722
+  village_civic:
+    verdict: fail
+    primary_metric: 143.46666666666667
+    metric_name: per_household_cost
+    notes: per_hh=143.47, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: win
+    primary_metric: 0.34232444410483687
+    metric_name: payback_years
+    notes: ''
+  town_coop:
+    verdict: fail
+    primary_metric: 469.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=469, total_annual_cost=93722
+  town_civic:
+    verdict: fail
+    primary_metric: 21.098039215686274
+    metric_name: per_household_cost
+    notes: per_hh=21.10, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: win
+    primary_metric: 0.34232444410483687
+    metric_name: payback_years
+    notes: ''
+  small_city_coop:
+    verdict: win
+    primary_metric: 469.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=469, total_annual_cost=93722
+  small_city_civic:
+    verdict: fail
+    primary_metric: 3.985185185185185
+    metric_name: per_household_cost
+    notes: per_hh=3.99, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "USDA Economic Research Service, 'Retail Bread Prices and Costs,' 2024 [CITATION-NEEDED — replace with specific ERS report URL and access date]"
   - ref: "King Arthur Baking Company, 'Wholesale Artisan Bread Pricing Survey,' 2023 [CITATION-NEEDED — replace with actual survey or industry report citation]"
@@ -231,7 +264,6 @@ sources:
   - ref: "research/trades/baking/DECLINE-VERDICT.md — flour sourcing and B2B channel niche targeting guidance"
   - ref: "catalog/baking/SCHEMA.md v1.0 — baking throughput structure, energy_source enumeration, flour_source_declaration field"
 ---
-
 ## Summary
 
 bake-004 is a medium-scale artisan bakery designed primarily for wholesale supply to local B2B customers: independent restaurants, specialty cafés, and neighborhood grocery stores. It occupies the space between a micro-bakery (bake-001 or bake-002, under 100 loaves/day, direct-to-consumer) and an industrial bread plant. The defining characteristics are: multiple electric deck oven units in rotation, a two-to-three-operator team, 200-500 loaves/day throughput, and a B2B sales channel that trades a lower per-unit price for volume and predictable order flow. This entry exists in the catalog because no other baking entry addresses the wholesale B2B channel at this throughput scale; the economics, failure modes, and regulatory posture are materially different from DTC artisan and from cottage-scale operations.

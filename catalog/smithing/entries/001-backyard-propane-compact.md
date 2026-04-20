@@ -529,7 +529,8 @@ sources:
   - ref: "[CITATION-NEEDED: hobbyist propane forge active-hours and throughput survey — no systematic source found; structural inference from REQUIREMENTS R-06]"
   - ref: "[CITATION-NEEDED: propane forge consumption rate experimental measurement — REQUIREMENTS §4 placeholder #6; smithing SCHEMA §2 propane row]"
   - ref: "[CITATION-NEEDED: US commodity hardware pricing 2023–2024 — industrial baseline comparison; widely available but formal citation pending]"
----## Summary
+---
+## Summary
 
 The Backyard Propane Compact (forge-001) is a minimum-capital, single-operator propane forge suited to hobbyist and entry-level artisan use in a garage or shed footprint of approximately 8–12 m². It is designed to test the lower viability boundary of the smithing catalog: can a minimal-capital entry produce economically viable outcomes? The answer this entry is structured to demonstrate is that minimum-viable-entry is not automatically viable. At part-time throughput (15–20 active hours per week), village-scale demand, and a market lens that cannot clear the $48,000/yr village median wage threshold, the entry lands at market-poor and cooperative-marginal. It exists in the catalog not as a recommended design but as the calibration point for the viability floor, establishing what the entry-level economics actually look like before more capable designs are evaluated against the same framework.
 

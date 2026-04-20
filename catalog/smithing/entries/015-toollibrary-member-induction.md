@@ -784,7 +784,8 @@ sources:
   - ref: "[CITATION-NEEDED: comparable tool-library operating cost and revenue data for cooperative model; US Tool Library Network survey or case-study data]"
   - ref: "[CITATION-NEEDED: state cooperative-corporation statute reference; NCBA CLUSA model articles; 501(c)(3) qualification criteria for tool-library organizations]"
   - ref: "[CITATION-NEEDED: seasonal utilization pattern for shared-access maker/tool facilities; academic-year demand rhythm data]"
----## Summary
+---
+## Summary
 
 The Tool-Library Member-Access Induction Forge (forge-015) is a member-owned cooperative providing subscription-based shared access to 3–4 induction-electric forge stations in a 30–50 m² facility within urban or suburban commercial space. Members pay annual dues and per-session booking fees; a journeyman supervisor is on-floor whenever stations are active; members work under shop protocol at their own stations. The cooperative is the primary ownership and governance vehicle. The design is the induction-electric counterpart to the coal-based shared tool-library (forge-003) and is distinguishable from the civic makerspace (forge-004) and the apprentice training cooperative (forge-009) by its consumer-cooperative structure, its lower regulatory footprint, and its target niche of urban and suburban populations where coal-forge zoning and emissions requirements would block siting entirely.
 

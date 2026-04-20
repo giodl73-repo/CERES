@@ -326,18 +326,51 @@ sim_params:
 # ── RESULTS ──────────────────────────────────────────────────────────────────
 
 results:
-  village_market:    null
-  village_coop:      null
-  village_civic:     null
-  town_market:       null
-  town_coop:         null
-  town_civic:        null
-  small_city_market: null
-  small_city_coop:   null
-  small_city_civic:  null
-
-# ── SOURCES ──────────────────────────────────────────────────────────────────
-
+  village_market:
+    verdict: fail
+    primary_metric: 4.685253208120649
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=6605 vs median=48000)
+  village_coop:
+    verdict: fail
+    primary_metric: 127.0
+    metric_name: break_even_members
+    notes: feasible_pool=31.2, break_even=127, total_annual_cost=25260
+  village_civic:
+    verdict: fail
+    primary_metric: 35.7
+    metric_name: per_household_cost
+    notes: per_hh=35.70, threshold=120, hrs/capita=0.000 vs threshold=2.0
+  town_market:
+    verdict: fail
+    primary_metric: 4.685253208120649
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=6605 vs median=56000)
+  town_coop:
+    verdict: win
+    primary_metric: 127.0
+    metric_name: break_even_members
+    notes: feasible_pool=212.5, break_even=127, total_annual_cost=25260
+  town_civic:
+    verdict: fail
+    primary_metric: 5.25
+    metric_name: per_household_cost
+    notes: per_hh=5.25, threshold=100, hrs/capita=0.000 vs threshold=2.0
+  small_city_market:
+    verdict: fail
+    primary_metric: 4.685253208120649
+    metric_name: payback_years
+    notes: wage_verdict=fail (take_home=6605 vs median=62000)
+  small_city_coop:
+    verdict: win
+    primary_metric: 127.0
+    metric_name: break_even_members
+    notes: feasible_pool=900.0, break_even=127, total_annual_cost=25260
+  small_city_civic:
+    verdict: fail
+    primary_metric: 0.9916666666666667
+    metric_name: per_household_cost
+    notes: per_hh=0.99, threshold=80, hrs/capita=0.000 vs threshold=2.0
 sources:
   - ref: "[CITATION-NEEDED: electric-deck oven energy consumption benchmarks — commercial bakery equipment energy survey]"
   - ref: "[CITATION-NEEDED: artisan subscription bakery capital cost ranges — equipment vendor price lists or bakery startup cost surveys, 2023-2026]"
@@ -350,7 +383,6 @@ sources:
   - ref: "Ostrom, E. 1990, Governing the Commons, Cambridge University Press — Ostrom design principles (Principles 1-8)"
   - ref: "[CITATION-NEEDED: CSA model subscription agriculture precedents — community-supported agriculture academic literature or USDA CSA program data]"
 ---
-
 ## Summary
 
 The Heritage Grain Subscription Bakery (bake-002) is a CSA-model artisan operation built around a fixed subscriber base receiving weekly boxes of heritage-grain sourdough bread — einkorn, spelt, emmer, and red fife wheat loaves baked twice weekly and delivered or collected on a set schedule. The model is sized for 60–120 loaves per week (mid: 90), operated by 1–2 journeyman bakers in a 25–40 m² commercial kitchen with an electric-deck oven. Its defining characteristic is the `flour_source_declaration: local-mill-partnership` — sourcing directly from a regional small mill that carries heritage variety whole and stone-ground flours. This makes bake-002 the test case for the "can you source local flour?" decision branch in the CERES evaluation framework: the subscription price premium and the civic agricultural-preservation externalities are both contingent on that partnership being real and reliable.
