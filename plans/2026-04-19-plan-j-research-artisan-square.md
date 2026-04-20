@@ -2,9 +2,11 @@
 id: plan-j-research-artisan-square
 name: Research Corpus — Artisan Square Facility Model
 description: Establish Artisan Square as a CERES-compatible "building-operator trade"; define facility functional requirements, schema extension, real-world benchmarking, and market-viability foundation for Plan K catalog
-status: draft
-version: "1.0"
+status: completed
+version: "1.1"
 created: 2026-04-19
+completed: 2026-04-19
+last_modified: 2026-04-19
 phase: 1
 subsystem: research-corpus
 trade: artisan-square
