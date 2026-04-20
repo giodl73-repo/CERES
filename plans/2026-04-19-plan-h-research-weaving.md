@@ -2,8 +2,10 @@
 id: plan-h-research-weaving
 name: Research Corpus — Weaving
 description: Historical functional-requirements research for weaving across 4 anchor cultures
-status: draft
-version: "1.0"
+status: completed
+completed: 2026-04-19
+last_modified: 2026-04-19
+version: "1.1"
 created: 2026-04-19
 phase: 1
 subsystem: research-corpus

@@ -157,21 +157,21 @@ Populated as entries are authored. Initially all entries are `draft`. Promoted t
 
 | ID | Name | Status | Last Modified |
 |---|---|---|---|
-| weave-001 | Handwoven Tapestry Studio | draft | 2026-04-19 |
-| weave-002 | Heritage Wool / Natural-Dye Workshop | draft | 2026-04-19 |
-| weave-003 | Architectural Textile Studio | draft | 2026-04-19 |
-| weave-004 | Natural Fiber Fashion Atelier | draft | 2026-04-19 |
-| weave-005 | Custom Rug & Upholstery Studio | draft | 2026-04-19 |
-| weave-006 | Traditional / Ethnic Weaving Revival | draft | 2026-04-19 |
-| weave-007 | Coverlet & Americana Revival | draft | 2026-04-19 |
-| weave-008 | Japanese-style Textile Studio | draft | 2026-04-19 |
-| weave-009 | Rigid Heddle Tool-Library | draft | 2026-04-19 |
-| weave-010 | Community Fiber Arts Center | draft | 2026-04-19 |
-| weave-011 | Therapeutic Weaving Workshop | draft | 2026-04-19 |
-| weave-012 | Apprentice Training Loom Studio | draft | 2026-04-19 |
-| weave-013 | Production Weaving Cooperative | draft | 2026-04-19 |
-| weave-014 | Backstrap Home Studio | draft | 2026-04-19 |
-| weave-015 | Artist-Designer Collaboration Studio | draft | 2026-04-19 |
+| weave-001 | Handwoven Tapestry Studio | draft — sim-complete | 2026-04-19 |
+| weave-002 | Heritage Wool / Natural-Dye Workshop | draft — sim-complete | 2026-04-19 |
+| weave-003 | Architectural Textile Studio | draft — sim-complete | 2026-04-19 |
+| weave-004 | Natural Fiber Fashion Atelier | draft — sim-complete | 2026-04-19 |
+| weave-005 | Custom Rug & Upholstery Studio | draft — sim-complete | 2026-04-19 |
+| weave-006 | Traditional / Ethnic Weaving Revival | draft — sim-complete | 2026-04-19 |
+| weave-007 | Coverlet & Americana Revival | draft — sim-complete | 2026-04-19 |
+| weave-008 | Japanese-style Textile Studio | draft — sim-complete | 2026-04-19 |
+| weave-009 | Rigid Heddle Tool-Library | draft — sim-complete | 2026-04-19 |
+| weave-010 | Community Fiber Arts Center | draft — sim-complete | 2026-04-19 |
+| weave-011 | Therapeutic Weaving Workshop | draft — sim-complete | 2026-04-19 |
+| weave-012 | Apprentice Training Loom Studio | draft — sim-complete | 2026-04-19 |
+| weave-013 | Production Weaving Cooperative | draft — sim-complete | 2026-04-19 |
+| weave-014 | Backstrap Home Studio | draft — sim-complete | 2026-04-19 |
+| weave-015 | Artist-Designer Collaboration Studio | draft — sim-complete | 2026-04-19 |
 
 ---
 

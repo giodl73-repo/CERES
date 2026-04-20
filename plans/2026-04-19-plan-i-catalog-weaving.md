@@ -2,8 +2,10 @@
 id: plan-i-catalog-weaving
 name: Catalog — Weaving (15 Entries)
 description: 15 weaving catalog entries per DECLINE-VERDICT niche guidance; each schema-complete and ready for Tier A sim
-status: draft
-version: "1.0"
+status: completed
+completed: 2026-04-19
+last_modified: 2026-04-19
+version: "1.1"
 created: 2026-04-19
 phase: 2
 subsystem: catalog
