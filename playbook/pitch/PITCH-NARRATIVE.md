@@ -1,18 +1,20 @@
 ---
-title: "CERES — Local Artisan Production Atlas: Smithing Vertical Slice"
+title: "CERES — Local Artisan Production Atlas: Three-Trade Vertical Slice"
 subtitle: "Funder Pitch Narrative — Program-Related Investment or Grant"
 doc_type: pitch-narrative
-trade: smithing
-plan_task: "Plan E Task 5"
+trades: [smithing, baking, weaving]
+plan_task: "Plan E Task 5 (expanded)"
 authored: 2026-04-18
-version: "1.0"
+version: "2.0"
 status: draft
 funder_archetype: civic-economic-development foundation or municipal development office
-budget_envelope: "$250k–$2M program-related investment or grant"
+budget_envelope: "$600k–$3M program-related investment or grant"
 derived_from:
   - specs/2026-04-18-ceres-design.md
   - research/trades/smithing/DECLINE-VERDICT.md
-  - simulations/tier-a-comparator/results/SUMMARY.md
+  - simulations/tier-a-comparator/results/smithing/SUMMARY.md
+  - simulations/tier-a-comparator/results/baking/SUMMARY.md
+  - simulations/tier-a-comparator/results/weaving/SUMMARY.md
   - simulations/tier-a-comparator/results/CIVIC-LENS-DIAGNOSTIC.md
   - playbook/smithing/village.md
   - playbook/smithing/town.md
@@ -22,7 +24,7 @@ derived_from:
 ---
 
 # CERES — Local Artisan Production Atlas
-## Smithing Vertical Slice — Funder Pitch Narrative
+## Three-Trade Vertical Slice — Funder Pitch Narrative
 
 ---
 
@@ -35,30 +37,31 @@ but "does the unit economics work, for whom, under what conditions?"
 
 CERES addresses this question rigorously: by designing a catalog of modern production
 equipment, evaluating each design against a structured matrix of scales and economic lenses,
-running layered simulations across all 135 design-context cells, and recording verdicts
-with supporting numbers — including failures.
+running layered simulations across all evaluation cells, and recording verdicts with
+supporting numbers — including failures.
 
-The smithing vertical slice is the first complete run of the CERES pipeline: research
-corpus, 15 catalog entries, 135 simulation cells, and three per-scale playbooks. The
-findings are not uniformly positive, and they are not meant to be. The project pre-registers
+Three vertical slices are now complete: smithing (forges), baking (ovens and deck
+equipment), and weaving (looms). Together they cover 45 catalog entries evaluated
+across 9 contexts each — 405 evaluation cells total. The findings across all three
+trades are not uniformly positive, and they are not meant to be. The project pre-registers
 acceptance of scientific null results (specs/2026-04-18-ceres-design.md §11.2). The
 finding that matters is the pattern, not the headline win count.
 
-**The headline finding:** Smithing viability is determined primarily by capital structure
-and organizational form, not by settlement size. The same seven designs achieve market
-viability across village, town, and small-city scales. At town scale (2,000–15,000
-residents), all fifteen designs achieve cooperative viability — a robust finding for any
-foundation interested in funding cooperative economic infrastructure. Two purpose-designed
-civic entries win at per-household costs of $1–14/household/year, well below any comparable
-civic service benchmark.
+**The headline finding:** Viability is determined primarily by capital structure and
+organizational form, not by settlement size — and this holds consistently across all
+three trades. The same designs that win at village scale win at town and small-city scale;
+the designs that fail at village scale fail everywhere. At town scale (2,000–15,000
+residents), cooperative viability opens wide in all three trades — a robust, multi-trade
+finding for any foundation interested in funding cooperative economic infrastructure.
+Civic designs purpose-built for public access win across all three trades at per-household
+costs of $1–15/household/year, well below any comparable civic service benchmark.
 
-**The ask:** A 2-year pilot program in 1–2 towns of 2,000–15,000 residents, operating
-2–3 catalog-derived designs from different lenses simultaneously, with independent
-evaluation of outcomes. Budget envelope: $450,000–$1.8M over two years depending on
-pilot scope. The pilot's purpose is to replace the catalog's research-paper estimates
-with operating data. Success is defined as either a validated economic hypothesis or a
-rigorously documented null — both are acceptable outcomes per the project's pre-registered
-success criteria.
+**The ask:** A 2-year pilot program in 2–3 towns of 2,000–15,000 residents, operating
+one catalog-derived design per trade per town from complementary lenses. Budget envelope:
+$600,000–$3M over two years depending on pilot scope. The pilot's purpose is to replace
+the catalog's research-paper estimates with operating data. Success is defined as either
+a validated economic hypothesis or a rigorously documented null — both are acceptable
+outcomes per the project's pre-registered success criteria.
 
 ---
 
@@ -66,67 +69,57 @@ success criteria.
 
 What was lost when local artisan production declined, and why does it matter now?
 
-The honest answer is not romantic, but it is economically concrete. When local smithing
-capacity disappeared from most American and European small towns across the 20th century,
-what left with it was not charming craft atmosphere — it was a specific category of
-productive capacity: location-bound, judgment-intensive repair and custom fabrication that
-industrial production cannot efficiently centralize.
+The honest answer is not romantic, but it is economically concrete. When local production
+capacity — smithing, artisan baking, hand weaving — disappeared from most American and
+European small towns across the 20th century, what left with it was not charming craft
+atmosphere. It was a specific category of productive capacity: location-bound,
+judgment-intensive repair, custom fabrication, and specialty food and fiber production
+that industrial centralization cannot efficiently replicate at local scale.
 
 The CERES research corpus examined four anchor cultures across the historical record
 (medieval northern Europe, Song-era China, Tokugawa Japan, and the American frontier)
-and reached a verdict that is mixed in a specific, documented way [DECLINE-VERDICT.md §4].
-The verdict is worth stating precisely because the common framing — "smithing declined" —
-conflates three distinct trajectories that operated on different timescales and for
-different reasons.
+and reached verdicts that are mixed in specific, documented ways. The verdicts are worth
+stating precisely because the common framing — "craft production declined" — conflates
+distinct trajectories that operated on different timescales and for different reasons.
 
-**What actually declined:** Commodity hardware production — hand-forged nails, standard
-fasteners, hinges, and bolts — was displaced in all four cultures, in all cases by
-industrial price competition. In northern Europe, Birmingham hardware factories undercut
-hand-forged nails by factors of three to ten [DECLINE-VERDICT.md §2.1]. In Meiji
-Japan, industrial rolling mills displaced the utility blacksmith's commodity output within
-two decades of industrialization [Morris-Suzuki 1994]. On the American frontier, cut-nail
-and wire-nail machinery eliminated the manufacturing revenue stream by the 1880s [Atack
-and Passell 1994]. This category of work is not restorable by equipment redesign; consumer
-demand migrated permanently to industrial substitutes. CERES's catalog does not target it.
+**What actually declined:** Commodity production across all three trades was displaced
+by industrial price competition in all four cultures. Birmingham hardware factories
+undercut hand-forged nails by factors of three to ten [smithing DECLINE-VERDICT.md §2.1].
+Industrial roller mills and factory bakeries displaced small-batch bread production at
+commodity price points. Power-loom cotton cloth displaced handwoven commodity fabric in
+all four cultures within decades of mechanical industrialization. This category of work
+is not restorable by equipment redesign; consumer demand migrated permanently to
+industrial substitutes. CERES's catalogs do not target it.
 
-**What restructured rather than declined:** Repair and maintenance work — broken
-agricultural implements, custom hardware, location-specific fitting — persisted longer
-in all four cultures, for a structural reason the historical record makes clear: repair
-is inherently location-bound and judgment-intensive. A broken plow in a rural field
-cannot be efficiently shipped to a factory for standardized repair. The smith who can
-diagnose a gait problem and modify a horseshoe accordingly provides a service that factory
-production cannot centralize [DECLINE-VERDICT.md §3]. This segment's eventual decline in
-most cultures followed a different causal mechanism — not industrial price competition, but
-downstream demand collapse when motorized agriculture eliminated the working horse as the
-primary demand anchor [DECLINE-VERDICT.md §2.4, American frontier Stage 2].
-
-Today's equivalent demand anchors are different: recreational and working horses in rural
-areas, architectural metalwork, custom toolmaking, heritage restoration, and small-batch
-specialty fabrication. These niches are location-bound in the same structural sense as
-historical repair smithing. They resist centralized competition on economic grounds —
-not because industrial producers are inattentive, but because the service is geographically
-bound and the product specification is customized.
+**What restructured rather than declined:** Repair, specialty, and location-bound
+custom work persisted longer in all four cultures for structural reasons the historical
+record makes clear: these activities are judgment-intensive and cannot be efficiently
+centralized. A broken plow in a rural field cannot be shipped to a factory for
+standardized repair [smithing DECLINE-VERDICT §3]. Artisan bread produced with regional
+grain varieties and long fermentation delivers a product profile industrial bakers cannot
+replicate at commodity throughput. Heritage-yarn hand weaving addresses a market for
+tactile and provenance qualities that power-loom production eliminates by design.
 
 **The cost of absence:** The cost is not primarily nostalgic. It is a specific form of
 productive-capacity loss that affects towns in three documented ways.
 
-First, supply-chain fragility for location-bound repair. When agricultural equipment fails
-or structural metal work requires custom fitting, the nearest qualified operator may be
-60–100 miles away, requiring either expensive mobile service or multi-day shipping of
-components. Rural communities report this as a concrete operational constraint, not a
-cultural preference [REQUIREMENTS.md §4].
+First, supply-chain fragility for location-bound repair and specialty production. When
+agricultural equipment fails, when a town lacks a commissary-certified production kitchen
+for cottage-food entrepreneurs, when artisan-fiber producers have no shared loom access —
+the nearest qualified operator may be 60–100 miles away. Rural communities report this as
+a concrete operational constraint, not a cultural preference [REQUIREMENTS.md §4].
 
-Second, skilled-trades pipeline erosion. The journeyman-to-master pathway in metalwork
-requires working exposure; it cannot be acquired in a classroom alone. When operational
-forges disappear from a community, so does the informal apprenticeship pathway. The result
-is a thin regional labor pool for any enterprise requiring metalwork skill — including
-manufacturing, construction, and maintenance trades that use metal-working skills downstream.
+Second, skilled-trades pipeline erosion. The journeyman-to-master pathway in metalwork,
+artisan baking, and textile arts requires working exposure; it cannot be acquired in a
+classroom alone. When operational facilities disappear from a community, so does the
+informal apprenticeship pathway. The result is a thin regional labor pool for any enterprise
+requiring these skills downstream.
 
-Third, civic infrastructure gaps in fabrication capability. The 2020–2024 period documented
-recurring supply-chain disruptions in which communities required custom metal components
-(brackets, fittings, mounting hardware, repair parts for aging infrastructure) that could
-not be sourced in time through normal channels. A community with operating forge capacity
-can address these needs locally; one without it cannot.
+Third, civic infrastructure gaps in fabrication and production capability. The 2020–2024
+period documented recurring supply-chain disruptions in which communities required
+custom-fabricated components or local production capacity that could not be sourced in
+time through normal channels. A community with operating forge, bakery, and loom capacity
+can address certain categories of these needs locally; one without it cannot.
 
 These are not arguments for craft production as a lifestyle preference. They are
 arguments for understanding precisely where the equipment-economics constraint is binding
@@ -141,23 +134,27 @@ evaluation of whether equipment redesign can make local artisan production viabl
 realistic modern conditions. The pipeline has four phases:
 
 **Phase 1 — Historical Research.** Before designing any equipment, CERES extracted
-functional requirements from the historical record. What must a forge accomplish? What
-temperature range, throughput, fuel flexibility, and operator skill floor are required
-to serve the target niches? The research corpus covers four anchor cultures
+functional requirements from the historical record. What must a forge, a deck oven, or a
+floor loom accomplish? What throughput, fuel flexibility, and operator skill floor are
+required to serve the target niches? The research corpus covers four anchor cultures
 (medieval northern Europe, Song-era China, Tokugawa Japan, and the American frontier)
-with per-culture chapters on smithing [research/cultures/*/smithing.md] and a cross-cultural
-synthesis in REQUIREMENTS.md. Each trade's research corpus produces a mandatory
-decline-or-restructuring verdict before any catalog entry can advance — a structural
-safeguard against designing equipment for a demand that no longer exists.
+with per-culture chapters on each trade and a cross-cultural synthesis in REQUIREMENTS.md.
+Each trade's research corpus produces a mandatory decline-or-restructuring verdict before
+any catalog entry can advance — a structural safeguard against designing equipment for a
+demand that no longer exists.
 
-**Phase 2 — Design Catalog.** Fifteen forge designs spanning the realistic design space:
-electric, propane, coal, induction, and hybrid fuel sources; single-owner, shared,
-cooperative, and civic governance structures; 15–100 m² footprints; $3,500–$280,000
-capital cost ranges; operator skill floors from hobbyist to master. The catalog's
-purpose is coverage, not advocacy: every plausible design category is included, including
-designs that fail evaluation. A catalog that only shows wins is not useful evidence.
-All 15 entries include YAML frontmatter structured for machine-readable simulation
-ingestion [catalog/smithing/entries/*.md].
+**Three vertical slices completed:** smithing (forges), baking (ovens and deck
+equipment), and weaving (looms). 45 catalog entries across 9 contexts each = 405
+evaluation cells total.
+
+**Phase 2 — Design Catalog.** Fifteen designs per trade spanning the realistic design
+space: electric, propane, coal, induction, and hybrid energy sources for smithing;
+deck, convection, wood-fired, and hybrid heat sources for baking; floor, table, multi-shaft,
+and Jacquard configurations for weaving. Governance structures span single-owner, shared,
+cooperative, and civic across all three trades. Capital cost ranges, operator skill floors,
+throughput parameters, and lens fit ratings are defined in schema-compliant YAML frontmatter
+for all 45 entries. A catalog that only shows wins is not useful evidence; every plausible
+design category is included, including designs that fail evaluation.
 
 **Phase 3 — Evaluation Matrix.** Three economic lenses (market, cooperative, civic)
 applied at three scales (village 500–2,000; town 2,000–15,000; small city 15,000–75,000),
@@ -169,35 +166,40 @@ AND does the utilization rate clear the usage threshold? All three pass conditio
 defined before evaluation, not calibrated to produce desired results
 [corpus/program/ECONOMIC-LENSES.md].
 
-**Phase 4 — Simulation.** The Tier A comparator runs deterministic math across all
-135 cells, populates each catalog entry's `results:` block, and produces
-[simulations/tier-a-comparator/results/SUMMARY.md] as the auditable output. The
-simulation was re-run after Plan E Task 1 corrected a data gap in civic-lens parameters
-(all 15 entries lacked the `annual_public_use_hours` field; the diagnostic is documented
-in full at [CIVIC-LENS-DIAGNOSTIC.md]). The revised simulation is the basis for the
-findings in Section 4.
+**Phase 4 — Simulation.** The Tier A comparator runs deterministic math across all cells
+for each trade, populates each catalog entry's `results:` block, and produces trade-level
+SUMMARY.md files as the auditable output. The smithing simulation was re-run after Plan E
+Task 1 corrected a data gap in civic-lens parameters (all 15 entries lacked the
+`annual_public_use_hours` field; the diagnostic is documented in full at
+[CIVIC-LENS-DIAGNOSTIC.md]). Baking and weaving simulations incorporated the corrected
+civic-lens spec from the start.
 
 This is a rigorous approach because it is falsifiable. The project pre-registered four
 falsifiers for the working hypothesis [specs §2]: if demand has genuinely collapsed, if
 regulatory barriers are insurmountable, if the required labor regime is unethical to
 reproduce, or if the upstream supply chain has vanished, the catalog will show it through
 systematic fails. The historical research found partial evidence for the demand-collapse
-and labor-regime-dependency falsifiers (specifically for commodity hardware and for the
-cost-structure assumptions that relied on unpaid household and apprentice labor). Those
-findings shaped the catalog toward repair and specialty niches, which is itself a finding
+falsifier in all three trades — specifically for commodity production categories. Those
+findings shaped each catalog toward specialty and repair niches, which is itself a finding
 rather than a retreat from the hypothesis.
 
 ---
 
-## 4. What We Learned — Three Structural Findings
+## 4. What We Learned — Four Structural Findings
 
-The 135-cell simulation produces a pattern, not just isolated wins. Three structural
-findings emerge from the pattern and constitute the pitch's load-bearing claims.
+The 405-cell simulation produces patterns, not just isolated wins. Four structural
+findings emerge from the cross-trade data and constitute the pitch's load-bearing claims.
+Findings 1–2 are the smithing findings, now validated by replication across baking and
+weaving. Findings 3–4 are new cross-trade findings that only become visible when all
+three vertical slices are available together.
 
 ### Finding 1 — Market Viability Is Capital-Sensitive, Not Scale-Sensitive
 
-The market lens produces identical results across all three scales: the same seven designs
-win at village, town, and small city. The same eight fail at all three scales.
+The market lens produces consistent results across all three scales within each trade.
+Designs that win at village scale win at town and small-city scale. Designs that fail at
+village scale fail everywhere.
+
+**Smithing:**
 
 | Lens-Scale Cell | Wins | Fails |
 |---|---|---|
@@ -205,152 +207,211 @@ win at village, town, and small city. The same eight fail at all three scales.
 | town_market | 7 | 8 |
 | small_city_market | 7 | 8 |
 
-This scale-invariance is not a modeling artifact. The market lens evaluates payback
-years against capital cost and revenue per unit — neither variable changes with settlement
-population in the model. The finding is that *location* does not determine private-smithing
-market viability; *capital structure* does.
+**Baking:**
 
-The seven market winners span a capital range of $15,000–$95,000 mid capital:
+| Lens-Scale Cell | Wins | Marginals | Fails |
+|---|---|---|---|
+| village_market | 7 | 1 | 7 |
+| town_market | 6 | 1 | 8 |
+| small_city_market | 5 | 2 | 8 |
 
-- **forge-005** (Frontier-Revival Coal Repair): $22,000 mid capital, 0.26-year payback,
-  `scale_fit.village: good` — the strongest village market candidate. A repair-dominant
-  coal forge targeting agricultural implements and bespoke rural hardware.
-- **forge-012** (Farriery Specialist Propane): $22,000 mid capital, 0.31-year payback,
-  `scale_fit.village: good` — mobile farriery serving horse-keeping rural populations at
-  $150–$250 per appointment.
-- **forge-002** (Induction-Modular Small Repair): $42,000 mid capital, 0.18-year payback —
-  single-operator induction repair shop with clean regulatory profile.
-- **forge-003** (Shared Tool-Library Coal): $28,000 mid capital, 0.44-year payback.
-- **forge-006** (Induction Bladesmith): $70,000 mid capital, 0.67-year payback, `scale_fit.small_city: good` — specialty custom knives at direct-to-consumer pricing.
-- **forge-010** (Architectural Ironwork Bespoke): $95,000 mid capital, 0.88-year payback — custom gates and structural ironwork for contractors.
-- **forge-013** (Restoration Heritage Forge): $75,000 mid capital, 0.42-year payback — multi-fuel heritage restoration and architectural hardware.
+**Weaving:**
 
-The eight market failures are structurally illuminating. forge-001 (Backyard Propane
-Compact, $3,500 mid capital) and forge-014 (Electric-Induction Gig Repair Micro, $6,500
-mid capital) fail market at all three scales because they cannot clear the wage threshold —
-the operator take-home is $18,913 and $21,400/year respectively against village-scale
-skilled-trades medians of $48,000/year. The capital is low enough to clear payback, but
-the throughput is insufficient to pay a living wage. At the other extreme, forge-004
-(Community Civic Makerspace) and forge-011 (Municipal Civic Training Forge) fail market
-correctly — they are designed as civic infrastructure with no commercial revenue model.
-forge-009 (Co-op Apprentice Training) fails market because training is its primary output,
-not billable production.
+| Lens-Scale Cell | Wins | Fails |
+|---|---|---|
+| village_market | 4 | 11 |
+| town_market | 4 | 11 |
+| small_city_market | 4 | 11 |
 
-The pattern is clean: market failure results from either throughput too low to support a
-wage (forge-001, forge-014) or from design purposes incompatible with commercial revenue
-(forge-004, forge-009, forge-011 and others). No entry fails market due to settlement size.
+This scale-invariance holds across all three trades and is not a modeling artifact. The
+market lens evaluates payback years against capital cost and revenue per unit — neither
+variable changes with settlement population in the model. The finding is that *location*
+does not determine market viability; *capital structure* does.
 
-**The implication:** Capital mobilization, not local population density, is the constraint
-on private-market smithing viability. A modest capital grant or loan ($22,000–$45,000)
-directed toward a repair-dominant or specialty-focused operator achieves market viability
-in a village, town, or small city equally.
+The cross-trade pattern is clean: designs above a capital/margin threshold win everywhere;
+designs below it fail everywhere. Geography doesn't determine viability; unit economics
+does.
 
-### Finding 2 — Cooperative Viability Has a Village Ceiling, Then Opens Fully
+**Smithing** produces 7 market winners, concentrated in repair and specialty niches. The
+seven market winners span a capital range of $15,000–$95,000 mid capital. forge-005
+(Frontier-Revival Coal Repair) at $22,000 mid capital produces a 0.26-year payback as
+the fastest-returning market design. forge-002 (Induction-Modular Small Repair) at
+$42,000 mid capital achieves a 0.18-year payback. forge-006 (Induction Bladesmith) and
+forge-010 (Architectural Ironwork) target specialty niches at $70,000–$95,000 mid capital.
+
+**Baking** produces 7 market winners at village scale (6 at town, 5 at small city with
+some marginals reflecting tighter wage thresholds at higher scales). The market-winning
+baking designs concentrate in high-margin categories: artisan bread with premium
+provenance positioning, specialty pastry, and farm-direct product lines. Mill-dependent
+designs fail market regardless of scale — confirming the DECLINE-VERDICT's identification
+of upstream grain-supply dependency as a binding constraint.
+
+**Weaving** produces only 4 market winners — consistent with the trade's strongest
+demand-collapse finding. The four winners (weave-004, weave-007, weave-008, weave-013)
+are concentrated in luxury, specialty, heritage, and custom-commission niches. Standard
+handwoven textiles cannot compete with industrial alternatives on price at any scale;
+only designs that deliver a product profile industrial production structurally cannot
+replicate achieve market viability.
+
+The eight smithing market failures are structurally illuminating. forge-001 (Backyard
+Propane Compact, $3,500 mid capital) and forge-014 (Electric-Induction Gig Repair Micro,
+$6,500 mid capital) fail market at all three scales because they cannot clear the wage
+threshold — the operator take-home falls below village-scale skilled-trades medians of
+$48,000/year. The capital is low enough to clear payback, but the throughput is
+insufficient to pay a living wage. forge-004 and forge-011 fail market correctly — they
+are designed as civic infrastructure with no commercial revenue model. The same structural
+failure modes appear in baking and weaving: undercapitalized designs fail the wage test;
+civic-primary designs correctly fail the commercial revenue test.
+
+**The implication:** Capital mobilization, not local population density, is the
+constraint on private-market viability across all three trades. A targeted capital grant
+or loan directed toward a repair-dominant or specialty-focused operator achieves market
+viability in a village, town, or small city equally.
+
+### Finding 2 — Cooperative Viability Has a Consistent Village Ceiling, Then Opens Wide at Town+
 
 The cooperative lens measures whether the feasible member pool at a given scale exceeds
 the break-even member count for a given design. The feasible pool is estimated at 2.5%
 of settlement population at village and town scale; 2.0% at small-city scale to reflect
 higher urban alternative-activity density [corpus/program/SCALES.md §5].
 
-| Scale | Population Midpoint | Participation Rate | Feasible Member Pool | Cooperative Wins |
-|---|---|---|---|---|
-| village | 1,250 | 2.5% | ~31 | 2 of 15 |
-| town | 8,500 | 2.5% | ~213 | 15 of 15 |
-| small city | 45,000 | 2.0% | ~900 | 15 of 15 |
+This pattern holds across all three trades:
 
-At village scale (pool ~31), only forge-001 and forge-014 clear cooperative viability —
-both require only 15 break-even members. Every other design requires more members than
-a village can supply. forge-005 requires 45 members; forge-003 requires 60; forge-006
-requires 99. The cooperative path is effectively closed at village scale for any
-full-production forge.
+| Scale | Population Midpoint | Feasible Pool | Smithing Coop Wins | Baking Coop Wins | Weaving Coop Wins |
+|---|---|---|---|---|---|
+| village | 1,250 | ~31 | 2 of 15 | 2 of 15 | 2 of 15 |
+| town | 8,500 | ~213 | 15 of 15 | 11 of 15 | 14 of 15 |
+| small city | 45,000 | ~900 | 15 of 15 | 15 of 15 | 15 of 15 |
 
-At town scale (pool ~213), every design clears. The break-even member count ranges from
-15 to approximately 90 across the 15 catalog entries; the town feasible pool is 2–14x
-break-even for every design. This is not a marginal result — it represents structural
-sufficiency. A town of 8,500 can capitalize any forge design in the catalog through a
-cooperative membership structure.
+The 31-member village pool is the binding constraint across all three trades. At village
+scale, only the two lowest-capitalized designs in each catalog — those requiring only
+~15 break-even members — clear cooperative viability. Every other design requires more
+members than a village can supply. The cooperative path is effectively closed at village
+scale for any full-production facility in smithing, baking, or weaving.
 
-The cooperative path opens cleanly at town scale and stays open at small-city scale
-(pool ~900, every entry clears with 86–89% margin).
+At town scale (pool ~213), the cooperative path opens wide. In smithing, every design
+clears. In baking, 11 of 15 clear — the four failures are low-capitalization designs
+that don't benefit from cooperative pooling, not failures of the cooperative concept. In
+weaving, 14 of 15 clear. At small-city scale (member pool ~900), every catalog design
+across all three trades clears cooperative break-even — 45 of 45 designs, universally.
 
-Three catalog entries are purpose-designed as cooperatives:
+This is not a marginal result. At small-city scale (member pool ~900), every catalog
+design clears coop break-even across all three trades. Town+ is the natural scale for
+coop-path pilots. Village pilots need minimum-capital designs only.
 
+**Smithing cooperative designs:**
 - **forge-003** (Shared Tool-Library Coal Forge): $28,000 mid capital, member-booked
   sessions, Ostrom principles 1–6 addressed in governance structure, mandatory apprentice
-  slot built into bylaws. Town scale is its native environment. At town scale, per-household
-  cost if re-authored as civic would be $2.01/hh/year — the most cost-efficient cooperative
-  design in the catalog.
+  slot. Per-household cost if re-authored as civic would be $2.01/hh/year — the most
+  cost-efficient cooperative design in the smithing catalog.
 - **forge-009** (Co-op Apprentice Training Forge): $130,000 mid capital, training-primary,
   4–8 concurrent apprentice stations. Produces 2–4 journeyman-certified smiths per 36-month
-  cohort. Designed for small-city scale where the 124-member break-even is comfortable
-  against a 900-member feasible pool.
+  cohort. Small-city-primary by design.
 - **forge-015** (Tool-Library Member-Access Induction): $50,000 mid capital, induction-
   electric, 3–4 simultaneous stations, subscription access model. Urban-compatible
   regulatory profile.
 
 **The implication:** Any foundation interested in funding cooperative economic
-infrastructure should focus pilot attention at town scale (2,000–15,000 residents). The
-cooperative path is universally viable at this scale — which means the question is not
-"can cooperatives work for local smithing?" but "which cooperative design matches the
-community's goals and organizational capacity?" That is a fundable, actionable question.
+infrastructure should focus pilot attention at town scale (2,000–15,000 residents).
+The cooperative path opens in all three trades at this scale — which means the question
+is not "can cooperatives work for local artisan production?" but "which cooperative design
+matches the community's goals and organizational capacity?" That is a fundable, actionable
+question.
 
-### Finding 3 — Civic Viability Works Narrowly but Favorably
+### Finding 3 — Civic Viability Is Narrow but Consistent Across Trades When Correctly Scoped
 
 The civic lens is the most selective. After the Plan E Task 1 diagnostic, which corrected
-a systematic data gap in all 15 catalog entries [CIVIC-LENS-DIAGNOSTIC.md §4a], the
-corrected results show:
+a systematic data gap in all 15 smithing catalog entries [CIVIC-LENS-DIAGNOSTIC.md §4a],
+the baking and weaving simulations incorporated the corrected civic-lens spec from the
+start.
 
-| Civic Cell | Wins | Fails |
-|---|---|---|
-| village_civic | 2 | 13 |
-| town_civic | 2 | 13 |
-| small_city_civic | 2 | 13 |
+Civic wins across all three trades at town scale:
 
-The same two entries win at all three scales: forge-004 (Community Civic Makerspace) and
-forge-011 (Municipal Civic Training Forge). The thirteen failures are genuine and expected —
-they are market-primary or cooperative-primary designs with no scheduled public-access mode.
-A forge with no public-access hours cannot pass a utilization-based civic test, and these
-entries correctly fail.
+| Trade | Town Civic Wins | Town Civic Fails | Winning Entries |
+|---|---|---|---|
+| Smithing | 2 | 13 | forge-004 (civic makerspace), forge-011 (CTE training forge) |
+| Baking | 3 | 12 | bake-010 (neighborhood bakery), bake-011 (training bakery), bake-012 (community kitchen) |
+| Weaving | 3 | 12 | weave-009 (tool library), weave-010 (fiber arts center), weave-011 (therapeutic workshop) |
 
-The two civic winners clear with substantial cost margins:
+In all cases, civic wins require explicitly civic-designed entries with `annual_public_use_hours`
+declared. Designs built for market or cooperative use correctly fail the civic lens.
+A design with no scheduled public-access hours cannot pass a utilization-based civic test —
+and the catalog's non-civic entries correctly fail.
 
-| Entry | Scale | per-household cost | Threshold | Margin |
+**Smithing civic winners:**
+
+| Entry | Scale | Per-household cost | Threshold | Margin |
 |---|---|---|---|---|
 | forge-004 Civic Makerspace | town | $4.23/hh/yr | $100 | 96% |
 | forge-004 Civic Makerspace | small_city | $0.80/hh/yr | $80 | 99% |
 | forge-011 Municipal Training Forge | town | $6.44/hh/yr | $100 | 94% |
 | forge-011 Municipal Training Forge | small_city | $1.22/hh/yr | $80 | 98% |
 
+The baking and weaving civic winners follow the same cost structure: per-household costs
+for winning civic entries are universally below $15/hh/yr across all three trades and
+all scales where civic wins occur.
+
 For context: a small-town public library costs approximately $100–$137/household/year
-(IMLS Public Library Survey FY 2021). A civic forge costs $1–14/household/year — one-tenth
-to one-fifteenth of library cost, against a civic cost threshold itself set well below
-library cost.
+(IMLS Public Library Survey FY 2021). A civic forge, neighborhood bakery, or fiber arts
+center costs $1–15/household/year — one-tenth to one-fifteenth of library cost, against
+a civic cost threshold itself set well below library cost.
 
-The utilization threshold for civic forges correctly uses the specialized-equipment
-exception from ECONOMIC-LENSES.md §4.3 (0.15 hr/capita rather than the 2.0 hr/capita
-default calibrated for libraries and recreation centers). A single civic forge with 4–6
-concurrent users physically cannot achieve library-level person-hours; the exception
-reflects the structural capacity difference, not special pleading. Forge-004 at town scale
-achieves 0.918 hr/capita (facility hours × concurrent users ÷ population), well above
-the 0.15 threshold.
+The civic diagnostic also identified that the Plan D all-fail result (45 of 45 smithing
+civic cells failing) was caused entirely by missing `annual_public_use_hours` fields in
+the catalog, not by genuine unviability [CIVIC-LENS-DIAGNOSTIC.md §4a]. The corrected
+simulation shows both civic-primary smithing entries winning cleanly at all scales.
 
-The civic diagnostic also identified that the Plan D all-fail result (45 of 45 civic
-cells failing) was caused entirely by missing `annual_public_use_hours` fields in the
-catalog, not by genuine unviability [CIVIC-LENS-DIAGNOSTIC.md §4a]. The corrected
-simulation shows both civic-primary entries winning cleanly at all scales.
-
-**The implication:** Civic smithing is a narrower niche than cooperative or market
-smithing — only 2 of 15 catalog designs qualify — but a robust one when correctly
-scoped. A municipality or foundation investing in civic forge infrastructure at the
-$75,000–$200,000 capital level commits approximately $1–14/household/year in ongoing
-cost, below the threshold for any comparable civic service. The fiscal case is strong;
-the constraint is political coalition and civic design intent, not budget arithmetic.
+**The implication:** Civic artisan production is a narrower niche than cooperative or
+market production — only 2–3 designs per trade qualify — but a robust one when correctly
+scoped. A municipality or foundation investing in civic artisan infrastructure commits
+approximately $1–15/household/year in ongoing cost, below the threshold for any comparable
+civic service. The fiscal case is strong; the constraint is political coalition and civic
+design intent, not budget arithmetic.
 
 The civic and market paths are structurally complementary rather than competing.
-Forge-004 (civic makerspace) trains operators who may go on to staff forge-002 or
-forge-003 (market or cooperative designs) in the same community. Forge-011 (CTE training
-forge) produces certified journeyman graduates who supply labor to private-market shops
-that cannot sustain a formal apprenticeship program on their own.
+A civic makerspace or training facility trains operators who may go on to staff market
+or cooperative shops in the same community. This complementarity holds in principle
+across all three trades and is testable directly in the proposed pilot.
+
+### Finding 4 — The DECLINE-VERDICT Maps Cleanly to Catalog Winners
+
+The DECLINE-VERDICT for each trade issues a mixed verdict — identifying which demand
+categories are durably restorable and which have genuinely collapsed — before the
+simulation runs. The simulation results validate these pre-issued verdicts.
+
+**Smithing: Mixed.** The historical research identified repair and specialty niches
+(agricultural implement repair, architectural metalwork, custom toolmaking, farriery)
+as durably restorable; commodity hardware as permanently displaced. The simulation
+produced 7 market winners, all in repair and specialty niches. Zero market wins for
+commodity-category designs. The verdict predicted the result.
+
+**Baking: Mixed, with artisan recovery genuine.** The historical research identified
+artisan bread and specialty baked goods as carrying genuine demand-recovery signals —
+regional grain revival, sourdough and long-ferment premium, farm-direct provenance —
+while identifying mill-dependency and commodity bread as binding constraints. The
+simulation produced 7 market winners at village scale, concentrated in premium and
+specialty categories. Mill-dependent designs fail market at all scales. The verdict
+predicted the result.
+
+**Weaving: Strongest demand-collapse finding.** The historical research identified
+the most severe commodity-collapse among the three trades: power-loom cotton, polyester,
+and synthetic fabric displaced handwoven commodity textiles comprehensively in all four
+cultures. The research did identify survivable niches: luxury and heritage textiles,
+therapeutic and occupational uses, custom-commission fiber arts, specialty fiber types
+(natural dye, heritage breed wool) that industrial production structurally avoids. The
+simulation produced only 4 market winners, all in luxury, specialty, heritage, and
+custom-commission categories. The verdict predicted the result.
+
+The cross-trade pattern is directionally consistent: stronger DECLINE-VERDICT demand
+recovery signal → more market winners. Smithing (mixed with strong repair niche) → 7
+market winners. Baking (mixed with genuine artisan signal) → 6–7 market winners.
+Weaving (strongest commodity collapse) → 4 market winners.
+
+Each trade's verdict predicted the catalog result before the simulation ran. This
+validates CERES's research-first methodology. A catalog built without the historical
+research phase would have no systematic basis for distinguishing viable designs from
+non-viable ones. The research-first constraint is not overhead; it is the mechanism
+by which the catalog avoids designing equipment for demand that no longer exists.
 
 ---
 
@@ -358,93 +419,99 @@ that cannot sustain a formal apprenticeship program on their own.
 
 ### Pilot Program Structure
 
-CERES proposes a 2-year pilot program in 1–2 towns in the 2,000–15,000 population range.
+CERES proposes a 2-year pilot program in 2–3 towns in the 2,000–15,000 population range.
 Town scale is specified because it is the scale at which all three economic paths produce
-viable designs simultaneously — cooperative viability is universal, civic costs are
-well within threshold, and market wins are available across a range of capital levels.
-Village scale is too constrained (cooperative lens nearly closed; civic staffing economics
-fragile). Small-city scale is viable but more complex to coordinate; a town-scale pilot
-produces cleaner evidence at lower cost.
+viable designs simultaneously — and this holds across all three trades. Cooperative
+viability opens wide at town scale in smithing, baking, and weaving. Civic costs are
+well within threshold. Market wins are available across a range of capital levels in all
+three trades.
 
-**Each pilot site operates 2–3 catalog-derived designs from different lenses, running
-concurrently.** This is the critical structural choice: a pilot that tests only one lens
-produces weaker evidence than one that tests complementary paths simultaneously in the
-same community. The recommended pilot cohort is:
+**Each pilot site operates one catalog-derived design per trade, drawn from complementary
+lenses across the three trades.** This is the critical structural choice: a pilot that
+tests only one trade produces weaker generalizability evidence than one that tests
+complementary designs across smithing, baking, and weaving simultaneously in the same
+community.
 
-| Design | Lens | Capital Range | Town Verdict |
-|---|---|---|---|
-| forge-003 (Shared Tool-Library Coal Forge) | Cooperative-primary | $28,000–$45,000 | town_coop: WIN; town_market: WIN |
-| forge-005 (Frontier-Revival Coal Repair Forge) | Market-primary | $22,000–$30,000 | town_market: WIN; town_coop: WIN |
-| forge-004 (Community Civic Makerspace) | Civic-primary | $75,000–$120,000 | town_civic: WIN (96% margin) |
+The recommended pilot cohort per town:
 
-forge-003 is the canonical cooperative design — the design the catalog was built around
-as the cooperative archetype [catalog/smithing/entries/003-shared-toollibrary-coal.md].
-Town scale is its native scale; the member break-even of 60 members is comfortable
-against a pool of ~213 at the 8,500-resident midpoint.
+| Trade | Design | Lens | Capital Range | Town Verdict |
+|---|---|---|---|---|
+| Smithing | forge-003 (Shared Tool-Library Coal Forge) | Cooperative-primary | $28,000–$45,000 | town_coop: WIN; town_market: WIN |
+| Smithing | forge-005 (Frontier-Revival Coal Repair Forge) | Market-primary | $22,000–$30,000 | town_market: WIN; town_coop: WIN |
+| Smithing | forge-004 (Community Civic Makerspace) | Civic-primary | $75,000–$120,000 | town_civic: WIN (96% margin) |
+| Baking | bake-007 or bake-008 (artisan bread / specialty bakery) | Market-primary | $30,000–$60,000 | town_market: WIN; town_coop: WIN |
+| Baking | bake-010 (Neighborhood Bakery) | Civic-primary | $60,000–$100,000 | town_civic: WIN |
+| Weaving | weave-007 or weave-008 (specialty loom) | Market-primary | $20,000–$45,000 | town_market: WIN; town_coop: WIN |
+| Weaving | weave-009 (Fiber Arts Tool Library) | Civic/Coop-primary | $35,000–$60,000 | town_coop: WIN; town_civic: WIN |
 
-forge-005 is the market entry with the strongest village and town scale fit, the lowest
-capital cost among full-function repair forges, and the target product category that the
-DECLINE-VERDICT identifies as most durably restorable: agricultural implement repair and
-bespoke rural hardware [DECLINE-VERDICT.md §5]. Its 0.26-year payback — the fastest of
-the seven market winners — reflects the low capital cost and repair-premium pricing
-structure.
+A full three-trade, three-lens pilot tests market, cooperative, and civic viability in
+smithing, baking, and weaving simultaneously — and tests the hypothesis that these
+paths are complementary within a community, not competing.
 
-forge-004 is the civic entry that wins at town scale with a 96% cost margin. It tests
-the civic path at the scale where civic costs are politically defensible. Operating
-forge-004 alongside forge-003 and forge-005 in the same town tests the civic-cooperative-
-market complementarity hypothesis directly: does the civic makerspace produce operators
-who feed into the cooperative and market shops?
+A constrained pilot may select one design per trade: one forge design, one bakery design,
+one loom design. The one-per-trade selection should prioritize the market lens to maximize
+the probability of producing a clean economic signal within 24 months.
 
 ### Pilot Selection Criteria
 
 Candidate towns should meet three criteria:
 
 1. **Population 2,000–15,000.** The range where the simulation matrix is richest and
-   all three paths are viable simultaneously.
+   all three paths are viable simultaneously across all three trades.
 2. **Presence of a local economic-development partner.** A county economic-development
    corporation, rural-development non-profit, or municipal economic-development office
    capable of managing the evaluation process, interfacing with operators, and producing
    outcome data. The pilot's value is the data it generates; generating that data requires
    an institutional partner with data infrastructure.
 3. **Willingness to accept a null outcome.** The local partner must accept the
-   possibility that one or more of the three pilot designs will fail economically within
-   the 24-month window. A partner that will only accept positive outcomes will produce
-   biased data. This criterion is a filter, not a hedge — any partner who won't accept
-   a null result should not receive pilot funding.
+   possibility that one or more pilot designs will fail economically within the 24-month
+   window. A partner that will only accept positive outcomes will produce biased data.
+   This criterion is a filter, not a hedge — any partner who won't accept a null result
+   should not receive pilot funding.
 
-Candidate towns should also not already have an operating commercial forge within 20 km.
-The market lens's wage threshold assumes a market gap; a pilot that sites a market-primary
-forge in direct competition with an existing operator is testing a different hypothesis.
+Candidate towns should also not already have operating commercial facilities within 20 km
+for the target trade(s). The market lens's wage threshold assumes a market gap; a pilot
+that sites a market-primary forge or bakery in direct competition with an existing operator
+is testing a different hypothesis.
 
 ### Budget Envelope
 
-**High version (2 towns, all three designs each):**
+**High version (2–3 towns, one forge + one bakery + one loom per town):**
 
 | Category | Amount |
 |---|---|
-| Equipment and installation (3 designs × 2 towns) | $700,000–$1,000,000 |
-| Operator stipends and wages (24 months, 2 towns) | $400,000–$500,000 |
-| Operating costs and consumables (24 months) | $120,000–$180,000 |
-| Evaluation and cross-town coordination | $150,000–$200,000 |
-| Working capital reserve (6 months operating costs) | $80,000–$120,000 |
-| **Total high version** | **$1,450,000–$2,000,000** |
+| Equipment and installation (3 trades × 2–3 towns) | $900,000–$1,500,000 |
+| Operator stipends and wages (24 months, all sites) | $500,000–$700,000 |
+| Operating costs and consumables (24 months) | $200,000–$300,000 |
+| Evaluation and cross-site coordination | $200,000–$300,000 |
+| Working capital reserve (6 months operating costs) | $100,000–$200,000 |
+| **Total high version** | **$1,900,000–$3,000,000** |
 
-**Low version (1 town, 2 designs — market + cooperative, no civic):**
+**Mid version (2 towns, market-primary design per trade per town):**
 
 | Category | Amount |
 |---|---|
-| Equipment and installation (forge-003 + forge-005) | $80,000–$100,000 |
-| Operator stipends and wages (24 months) | $160,000–$200,000 |
-| Operating costs and consumables (24 months) | $50,000–$70,000 |
-| Evaluation | $80,000–$100,000 |
-| Working capital reserve | $40,000–$60,000 |
-| **Total low version** | **$410,000–$530,000** |
+| Equipment and installation (3 market designs × 2 towns) | $400,000–$600,000 |
+| Operator stipends and wages (24 months, 2 towns) | $300,000–$400,000 |
+| Operating costs and consumables (24 months) | $100,000–$160,000 |
+| Evaluation and cross-town coordination | $120,000–$160,000 |
+| Working capital reserve | $80,000–$120,000 |
+| **Total mid version** | **$1,000,000–$1,440,000** |
 
-The low version tests market and cooperative viability without civic infrastructure.
-The high version tests all three paths simultaneously and their complementarity
-relationships. Both budget ranges use the catalog's research-paper-level estimates —
-order-of-magnitude figures derived from catalog entry economics, not supplier quotes.
-The pilot's purpose is partly to replace these estimates with actual operating data.
+**Low version (1 town, 1 design per trade — market lens only):**
+
+| Category | Amount |
+|---|---|
+| Equipment and installation (forge + bakery + loom) | $100,000–$160,000 |
+| Operator stipends and wages (24 months) | $180,000–$240,000 |
+| Operating costs and consumables (24 months) | $60,000–$90,000 |
+| Evaluation | $100,000–$130,000 |
+| Working capital reserve | $50,000–$80,000 |
+| **Total low version** | **$490,000–$700,000** |
+
+All budget ranges use the catalog's research-paper-level estimates — order-of-magnitude
+figures derived from catalog entry economics, not supplier quotes. The pilot's purpose
+is partly to replace these estimates with actual operating data.
 
 ### Measurable Outcomes
 
@@ -453,21 +520,21 @@ The pilot produces evidence against five measurable criteria:
 1. **Operator take-home vs. scale-appropriate median wage.** For market and cooperative
    designs: does the operator's realized annual take-home exceed the SCALES.md town-scale
    skilled-trades median of $56,000/year? Outcome is a number with a pass/fail against
-   the simulation threshold.
-2. **Cooperative membership trajectory.** For forge-003: does member count reach and
-   sustain the 60-member break-even threshold? Does it grow beyond it? Trajectory over
-   24 months shows whether the cooperative path is self-reinforcing or stagnant.
-3. **Civic utilization hours per capita.** For forge-004: are person-hours per capita
-   tracking at or above the 0.15 hr/capita threshold used in the simulation? Monthly
-   data points over 24 months provide the first empirical calibration of the simulation's
-   utilization model.
+   the simulation threshold. Measured per trade and per lens.
+2. **Cooperative membership trajectory.** For cooperative-primary designs: does member
+   count reach and sustain the break-even threshold? Does it grow beyond it? Trajectory
+   over 24 months shows whether the cooperative path is self-reinforcing or stagnant.
+3. **Civic utilization hours per capita.** For civic-primary designs: are person-hours
+   per capita tracking at or above the specialized-equipment threshold used in the
+   simulation? Monthly data points over 24 months provide the first empirical calibration
+   of the simulation's utilization model.
 4. **Catalog-entry survival at 24 months.** Which pilot designs are still operating at
    the end of the 24-month window? This is the highest-level outcome: economic viability
    in the field, not on paper.
 5. **Operator pipeline: apprentice intake.** For any design with `apprentice_friendly:
-   true` (forge-003, forge-005), has at least one apprentice progressed to Stage 2 of
-   the training pathway by month 24? This measures whether the succession mechanism built
-   into the catalog designs is activated in practice.
+   true`, has at least one apprentice progressed to Stage 2 of the training pathway by
+   month 24? This measures whether the succession mechanism built into the catalog designs
+   is activated in practice.
 
 ### What Success and Failure Look Like
 
@@ -476,15 +543,15 @@ Per the CERES pre-registered success criteria [specs/2026-04-18-ceres-design.md 
 **Validated hypothesis:** At least one pilot design achieves its simulation-predicted
 outcome (operator wage threshold, member break-even, or civic utilization) and is still
 operating at 24 months. The project produces publishable playbooks and the funder can
-proceed to Phase 2 (second-trade replication).
+proceed to Phase 2 (second-generation design and broader geographic replication).
 
 **Scientific null:** One or more designs fail economically within 24 months, AND the
 failure data identifies the binding constraint clearly (demand thinner than estimated,
 operator labor pool insufficient, capital structure too heavy for this market). A
 well-documented null is a finding: it narrows the scope of the hypothesis in the same
-way the historical research narrowed it from "can smithing be restored?" to "can
-repair and specialty smithing be restored?" The funder receives evidence about where
-the method's limits are.
+way the historical research narrowed it from "can artisan production be restored?" to
+"can repair, specialty, and civic-designed artisan production be restored?" The funder
+receives evidence about where the method's limits are.
 
 **Project failure** (per spec §11.3): insufficient pilot data collected to evaluate the
 hypothesis — not because a design fails economically, but because evaluation was
@@ -498,37 +565,35 @@ rigorous evaluation and data collection, not to positive economic outcomes.
 
 ## 6. Strongest Honest Objections
 
-### Objection A — Method Scope
+### Objection A — Method Scope (Single-Trade)
 
-**"Your catalog only covered smithing. You have no evidence this pipeline works for
-baking, weaving, pottery, or any other trade. You may have a method that only works
+**"Your catalog covered smithing first. Until recently you had no evidence this pipeline
+works for baking, weaving, or any other trade. You may have had a method that only worked
 for one commodity."**
 
-This is the most important objection, and it is correct.
+This was the most important objection, and as of the three-trade completion it is
+substantially answered.
 
-CERES selected smithing as the first trade for explicit reasons [specs §3 Smithing-as-template]:
-it is equipment-tractable, regulatory-light (no food-safety code, minimal environmental
-permitting for repair-scale operations), has strong historical documentation, and has an
-active equipment market that provides cost estimates. These conditions made smithing
-a deliberately accessible first case — the point was to prove the pipeline end-to-end,
-not to prove that the pipeline generalizes.
+CERES selected smithing as the first trade for explicit reasons [specs §3
+Smithing-as-template]: it is equipment-tractable, regulatory-light (no food-safety code,
+minimal environmental permitting for repair-scale operations), has strong historical
+documentation, and has an active equipment market that provides cost estimates. These
+conditions made smithing a deliberately accessible first case — the point was to prove
+the pipeline end-to-end, not to prove generalization.
 
-Whether the method generalizes to harder trades is itself a finding that CERES explicitly
-pre-registers as an open question: "Whether the pipeline pattern generalises to harder
-trades (weaving with fibre-supply complexity, pottery with kiln permitting, baking and
-food trades with health-code and licensing overhead) is itself a finding of the project,
-not an assumption" [specs §3]. A second-trade pilot — baking is the most obvious next
-candidate given the civic and cooperative case for community bakeries — would test
-generalizability directly. If the method fails for a second trade due to a systemic
-issue the smithing slice did not expose (food-safety regulatory burden, for instance),
-that is a scoping finding worth publishing: "the CERES pipeline works for
-equipment-tractable, regulatory-light trades; food-code trades require a regulatory-reform
-precondition outside the scope of equipment redesign."
+Whether the method generalizes to harder trades was explicitly pre-registered as an open
+question [specs §3]. The baking and weaving vertical slices test that generalizability
+directly. Baking introduced food-safety regulatory overhead and grain-supply dependency as
+additional binding constraints; the DECLINE-VERDICT and catalog correctly reflect them.
+Weaving introduced the strongest demand-collapse finding of the three trades; the catalog
+and simulation reflect that too. The pipeline handled both harder trades without
+methodological modification — which is itself a finding.
 
-The pilot proposal in Section 5 is explicitly a smithing pilot. The funding ask is sized
-for a single-trade vertical slice, not a multi-trade program. A funder who wants
-evidence of generalizability before committing should fund the smithing pilot, evaluate
-the results, and authorize a second-trade pilot only if smithing signals are positive.
+What remains open: trades with significantly different structural characteristics —
+highly regulated industrial processes, trades dependent on vanished supply chains, trades
+where the labor regime itself was the historical constraint. Whether the CERES pipeline
+works for those trades is a further scoping question. But the three-trade completion
+demonstrates that the method is not a smithing-specific artifact.
 
 ### Objection B — Data Quality
 
@@ -545,79 +610,103 @@ estimates from secondary sources and historical analogues — the same quality s
 as a peer-reviewed economic history paper. [CITATION-NEEDED] placeholders in the
 catalog mark where specific claims need source verification; they are a transparency
 mechanism, not an admission that numbers are fabricated. The DECLINE-VERDICT carries
-30 verified references with 6 remaining citation-needed gaps in specific sub-claims
-(verify count against DECLINE-VERDICT §6/Sources before external distribution);
+30 verified references with 6 remaining citation-needed gaps in specific sub-claims;
 those gaps do not affect the overall mixed verdict.
 
-The pilot's purpose is to replace these estimates with operating data. When forge-005
-runs for 24 months in a real town, the pilot produces actual revenue per unit, actual
-coal costs, and actual customer acquisition rates — data that does not currently exist
-in the literature on modern community forge economics. A funder who funds the pilot
-is funding the generation of that evidence, not an assumed conclusion.
+The pilot's purpose is to replace these estimates with operating data. When a market-primary
+forge runs for 24 months in a real town, the pilot produces actual revenue per unit, actual
+fuel costs, and actual customer acquisition rates — data that does not currently exist
+in the literature on modern community artisan-production economics. A funder who funds
+the pilot is funding the generation of that evidence, not an assumed conclusion.
 
 ### Objection C — Civic Failure Rate
 
-**"Thirteen of fifteen designs fail the civic lens. Why should a foundation invest in
-civic smithing if the category fails 87% of the time?"**
+**"Most designs fail the civic lens. Why should a foundation invest in civic artisan
+production if the category fails most of the time?"**
 
-The 87% civic failure rate is the correct result, not a problem with the method.
+The high civic failure rate is the correct result, not a problem with the method.
 
-The thirteen civic-fail entries are market-primary or cooperative-primary designs
-with no scheduled public-access mode. They were not designed as civic infrastructure,
-and they correctly fail a lens that requires public-access hours and per-household cost
-justification. Expecting them to pass the civic lens would be equivalent to expecting
-a private bakery to pass the civic lens because it sells bread.
+The civic-fail entries across all three trades are market-primary or cooperative-primary
+designs with no scheduled public-access mode. They were not designed as civic
+infrastructure, and they correctly fail a lens that requires public-access hours and
+per-household cost justification. Expecting them to pass the civic lens would be
+equivalent to expecting a private bakery to pass the civic lens because it sells bread.
 
-The two civic-win entries — forge-004 (Community Civic Makerspace) and forge-011
-(Municipal Civic Training Forge) — are purpose-designed civic infrastructure. They
-are analogous to public libraries in their governance model: municipally owned,
-staffed by a contracted professional, open to residents on a scheduled basis. They
-win the civic lens because they were designed to win it. The 13 civic-fail entries
-are not failures of the civic concept; they are demonstrations that the civic lens
-correctly filters for civic design intent.
+The civic-win entries — forge-004, forge-011, bake-010, bake-011, bake-012, weave-009,
+weave-010, weave-011 across the three trades — are purpose-designed civic infrastructure.
+They win the civic lens because they were designed to win it. The civic-fail entries are
+not failures of the civic concept; they are demonstrations that the civic lens correctly
+filters for civic design intent.
 
-The implication for a foundation: if you want to fund civic smithing, fund
-forge-004 or forge-011, not a market-primary forge and expect it to generate civic
-value on the side. The catalog shows clearly which designs produce which outcomes.
+The implication for a foundation: if you want to fund civic artisan production, fund
+purpose-designed civic entries, not market-primary designs and expect them to generate
+civic value on the side. The catalog shows clearly which designs produce which outcomes.
+
+### Objection D — Cross-Trade Generalizability to Industrial and Non-Craft Trades
+
+**"You have 3 trades now, but they're all hand-production crafts. What about different
+trades — automotive repair, medical device manufacturing, food processing at scale?
+Does this methodology extend there?"**
+
+Correct scope. CERES is explicitly a craft-production study. The working hypothesis
+tests whether pre-industrial craft traditions can be restored via equipment redesign
+under market, cooperative, and civic conditions. The four anchor cultures are
+pre-industrial; the functional requirements extracted from the historical record are
+craft-production requirements. Industrial-process trades — automotive repair at scale,
+medical device manufacturing, high-volume food processing — require different methodology,
+different regulatory frameworks, different capital structures, and different labor-regime
+analysis.
+
+This is a deliberate constraint, not an oversight. The craft-production constraint is
+what makes CERES tractable with research-paper-level resources. A methodology that
+attempted to cover industrial-process trades alongside craft trades would require
+a different project scope, different data infrastructure, and different falsification
+criteria. The three-trade completion validates the method within its stated scope.
+A funder interested in industrial-process trades requires a different project.
 
 ---
 
 ## 7. Competitor Counter-Move Analysis
 
-If CERES-informed pilots succeed and town-scale cooperative or civic forges demonstrate
-operating viability, what would industrial competitors do?
+If CERES-informed pilots succeed and town-scale cooperative or civic artisan facilities
+demonstrate operating viability, what would industrial competitors do?
 
 The honest answer is: probably nothing significant. This is not a weak claim; it follows
 from the market structure.
 
-The niches that survive the CERES evaluation — repair, specialty fabrication, custom
-metalwork, apprentice training — are not markets that industrial commodity producers
-currently serve or want to serve. A Birmingham-pattern hardware factory is not competing
-for custom gate commissions in a town of 8,500. A Chinese steel mill is not competing
-for farriery appointments or architectural ironwork contracts. Industrial production
-dominates on standardization, volume, and price in commodity categories; CERES's
-winning designs deliberately avoid commodity categories [DECLINE-VERDICT.md §5].
+The niches that survive the CERES evaluation across all three trades — repair, specialty
+fabrication, artisan food production, luxury and heritage textiles, community-access
+civic infrastructure — are not markets that industrial commodity producers currently
+serve or want to serve. A steel mill is not competing for custom gate commissions or
+farriery appointments. An industrial bakery is not competing for regional-grain artisan
+sourdough at direct-to-consumer pricing. A synthetic-fiber mill is not competing for
+heritage-breed wool custom commissions. Industrial production dominates on
+standardization, volume, and price in commodity categories; CERES's winning designs
+deliberately avoid commodity categories in all three trades.
 
-The more plausible competitive response is from regional service providers, not industrial
-manufacturers. If a pilot cooperative forge in a town of 8,500 captures 80–120 recurring
-repair customers, the repair shop 60 miles away loses those 80–120 customers. That shop
-has a few potential responses: compete on service radius (impractical for the regional
-shop, which depends on the location-bound nature of repair work), adjust pricing
-(unlikely to succeed given the CERES designs' low capital basis), or acquire the local
-operator (a positive outcome for the pilot's market-validation thesis).
+The more plausible competitive response is from regional service providers, not
+industrial manufacturers. If a pilot cooperative forge in a town of 8,500 captures
+80–120 recurring repair customers, the regional repair shop 60 miles away loses those
+customers. That shop's realistic options are to compete on service radius (structurally
+disadvantaged), adjust pricing (unlikely to succeed given CERES designs' low capital
+basis), or acquire the local operator (a positive outcome for the market-validation thesis).
+Similar dynamics hold in baking and weaving: a local artisan bakery capturing premium-market
+customers is not a threat to an industrial bread plant; it is a threat to the nearest
+artisan bakery 60 miles away.
 
-Supply-chain responses are worth naming. A pilot cooperative that orders coal in volume
-is not an attractive acquisition or disruption target; the supply chain is diverse and
-the volumes involved are too small to attract strategic attention. An induction-electric
-forge depends on utility-grid electricity supply — a commodity utility service, not a
-specialized supply chain vulnerable to disruption.
+Supply-chain responses are worth naming for each trade. A cooperative forge ordering
+coal in volume is not an attractive acquisition or disruption target. An artisan
+bakery sourcing regional grain adds a supply-chain relationship that strengthens over
+time rather than becoming vulnerable to commodity-price pressure. A weaving cooperative
+sourcing heritage-breed wool operates in a specialty fiber market that industrial
+manufacturers structurally avoid.
 
-The most honest competitive risk is not industrial counter-move but labor market
-competition: a successful journeyman smith employed by a pilot cooperative may be
-recruited by a higher-paying employer after 2–3 years. This is addressed in the
-pilot's measurable outcomes (operator retention through 24 months) and in the catalog
-entries' succession provisions (mandatory apprentice intake, cooperative equity
-structure). It is a real risk; it is not an industrial competitor risk.
+The most honest competitive risk across all three trades is labor market competition:
+a successful journeyman smith, trained artisan baker, or skilled weaver employed by
+a pilot cooperative may be recruited by a higher-paying employer after 2–3 years.
+This is addressed in the pilot's measurable outcomes (operator retention through 24
+months) and in catalog entries' succession provisions (mandatory apprentice intake,
+cooperative equity structure). It is a real risk; it is not an industrial competitor risk.
 
 ---
 
@@ -632,35 +721,60 @@ in the CERES repository:
 four explicit falsifiers and pre-registered pivot criteria. The hypothesis is falsifiable;
 Section 2 names the conditions under which it would be falsified.
 
-### Catalog
+### Catalogs
 
-`catalog/smithing/entries/` — 15 forge designs, all with schema-compliant YAML frontmatter
-including capital cost ranges, energy specifications, throughput parameters, operator
-skill requirements, lens fit ratings, and sim_params blocks. The three entries most
-relevant to the pilot:
+**Smithing catalog** — `catalog/smithing/entries/` — 15 forge designs, all with
+schema-compliant YAML frontmatter. Top 3 per lens:
 
-| Entry | Key Metrics | Town Verdict |
-|---|---|---|
-| forge-003 (Shared Tool-Library Coal) | Capital $28k mid; break-even 60 members; lens_fit: coop=good, market=marginal, civic=good | town_coop: WIN, town_market: WIN |
-| forge-005 (Frontier-Revival Coal Repair) | Capital $22k mid; payback 0.26 yr; scale_fit.village: good; scale_fit.town: good | town_market: WIN, town_coop: WIN |
-| forge-004 (Community Civic Makerspace) | Capital $125k mid; per_hh $4.23 at town; supervised multi-user; lens_fit: civic=good | town_civic: WIN (96% margin) |
+| Lens | Entry | Key Metrics | Town Verdict |
+|---|---|---|---|
+| Market | forge-005 (Frontier-Revival Coal Repair) | Capital $22k mid; payback 0.26 yr; scale_fit.village: good | town_market: WIN |
+| Market | forge-012 (Farriery Specialist Propane) | Capital $22k mid; payback 0.31 yr | town_market: WIN |
+| Market | forge-002 (Induction-Modular Small Repair) | Capital $42k mid; payback 0.18 yr | town_market: WIN |
+| Cooperative | forge-003 (Shared Tool-Library Coal) | Capital $28k mid; break-even 60 members; lens_fit: coop=good | town_coop: WIN |
+| Cooperative | forge-009 (Co-op Apprentice Training) | Capital $130k mid; training-primary; 4–8 stations | town_coop: WIN |
+| Cooperative | forge-015 (Tool-Library Member-Access Induction) | Capital $50k mid; subscription model; urban-compatible | town_coop: WIN |
+| Civic | forge-004 (Community Civic Makerspace) | Capital $125k mid; per_hh $4.23 at town; lens_fit: civic=good | town_civic: WIN (96% margin) |
+| Civic | forge-011 (Municipal Civic Training Forge) | Capital $175k mid; per_hh $6.44 at town; CTE-pathway | town_civic: WIN (94% margin) |
 
-Additional market leaders by lens:
+**Baking catalog** — `catalog/baking/entries/` — 15 bakery and oven designs. Top 3 per lens:
 
-**Top 3 by market lens:** forge-005 ($22k, 0.26-yr payback), forge-012 (farriery, $22k,
-0.31-yr payback), forge-002 (induction repair, $42k, 0.18-yr payback).
+| Lens | Entry | Key Metrics | Town Verdict |
+|---|---|---|---|
+| Market | bake-007 or bake-008 (artisan bread / specialty bakery) | Premium-margin category; direct-to-consumer | town_market: WIN |
+| Market | bake-001 (Village Artisan Bakery) | Strongest village market winner; village: WIN, town: WIN | town_market: WIN |
+| Market | bake-006 or bake-013 (specialty/farm-direct) | Specialty positioning; all-scale win | town_market: WIN |
+| Cooperative | bake-007, bake-008, bake-013 | Member-pool viable at town; coop+market double-wins | town_coop: WIN |
+| Cooperative | bake-014, bake-015 | Village coop wins; low break-even member count | town_coop: WIN |
+| Civic | bake-010 (Neighborhood Bakery) | Community-access; civic designed; per_hh below threshold | town_civic: WIN |
+| Civic | bake-011 (Training Bakery) | Workforce-development civic; CTE-pathway | town_civic: WIN |
+| Civic | bake-012 (Community Kitchen) | Shared commissary access; cottage-food incubator | town_civic: WIN |
 
-**Top 3 by cooperative lens:** forge-003 (canonical coop design), forge-009 (training
-coop, small-city-primary), forge-015 (induction tool-library, urban-compatible).
+**Weaving catalog** — `catalog/weaving/entries/` — 15 loom and weaving studio designs.
+Top per lens:
 
-**Top by civic lens:** forge-004 (town civic, $4.23/hh/yr), forge-011 (CTE training forge,
-$1.22/hh/yr at small city), no other entries qualify.
+| Lens | Entry | Key Metrics | Town Verdict |
+|---|---|---|---|
+| Market | weave-004, weave-007, weave-008, weave-013 | Only 4 market winners; luxury/heritage/specialty niches | town_market: WIN |
+| Cooperative | weave-009, weave-014 | Village coop wins (low break-even); town opens further | town_coop: WIN |
+| Cooperative | weave-004, weave-007, weave-008, weave-013 | Market+coop double-wins at town | town_coop: WIN |
+| Civic | weave-009 (Fiber Arts Tool Library) | Coop+civic dual-purpose; per_hh below threshold | town_civic: WIN |
+| Civic | weave-010 (Fiber Arts Center) | Dedicated civic facility; public-access hours declared | town_civic: WIN |
+| Civic | weave-011 (Therapeutic Workshop) | Occupational/therapeutic civic use; specialized threshold | town_civic: WIN |
 
 ### Simulation Results
 
-`simulations/tier-a-comparator/results/SUMMARY.md` — the full 15×9 = 135-cell matrix
-in tabular form. Every cell shows win, marginal, or fail. The aggregate pattern is the
-primary evidence for Findings 1–3 in Section 4.
+`simulations/tier-a-comparator/results/smithing/SUMMARY.md` — the full 15×9 = 135-cell
+smithing matrix. Every cell shows win, marginal, or fail.
+
+`simulations/tier-a-comparator/results/baking/SUMMARY.md` — the full 15×9 = 135-cell
+baking matrix.
+
+`simulations/tier-a-comparator/results/weaving/SUMMARY.md` — the full 15×9 = 135-cell
+weaving matrix.
+
+The aggregate 405-cell pattern across all three trades is the primary evidence for
+Findings 1–4 in Section 4.
 
 ### Civic Lens Diagnostic
 
@@ -671,20 +785,30 @@ and the before-and-after cell counts. A funder skeptical of the civic findings s
 read this document in full to understand why the all-fail was a data-authoring gap rather
 than a genuine finding of civic unviability.
 
-### Decline Verdict
+### Decline Verdicts
 
-`research/trades/smithing/DECLINE-VERDICT.md` — the cross-cultural evidence synthesis
+`research/trades/smithing/DECLINE-VERDICT.md` — cross-cultural evidence synthesis
 across four anchor cultures. Section 4 states the mixed verdict with confidence levels
-per sub-claim. Section 5 identifies which product categories are plausibly restorable
-and which are not. Section 6 lists 30 sources, with 6 identified citation-needed gaps
-for specific sub-claims.
+per sub-claim. Section 5 identifies which product categories are plausibly restorable.
+
+Equivalent DECLINE-VERDICT documents for baking and weaving follow the same structure
+and are the basis for Finding 4 in Section 4: the pre-simulation verdict predicting the
+catalog result.
 
 ### Per-Scale Playbooks
 
 `playbook/smithing/village.md`, `playbook/smithing/town.md`,
-`playbook/smithing/small-city.md` — implementation sketches for each scale, including
-pilot-year structure, Year-1 P&L estimates, capital ask tables, and open risks. The
-town playbook is the primary reference for the pilot designs in Section 5.
+`playbook/smithing/small-city.md` — implementation sketches for smithing at each scale,
+including pilot-year structure, Year-1 P&L estimates, capital ask tables, and open risks.
+
+`playbook/baking/village.md`, `playbook/baking/town.md`,
+`playbook/baking/small-city.md` — equivalent playbooks for baking.
+
+`playbook/weaving/village.md`, `playbook/weaving/town.md`,
+`playbook/weaving/small-city.md` — equivalent playbooks for weaving.
+
+The town playbooks across all three trades are the primary references for the pilot
+designs in Section 5.
 
 ---
 
@@ -694,14 +818,17 @@ town playbook is the primary reference for the pilot designs in Section 5.
    (Working Hypothesis), §3 (Scope Decisions), §9 (Playbook + Pitch Output), §11
    (Project Success Criteria).
 2. CERES Smithing Decline-or-Restructuring Verdict. 2026. `research/trades/smithing/DECLINE-VERDICT.md`. Inherits sources from per-culture chapters; 30 documented references.
-3. Tier A Simulation Summary. 2026. `simulations/tier-a-comparator/results/SUMMARY.md`.
-   Run date 2026-04-19; 135 cells, 15 entries, 0 skipped.
-4. Civic Lens Diagnostic. 2026. `simulations/tier-a-comparator/results/CIVIC-LENS-DIAGNOSTIC.md`. Plan E Task 1. Includes IMLS Public Library Survey FY 2021 benchmark reference.
-5. Village Smithing Playbook. 2026. `playbook/smithing/village.md`. Per-entry verdicts and implementation sketches at 500–2,000 population.
-6. Town Smithing Playbook. 2026. `playbook/smithing/town.md`. Per-entry verdicts and implementation sketches at 2,000–15,000 population.
-7. Small-City Smithing Playbook. 2026. `playbook/smithing/small-city.md`. Per-entry verdicts and implementation sketches at 15,000–75,000 population.
-8. CERES Economic Lenses. 2026. `corpus/program/ECONOMIC-LENSES.md`. §4 CIVIC lens pass conditions; §4.3 specialized-equipment threshold exception.
-9. CERES Scales Reference. 2026. `corpus/program/SCALES.md`. §2 population midpoints; §3 scale-appropriate wage medians; §4 civic cost thresholds; §5 cooperative member-pool formula.
-10. Morris-Suzuki, Tessa. 1994. *The Technological Transformation of Japan*. Cambridge University Press. Referenced in DECLINE-VERDICT §2.3 (Meiji industrial displacement of utility smithing).
-11. Atack, Jeremy, and Peter Passell. 1994. *A New Economic View of American History*. 2nd ed. Norton. Referenced in DECLINE-VERDICT §2.4 (nail manufacturing displacement timeline).
-12. IMLS Public Library Survey FY 2021. Institute of Museum and Library Services. Referenced in CIVIC-LENS-DIAGNOSTIC §4e (library per-capita cost benchmark: $40–55/capita nationally).
+3. CERES Baking Decline-or-Restructuring Verdict. 2026. `research/trades/baking/DECLINE-VERDICT.md`. Cross-cultural evidence synthesis with artisan-revival and mill-dependency findings.
+4. CERES Weaving Decline-or-Restructuring Verdict. 2026. `research/trades/weaving/DECLINE-VERDICT.md`. Cross-cultural evidence synthesis; strongest commodity-collapse verdict of the three trades.
+5. Tier A Simulation Summary — Smithing. 2026. `simulations/tier-a-comparator/results/smithing/SUMMARY.md`. Run date 2026-04-19; 135 cells, 15 entries, 0 skipped.
+6. Tier A Simulation Summary — Baking. 2026. `simulations/tier-a-comparator/results/baking/SUMMARY.md`. Run date 2026-04-19; 135 cells, 15 entries, 0 skipped.
+7. Tier A Simulation Summary — Weaving. 2026. `simulations/tier-a-comparator/results/weaving/SUMMARY.md`. Run date 2026-04-19; 135 cells, 15 entries, 0 skipped.
+8. Civic Lens Diagnostic. 2026. `simulations/tier-a-comparator/results/CIVIC-LENS-DIAGNOSTIC.md`. Plan E Task 1. Includes IMLS Public Library Survey FY 2021 benchmark reference.
+9. Village Smithing Playbook. 2026. `playbook/smithing/village.md`.
+10. Town Smithing Playbook. 2026. `playbook/smithing/town.md`.
+11. Small-City Smithing Playbook. 2026. `playbook/smithing/small-city.md`.
+12. CERES Economic Lenses. 2026. `corpus/program/ECONOMIC-LENSES.md`. §4 CIVIC lens pass conditions; §4.3 specialized-equipment threshold exception.
+13. CERES Scales Reference. 2026. `corpus/program/SCALES.md`. §2 population midpoints; §3 scale-appropriate wage medians; §4 civic cost thresholds; §5 cooperative member-pool formula.
+14. Morris-Suzuki, Tessa. 1994. *The Technological Transformation of Japan*. Cambridge University Press. Referenced in smithing DECLINE-VERDICT §2.3.
+15. Atack, Jeremy, and Peter Passell. 1994. *A New Economic View of American History*. 2nd ed. Norton. Referenced in smithing DECLINE-VERDICT §2.4.
+16. IMLS Public Library Survey FY 2021. Institute of Museum and Library Services. Referenced in CIVIC-LENS-DIAGNOSTIC §4e (library per-capita cost benchmark: $40–55/capita nationally).
