@@ -229,7 +229,12 @@ def civic_lens(entry: dict, scale: str, scales: dict) -> LensResult:
 
     # Usage rate sub-condition
     population_midpoint = scale_data["population_midpoint"]
-    annual_public_use_hours = params.get("annual_public_use_hours", 0)
+    # annual_public_use_hours may be in sim_params or in trade_specific
+    trade_specific = entry.get("trade_specific", {})
+    annual_public_use_hours = (
+        params.get("annual_public_use_hours")
+        or trade_specific.get("annual_public_use_hours", 0)
+    )
     usage_rate_threshold = params.get("usage_rate_threshold", DEFAULT_USAGE_RATE_THRESHOLD)
 
     hours_per_capita = annual_public_use_hours / population_midpoint if population_midpoint > 0 else 0.0

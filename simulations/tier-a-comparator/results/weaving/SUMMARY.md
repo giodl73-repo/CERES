@@ -12,13 +12,13 @@
 |---|---|---|---|
 | village_market | 4 | 0 | 11 |
 | village_coop | 2 | 0 | 13 |
-| village_civic | 1 | 0 | 14 |
+| village_civic | 3 | 0 | 12 |
 | town_market | 4 | 0 | 11 |
 | town_coop | 14 | 0 | 1 |
-| town_civic | 1 | 0 | 14 |
+| town_civic | 3 | 0 | 12 |
 | small_city_market | 4 | 0 | 11 |
 | small_city_coop | 15 | 0 | 0 |
-| small_city_civic | 0 | 0 | 15 |
+| small_city_civic | 1 | 0 | 14 |
 
 ## Per-Entry Verdicts
 
@@ -33,8 +33,8 @@
 | weave-007 | win | fail | fail | win | win | fail | win | win | fail |
 | weave-008 | win | fail | fail | win | win | fail | win | win | fail |
 | weave-009 | fail | win | win | fail | win | win | fail | win | fail |
-| weave-010 | fail | fail | fail | fail | win | fail | fail | win | fail |
-| weave-011 | fail | fail | fail | fail | win | fail | fail | win | fail |
+| weave-010 | fail | fail | win | fail | win | win | fail | win | win |
+| weave-011 | fail | fail | win | fail | win | win | fail | win | fail |
 | weave-012 | fail | fail | fail | fail | win | fail | fail | win | fail |
 | weave-013 | win | fail | fail | win | win | fail | win | win | fail |
 | weave-014 | fail | win | fail | fail | win | fail | fail | win | fail |

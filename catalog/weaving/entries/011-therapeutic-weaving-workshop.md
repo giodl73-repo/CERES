@@ -679,10 +679,10 @@ results:
     metric_name: break_even_members
     notes: feasible_pool=31.2, break_even=48, total_annual_cost=9450
   village_civic:
-    verdict: fail
+    verdict: win
     primary_metric: 18.9
     metric_name: per_household_cost
-    notes: per_hh=18.90, threshold=120, hrs/capita=0.000 vs threshold=0.15
+    notes: per_hh=18.90, threshold=120, hrs/capita=2.995 vs threshold=0.15
   town_market:
     verdict: fail
     primary_metric: -1.0
@@ -694,10 +694,10 @@ results:
     metric_name: break_even_members
     notes: feasible_pool=212.5, break_even=48, total_annual_cost=9450
   town_civic:
-    verdict: fail
+    verdict: win
     primary_metric: 2.7794117647058822
     metric_name: per_household_cost
-    notes: per_hh=2.78, threshold=100, hrs/capita=0.000 vs threshold=0.15
+    notes: per_hh=2.78, threshold=100, hrs/capita=0.440 vs threshold=0.15
   small_city_market:
     verdict: fail
     primary_metric: -1.0
@@ -712,7 +712,7 @@ results:
     verdict: fail
     primary_metric: 0.525
     metric_name: per_household_cost
-    notes: per_hh=0.53, threshold=80, hrs/capita=0.000 vs threshold=0.15
+    notes: per_hh=0.53, threshold=80, hrs/capita=0.083 vs threshold=0.15
 sources:
   - ref: "corpus/program/SCALES.md §2–4 — small-city scale parameters, per-household civic cost threshold ($80/hh/yr), and median wage ($62,000/yr)"
   - ref: "Ostrom, Elinor. 1990. Governing the Commons. Cambridge University Press — governance principles (cited for civic MOU structure, not cooperative lens)"

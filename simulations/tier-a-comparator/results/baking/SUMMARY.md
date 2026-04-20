@@ -12,7 +12,7 @@
 |---|---|---|---|
 | village_market | 7 | 1 | 7 |
 | village_coop | 2 | 0 | 13 |
-| village_civic | 3 | 0 | 12 |
+| village_civic | 4 | 0 | 11 |
 | town_market | 6 | 1 | 8 |
 | town_coop | 11 | 0 | 4 |
 | town_civic | 3 | 0 | 12 |
@@ -38,4 +38,4 @@
 | bake-012 | fail | fail | win | fail | fail | win | fail | win | fail |
 | bake-013 | win | fail | fail | win | win | fail | marg | win | fail |
 | bake-014 | fail | win | fail | fail | win | fail | fail | win | fail |
-| bake-015 | fail | win | fail | fail | win | fail | fail | win | fail |
+| bake-015 | fail | win | win | fail | win | fail | fail | win | fail |

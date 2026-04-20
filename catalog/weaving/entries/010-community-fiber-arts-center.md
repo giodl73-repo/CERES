@@ -656,10 +656,10 @@ results:
     metric_name: break_even_members
     notes: feasible_pool=31.2, break_even=57, total_annual_cost=11220
   village_civic:
-    verdict: fail
+    verdict: win
     primary_metric: 21.46666666666667
     metric_name: per_household_cost
-    notes: per_hh=21.47, threshold=120, hrs/capita=0.000 vs threshold=0.15
+    notes: per_hh=21.47, threshold=120, hrs/capita=6.240 vs threshold=0.15
   town_market:
     verdict: fail
     primary_metric: -1.0
@@ -671,10 +671,10 @@ results:
     metric_name: break_even_members
     notes: feasible_pool=212.5, break_even=57, total_annual_cost=11220
   town_civic:
-    verdict: fail
+    verdict: win
     primary_metric: 3.1568627450980395
     metric_name: per_household_cost
-    notes: per_hh=3.16, threshold=100, hrs/capita=0.000 vs threshold=0.15
+    notes: per_hh=3.16, threshold=100, hrs/capita=0.918 vs threshold=0.15
   small_city_market:
     verdict: fail
     primary_metric: -1.0
@@ -686,10 +686,10 @@ results:
     metric_name: break_even_members
     notes: feasible_pool=900.0, break_even=57, total_annual_cost=11220
   small_city_civic:
-    verdict: fail
+    verdict: win
     primary_metric: 0.5962962962962963
     metric_name: per_household_cost
-    notes: per_hh=0.60, threshold=80, hrs/capita=0.000 vs threshold=0.15
+    notes: per_hh=0.60, threshold=80, hrs/capita=0.173 vs threshold=0.15
 sources:
   - ref: "corpus/program/SCALES.md §3 — town-scale skilled-trades median wage and civic facility per-household cost benchmarks"
   - ref: "Ostrom, Elinor. 1990. Governing the Commons. Cambridge University Press — design principles for cooperative and commons governance"

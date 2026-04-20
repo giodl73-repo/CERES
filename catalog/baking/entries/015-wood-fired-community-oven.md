@@ -910,10 +910,10 @@ results:
     metric_name: break_even_members
     notes: feasible_pool=31.2, break_even=17, total_annual_cost=3257
   village_civic:
-    verdict: fail
+    verdict: win
     primary_metric: 6.7
     metric_name: per_household_cost
-    notes: per_hh=6.70, threshold=120, hrs/capita=0.000 vs threshold=2.0
+    notes: per_hh=6.70, threshold=120, hrs/capita=3.072 vs threshold=2.0
   town_market:
     verdict: fail
     primary_metric: -1.0
@@ -928,7 +928,7 @@ results:
     verdict: fail
     primary_metric: 0.9852941176470589
     metric_name: per_household_cost
-    notes: per_hh=0.99, threshold=100, hrs/capita=0.000 vs threshold=2.0
+    notes: per_hh=0.99, threshold=100, hrs/capita=0.452 vs threshold=2.0
   small_city_market:
     verdict: fail
     primary_metric: -1.0
@@ -943,7 +943,7 @@ results:
     verdict: fail
     primary_metric: 0.18611111111111112
     metric_name: per_household_cost
-    notes: per_hh=0.19, threshold=80, hrs/capita=0.000 vs threshold=2.0
+    notes: per_hh=0.19, threshold=80, hrs/capita=0.085 vs threshold=2.0
 sources:
   - ref: "corpus/program/SCALES.md §2 — village scale parameters; household count multiplier (0.40); village mid-point 2,000 residents; town mid-point 7,500 residents"
   - ref: "corpus/program/SCALES.md §3 — village-scale skilled-trades compensation reference; town-scale skilled-trades median wage; basis for fire-keeper partial-FTE wage assumption"
