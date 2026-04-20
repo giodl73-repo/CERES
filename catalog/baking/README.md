@@ -152,23 +152,23 @@ Populated as entries are authored. Initially all entries are `draft`. Promoted t
 `reviewed` after ceres-panel R1; to `validated` after Plan D simulation cross-check;
 `deprecated` if an entry is superseded or dropped.
 
-| ID | Name | Status | Last Modified |
-|---|---|---|---|
-| bake-001 | Sourdough Artisan Micro-bakery | draft | 2026-04-19 |
-| bake-002 | Heritage Grain Subscription Bakery | draft | 2026-04-19 |
-| bake-003 | Community Grain-Share Bakery | draft | 2026-04-19 |
-| bake-004 | Wholesale Artisan Loaf Bakery | draft | 2026-04-19 |
-| bake-005 | Mobile Pop-up Bakery | draft | 2026-04-19 |
-| bake-006 | French-style Pastry / Viennoiserie | draft | 2026-04-19 |
-| bake-007 | Japanese-style Wagashi Confection | draft | 2026-04-19 |
-| bake-008 | Ethnic / Cultural Specialty Bakery | draft | 2026-04-19 |
-| bake-009 | Wedding / Custom Cake Studio | draft | 2026-04-19 |
-| bake-010 | Civic Neighborhood Bakery | draft | 2026-04-19 |
-| bake-011 | Apprentice Training Bakery | draft | 2026-04-19 |
-| bake-012 | Community Kitchen Collective | draft | 2026-04-19 |
-| bake-013 | Farm-to-Table Integrated Bakery | draft | 2026-04-19 |
-| bake-014 | Apartment/Home Micro-bakery | draft | 2026-04-19 |
-| bake-015 | Wood-fired Community Oven | draft | 2026-04-19 |
+| ID | Name | Status | Tier A Sim | Last Modified |
+|---|---|---|---|---|
+| bake-001 | Sourdough Artisan Micro-bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-002 | Heritage Grain Subscription Bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-003 | Community Grain-Share Bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-004 | Wholesale Artisan Loaf Bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-005 | Mobile Pop-up Bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-006 | French-style Pastry / Viennoiserie | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-007 | Japanese-style Wagashi Confection | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-008 | Ethnic / Cultural Specialty Bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-009 | Wedding / Custom Cake Studio | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-010 | Civic Neighborhood Bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-011 | Apprentice Training Bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-012 | Community Kitchen Collective | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-013 | Farm-to-Table Integrated Bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-014 | Apartment/Home Micro-bakery | draft | complete (2026-04-19) | 2026-04-19 |
+| bake-015 | Wood-fired Community Oven | draft | complete (2026-04-19) | 2026-04-19 |
 
 ---
 
