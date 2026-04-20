@@ -5,7 +5,7 @@ doc_type: pitch-narrative
 trades: [smithing, baking, weaving]
 plan_task: "Plan E Task 5 (expanded)"
 authored: 2026-04-18
-version: "2.0"
+version: "2.1"
 status: draft
 funder_archetype: civic-economic-development foundation or municipal development office
 budget_envelope: "$600k–$3M program-related investment or grant"
@@ -223,6 +223,11 @@ village scale fail everywhere.
 | town_market | 4 | 11 |
 | small_city_market | 4 | 11 |
 
+Baking shows modest scale-sensitivity (7/6/5 wins at village/town/small-city) due to
+tighter wage thresholds at higher scales — the $62k/yr small-city median wage narrows
+market viability for lower-throughput designs. The core finding holds: unit economics,
+not location, determines viability.
+
 This scale-invariance holds across all three trades and is not a modeling artifact. The
 market lens evaluates payback years against capital cost and revenue per unit — neither
 variable changes with settlement population in the model. The finding is that *location*
@@ -392,6 +397,15 @@ while identifying mill-dependency and commodity bread as binding constraints. Th
 simulation produced 7 market winners at village scale, concentrated in premium and
 specialty categories. Mill-dependent designs fail market at all scales. The verdict
 predicted the result.
+
+Note: the baking demand-recovery argument rests on two distinct evidence types — the
+historical restructuring documented in the four anchor cultures, and contemporary
+premium-food market signals (regional grain revival, sourdough premium, farm-direct
+provenance). These are complementary but not identical. The historical evidence
+establishes that artisan baking survived industrialization in premium niches; the
+contemporary evidence establishes that premium demand is currently accessible. Plan G
+catalog entries reflect the contemporary market; the historical corpus informs functional
+requirements only.
 
 **Weaving: Strongest demand-collapse finding.** The historical research identified
 the most severe commodity-collapse among the three trades: power-loom cotton, polyester,
@@ -663,6 +677,19 @@ attempted to cover industrial-process trades alongside craft trades would requir
 a different project scope, different data infrastructure, and different falsification
 criteria. The three-trade completion validates the method within its stated scope.
 A funder interested in industrial-process trades requires a different project.
+
+### Objection E — Operator Sourcing
+
+**"Your pilot requires journeyman smiths, bakers, and weavers simultaneously in towns
+where skilled-trades pipelines are thin. Where do these operators come from?"**
+
+Acknowledged. Operator sourcing is the execution risk CERES cannot resolve analytically —
+it requires regional labor-market verification before site selection. The pilot design
+mitigates by (a) selecting towns with existing trade-school or community-college
+affiliations, (b) including civic-primary entries with instructor-hire pathways at market
+rate per SCALES.md thresholds, (c) targeting the training-bakery and apprentice-training
+designs (bake-011, forge-009) specifically because they build the pipeline rather than
+depend on it. Operator availability is a site-selection filter, not a pilot design flaw.
 
 ---
 
