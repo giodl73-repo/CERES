@@ -56,10 +56,11 @@ apprentice_path:
 
 # ── BAKING-SPECIFIC REQUIRED FIELD ───────────────────────────────────────────
 
-flour_source_declaration: industrial-flour-purchased
-# Volume purchasing from regional distributor or industrial mill.
-# Local-mill sourcing is not reliably viable at 200-500 loaves/day scale without
-# a formal supply contract; see Key Assumptions.
+trade_specific:
+  flour_source_declaration: industrial-flour-purchased
+  # Volume purchasing from regional distributor or industrial mill.
+  # Local-mill sourcing is not reliably viable at 200-500 loaves/day scale without
+  # a formal supply contract; see Key Assumptions.
 
 # ── ECONOMICS ────────────────────────────────────────────────────────────────
 

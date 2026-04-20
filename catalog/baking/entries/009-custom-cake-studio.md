@@ -328,15 +328,16 @@ scale_fit:
 
 # ── BAKING TRADE-SPECIFIC FIELDS ──────────────────────────────────────────────
 
-flour_source_declaration: industrial-flour-purchased
-# Custom cake studios purchase commodity or specialty cake flour from industrial
-# distributors or restaurant-supply warehouses. At 400 orders/yr, flour volume
-# (~180 kg/yr for cake flour; custom cakes use less flour per unit than bread)
-# is far below the threshold that would attract a local-mill partnership.
-# The premium positioning of this studio rests entirely on craft skill and
-# design distinctiveness, not on grain provenance. Flour sourcing is not a
-# customer-visible value claim in the custom cake market; fondant, fillings,
-# and decoration execution are the visible differentiators.
+trade_specific:
+  flour_source_declaration: industrial-flour-purchased
+  # Custom cake studios purchase commodity or specialty cake flour from industrial
+  # distributors or restaurant-supply warehouses. At 400 orders/yr, flour volume
+  # (~180 kg/yr for cake flour; custom cakes use less flour per unit than bread)
+  # is far below the threshold that would attract a local-mill partnership.
+  # The premium positioning of this studio rests entirely on craft skill and
+  # design distinctiveness, not on grain provenance. Flour sourcing is not a
+  # customer-visible value claim in the custom cake market; fondant, fillings,
+  # and decoration execution are the visible differentiators.
 
 # ── SIMULATION PARAMETERS ─────────────────────────────────────────────────────
 

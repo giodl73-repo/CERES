@@ -219,6 +219,14 @@ sim_params:
   # the conservative base; actual horizon depends on van condition and
   # maintenance discipline.
 
+# ── TRADE-SPECIFIC ────────────────────────────────────────────────────────────
+
+trade_specific:
+  flour_source_declaration: industrial-flour-purchased
+  # Industrial flour purchased from warehouse distributor. At ~4,774 kg/yr this
+  # volume is below the threshold at which a direct-mill relationship is
+  # economically attractive; see Key Assumptions for sourcing rationale.
+
 # ── RESULTS ───────────────────────────────────────────────────────────────────
 
 results:

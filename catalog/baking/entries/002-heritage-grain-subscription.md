@@ -104,12 +104,13 @@ economics:
 
 # ── TRADE-SPECIFIC FIELD ─────────────────────────────────────────────────────
 
-flour_source_declaration: local-mill-partnership
-# KEY DIFFERENTIATOR — this entry tests the "can you source local flour?" path.
-# Success depends on finding a small-scale regional mill carrying heritage grain varieties
-# (einkorn, spelt, emmer, red wheat). If no local mill exists, flour_source_declaration
-# reverts to industrial-flour-purchased and the heritage-grain premium evaporates.
-# See Mill Dependency note in Known Risks.
+trade_specific:
+  flour_source_declaration: local-mill-partnership
+  # KEY DIFFERENTIATOR — this entry tests the "can you source local flour?" path.
+  # Success depends on finding a small-scale regional mill carrying heritage grain varieties
+  # (einkorn, spelt, emmer, red wheat). If no local mill exists, flour_source_declaration
+  # reverts to industrial-flour-purchased and the heritage-grain premium evaporates.
+  # See Mill Dependency note in Known Risks.
 
 # ── OPERATIONS REALITY ───────────────────────────────────────────────────────
 

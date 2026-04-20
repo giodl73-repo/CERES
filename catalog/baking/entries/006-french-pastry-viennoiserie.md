@@ -84,10 +84,11 @@ apprentice_friendly: false
 
 # ── BAKING-SPECIFIC REQUIRED FIELD ───────────────────────────────────────────
 
-flour_source_declaration: industrial-flour-purchased
-# Specialty pastry flour (T45 or equivalent low-extraction, low-protein) sourced
-# from industrial mill or specialty distributor. Local mill sourcing is not reliably
-# viable for T45-equivalent at small-city artisan volumes; see Key Assumptions.
+trade_specific:
+  flour_source_declaration: industrial-flour-purchased
+  # Specialty pastry flour (T45 or equivalent low-extraction, low-protein) sourced
+  # from industrial mill or specialty distributor. Local mill sourcing is not reliably
+  # viable for T45-equivalent at small-city artisan volumes; see Key Assumptions.
 
 # ── ECONOMICS ────────────────────────────────────────────────────────────────
 
