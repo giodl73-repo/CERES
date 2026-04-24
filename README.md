@@ -169,3 +169,9 @@ Early-stage. Phase 1 (smithing vertical slice) in progress. See
 ## Author
 
 Giovanni Della-Libera. Started 2026-04-18.
+
+---
+
+## License
+
+[MIT](LICENSE) — © 2026 Gio Della-Libera.
