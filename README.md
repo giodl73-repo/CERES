@@ -125,7 +125,7 @@ small city can easily fail a village on utilization, and vice versa.
 | Framework and lens math | [`corpus/`](corpus/) | Active |
 | Simulation tiers | [`simulations/`](simulations/) | Tier A in progress |
 | Playbook and pitch | [`playbook/`](playbook/) | Planned (Phase 5) |
-| Review roles | [`.craft/roles/`](.craft/roles/) | Active |
+| Review roles | [`.roles/`](.roles/) | Active |
 | Pipeline skills | [`skills/`](skills/) | Active |
 | Quality rubric | [`scoring/RUBRIC.md`](scoring/RUBRIC.md) | Active |
 | Progress tracker | [`TRACKER.md`](TRACKER.md) | Active |

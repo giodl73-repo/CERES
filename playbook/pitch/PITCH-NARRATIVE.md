@@ -19,7 +19,7 @@ derived_from:
   - playbook/smithing/village.md
   - playbook/smithing/town.md
   - playbook/smithing/small-city.md
-  - .craft/roles/panel/P-6-skeptical-funder.md
+  - .roles/panel/P-6-skeptical-funder.md
   - docs/STYLE-GUIDE.md
 ---
 

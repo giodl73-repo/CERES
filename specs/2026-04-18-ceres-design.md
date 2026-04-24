@@ -145,7 +145,7 @@ CERES/
 │
 ├── agents/                            # Chronicle-pattern
 │   └── ...
-├── .craft/
+├── .roles/
 │   └── roles/                         # panel reviewer roles
 ├── reviews/                           # panel outputs
 ├── scoring/
@@ -399,7 +399,7 @@ Thresholds are defined in `corpus/program/SCALES.md` per scale (village/town/sma
 - Every `sim_params` number in a catalog entry cites a source (historical cost data, modern equipment listing, trade-journal estimate). Uncited numbers block `status: validated`.
 - Tier A outputs are sanity-checked against known real-world parallels (existing microbakeries, community forges, small textile operations) documented in `simulations/tier-a-comparator/VALIDATION.md`.
 - A quality rubric (`scoring/RUBRIC.md`) scores catalog entries. `status: draft` → `reviewed` → `validated` gates require rubric score thresholds.
-- Chronicle/Panel-style review pattern: reviewer roles in `.craft/roles/` score catalog entries and flag issues.
+- Chronicle/Panel-style review pattern: reviewer roles in `.roles/` score catalog entries and flag issues.
 
 ---
 

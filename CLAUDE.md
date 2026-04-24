@@ -32,7 +32,7 @@ First-class top-level directories. Never use `docs/superpowers/...` paths.
 | `corpus/` | Framework material: `corpus/canon/` (theory, glossary, principles) and `corpus/program/` (lens math, scales, FX table, validation rules). |
 | `simulations/` | Phase 4 — layered Tier A (scenario comparator), Tier B (system dynamics), Tier C (agent-based). *(upcoming)* |
 | `playbook/` | Phase 5 — per-trade, per-scale winning-designs files and pitch narrative. *(upcoming)* |
-| `.craft/` | Review organization. Role definitions in `.craft/roles/`. See Section 5. |
+| `.roles/` | Review organization. Role definitions in `.roles/`. See Section 5. |
 | `agents/` | Chronicle-pattern agent definitions. *(upcoming)* |
 | `skills/` | Reusable pipeline skills. See Section 6. |
 | `reviews/` | Panel and editorial review outputs. Filenames identify artifact, round, and reviewer. |
@@ -72,13 +72,13 @@ First-class top-level directories. Never use `docs/superpowers/...` paths.
 
 ## 5. Review Tiers
 
-Role definitions: `.craft/roles/ROLE.md`
+Role definitions: `.roles/ROLE.md`
 
 | Tier | Voices | When |
 |---|---|---|
-| **Panel** (`.craft/roles/panel/`) | 6 permanent — P-1 Market Economist, P-2 Commons Theorist, P-3 Civic Steward, P-4 Craft Practitioner, P-5 Historian, P-6 Skeptical Funder | Every artifact: spec, plan, catalog entry, playbook file, pitch narrative |
-| **Editorial** (`.craft/roles/editorial/`) | 3 permanent — E-1 Citation Auditor, E-2 Scope Keeper, E-3 Numeracy Checker | Validation gate: required before any artifact advances to `validated` |
-| **Board** (`.craft/roles/board/`) | Per-trade domain experts, assembled on demand | Expert claims needing domain defense; not permanent |
+| **Panel** (`.roles/panel/`) | 6 permanent — P-1 Market Economist, P-2 Commons Theorist, P-3 Civic Steward, P-4 Craft Practitioner, P-5 Historian, P-6 Skeptical Funder | Every artifact: spec, plan, catalog entry, playbook file, pitch narrative |
+| **Editorial** (`.roles/editorial/`) | 3 permanent — E-1 Citation Auditor, E-2 Scope Keeper, E-3 Numeracy Checker | Validation gate: required before any artifact advances to `validated` |
+| **Board** (`.roles/board/`) | Per-trade domain experts, assembled on demand | Expert claims needing domain defense; not permanent |
 
 The six panel voices create deliberate friction across the core productive
 tensions of local-production economics (profit vs. commons, commons vs.

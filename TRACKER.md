@@ -98,7 +98,7 @@ Queue empty. Board review fires on-demand for contested domain claims.
 ## 7. Recent Findings / Decisions
 
 - **2026-04-18:** Initial spec drafted (v0.1). Project identity, pipeline architecture, schema skeleton, three lenses, three scales, vertical-slice strategy established.
-- **2026-04-18:** Review infrastructure authored. `.craft/roles/` (panel, editorial, board), `skills/ceres-panel/`, `skills/ceres-editorial/`, `skills/ceres-board/`.
+- **2026-04-18:** Review infrastructure authored. `.roles/` (panel, editorial, board), `skills/ceres-panel/`, `skills/ceres-editorial/`, `skills/ceres-board/`.
 - **2026-04-18:** Panel R1 on spec — 6 reviews committed (`reviews/R1-P*-ceres-design.md`). Cross-cutting findings: (a) schema underspecified — missing `market_price_per_unit` field, no governance-sketch block for coop entries, no political-coalition field for civic entries (P-1, P-2, P-3); (b) central claim in Section 2 stated as premise, not testable hypothesis (P-1); (c) no project-level success criterion (P-6).
 - **2026-04-18:** Spec revised to v0.2 addressing themes 1, 2-lite, 3. Changes: added `market_price_per_unit` and `pricing_notes` to schema (Section 5); added `operations_reality` block (P-4); added `lens_context.cooperative` and `lens_context.civic` conditional blocks; reframed Section 2 as "Working Hypothesis" with four named falsifiers and pivot criteria; added Section 11 "Project Success Criteria" with success / null / failure definitions, timeline, funder archetype, world-level outcome.
 - **2026-04-18:** Plan A (scaffolding) authored and execution begun. Tasks 1–3 complete: `CLAUDE.md` (project house rules), 12 directory README stubs (skeleton scaffold), `README.md` (project entry point).

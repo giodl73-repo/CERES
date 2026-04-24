@@ -72,10 +72,10 @@ Per-task structure: create file → write content per outline → self-review fo
 Required sections:
 
 1. **Project identity** — one paragraph. CERES = Local Production Atlas. Named for CeCe (chicken) and Ceres (Roman goddess). Sibling projects (LUCIA, FELICE/RMM, MAXIM).
-2. **Directory conventions** — `specs/`, `plans/`, `research/`, `catalog/`, `corpus/`, `simulations/`, `playbook/`, `.craft/`, `skills/`, `reviews/`, `scoring/`, `sources/`, `TRACKER.md`. One line per. Never use `docs/superpowers/...` — user preference.
+2. **Directory conventions** — `specs/`, `plans/`, `research/`, `catalog/`, `corpus/`, `simulations/`, `playbook/`, `.roles/`, `skills/`, `reviews/`, `scoring/`, `sources/`, `TRACKER.md`. One line per. Never use `docs/superpowers/...` — user preference.
 3. **Quality bar** — research-paper-level estimates, every number cited, no supplier BOMs.
 4. **Authoring discipline** — markdown with YAML frontmatter for catalog entries and plans. Match existing patterns. Don't invent schema fields; amend `catalog/SCHEMA.md` if the schema needs to change.
-5. **Review tiers** — `.craft/roles/panel/` (6 voices, every artifact), `.craft/roles/editorial/` (3 voices, validated-promotion gate), `.craft/roles/board/` (per-trade, on-demand). Point at `.craft/roles/ROLE.md`.
+5. **Review tiers** — `.roles/panel/` (6 voices, every artifact), `.roles/editorial/` (3 voices, validated-promotion gate), `.roles/board/` (per-trade, on-demand). Point at `.roles/ROLE.md`.
 6. **Review skills** — point at `skills/ceres-panel/`, `skills/ceres-editorial/`, `skills/ceres-board/`.
 7. **Scope discipline** — keep artifacts in their box; if an artifact grows beyond its spec scope, propose a spec amendment (don't silently expand).
 8. **Sibling project references** — LUCIA at `C:\src\chronicle`, FELICE/RMM at `C:\src\rmm`, MAXIM at `C:\src\reference`. Cite MAXIM for domain material; don't duplicate.
@@ -145,7 +145,7 @@ Required sections:
 1. **Project name + tagline** — CERES — Local Production Atlas
 2. **What this is** — one paragraph: catalog-driven design of modern artisan-production equipment evaluated under market/coop/civic lenses across village/town/small-city scales, testing whether historical local production can be restored.
 3. **Named after** — CeCe (chicken, alive) + Ceres (Roman goddess, not alive). Tie to sibling-project naming: LUCIA from Lucy, FELICE from Felix.
-4. **Project sections** — quick-links to `specs/`, `plans/`, `.craft/roles/`, `skills/`, `corpus/canon/THEORY.md`, `catalog/SCHEMA.md`, `TRACKER.md`.
+4. **Project sections** — quick-links to `specs/`, `plans/`, `.roles/`, `skills/`, `corpus/canon/THEORY.md`, `catalog/SCHEMA.md`, `TRACKER.md`.
 5. **Status** — "Early-stage. Phase 1 (smithing vertical slice) in progress."
 6. **Author + credit line** — Giovanni Della-Libera; developed with Claude Opus 4.7 (1M context); started 2026-04-18.
 
@@ -251,7 +251,7 @@ Required sections:
 
 1. **5-phase overview** — Research → Catalog ★ → Evaluation Matrix → Simulation → Playbook + Pitch. One paragraph each linking to the artifacts each phase produces.
 2. **Per-phase workflow** — for each phase: inputs, outputs, review tiers that fire, promotion criteria.
-3. **Review-tier firing rules** (from `.craft/roles/ROLE.md` "When Each Tier Fires" table): panel on every artifact; editorial on validated-promotion; board on demand.
+3. **Review-tier firing rules** (from `.roles/ROLE.md` "When Each Tier Fires" table): panel on every artifact; editorial on validated-promotion; board on demand.
 4. **Catalog-entry lifecycle** — `draft` → panel review R1 → revise → panel review R2 (if needed) → editorial 3-lens pass → `validated` (or held / deprecated).
 5. **Spec-amendment pathway** — if an artifact needs content the spec doesn't authorize, don't silently expand — open a short amendment to the spec and link it from the artifact.
 6. **Simulation tier escalation** — Tier A runs on every cell; Tier B requires ≥2 trades; Tier C is targeted.
@@ -259,7 +259,7 @@ Required sections:
 
 Self-review:
 - Matches spec Section 4.1 (Architecture), Section 7 (Simulation Tiers), Section 10 (Phase-1 DoD).
-- Cross-checked against `.craft/roles/ROLE.md` firing table.
+- Cross-checked against `.roles/ROLE.md` firing table.
 
 Commit:
 ```bash
@@ -625,7 +625,7 @@ Plan A is complete (17/17 tasks). This section records what P-6 would have raise
 - **If spec revises mid-plan:** stop all in-flight tasks, re-ingest the revised spec section, diff against already-authored files, update affected files, then resume. The spec-amendment pathway in `docs/PIPELINE.md` governs this.
 - **If schema divergence is discovered** (e.g., Plan C entry schema does not match Plan A canonical): treat as a spec-amendment trigger — open a short amendment, update `catalog/SCHEMA.md`, and re-validate affected entries. Do not patch entries silently.
 - **If authoring cost spirals:** switch to reduced-review mode (one self-review pass instead of two), batch commits by logical group rather than one per task, and defer polish to a v1.1 pass after all tasks are drafted.
-- **If premature lock-in surfaces:** use the v1.1-style refactor pattern (as applied to `.craft/roles/` when RMM's dynamic-discovery pattern informed a role revision) — add fields, bump the schema version, document migration steps in the schema changelog.
+- **If premature lock-in surfaces:** use the v1.1-style refactor pattern (as applied to `.roles/` when RMM's dynamic-discovery pattern informed a role revision) — add fields, bump the schema version, document migration steps in the schema changelog.
 
 ### Assumptions Now Made Explicit
 

@@ -154,7 +154,7 @@ Before committing each cultural chapter, the implementer runs this checklist:
 - `docs/STYLE-GUIDE.md` §4 (forbidden framings)
 - `docs/METHODOLOGY.md` §5 (historical-claim source standards)
 - `corpus/canon/THEORY.md` §6 (function-vs-form distinction)
-- `.craft/roles/panel/P-5-historian.md` (the voice that will review this)
+- `.roles/panel/P-5-historian.md` (the voice that will review this)
 - Reference material: `C:\src\reference\archaeology\`, `C:\src\reference\architecture-history\`, `C:\src\reference\cartography\` as relevant — cite them as `[MAXIM: <topic>]` when drawing from there.
 
 **Commit:**

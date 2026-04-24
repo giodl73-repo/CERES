@@ -24,7 +24,7 @@ The board is assembled for this claim — not a standing committee.
 
 ## Board Assembly
 
-Each board is 2–3 domain experts per `.craft/roles/board/ROLE.md`, spanning:
+Each board is 2–3 domain experts per `.roles/board/ROLE.md`, spanning:
 
 1. **Domain-history specialist** (e.g., historical metallurgy for smithing)
 2. **Modern-practitioner specialist** (e.g., working bladesmith, working baker)
@@ -32,9 +32,9 @@ Each board is 2–3 domain experts per `.craft/roles/board/ROLE.md`, spanning:
 
 ### Assembly Procedure
 
-1. Check `.craft/roles/board/` for existing trade-specific role files matching the claim's domain needs.
+1. Check `.roles/board/` for existing trade-specific role files matching the claim's domain needs.
 2. If the needed expert role does not yet exist:
-   - **Create it**, using `.craft/roles/board/ROLE.md` as the template.
+   - **Create it**, using `.roles/board/ROLE.md` as the template.
    - Name the file `B-{trade}-{slug}.md` — e.g., `B-smithing-induction-engineering.md`.
    - Declare `status: active | historical | hypothetical` in frontmatter; explain in `status_note` if not a real named figure.
 3. Read each assembled board member's role file before writing their review.
@@ -103,7 +103,7 @@ the recommended author action.
 
 - [ ] The contested claim is specific and bounded
 - [ ] Board assembled with 2–3 domain experts
-- [ ] Missing role files created from `.craft/roles/board/ROLE.md` template
+- [ ] Missing role files created from `.roles/board/ROLE.md` template
 - [ ] Each role's `status` declared honestly (active / historical / hypothetical)
 - [ ] Each board member's review focuses on the claim, not the artifact
 - [ ] Verdicts assigned per member

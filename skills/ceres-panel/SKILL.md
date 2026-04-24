@@ -32,12 +32,12 @@ vs historical realism vs funder rigor.
 
 **Before writing any review, read each panel role file:**
 
-- `.craft/roles/panel/P-1-market-economist.md`
-- `.craft/roles/panel/P-2-commons-theorist.md`
-- `.craft/roles/panel/P-3-civic-steward.md`
-- `.craft/roles/panel/P-4-craft-practitioner.md`
-- `.craft/roles/panel/P-5-historian.md`
-- `.craft/roles/panel/P-6-skeptical-funder.md`
+- `.roles/panel/P-1-market-economist.md`
+- `.roles/panel/P-2-commons-theorist.md`
+- `.roles/panel/P-3-civic-steward.md`
+- `.roles/panel/P-4-craft-practitioner.md`
+- `.roles/panel/P-5-historian.md`
+- `.roles/panel/P-6-skeptical-funder.md`
 
 You must read the full role file (frontmatter + prose) for each voice before
 writing its review. The YAML `lens.verify` and `lens.simplify` lists are the

@@ -199,7 +199,7 @@ Links checked manually:
 - THEORY.md → `corpus/canon/GLOSSARY.md` — exists.
 - METHODOLOGY.md → `docs/STYLE-GUIDE.md` — exists.
 - STYLE-GUIDE.md → `corpus/program/CURRENCIES.md` — exists.
-- PIPELINE.md → `docs/METHODOLOGY.md`, `corpus/program/ECONOMIC-LENSES.md`, `corpus/program/SCALES.md`, `.craft/roles/ROLE.md`, `skills/` — all exist.
+- PIPELINE.md → `docs/METHODOLOGY.md`, `corpus/program/ECONOMIC-LENSES.md`, `corpus/program/SCALES.md`, `.roles/ROLE.md`, `skills/` — all exist.
 - VALIDATION.md → `skills/ceres-editorial/SKILL.md`, `corpus/program/ECONOMIC-LENSES.md`, `corpus/program/SCALES.md` — all exist.
 - SCHEMA.md → `specs/2026-04-18-ceres-design.md` — exists.
 

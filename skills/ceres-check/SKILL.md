@@ -33,7 +33,7 @@ scan. Both coexist; neither replaces the other.
 
 ### 1a. Enumerate the role library
 
-Glob `.craft/roles/**/*.md` to list every file in the role library.
+Glob `.roles/**/*.md` to list every file in the role library.
 
 **Exclude any file named `ROLE.md`** — those are tier overview/template files,
 not individual reviewer roles. Only files with individual role IDs (e.g.,
@@ -43,16 +43,16 @@ After globbing you should have up to 9 individual role files (6 panel + 3
 editorial + any board members present):
 
 ```
-.craft/roles/panel/P-1-market-economist.md
-.craft/roles/panel/P-2-commons-theorist.md
-.craft/roles/panel/P-3-civic-steward.md
-.craft/roles/panel/P-4-craft-practitioner.md
-.craft/roles/panel/P-5-historian.md
-.craft/roles/panel/P-6-skeptical-funder.md
-.craft/roles/editorial/E-1-citation-auditor.md
-.craft/roles/editorial/E-2-scope-keeper.md
-.craft/roles/editorial/E-3-numeracy-checker.md
-.craft/roles/board/B-*.md           (zero or more, assembled on demand)
+.roles/panel/P-1-market-economist.md
+.roles/panel/P-2-commons-theorist.md
+.roles/panel/P-3-civic-steward.md
+.roles/panel/P-4-craft-practitioner.md
+.roles/panel/P-5-historian.md
+.roles/panel/P-6-skeptical-funder.md
+.roles/editorial/E-1-citation-auditor.md
+.roles/editorial/E-2-scope-keeper.md
+.roles/editorial/E-3-numeracy-checker.md
+.roles/board/B-*.md           (zero or more, assembled on demand)
 ```
 
 ### 1b. Read frontmatter from each role
@@ -310,7 +310,7 @@ table, not as first-person qualitative reviews.
 
 ## Checklist
 
-- [ ] Glob `.craft/roles/**/*.md` executed; `ROLE.md` files excluded
+- [ ] Glob `.roles/**/*.md` executed; `ROLE.md` files excluded
 - [ ] Frontmatter read from every individual role file
 - [ ] Artifact type derived from path; noted if ambiguous
 - [ ] Filters applied in order: artifact type → scope → (relevance scored)

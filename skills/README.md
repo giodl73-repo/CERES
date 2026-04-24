@@ -2,7 +2,7 @@
 
 Reusable pipeline stages for CERES. Each skill lives in its own directory
 as `SKILL.md`. Skills operationalize the review tiers defined in
-`.craft/roles/`.
+`.roles/`.
 
 ## Review Skills
 

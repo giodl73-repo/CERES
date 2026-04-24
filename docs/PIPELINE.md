@@ -3,7 +3,7 @@
 Five-phase workflow guide — from raw historical research to a fundable pitch.
 
 **Cross-references:** spec `specs/2026-04-18-ceres-design.md` §§ 4, 7, 8, 10;
-review-tier rules `.craft/roles/ROLE.md`; skills in `skills/`.
+review-tier rules `.roles/ROLE.md`; skills in `skills/`.
 
 ---
 
@@ -105,7 +105,7 @@ production declined, what the research found, and what a pilot program would cos
 
 ## 3. Review-Tier Firing Rules
 
-Source: `.craft/roles/ROLE.md` — "When Each Tier Fires" table.
+Source: `.roles/ROLE.md` — "When Each Tier Fires" table.
 
 ### Summary
 
@@ -178,8 +178,8 @@ Board fires when:
    historical claim.
 
 The board is assembled per claim (2–3 domain experts), not per trade wholesale.
-Board members are defined in `.craft/roles/board/` using the template at
-`.craft/roles/board/ROLE.md`.
+Board members are defined in `.roles/board/` using the template at
+`.roles/board/ROLE.md`.
 
 Reviews land in `reviews/BOARD-B-{trade}-{slug}-{artifact-slug}.md`. Invoke via
 `/ceres-board` (see `skills/ceres-board/SKILL.md`).

@@ -33,9 +33,9 @@ the form.
 
 **Before writing any editorial output, read each editorial role file:**
 
-- `.craft/roles/editorial/E-1-citation-auditor.md`
-- `.craft/roles/editorial/E-2-scope-keeper.md`
-- `.craft/roles/editorial/E-3-numeracy-checker.md`
+- `.roles/editorial/E-1-citation-auditor.md`
+- `.roles/editorial/E-2-scope-keeper.md`
+- `.roles/editorial/E-3-numeracy-checker.md`
 
 ### Lens Summary
 

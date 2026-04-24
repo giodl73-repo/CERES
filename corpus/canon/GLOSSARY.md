@@ -21,7 +21,7 @@ Terms are listed alphabetically. Each entry is 1–3 sentences.
 
 ## A
 
-**Applies_to** — a YAML frontmatter field in every role file (`.craft/roles/**/*.md`)
+**Applies_to** — a YAML frontmatter field in every role file (`.roles/**/*.md`)
 listing the artifact types that role is eligible to review: one or more of `spec`,
 `plan`, `catalog-entry`, `playbook-file`, `pitch-narrative`. The `ceres-check` skill
 reads this field to filter roles by artifact type before running its checklist.
