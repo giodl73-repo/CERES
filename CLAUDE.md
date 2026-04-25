@@ -10,9 +10,9 @@ nourishment). The mission: design equipment that hits price and
 operational points enabling towns and small cities to restore meaningful
 local production, evaluated under realistic economic conditions and
 framed as a fundable-quality plan. Sibling projects: **LUCIA**
-(`C:\src\chronicle` — narrative encyclopedia of human cultures),
-**FELICE/RMM** (`C:\src\rmm` — theoretical framework and simulation),
-**MAXIM** (`C:\src\reference` — encyclopedic knowledge base). CERES is
+(`chronicle` — narrative encyclopedia of human cultures),
+**FELICE/RMM** (`rmm` — theoretical framework and simulation),
+**MAXIM** (`reference` — encyclopedic knowledge base). CERES is
 fully independent — own schema, own playbook, own simulation code —
 but borrows structural patterns from siblings and cites MAXIM for
 domain material.
@@ -131,9 +131,9 @@ usage guidance. *(A `skills/README.md` index is not yet created; see Plan B.)*
 
 | Project | Path | Relationship |
 |---|---|---|
-| LUCIA | `C:\src\chronicle` | Structural pattern source: "many instances, consistent schema" catalog model; panel/scoring patterns |
-| FELICE/RMM | `C:\src\rmm` | `corpus/canon` + `corpus/program` framework structure; simulation-design discipline |
-| MAXIM | `C:\src\reference` | Primary citation source for domain material (archaeology, ceramics, architecture-history, chemical engineering, agriculture, etc.) |
+| LUCIA | `chronicle` | Structural pattern source: "many instances, consistent schema" catalog model; panel/scoring patterns |
+| FELICE/RMM | `rmm` | `corpus/canon` + `corpus/program` framework structure; simulation-design discipline |
+| MAXIM | `reference` | Primary citation source for domain material (archaeology, ceramics, architecture-history, chemical engineering, agriculture, etc.) |
 
 **Cite MAXIM for domain material; do not duplicate it here.** If MAXIM has
 a relevant entry, reference it. If no MAXIM entry exists, add the citation

@@ -1,6 +1,6 @@
 # ceres-check — Plan A: Scaffolding and Framework Docs
 
-**Artifact:** `C:\src\artisan\plans\2026-04-18-plan-a-scaffolding.md`
+**Artifact:** `artisan\plans\2026-04-18-plan-a-scaffolding.md`
 **Scope:** full
 **Roles selected:** 6 of 9 individual roles in library
 **Run date:** 2026-04-18

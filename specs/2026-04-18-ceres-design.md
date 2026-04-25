@@ -13,7 +13,7 @@
 
 - **Codename:** CERES (after CeCe, Giovanni's chicken; CERES = Roman goddess of grain, harvest, and nourishment of settlements)
 - **Mission:** Design and evaluate a catalog of modern artisan-production equipment — forges, ovens, looms, kilns, and the rest — that hits price and operational points enabling towns and cities to restore meaningful local production. Anchor the designs in historical functional requirements; evaluate them under realistic economic conditions; produce a fundable-quality plan.
-- **Sibling projects:** LUCIA (C:\src\chronicle — narrative encyclopedia of human cultures), FELICE/RMM (C:\src\rmm — theoretical framework + simulation), MAXIM (C:\src\reference — encyclopedic knowledge base).
+- **Sibling projects:** LUCIA (chronicle — narrative encyclopedia of human cultures), FELICE/RMM (rmm — theoretical framework + simulation), MAXIM (reference — encyclopedic knowledge base).
 - **Relationship:** Fully independent. Own CLAUDE.md, schema, playbook, simulation code. Borrows patterns from siblings: Chronicle's "many instances, consistent schema" model for the catalog; RMM's canon/program/simulations structure for the theoretical framework. References MAXIM for domain citations (archaeology, ceramics, architecture-history, chemical-eng, agriculture, etc.).
 - **Repository:** https://github.com/giodl73-repo/CERES.git
 - **Quality bar:** Research-paper-level estimates. Order-of-magnitude unit economics with citations. Conceptual design specs, not real supplier BOMs.

@@ -1,6 +1,6 @@
 # ceres-check — CERES Design Specification
 
-**Artifact:** C:\src\artisan\specs\2026-04-18-ceres-design.md
+**Artifact:** artisan\specs\2026-04-18-ceres-design.md
 **Scope:** full
 **Roles selected:** 6 of 9 individual roles in library
 **Run date:** 2026-04-18

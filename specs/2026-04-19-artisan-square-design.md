@@ -14,7 +14,7 @@
 - **Codename:** Artisan Square
 - **Mission:** A private, operator-owned chain of multi-trade artisan production buildings — shared infrastructure, individually rented studios — enabling solo artisan practitioners to build their business without absorbing the full capital and compliance burden of a standalone commercial space. The Sola Salons model applied to smithing, baking, weaving, and adjacent trades.
 - **Relationship to CERES:** Artisan Square is Plan J in the CERES pipeline. The CERES Tier A simulation across 3 trades and 405 evaluation cells demonstrated that artisan production is economically viable in repair/specialty/premium niches, but that the binding constraint is not equipment economics — it is operator pipeline and shared infrastructure. Artisan Square is the physical instantiation of the shared-infrastructure finding. It completes the CERES vertical slice by providing the real-world context in which catalog entries would operate.
-- **Repository:** `C:\src\artisan` (Artisan Square spec lives alongside the CERES research that generated it)
+- **Repository:** `artisan` (Artisan Square spec lives alongside the CERES research that generated it)
 
 ---
 

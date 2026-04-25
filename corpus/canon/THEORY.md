@@ -187,7 +187,7 @@ to the requirements spec.
 
 Anchor cultures (the 4–6 documented historical contexts in `research/cultures/`)
 supply the primary research basis. Domain citations for archaeological, engineering,
-and economic evidence are sourced from MAXIM (`C:\src\reference`), not generated
+and economic evidence are sourced from MAXIM (`reference`), not generated
 independently. The research corpus documents which historical forms informed which
 functional requirements, providing a traceable chain from historical precedent to
 catalog design choice. A catalog entry whose `## Historical lineage` section cites no

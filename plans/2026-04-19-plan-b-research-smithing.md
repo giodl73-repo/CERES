@@ -155,7 +155,7 @@ Before committing each cultural chapter, the implementer runs this checklist:
 - `docs/METHODOLOGY.md` §5 (historical-claim source standards)
 - `corpus/canon/THEORY.md` §6 (function-vs-form distinction)
 - `.roles/panel/P-5-historian.md` (the voice that will review this)
-- Reference material: `C:\src\reference\archaeology\`, `C:\src\reference\architecture-history\`, `C:\src\reference\cartography\` as relevant — cite them as `[MAXIM: <topic>]` when drawing from there.
+- Reference material: `reference\archaeology\`, `reference\architecture-history\`, `reference\cartography\` as relevant — cite them as `[MAXIM: <topic>]` when drawing from there.
 
 **Commit:**
 ```bash
@@ -464,7 +464,7 @@ Run these checks before declaring Plan B complete:
 - The 4 selected cultures cover sufficient variance for functional-requirements synthesis. Adding Andean and Islamic later will enrich, not invalidate, the synthesis.
 - `docs/STYLE-GUIDE.md` and `docs/METHODOLOGY.md` are the authoritative style sources; P-5 Historian is the heaviest panel reviewer.
 - Plan C will consume REQUIREMENTS.md and HISTORICAL-FORMS.md; DECLINE-VERDICT.md informs Plan C's scope (which restored-trade niches to target).
-- Modern sources referenced via MAXIM (`C:\src\reference`) are citable; don't duplicate, cite.
+- Modern sources referenced via MAXIM (`reference`) are citable; don't duplicate, cite.
 
 ## Handoff
 

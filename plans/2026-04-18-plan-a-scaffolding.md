@@ -78,7 +78,7 @@ Required sections:
 5. **Review tiers** — `.roles/panel/` (6 voices, every artifact), `.roles/editorial/` (3 voices, validated-promotion gate), `.roles/board/` (per-trade, on-demand). Point at `.roles/ROLE.md`.
 6. **Review skills** — point at `skills/ceres-panel/`, `skills/ceres-editorial/`, `skills/ceres-board/`.
 7. **Scope discipline** — keep artifacts in their box; if an artifact grows beyond its spec scope, propose a spec amendment (don't silently expand).
-8. **Sibling project references** — LUCIA at `C:\src\chronicle`, FELICE/RMM at `C:\src\rmm`, MAXIM at `C:\src\reference`. Cite MAXIM for domain material; don't duplicate.
+8. **Sibling project references** — LUCIA at `chronicle`, FELICE/RMM at `rmm`, MAXIM at `reference`. Cite MAXIM for domain material; don't duplicate.
 
 Self-review:
 - No forward references to docs that don't exist yet (or flag them as "upcoming").
