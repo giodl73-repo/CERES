@@ -74,16 +74,19 @@ replicated trade by trade.
 The same catalog entry is evaluated three ways, because the same forge
 is a different thing under each model:
 
-- **Market** — private business, profit motive. Pass condition: payback
-  ≤ 8 years *and* the operator earns at least a scale-appropriate median
-  wage.
-- **Cooperative** — worker or member co-op, member-funded.
-  Pass condition: break-even member count fits the feasible pool at
-  that scale, with a credible governance sketch (Ostrom-principle
-  alignment, monitoring, sanctions, conflict resolution).
-- **Civic** — municipally owned, library or fire-department model. Pass
-  condition: per-household annual cost and usage rate sit inside
-  thresholds benchmarked against peer civic services.
+- **Market** — *Does this pencil out as a private business?* A single
+  operator owns the forge and lives off the income. Pass condition:
+  payback ≤ 8 years *and* the operator earns at least a scale-appropriate
+  median wage.
+- **Cooperative** — *Does this work as a member-owned commons?* Users
+  jointly own and fund the forge, sharing capacity and cost. Pass
+  condition: break-even member count fits the feasible pool at that
+  scale, with a credible governance sketch (Ostrom-principle alignment,
+  monitoring, sanctions, conflict resolution).
+- **Civic** — *Does this work as town infrastructure, like a library or
+  fire department?* The municipality owns and funds the forge as a
+  public service. Pass condition: per-household annual cost and usage
+  rate sit inside thresholds benchmarked against peer civic services.
 
 ### Settlement scales
 
