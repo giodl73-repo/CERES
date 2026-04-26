@@ -1,0 +1,20 @@
+[meta]
+name = "CERES"
+description = "Local production atlas — crafts, trades, and economic simulation"
+
+[files]
+include = ["**/*.md"]
+exclude = ["_archive/**"]
+root = true
+
+[ascii_box]
+enabled = true
+tolerance = 50  # flowchart annotations appear after │ making rows wider than box border
+code_blocks_only = true
+check_col_separators = false
+
+[ascii_char]
+error_on_wide = false
+
+[markdown_table]
+ignore_extra_body_cols = true
