@@ -4,6 +4,10 @@ Can a town of five thousand restore a working forge, a bakery that sells
 wholesale, a weaving co-op? CERES tests whether the answer is yes — and
 why, for whom, and at what cost.
 
+**Review roles:** This repo uses
+[ROLES](https://github.com/giodl73-repo/ROLES), the `.roles` convention for
+repository-local review panels.
+
 ---
 
 ## What This Is
