@@ -2,6 +2,10 @@
 name = "CERES"
 description = "Local production atlas — crafts, trades, and economic simulation"
 
+[[compile]]
+source_dir = "src/guides"
+output_dir = "docs/guides"
+
 [files]
 include = ["**/*.md"]
 exclude = ["_archive/**"]
