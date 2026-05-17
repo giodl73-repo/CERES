@@ -110,13 +110,14 @@ CERES now has a Rust Tier A path at the repo root:
 ```powershell
 cargo test
 cargo run -- --catalog catalog\smithing --jsonl simulations\tier-a-comparator\results\smithing-rust-events.jsonl
+cargo run -- --compare catalog\smithing\entries\001-backyard-propane-compact.md catalog\smithing\entries\002-induction-modular-small-repair.md --scale town --lens market --json
 ```
 
 The Rust crate uses RALLY only for product-neutral validation infrastructure:
 deterministic `SimulationRun` identifiers, `SimulationMetric` rows,
-`ValidationReport` status, event JSONL, and `PacketManifest` evidence bundles.
-CERES still owns catalog schema, scale parameters, and market/cooperative/civic
-economic policy.
+`ComparisonReport` deltas, `ValidationReport` status, event JSONL, and
+`PacketManifest` evidence bundles. CERES still owns catalog schema, scale
+parameters, and market/cooperative/civic economic policy.
 
 ---
 

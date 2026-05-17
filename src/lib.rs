@@ -1,6 +1,6 @@
 use rally_core::{
-    BeatRef, EventLogEntry, PacketManifest, SimulationMetric, SimulationRun, ValidationFinding,
-    ValidationReport,
+    BeatRef, ComparisonDelta, ComparisonReport, EventLogEntry, PacketManifest, SimulationMetric,
+    SimulationRun, ValidationFinding, ValidationReport,
 };
 use serde::Serialize;
 use serde_yaml::{Mapping, Value};
@@ -229,6 +229,30 @@ pub struct CatalogRun {
     pub evidence_packet_id: String,
 }
 
+#[derive(Debug, Clone, PartialEq, Serialize)]
+pub struct ComparisonDeltaRow {
+    pub metric: String,
+    pub baseline: f64,
+    pub candidate: f64,
+    pub direction: String,
+    pub change: f64,
+    pub improved: bool,
+}
+
+#[derive(Debug, Clone, PartialEq, Serialize)]
+pub struct EntryComparison {
+    pub subject: String,
+    pub baseline_id: String,
+    pub candidate_id: String,
+    pub scale: String,
+    pub lens: String,
+    pub status: String,
+    pub improved_count: usize,
+    pub deltas: Vec<ComparisonDeltaRow>,
+    pub baseline: CellResult,
+    pub candidate: CellResult,
+}
+
 pub fn market_lens(entry: &CatalogEntry, scale: &Scale) -> Result<LensResult, String> {
     let capital_cost = entry.required_number(&["economics", "capital_cost", "mid"])?;
     let install_cost = entry.optional_number(&["economics", "install_cost"], 0.0);
@@ -407,16 +431,96 @@ pub fn run_entry(entry: &CatalogEntry) -> Result<Vec<CellResult>, String> {
             .get(scale_name)
             .ok_or_else(|| format!("missing scale {scale_name}"))?;
         for lens in LENSES {
-            let result = match lens {
-                "market" => market_lens(entry, scale)?,
-                "coop" => coop_lens(entry, scale)?,
-                "civic" => civic_lens(entry, scale)?,
-                _ => unreachable!("static lens list"),
-            };
+            let result = evaluate_lens(entry, scale, lens)?;
             cells.push(CellResult::from_lens(entry, scale_name, lens, result));
         }
     }
     Ok(cells)
+}
+
+pub fn compare_entry_paths(
+    baseline_path: impl AsRef<Path>,
+    candidate_path: impl AsRef<Path>,
+    scale_name: &str,
+    lens: &str,
+) -> Result<EntryComparison, String> {
+    let baseline = CatalogEntry::from_markdown(baseline_path)?;
+    let candidate = CatalogEntry::from_markdown(candidate_path)?;
+    compare_entries(&baseline, &candidate, scale_name, lens)
+}
+
+pub fn compare_entries(
+    baseline: &CatalogEntry,
+    candidate: &CatalogEntry,
+    scale_name: &str,
+    lens: &str,
+) -> Result<EntryComparison, String> {
+    let scales = default_scales();
+    let scale = scales
+        .get(scale_name)
+        .ok_or_else(|| format!("unknown scale: {scale_name}"))?;
+    if !LENSES.contains(&lens) {
+        return Err(format!("unknown lens: {lens}"));
+    }
+
+    let baseline_cell = CellResult::from_lens(
+        baseline,
+        scale_name,
+        lens,
+        evaluate_lens(baseline, scale, lens)?,
+    );
+    let candidate_cell = CellResult::from_lens(
+        candidate,
+        scale_name,
+        lens,
+        evaluate_lens(candidate, scale, lens)?,
+    );
+
+    let mut report =
+        ComparisonReport::new(&format!("{scale_name}-{lens}"), &baseline.id, &candidate.id);
+    report.add_delta(ComparisonDelta::lower_is_better(
+        &baseline_cell.metric_name,
+        baseline_cell.primary_metric,
+        candidate_cell.primary_metric,
+    ));
+
+    let deltas = report
+        .deltas
+        .iter()
+        .map(|delta| ComparisonDeltaRow {
+            metric: delta.metric.clone(),
+            baseline: delta.baseline,
+            candidate: delta.candidate,
+            direction: delta.direction.clone(),
+            change: delta.change(),
+            improved: delta.improved(),
+        })
+        .collect::<Vec<_>>();
+
+    let status = report.status().to_string();
+    let improved_count = report.improved_count();
+
+    Ok(EntryComparison {
+        subject: report.subject,
+        baseline_id: report.baseline_id,
+        candidate_id: report.candidate_id,
+        scale: scale_name.to_string(),
+        lens: lens.to_string(),
+        status,
+        improved_count,
+        deltas,
+        baseline: baseline_cell,
+        candidate: candidate_cell,
+    })
+}
+
+fn evaluate_lens(entry: &CatalogEntry, scale: &Scale, lens: &str) -> Result<LensResult, String> {
+    match lens {
+        "market" => market_lens(entry, scale),
+        "coop" => coop_lens(entry, scale),
+        "civic" => civic_lens(entry, scale),
+        _ => Err(format!("unknown lens: {lens}")),
+    }
 }
 
 pub fn run_catalog(catalog_dir: impl AsRef<Path>) -> Result<CatalogRun, String> {
@@ -577,5 +681,20 @@ sim_params:
 
         assert_eq!(run.validation_status, "error");
         fs::remove_dir_all(temp).ok();
+    }
+
+    #[test]
+    fn comparison_reports_use_rally_deltas() {
+        let baseline = CatalogEntry::from_yaml_str(ENTRY).expect("baseline parses");
+        let candidate_yaml = ENTRY.replace("mid: 45", "mid: 55");
+        let candidate = CatalogEntry::from_yaml_str(&candidate_yaml).expect("candidate parses");
+
+        let comparison =
+            compare_entries(&baseline, &candidate, "town", "market").expect("comparison runs");
+
+        assert_eq!(comparison.status, "improved");
+        assert_eq!(comparison.improved_count, 1);
+        assert_eq!(comparison.deltas[0].direction, "lower");
+        assert!(comparison.candidate.primary_metric < comparison.baseline.primary_metric);
     }
 }
