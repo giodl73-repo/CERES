@@ -123,8 +123,8 @@ evidence layer those systems can consume.
 | Survival or city-builder loops | Industry unlocks, repair capacity, shared infrastructure, and failure cascades. |
 | RPG/worldbuilding narrative | Concrete economic stakes for quests, disasters, patronage, and local politics. |
 
-The highest-leverage sibling to develop next is **ATLAS**. CERES can say whether
-an industry works; ATLAS would say where it can work, what climate and terrain
+The highest-leverage sibling to develop next is **PORTO**. CERES can say whether
+an industry works; PORTO would say where it can work, what climate and terrain
 permit, which routes carry inputs and customers, and what travel or supply risks
 make the industry fragile.
 
