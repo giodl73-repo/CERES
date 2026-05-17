@@ -55,12 +55,28 @@ python -m pytest -v
 
 ## Running the full matrix (Wave 2+)
 
-Once lens math is implemented:
+The Python implementation remains the behavior reference:
 
 ```bash
 cd simulations/tier-a-comparator
 python -m tier_a.cli --catalog ../../catalog/smithing/ --results-dir ./results
 ```
+
+The Rust implementation at the repo root ports the same Tier A formulas and uses
+RALLY's neutral simulation-validation primitives for run IDs, metrics,
+validation status, event JSONL, and evidence packet manifests:
+
+```powershell
+cd ..\..
+cargo test
+cargo run -- --catalog catalog\smithing --jsonl simulations\tier-a-comparator\results\smithing-rust-events.jsonl
+cargo run -- --catalog catalog\baking
+cargo run -- --catalog catalog\weaving
+```
+
+RALLY usage is intentionally limited to deterministic run/report/evidence
+plumbing. CERES still owns the catalog schema, scale parameters, and all
+market/cooperative/civic formulas.
 
 Options:
 

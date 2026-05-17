@@ -21,6 +21,8 @@ node_modules/
 # Simulation outputs (re-generated)
 simulations/*/results/*.csv
 simulations/*/results/*.parquet
+simulations/*/results/*.jsonl
+target/
 
 # Local/editor state (not public)
 .claude/settings.local.json

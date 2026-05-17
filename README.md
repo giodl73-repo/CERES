@@ -64,11 +64,13 @@ replicated trade by trade.
    frontmatter directly.
 3. **Evaluation matrix.** Every catalog entry scored across nine
    contexts: three settlement scales × three economic lenses.
-4. **Simulation.** Layered — a deterministic scenario comparator (Tier
-   A) runs every cell; system dynamics (Tier B) handles inter-trade
-   dependencies and cascade risk; agent-based modeling (Tier C) is
-   reserved for targeted questions like succession failures or
-   regulatory shocks.
+4. **Simulation.** Layered — a deterministic Rust scenario comparator
+   (Tier A) runs every cell and emits RALLY-shaped run/report evidence;
+   system dynamics (Tier B) handles inter-trade dependencies and cascade
+   risk; agent-based modeling (Tier C) is reserved for targeted questions
+   like succession failures or regulatory shocks. The original Python
+   Tier A implementation remains the behavioral reference during the Rust
+   transition.
 5. **Playbook and pitch.** Per-trade, per-scale files naming the
    winning designs with implementation sketches, plus a single
    pitch-narrative document that frames the whole project for funders.
@@ -100,6 +102,21 @@ is a different thing under each model:
 
 Scale is a first-class simulation variable. A design that wins in a
 small city can easily fail a village on utilization, and vice versa.
+
+### Rust Tier A / RALLY boundary
+
+CERES now has a Rust Tier A path at the repo root:
+
+```powershell
+cargo test
+cargo run -- --catalog catalog\smithing --jsonl simulations\tier-a-comparator\results\smithing-rust-events.jsonl
+```
+
+The Rust crate uses RALLY only for product-neutral validation infrastructure:
+deterministic `SimulationRun` identifiers, `SimulationMetric` rows,
+`ValidationReport` status, event JSONL, and `PacketManifest` evidence bundles.
+CERES still owns catalog schema, scale parameters, and market/cooperative/civic
+economic policy.
 
 ---
 
