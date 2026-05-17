@@ -611,6 +611,14 @@ pub fn evidence_packet(packet: PacketManifest) -> EvidencePacket {
     }
 }
 
+pub fn evidence_packet_json(packet: &EvidencePacket) -> String {
+    let mut rally_packet = PacketManifest::new(&packet.packet_id);
+    for (name, path) in &packet.artifacts {
+        rally_packet.add_artifact(name, path);
+    }
+    rally_packet.to_json()
+}
+
 fn split_frontmatter(text: &str) -> Option<&str> {
     let rest = text.strip_prefix("---")?;
     let rest = rest

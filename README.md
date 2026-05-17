@@ -116,10 +116,13 @@ cargo run -- --compare catalog\smithing\entries\001-backyard-propane-compact.md 
 The Rust crate uses RALLY only for product-neutral validation infrastructure:
 deterministic `SimulationRun` identifiers, `SimulationMetric` rows,
 `ComparisonReport` deltas, `ValidationReport` status, event JSONL, and
-exportable `PacketManifest` evidence bundles. Generated event and packet files
-under `simulations\tier-a-comparator\results\` are ignored by default. CERES
-still owns catalog schema, scale parameters, and market/cooperative/civic
-economic policy.
+exportable `PacketManifest` evidence bundles. Packet files use RALLY-owned
+neutral JSON output; CERES uses those packets to support real economy and
+industry design for game worlds, funder pitches, and local-production analysis
+without moving economic policy into RALLY. Generated event and packet files under
+`simulations\tier-a-comparator\results\` are ignored by default. CERES still
+owns catalog schema, scale parameters, and market/cooperative/civic economic
+policy.
 
 ---
 

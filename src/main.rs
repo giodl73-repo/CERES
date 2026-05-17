@@ -54,7 +54,10 @@ fn run() -> Result<(), String> {
             candidate.ok_or_else(|| "missing --compare <BASELINE> <CANDIDATE>".to_string())?;
         let comparison = ceres::compare_entry_paths(&baseline, &candidate, &scale, &lens)?;
         if let Some(path) = packet {
-            write_json(&path, &comparison.evidence_packet)?;
+            write_text(
+                &path,
+                &ceres::evidence_packet_json(&comparison.evidence_packet),
+            )?;
         }
         if json {
             println!(
@@ -86,7 +89,7 @@ fn run() -> Result<(), String> {
             .map_err(|err| format!("failed to write {}: {err}", path.display()))?;
     }
     if let Some(path) = packet {
-        write_json(&path, &run.evidence_packet)?;
+        write_text(&path, &ceres::evidence_packet_json(&run.evidence_packet))?;
     }
     if json {
         println!(
@@ -104,13 +107,12 @@ fn run() -> Result<(), String> {
     Ok(())
 }
 
-fn write_json<T: serde::Serialize>(path: &PathBuf, value: &T) -> Result<(), String> {
+fn write_text(path: &PathBuf, value: &str) -> Result<(), String> {
     if let Some(parent) = path.parent() {
         fs::create_dir_all(parent)
             .map_err(|err| format!("failed to create {}: {err}", parent.display()))?;
     }
-    let json = serde_json::to_string_pretty(value).map_err(|err| err.to_string())?;
-    fs::write(path, json).map_err(|err| format!("failed to write {}: {err}", path.display()))
+    fs::write(path, value).map_err(|err| format!("failed to write {}: {err}", path.display()))
 }
 
 fn print_help() {

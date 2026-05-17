@@ -79,8 +79,10 @@ RALLY usage is intentionally limited to deterministic run/report/evidence
 plumbing. CERES still owns the catalog schema, scale parameters, and all
 market/cooperative/civic formulas. Comparison mode uses RALLY
 `ComparisonReport`/`ComparisonDelta` for baseline-vs-candidate metric deltas.
-`--packet` writes a RALLY `PacketManifest`-backed JSON manifest for generated
-evidence bundles; generated packet files are ignored by default.
+`--packet` writes a RALLY `PacketManifest` JSON manifest for generated evidence
+bundles; generated packet files are ignored by default. This keeps the
+economy/industry model in CERES while making the evidence portable for games,
+worldbuilding, and TRACKER-level reporting.
 
 Options:
 
