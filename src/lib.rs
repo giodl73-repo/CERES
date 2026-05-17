@@ -227,6 +227,13 @@ pub struct CatalogRun {
     pub cells: Vec<CellResult>,
     pub validation_status: String,
     pub evidence_packet_id: String,
+    pub evidence_packet: EvidencePacket,
+}
+
+#[derive(Debug, Clone, PartialEq, Serialize)]
+pub struct EvidencePacket {
+    pub packet_id: String,
+    pub artifacts: BTreeMap<String, String>,
 }
 
 #[derive(Debug, Clone, PartialEq, Serialize)]
@@ -251,6 +258,7 @@ pub struct EntryComparison {
     pub deltas: Vec<ComparisonDeltaRow>,
     pub baseline: CellResult,
     pub candidate: CellResult,
+    pub evidence_packet: EvidencePacket,
 }
 
 pub fn market_lens(entry: &CatalogEntry, scale: &Scale) -> Result<LensResult, String> {
@@ -499,6 +507,18 @@ pub fn compare_entries(
 
     let status = report.status().to_string();
     let improved_count = report.improved_count();
+    let mut packet = PacketManifest::new(&format!(
+        "ceres-comparison-{}-{}-{}-{}",
+        baseline.id, candidate.id, scale_name, lens
+    ));
+    if let Some(path) = &baseline.source_path {
+        packet.add_artifact("baseline-entry", &path.display().to_string());
+    }
+    if let Some(path) = &candidate.source_path {
+        packet.add_artifact("candidate-entry", &path.display().to_string());
+    }
+    packet.add_artifact("scale", scale_name);
+    packet.add_artifact("lens", lens);
 
     Ok(EntryComparison {
         subject: report.subject,
@@ -511,6 +531,7 @@ pub fn compare_entries(
         deltas,
         baseline: baseline_cell,
         candidate: candidate_cell,
+        evidence_packet: evidence_packet(packet),
     })
 }
 
@@ -556,24 +577,38 @@ pub fn run_catalog(catalog_dir: impl AsRef<Path>) -> Result<CatalogRun, String> 
         subject: catalog_name.to_string(),
         findings,
     };
-    let mut packet = PacketManifest::new(&format!("ceres-tier-a-{catalog_name}"));
-    packet.add_artifact("catalog", &catalog_dir.display().to_string());
-    packet.add_artifact(
-        "python-reference",
-        "simulations/tier-a-comparator/src/tier_a",
-    );
+    let packet = catalog_packet_manifest(catalog_dir, catalog_name);
+    let evidence_packet = evidence_packet(packet);
 
     Ok(CatalogRun {
         run_id: run.run_id,
         catalog: catalog_name.to_string(),
         cells,
         validation_status: report.status().to_string(),
-        evidence_packet_id: packet.packet_id,
+        evidence_packet_id: evidence_packet.packet_id.clone(),
+        evidence_packet,
     })
 }
 
 pub fn event_jsonl(cells: &[CellResult]) -> String {
     cells.iter().map(CellResult::to_event_jsonl).collect()
+}
+
+pub fn catalog_packet_manifest(catalog_dir: &Path, catalog_name: &str) -> PacketManifest {
+    let mut packet = PacketManifest::new(&format!("ceres-tier-a-{catalog_name}"));
+    packet.add_artifact("catalog", &catalog_dir.display().to_string());
+    packet.add_artifact(
+        "python-reference",
+        "simulations/tier-a-comparator/src/tier_a",
+    );
+    packet
+}
+
+pub fn evidence_packet(packet: PacketManifest) -> EvidencePacket {
+    EvidencePacket {
+        packet_id: packet.packet_id,
+        artifacts: packet.artifacts,
+    }
 }
 
 fn split_frontmatter(text: &str) -> Option<&str> {
@@ -680,6 +715,11 @@ sim_params:
         let run = run_catalog(&temp).expect("catalog run returns validation state");
 
         assert_eq!(run.validation_status, "error");
+        assert_eq!(
+            run.evidence_packet.packet_id,
+            "ceres-tier-a-ceres-tier-a-test-".to_string() + &std::process::id().to_string()
+        );
+        assert!(run.evidence_packet.artifacts.contains_key("catalog"));
         fs::remove_dir_all(temp).ok();
     }
 
@@ -695,6 +735,10 @@ sim_params:
         assert_eq!(comparison.status, "improved");
         assert_eq!(comparison.improved_count, 1);
         assert_eq!(comparison.deltas[0].direction, "lower");
+        assert!(comparison
+            .evidence_packet
+            .packet_id
+            .starts_with("ceres-comparison-test-forge-001-test-forge-001-town-market"));
         assert!(comparison.candidate.primary_metric < comparison.baseline.primary_metric);
     }
 }

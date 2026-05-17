@@ -22,6 +22,7 @@ node_modules/
 simulations/*/results/*.csv
 simulations/*/results/*.parquet
 simulations/*/results/*.jsonl
+simulations/*/results/*.packet.json
 target/
 
 # Local/editor state (not public)

@@ -17,6 +17,7 @@ fn run() -> Result<(), String> {
     let mut lens = "market".to_string();
     let mut json = false;
     let mut jsonl: Option<PathBuf> = None;
+    let mut packet: Option<PathBuf> = None;
     let mut args = env::args().skip(1);
     while let Some(arg) = args.next() {
         match arg.as_str() {
@@ -37,6 +38,7 @@ fn run() -> Result<(), String> {
             }
             "--json" => json = true,
             "--jsonl" => jsonl = args.next().map(PathBuf::from),
+            "--packet" => packet = args.next().map(PathBuf::from),
             "--help" | "-h" => {
                 print_help();
                 return Ok(());
@@ -51,6 +53,9 @@ fn run() -> Result<(), String> {
         let candidate =
             candidate.ok_or_else(|| "missing --compare <BASELINE> <CANDIDATE>".to_string())?;
         let comparison = ceres::compare_entry_paths(&baseline, &candidate, &scale, &lens)?;
+        if let Some(path) = packet {
+            write_json(&path, &comparison.evidence_packet)?;
+        }
         if json {
             println!(
                 "{}",
@@ -80,6 +85,9 @@ fn run() -> Result<(), String> {
         fs::write(&path, ceres::event_jsonl(&run.cells))
             .map_err(|err| format!("failed to write {}: {err}", path.display()))?;
     }
+    if let Some(path) = packet {
+        write_json(&path, &run.evidence_packet)?;
+    }
     if json {
         println!(
             "{}",
@@ -96,8 +104,17 @@ fn run() -> Result<(), String> {
     Ok(())
 }
 
+fn write_json<T: serde::Serialize>(path: &PathBuf, value: &T) -> Result<(), String> {
+    if let Some(parent) = path.parent() {
+        fs::create_dir_all(parent)
+            .map_err(|err| format!("failed to create {}: {err}", parent.display()))?;
+    }
+    let json = serde_json::to_string_pretty(value).map_err(|err| err.to_string())?;
+    fs::write(path, json).map_err(|err| format!("failed to write {}: {err}", path.display()))
+}
+
 fn print_help() {
     println!("Usage:");
-    println!("  ceres --catalog <catalog-trade-dir> [--json] [--jsonl <path>]");
-    println!("  ceres --compare <baseline-entry.md> <candidate-entry.md> [--scale town] [--lens market] [--json]");
+    println!("  ceres --catalog <catalog-trade-dir> [--json] [--jsonl <path>] [--packet <path>]");
+    println!("  ceres --compare <baseline-entry.md> <candidate-entry.md> [--scale town] [--lens market] [--json] [--packet <path>]");
 }

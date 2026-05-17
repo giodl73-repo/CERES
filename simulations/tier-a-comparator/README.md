@@ -69,16 +69,18 @@ validation status, event JSONL, and evidence packet manifests:
 ```powershell
 cd ..\..
 cargo test
-cargo run -- --catalog catalog\smithing --jsonl simulations\tier-a-comparator\results\smithing-rust-events.jsonl
+cargo run -- --catalog catalog\smithing --jsonl simulations\tier-a-comparator\results\smithing-rust-events.jsonl --packet simulations\tier-a-comparator\results\smithing-rust.packet.json
 cargo run -- --catalog catalog\baking
 cargo run -- --catalog catalog\weaving
-cargo run -- --compare catalog\smithing\entries\001-backyard-propane-compact.md catalog\smithing\entries\002-induction-modular-small-repair.md --scale town --lens market --json
+cargo run -- --compare catalog\smithing\entries\001-backyard-propane-compact.md catalog\smithing\entries\002-induction-modular-small-repair.md --scale town --lens market --json --packet simulations\tier-a-comparator\results\smithing-comparison.packet.json
 ```
 
 RALLY usage is intentionally limited to deterministic run/report/evidence
 plumbing. CERES still owns the catalog schema, scale parameters, and all
 market/cooperative/civic formulas. Comparison mode uses RALLY
 `ComparisonReport`/`ComparisonDelta` for baseline-vs-candidate metric deltas.
+`--packet` writes a RALLY `PacketManifest`-backed JSON manifest for generated
+evidence bundles; generated packet files are ignored by default.
 
 Options:
 
