@@ -25,6 +25,12 @@ identifying which equipment designs pencil out, at which scales, under
 which economic models, plus a pitch narrative that frames the evidence
 for funders.
 
+CERES also gives game systems a grounded economy and industry layer. It can tell
+a worldbuilder, RPG, settlement sim, survival game, or city-builder which trades
+are plausible at a given settlement scale, what equipment and labor they require,
+which ownership model works, and what breaks when inputs, routes, operators, or
+public budgets fail.
+
 ---
 
 ## Working Hypothesis
@@ -102,6 +108,25 @@ is a different thing under each model:
 
 Scale is a first-class simulation variable. A design that wins in a
 small city can easily fail a village on utilization, and vice versa.
+
+### Downstream game-system support
+
+CERES is not a game engine, crafting engine, or faction engine. It is the
+evidence layer those systems can consume.
+
+| Game-system need | CERES contribution |
+|---|---|
+| Settlement economy | Viable trades by scale and ownership model. |
+| Crafting and workshops | Equipment costs, throughput, labor needs, skill floor, and maintenance reality. |
+| Trade and logistics | Local capacity vs. import dependence, route-sensitive bottlenecks, and supply shocks. |
+| Factions and institutions | Plausible guild, cooperative, civic, merchant, and monopoly stakes. |
+| Survival or city-builder loops | Industry unlocks, repair capacity, shared infrastructure, and failure cascades. |
+| RPG/worldbuilding narrative | Concrete economic stakes for quests, disasters, patronage, and local politics. |
+
+The highest-leverage sibling to develop next is **ATLAS**. CERES can say whether
+an industry works; ATLAS would say where it can work, what climate and terrain
+permit, which routes carry inputs and customers, and what travel or supply risks
+make the industry fragile.
 
 ### Rust Tier A / RALLY boundary
 
