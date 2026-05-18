@@ -2,6 +2,10 @@ use rally_core::{
     BeatRef, ComparisonDelta, ComparisonReport, EventLogEntry, PacketManifest, SimulationMetric,
     SimulationRun, ValidationFinding, ValidationReport,
 };
+use rfacility_core::{
+    validate_facility_spec, FacilityCapability, FacilityCategory, FacilityRequirement,
+    FacilitySpec, RequirementType,
+};
 use serde::Serialize;
 use serde_yaml::{Mapping, Value};
 use std::collections::BTreeMap;
@@ -172,6 +176,67 @@ impl CatalogEntry {
     fn optional_number(&self, path: &[&str], default: f64) -> f64 {
         nested_number(&self.data, path).unwrap_or(default)
     }
+}
+
+pub fn facility_spec(entry: &CatalogEntry) -> FacilitySpec {
+    let mut categories = vec![FacilityCategory::Production];
+    if nested_number(&entry.data, &["economics", "market_price_per_unit", "mid"]).is_some() {
+        categories.push(FacilityCategory::Market);
+    }
+    if nested_number(&entry.data, &["sim_params", "annual_public_use_hours"])
+        .or_else(|| nested_number(&entry.data, &["trade_specific", "annual_public_use_hours"]))
+        .is_some_and(|hours| hours > 0.0)
+    {
+        categories.push(FacilityCategory::Civic);
+    }
+
+    let mut requirements = Vec::new();
+    if let Some(footprint) = nested_number(&entry.data, &["footprint_m2"]) {
+        requirements.push(FacilityRequirement {
+            requirement_id: "floor-space".to_string(),
+            label: format!("Requires approximately {footprint:.0} m2 of floor area"),
+            requirement_type: RequirementType::Input,
+            note: Some("CERES keeps detailed space economics local.".to_string()),
+        });
+    }
+    if let Some(energy_source) = string_field(&entry.data, "energy_source") {
+        requirements.push(FacilityRequirement {
+            requirement_id: "energy-source".to_string(),
+            label: format!("Primary energy source: {energy_source}"),
+            requirement_type: RequirementType::Utility,
+            note: Some("CERES keeps fuel cost and risk modeling local.".to_string()),
+        });
+    }
+    if let Some(operators) = string_field(&entry.data, "operators_concurrent") {
+        requirements.push(FacilityRequirement {
+            requirement_id: "operators".to_string(),
+            label: format!("Concurrent operators: {operators}"),
+            requirement_type: RequirementType::Labor,
+            note: Some("CERES keeps wage and skill economics local.".to_string()),
+        });
+    }
+
+    FacilitySpec {
+        facility_id: entry.id.clone(),
+        name: string_field(&entry.data, "name").unwrap_or_else(|| entry.id.clone()),
+        categories,
+        capabilities: vec![FacilityCapability {
+            capability_id: format!("{}-production", entry.trade),
+            label: format!("{} production or service capacity", entry.trade),
+            capacity_note: Some(
+                "CERES catalog entry; detailed throughput remains in CERES fields.".to_string(),
+            ),
+        }],
+        requirements,
+        notes: vec![
+            "Projected from CERES catalog frontmatter into RLINE rfacility-core.".to_string(),
+            "RLINE owns generic facility shape; CERES owns economics and lens math.".to_string(),
+        ],
+    }
+}
+
+pub fn validate_facility_entry(entry: &CatalogEntry) -> Result<(), String> {
+    validate_facility_spec(&facility_spec(entry)).map_err(|err| err.to_string())
 }
 
 #[derive(Debug, Clone, PartialEq, Serialize)]
@@ -558,7 +623,10 @@ pub fn run_catalog(catalog_dir: impl AsRef<Path>) -> Result<CatalogRun, String> 
     let mut cells = Vec::new();
     let mut findings = Vec::new();
     for path in entry_paths {
-        match CatalogEntry::from_markdown(&path).and_then(|entry| run_entry(&entry)) {
+        match CatalogEntry::from_markdown(&path).and_then(|entry| {
+            validate_facility_entry(&entry)?;
+            run_entry(&entry)
+        }) {
             Ok(mut entry_cells) => cells.append(&mut entry_cells),
             Err(message) => findings.push(ValidationFinding::error(
                 "ceres-tier-a-entry",
@@ -684,6 +752,9 @@ sim_params:
   usage_rate_threshold: 2.0
   amortization_years: 30
   per_member_annual_dues: 200
+footprint_m2: 10
+energy_source: propane
+operators_concurrent: "1"
 "#;
 
     #[test]
@@ -748,5 +819,25 @@ sim_params:
             .packet_id
             .starts_with("ceres-comparison-test-forge-001-test-forge-001-town-market"));
         assert!(comparison.candidate.primary_metric < comparison.baseline.primary_metric);
+    }
+
+    #[test]
+    fn catalog_entries_project_to_rfacility_specs() {
+        let entry = CatalogEntry::from_yaml_str(ENTRY).expect("entry parses");
+        let facility = facility_spec(&entry);
+
+        validate_facility_spec(&facility).expect("facility spec validates");
+        assert_eq!(facility.facility_id, "test-forge-001");
+        assert!(facility.categories.contains(&FacilityCategory::Production));
+        assert!(facility.categories.contains(&FacilityCategory::Market));
+        assert!(facility.categories.contains(&FacilityCategory::Civic));
+        assert!(facility
+            .requirements
+            .iter()
+            .any(|requirement| requirement.requirement_id == "operators"));
+        assert!(facility
+            .notes
+            .iter()
+            .any(|note| note.contains("CERES owns economics")));
     }
 }

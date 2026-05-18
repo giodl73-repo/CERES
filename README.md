@@ -149,6 +149,11 @@ without moving economic policy into RALLY. Generated event and packet files unde
 owns catalog schema, scale parameters, and market/cooperative/civic economic
 policy.
 
+CERES also projects catalog entries into RLINE `rfacility-core` `FacilitySpec`
+records for shared facility vocabulary and validation. RLINE owns the generic
+facility shape; CERES keeps capital cost, throughput, labor, price, payback,
+cooperative, and civic lens math local.
+
 ---
 
 ## Quality Bar

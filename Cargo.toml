@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 rally-core = { path = "../../games-design/rally" }
+rfacility-core = { path = "../../tools-infra/rline/crates/rfacility-core" }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 serde_yaml = "0.9"
