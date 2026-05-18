@@ -1,0 +1,35 @@
+{
+  "schema_version": "fletch.registry.v1",
+  "generated_by": "CERES smithing and baking assets",
+  "registry_id": "ceres-smithing-baking-assets",
+  "fletches": [
+    {
+      "id": "ceres.framework.theory",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "corpus/canon/THEORY.md"}],
+      "metadata": {"owner_repo": "CERES", "asset_kind": "framework", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["ceres", "local-production", "framework", "economy", "theory"]
+    },
+    {
+      "id": "ceres.catalog.schema",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "catalog/SCHEMA.md"}],
+      "metadata": {"owner_repo": "CERES", "asset_kind": "catalog-schema", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["ceres", "catalog", "schema", "equipment", "local-production"]
+    },
+    {
+      "id": "ceres.catalog.baking.entry-001",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "catalog/baking/entries/001-sourdough-artisan-micro.md"}],
+      "metadata": {"owner_repo": "CERES", "asset_kind": "catalog-entry", "fetch_policy": "local_file", "custody_status": "repo_owned", "trade": "baking"},
+      "tags": ["ceres", "baking", "catalog-entry", "local-production", "artisan"]
+    },
+    {
+      "id": "ceres.catalog.smithing.entry-001",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "catalog/smithing/entries/001-backyard-propane-compact.md"}],
+      "metadata": {"owner_repo": "CERES", "asset_kind": "catalog-entry", "fetch_policy": "local_file", "custody_status": "repo_owned", "trade": "smithing"},
+      "tags": ["ceres", "smithing", "catalog-entry", "local-production", "forge"]
+    }
+  ]
+}
