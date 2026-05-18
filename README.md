@@ -174,7 +174,12 @@ cooperative, and civic lens math local.
   economics (profit vs. commons, civic vs. market, practitioner vs.
   investor, historical realism vs. narrative). A separate editorial gate
   — citation, scope, numeracy — is required before any artifact is
-  promoted to `validated`.
+   promoted to `validated`.
+
+The first agent-driven capability expansion run is recorded in
+[`docs\capability-expansion.md`](docs\capability-expansion.md). It proposes 60
+local-production capability systems and rubric-gap candidates for broader CERES
+scenario coverage.
 
 ---
 
