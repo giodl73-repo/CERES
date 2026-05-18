@@ -165,6 +165,10 @@ cooperative, and civic lens math local.
 - **Conceptual designs, not procurement plans.** No supplier BOMs, no
   vendor quotes, no due-diligence-grade engineering. The catalog is for
   evaluating viability, not buying equipment.
+- **BANISH gamepack economy gate.** A game seed that claims CERES support must
+  name the facility, storage, market, labor, or production alternative being
+  compared. If CERES cannot state the economic tradeoff without absorbing BANISH
+  mechanics, the seed is not yet CERES-ready.
 - **Panel and editorial review.** Six permanent reviewer voices create
   deliberate friction across the core tensions of local-production
   economics (profit vs. commons, civic vs. market, practitioner vs.
