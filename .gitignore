@@ -47,3 +47,4 @@ venv/
 .env
 .env.local
 
+.cargo/config.toml
