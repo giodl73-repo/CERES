@@ -154,6 +154,21 @@ records for shared facility vocabulary and validation. RLINE owns the generic
 facility shape; CERES keeps capital cost, throughput, labor, price, payback,
 cooperative, and civic lens math local.
 
+### Reuse boundary
+
+CERES is intentionally a specialist local-production evidence product, not a
+shared economy or crafting library. Its catalog frontmatter, Tier A crate,
+settlement scales, and market/cooperative/civic thresholds are coupled to this
+research program and have no downstream manifest or consumer-owned
+compatibility test. PORTO is a prospective complement, and BANISH's economy
+gate is an adoption prerequisite, not evidence that either repository consumes
+a CERES contract today.
+
+Use the neutral foundations CERES adopts instead: RALLY for deterministic
+validation evidence and RLINE for facility vocabulary. A CERES surface should
+graduate only when a named external adopter pins a versioned catalog or result
+contract and proves its own domain semantics without importing CERES policy.
+
 ---
 
 ## Quality Bar
