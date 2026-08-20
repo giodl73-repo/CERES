@@ -56,7 +56,7 @@ fn run() -> Result<(), String> {
         if let Some(path) = packet {
             write_text(
                 &path,
-                &ceres::evidence_packet_json(&comparison.evidence_packet),
+                &ceres::evidence_packet_json(&comparison.evidence_packet)?,
             )?;
         }
         if json {
@@ -67,12 +67,12 @@ fn run() -> Result<(), String> {
         } else {
             println!(
                 "CERES comparison {} -> {} at {}/{}: {} ({} improved)",
-                comparison.baseline_id,
-                comparison.candidate_id,
-                comparison.scale,
-                comparison.lens,
-                comparison.status,
-                comparison.improved_count
+                comparison.baseline.entry_id,
+                comparison.candidate.entry_id,
+                comparison.baseline.scale,
+                comparison.baseline.lens,
+                comparison.comparison.status().as_str(),
+                comparison.comparison.improved_count()
             );
         }
         return Ok(());
@@ -89,7 +89,7 @@ fn run() -> Result<(), String> {
             .map_err(|err| format!("failed to write {}: {err}", path.display()))?;
     }
     if let Some(path) = packet {
-        write_text(&path, &ceres::evidence_packet_json(&run.evidence_packet))?;
+        write_text(&path, &ceres::evidence_packet_json(&run.evidence_packet)?)?;
     }
     if json {
         println!(

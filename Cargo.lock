@@ -8,6 +8,7 @@ version = "0.1.0"
 dependencies = [
  "rally-core",
  "rfacility-core",
+ "scenarium",
  "serde",
  "serde_json",
  "serde_yaml",
@@ -68,6 +69,10 @@ dependencies = [
 [[package]]
 name = "rally-core"
 version = "0.1.0"
+dependencies = [
+ "rune-core",
+ "rune-derive",
+]
 
 [[package]]
 name = "rfacility-core"
@@ -78,10 +83,37 @@ dependencies = [
 ]
 
 [[package]]
+name = "rune-core"
+version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/RUNE.git?rev=ad0097001138c63c12d23e5caef861eac0f5aed6#ad0097001138c63c12d23e5caef861eac0f5aed6"
+dependencies = [
+ "serde",
+]
+
+[[package]]
+name = "rune-derive"
+version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/RUNE.git?rev=ad0097001138c63c12d23e5caef861eac0f5aed6#ad0097001138c63c12d23e5caef861eac0f5aed6"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "ryu"
 version = "1.0.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9774ba4a74de5f7b1c1451ed6cd5285a32eddb5cccb8cc655a4e50009e06477f"
+
+[[package]]
+name = "scenarium"
+version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/SCENARIUM.git?rev=724c97d9b4619ac26aa21169d48f656f5fd9f4db#724c97d9b4619ac26aa21169d48f656f5fd9f4db"
+dependencies = [
+ "serde",
+ "serde_json",
+]
 
 [[package]]
 name = "serde"

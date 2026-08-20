@@ -1,10 +1,11 @@
-use rally_core::{
-    BeatRef, ComparisonDelta, ComparisonReport, EventLogEntry, PacketManifest, SimulationMetric,
-    SimulationRun, ValidationFinding, ValidationReport,
-};
+use rally_core::{BeatRef, EventLogEntry};
 use rfacility_core::{
     validate_facility_spec, FacilityCapability, FacilityCategory, FacilityRequirement,
     FacilitySpec, RequirementType,
+};
+use scenarium::{
+    compare_metric_sets, ComparisonReport, EvidencePacket, Finding, Metric, MetricDirection,
+    Provenance, RunRecord, RunVariant, Scenario, Severity,
 };
 use serde::Serialize;
 use serde_yaml::{Mapping, Value};
@@ -21,6 +22,19 @@ const MARGIN_WIN: f64 = 0.20;
 
 pub const SCALES: [&str; 3] = ["village", "town", "small_city"];
 pub const LENSES: [&str; 3] = ["market", "coop", "civic"];
+
+fn scenarium<T>(result: Result<T, scenarium::Error>) -> Result<T, String> {
+    result.map_err(|error| error.to_string())
+}
+
+fn new_packet(id: &str, subject: &str, input: &str) -> Result<EvidencePacket, String> {
+    let provenance = scenarium(Provenance::new(
+        "ceres-tier-a",
+        env!("CARGO_PKG_VERSION"),
+        input,
+    ))?;
+    scenarium(EvidencePacket::new(id, subject, provenance))
+}
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
 #[serde(rename_all = "snake_case")]
@@ -242,38 +256,33 @@ pub fn validate_facility_entry(entry: &CatalogEntry) -> Result<(), String> {
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct CellResult {
     pub entry_id: String,
-    pub trade: String,
     pub scale: String,
     pub lens: String,
     pub verdict: Verdict,
     pub primary_metric: f64,
     pub metric_name: String,
     pub notes: String,
-    pub rally_run_id: String,
-    pub rally_metric: String,
 }
 
 impl CellResult {
     fn from_lens(entry: &CatalogEntry, scale: &str, lens: &str, result: LensResult) -> Self {
-        let run = SimulationRun::new("ceres-tier-a", &entry.id, &format!("{scale}-{lens}"));
-        let metric = SimulationMetric::new(&result.metric_name, result.primary_metric);
         Self {
             entry_id: entry.id.clone(),
-            trade: entry.trade.clone(),
             scale: scale.to_string(),
             lens: lens.to_string(),
             verdict: result.verdict,
             primary_metric: result.primary_metric,
             metric_name: result.metric_name,
             notes: result.notes,
-            rally_run_id: run.run_id,
-            rally_metric: metric.name,
         }
     }
 
     pub fn to_event_jsonl(&self) -> String {
         EventLogEntry {
-            run_id: self.rally_run_id.clone(),
+            run_id: format!(
+                "ceres-tier-a:{}:{}:{}",
+                self.entry_id, self.scale, self.lens
+            ),
             beat: BeatRef::new("tier-a", &self.scale, &self.lens),
             event_type: "ceres_lens_result".to_string(),
             message: format!(
@@ -288,39 +297,14 @@ impl CellResult {
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct CatalogRun {
     pub run_id: String,
-    pub catalog: String,
     pub cells: Vec<CellResult>,
     pub validation_status: String,
-    pub evidence_packet_id: String,
     pub evidence_packet: EvidencePacket,
 }
 
 #[derive(Debug, Clone, PartialEq, Serialize)]
-pub struct EvidencePacket {
-    pub packet_id: String,
-    pub artifacts: BTreeMap<String, String>,
-}
-
-#[derive(Debug, Clone, PartialEq, Serialize)]
-pub struct ComparisonDeltaRow {
-    pub metric: String,
-    pub baseline: f64,
-    pub candidate: f64,
-    pub direction: String,
-    pub change: f64,
-    pub improved: bool,
-}
-
-#[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct EntryComparison {
-    pub subject: String,
-    pub baseline_id: String,
-    pub candidate_id: String,
-    pub scale: String,
-    pub lens: String,
-    pub status: String,
-    pub improved_count: usize,
-    pub deltas: Vec<ComparisonDeltaRow>,
+    pub comparison: ComparisonReport,
     pub baseline: CellResult,
     pub candidate: CellResult,
     pub evidence_packet: EvidencePacket,
@@ -549,54 +533,62 @@ pub fn compare_entries(
         evaluate_lens(candidate, scale, lens)?,
     );
 
-    let mut report =
-        ComparisonReport::new(&format!("{scale_name}-{lens}"), &baseline.id, &candidate.id);
-    report.add_delta(ComparisonDelta::lower_is_better(
-        &baseline_cell.metric_name,
-        baseline_cell.primary_metric,
-        candidate_cell.primary_metric,
-    ));
-
-    let deltas = report
-        .deltas
-        .iter()
-        .map(|delta| ComparisonDeltaRow {
-            metric: delta.metric.clone(),
-            baseline: delta.baseline,
-            candidate: delta.candidate,
-            direction: delta.direction.clone(),
-            change: delta.change(),
-            improved: delta.improved(),
-        })
-        .collect::<Vec<_>>();
-
-    let status = report.status().to_string();
-    let improved_count = report.improved_count();
-    let mut packet = PacketManifest::new(&format!(
-        "ceres-comparison-{}-{}-{}-{}",
-        baseline.id, candidate.id, scale_name, lens
-    ));
+    let scenario = scenarium(Scenario::new(
+        &format!("{}..{}:{scale_name}:{lens}", baseline.id, candidate.id),
+        &format!("{scale_name}-{lens}"),
+        "comparison",
+    ))?;
+    let metric = |value| {
+        Metric::new(
+            &baseline_cell.metric_name,
+            value,
+            MetricDirection::LowerIsBetter,
+        )
+    };
+    let (baseline_run, candidate_run, comparison) = scenarium(compare_metric_sets(
+        &scenario,
+        "ceres-tier-a",
+        scenarium(RunVariant::baseline(&baseline.id))?,
+        scenarium(RunVariant::candidate(&candidate.id))?,
+        [scenarium(metric(baseline_cell.primary_metric))?],
+        [scenarium(metric(candidate_cell.primary_metric))?],
+    ))?;
+    let provenance = scenarium(Provenance::new(
+        "ceres-tier-a",
+        env!("CARGO_PKG_VERSION"),
+        &format!("{}..{}:{scale_name}:{lens}", baseline.id, candidate.id),
+    ))?;
+    let mut packet = scenarium(EvidencePacket::from_comparison(
+        &format!(
+            "ceres-comparison-{}-{}-{}-{}",
+            baseline.id, candidate.id, scale_name, lens
+        ),
+        &format!("{}..{}", baseline.id, candidate.id),
+        provenance,
+        &baseline_run,
+        &candidate_run,
+        &comparison,
+    ))?;
     if let Some(path) = &baseline.source_path {
-        packet.add_artifact("baseline-entry", &path.display().to_string());
+        scenarium(packet.add_artifact_path(
+            "baseline-entry",
+            &path.display().to_string(),
+            "text/markdown",
+        ))?;
     }
     if let Some(path) = &candidate.source_path {
-        packet.add_artifact("candidate-entry", &path.display().to_string());
+        scenarium(packet.add_artifact_path(
+            "candidate-entry",
+            &path.display().to_string(),
+            "text/markdown",
+        ))?;
     }
-    packet.add_artifact("scale", scale_name);
-    packet.add_artifact("lens", lens);
 
     Ok(EntryComparison {
-        subject: report.subject,
-        baseline_id: report.baseline_id,
-        candidate_id: report.candidate_id,
-        scale: scale_name.to_string(),
-        lens: lens.to_string(),
-        status,
-        improved_count,
-        deltas,
+        comparison,
         baseline: baseline_cell,
         candidate: candidate_cell,
-        evidence_packet: evidence_packet(packet),
+        evidence_packet: packet,
     })
 }
 
@@ -628,11 +620,15 @@ pub fn run_catalog(catalog_dir: impl AsRef<Path>) -> Result<CatalogRun, String> 
             run_entry(&entry)
         }) {
             Ok(mut entry_cells) => cells.append(&mut entry_cells),
-            Err(message) => findings.push(ValidationFinding::error(
-                "ceres-tier-a-entry",
-                &path.display().to_string(),
-                &message,
-            )),
+            Err(message) => findings.push(
+                Finding::new(
+                    Severity::Error,
+                    "ceres-tier-a-entry",
+                    &path.display().to_string(),
+                    &message,
+                )
+                .map_err(|error| error.to_string())?,
+            ),
         }
     }
 
@@ -640,20 +636,21 @@ pub fn run_catalog(catalog_dir: impl AsRef<Path>) -> Result<CatalogRun, String> 
         .file_name()
         .and_then(|value| value.to_str())
         .unwrap_or("catalog");
-    let run = SimulationRun::new("ceres-tier-a", catalog_name, "full-matrix");
-    let report = ValidationReport {
-        subject: catalog_name.to_string(),
-        findings,
-    };
-    let packet = catalog_packet_manifest(catalog_dir, catalog_name);
-    let evidence_packet = evidence_packet(packet);
+    let scenario = scenarium(Scenario::new(catalog_name, catalog_name, "full-matrix"))?;
+    let mut run = scenarium(RunRecord::new(
+        &scenario,
+        RunVariant::Inertia,
+        "ceres-tier-a",
+    ))?;
+    for finding in findings {
+        run.add_finding(finding);
+    }
+    let evidence_packet = catalog_evidence_packet(catalog_dir, catalog_name, &run)?;
 
     Ok(CatalogRun {
-        run_id: run.run_id,
-        catalog: catalog_name.to_string(),
+        run_id: run.run_id().to_string(),
         cells,
-        validation_status: report.status().to_string(),
-        evidence_packet_id: evidence_packet.packet_id.clone(),
+        validation_status: format!("{:?}", run.status()).to_ascii_lowercase(),
         evidence_packet,
     })
 }
@@ -662,29 +659,31 @@ pub fn event_jsonl(cells: &[CellResult]) -> String {
     cells.iter().map(CellResult::to_event_jsonl).collect()
 }
 
-pub fn catalog_packet_manifest(catalog_dir: &Path, catalog_name: &str) -> PacketManifest {
-    let mut packet = PacketManifest::new(&format!("ceres-tier-a-{catalog_name}"));
-    packet.add_artifact("catalog", &catalog_dir.display().to_string());
-    packet.add_artifact(
-        "python-reference",
-        "simulations/tier-a-comparator/src/tier_a",
-    );
-    packet
+fn catalog_evidence_packet(
+    catalog_dir: &Path,
+    catalog_name: &str,
+    run: &RunRecord,
+) -> Result<EvidencePacket, String> {
+    let mut packet = new_packet(
+        &format!("ceres-tier-a-{catalog_name}"),
+        catalog_name,
+        &catalog_dir.display().to_string(),
+    )?;
+    packet.include_run(run);
+    for (name, path) in [
+        ("catalog", catalog_dir.display().to_string()),
+        (
+            "python-reference",
+            "simulations/tier-a-comparator/src/tier_a".to_string(),
+        ),
+    ] {
+        scenarium(packet.add_artifact_path(name, &path, "inode/directory"))?;
+    }
+    Ok(packet)
 }
 
-pub fn evidence_packet(packet: PacketManifest) -> EvidencePacket {
-    EvidencePacket {
-        packet_id: packet.packet_id,
-        artifacts: packet.artifacts,
-    }
-}
-
-pub fn evidence_packet_json(packet: &EvidencePacket) -> String {
-    let mut rally_packet = PacketManifest::new(&packet.packet_id);
-    for (name, path) in &packet.artifacts {
-        rally_packet.add_artifact(name, path);
-    }
-    rally_packet.to_json()
+pub fn evidence_packet_json(packet: &EvidencePacket) -> Result<String, String> {
+    scenarium(packet.to_json())
 }
 
 fn split_frontmatter(text: &str) -> Option<&str> {
@@ -769,14 +768,12 @@ operators_concurrent: "1"
     }
 
     #[test]
-    fn tier_a_runs_nine_cells_with_rally_run_ids() {
+    fn tier_a_runs_nine_cells_with_stable_event_ids() {
         let entry = CatalogEntry::from_yaml_str(ENTRY).expect("entry parses");
         let cells = run_entry(&entry).expect("entry runs");
 
         assert_eq!(cells.len(), 9);
-        assert!(cells.iter().all(|cell| cell
-            .rally_run_id
-            .starts_with("ceres-tier-a:test-forge-001:")));
+        assert!(event_jsonl(&cells).contains("\"run_id\":\"ceres-tier-a:test-forge-001:"));
         assert!(event_jsonl(&cells).contains("\"event_type\":\"ceres_lens_result\""));
     }
 
@@ -795,30 +792,40 @@ operators_concurrent: "1"
 
         assert_eq!(run.validation_status, "error");
         assert_eq!(
-            run.evidence_packet.packet_id,
+            run.evidence_packet.packet_id(),
             "ceres-tier-a-ceres-tier-a-test-".to_string() + &std::process::id().to_string()
         );
-        assert!(run.evidence_packet.artifacts.contains_key("catalog"));
+        assert!(run.evidence_packet.artifacts().contains_key("catalog"));
         fs::remove_dir_all(temp).ok();
     }
 
     #[test]
-    fn comparison_reports_use_rally_deltas() {
+    fn comparison_reports_use_scenarium_deltas() {
         let baseline = CatalogEntry::from_yaml_str(ENTRY).expect("baseline parses");
         let candidate_yaml = ENTRY.replace("mid: 45", "mid: 55");
         let candidate = CatalogEntry::from_yaml_str(&candidate_yaml).expect("candidate parses");
 
         let comparison =
             compare_entries(&baseline, &candidate, "town", "market").expect("comparison runs");
+        let repeated =
+            compare_entries(&baseline, &candidate, "town", "market").expect("comparison repeats");
 
-        assert_eq!(comparison.status, "improved");
-        assert_eq!(comparison.improved_count, 1);
-        assert_eq!(comparison.deltas[0].direction, "lower");
+        assert_eq!(comparison.comparison.status().as_str(), "improved");
+        assert_eq!(comparison.comparison.improved_count(), 1);
+        assert_eq!(comparison.comparison.deltas()[0].metric(), "payback_years");
         assert!(comparison
             .evidence_packet
-            .packet_id
+            .packet_id()
             .starts_with("ceres-comparison-test-forge-001-test-forge-001-town-market"));
         assert!(comparison.candidate.primary_metric < comparison.baseline.primary_metric);
+        assert_eq!(
+            serde_json::to_string(&comparison).unwrap(),
+            serde_json::to_string(&repeated).unwrap()
+        );
+        assert_eq!(
+            evidence_packet_json(&comparison.evidence_packet).unwrap(),
+            evidence_packet_json(&repeated.evidence_packet).unwrap()
+        );
     }
 
     #[test]

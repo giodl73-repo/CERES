@@ -71,7 +71,7 @@ replicated trade by trade.
 3. **Evaluation matrix.** Every catalog entry scored across nine
    contexts: three settlement scales × three economic lenses.
 4. **Simulation.** Layered — a deterministic Rust scenario comparator
-   (Tier A) runs every cell and emits RALLY-shaped run/report evidence;
+   (Tier A) runs every cell and emits SCENARIUM run/report evidence;
    system dynamics (Tier B) handles inter-trade dependencies and cascade
    risk; agent-based modeling (Tier C) is reserved for targeted questions
    like succession failures or regulatory shocks. The original Python
@@ -128,7 +128,7 @@ an industry works; PORTO would say where it can work, what climate and terrain
 permit, which routes carry inputs and customers, and what travel or supply risks
 make the industry fragile.
 
-### Rust Tier A / RALLY boundary
+### Rust Tier A / SCENARIUM and RALLY boundary
 
 CERES now has a Rust Tier A path at the repo root:
 
@@ -138,16 +138,15 @@ cargo run -- --catalog catalog\smithing --jsonl simulations\tier-a-comparator\re
 cargo run -- --compare catalog\smithing\entries\001-backyard-propane-compact.md catalog\smithing\entries\002-induction-modular-small-repair.md --scale town --lens market --json --packet simulations\tier-a-comparator\results\smithing-comparison.packet.json
 ```
 
-The Rust crate uses RALLY only for product-neutral validation infrastructure:
-deterministic `SimulationRun` identifiers, `SimulationMetric` rows,
-`ComparisonReport` deltas, `ValidationReport` status, event JSONL, and
-exportable `PacketManifest` evidence bundles. Packet files use RALLY-owned
-neutral JSON output; CERES uses those packets to support real economy and
-industry design for game worlds, funder pitches, and local-production analysis
-without moving economic policy into RALLY. Generated event and packet files under
-`simulations\tier-a-comparator\results\` are ignored by default. CERES still
-owns catalog schema, scale parameters, and market/cooperative/civic economic
-policy.
+The Rust crate uses SCENARIUM directly for deterministic run identity, metrics,
+comparisons, findings, provenance, and versioned evidence packets. RALLY remains
+only for game-adjacent beat/event JSONL mechanics. CERES keeps catalog schema,
+scale parameters, market/cooperative/civic lens math, verdicts, and economic
+policy local. Generated event and packet files under
+`simulations\tier-a-comparator\results\` are ignored by default.
+
+The exact removed type family and production-line measurement are recorded in
+[`docs/scenarium-adoption.md`](docs/scenarium-adoption.md).
 
 CERES also projects catalog entries into RLINE `rfacility-core` `FacilitySpec`
 records for shared facility vocabulary and validation. RLINE owns the generic
