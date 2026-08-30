@@ -69,6 +69,7 @@ dependencies = [
 [[package]]
 name = "rally-core"
 version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/RALLY.git?branch=main#4d84433d8d113d5433fd2c97ef4d7e7aed55fbb0"
 dependencies = [
  "rune-core",
  "rune-derive",
@@ -77,6 +78,7 @@ dependencies = [
 [[package]]
 name = "rfacility-core"
 version = "0.1.0"
+source = "git+https://github.com/giodl73-repo/RLINE.git?branch=master#8426af135619224f073369e93aa05e79c8d45bf6"
 dependencies = [
  "serde",
  "thiserror",

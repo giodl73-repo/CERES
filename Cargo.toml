@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-rally-core = { git = "https://github.com/giodl73-repo/RALLY.git", package = "rally-core", branch = "master" }
+rally-core = { git = "https://github.com/giodl73-repo/RALLY.git", package = "rally-core", branch = "main" }
 rfacility-core = { git = "https://github.com/giodl73-repo/RLINE.git", package = "rfacility-core", branch = "master" }
 scenarium = { git = "https://github.com/giodl73-repo/SCENARIUM.git", rev = "724c97d9b4619ac26aa21169d48f656f5fd9f4db" }
 serde = { version = "1", features = ["derive"] }
