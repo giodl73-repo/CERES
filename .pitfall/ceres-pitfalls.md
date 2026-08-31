@@ -21,7 +21,7 @@ matrix failures, and explicit null-result language.
 
 ## CERES-PF-02: Catalog Numbers Become Procurement Numbers
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Actor:** Catalog author, playbook author, funder-facing reviewer, municipal
 reader, or future procurement-oriented adopter.
@@ -63,11 +63,12 @@ methodology, style-guide, and scope/numeracy role language that keeps CERES
 numbers at research-paper estimate level rather than procurement authority.
 
 **Evidence:** `docs/METHODOLOGY.md`, `docs/STYLE-GUIDE.md`,
-`.roles/editorial/E-2-scope-keeper.md`, and `README.md`.
+`.roles/editorial/E-2-scope-keeper.md`, `README.md`,
+`docs/pitfall-boundaries.v1.json`, and `tests/pitfall_policy.rs`.
 
 ## CERES-PF-03: Citation Placeholder Becomes Validated Evidence
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Actor:** Catalog promoter, editorial reviewer, simulation operator, pitch
 author, or external reader.
@@ -107,11 +108,12 @@ that keeps citation placeholders and source-quality gaps out of validated
 evidence claims.
 
 **Evidence:** `TRACKER.md`, `corpus/canon/PRINCIPLES.md`,
-`docs/METHODOLOGY.md`, and `reviews/CATALOG-AUDIT-plan-c.md`.
+`docs/METHODOLOGY.md`, `reviews/CATALOG-AUDIT-plan-c.md`,
+`docs/pitfall-boundaries.v1.json`, and `tests/pitfall_policy.rs`.
 
 ## CERES-PF-04: Downstream Game Or Economy Reuse Imports CERES Policy
 
-**Status:** OPEN
+**Status:** MITIGATED
 
 **Actor:** Game-system maintainer, economy-system maintainer, PORTO/CANON/BANISH
 integrator, RLINE/RALLY/SCENARIUM adopter, or portfolio dependency reviewer.
@@ -152,7 +154,8 @@ SCENARIUM adoption, capability-expansion, and RLINE projection wording that
 separates CERES research policy from generic downstream economy or game APIs.
 
 **Evidence:** `README.md`, `docs/scenarium-adoption.md`, and
-`docs/capability-expansion.md`.
+`docs/capability-expansion.md`, `docs/pitfall-boundaries.v1.json`, and
+`tests/pitfall_policy.rs`.
 
 ## CERES-PF-05: Upstream Branch Drift Breaks The Proof Path
 

@@ -81,3 +81,15 @@ preserve research-paper-level and no-procurement boundaries.
 **Evidence:** `README.md`, `docs/METHODOLOGY.md`,
 `.roles/editorial/E-2-scope-keeper.md`, and
 `reviews/R1-P6-skeptical-funder-pitch-v2.md`.
+
+## CERES-INV-06: Customer And Consumer Boundaries Are Testable
+
+**Status:** MITIGATED
+
+**Claim:** CERES keeps procurement, citation-validation, and downstream-reuse boundaries in a machine-readable contract that `tests/pitfall_policy.rs` parses directly.
+
+**Why it matters:** CERES has real customer/funder and game-system pull, so its precise-looking estimates, catalog statuses, and scenario packets need explicit negative claims.
+
+**Enforcement:** Run `cargo test --test pitfall_policy` before closing or weakening `CERES-PF-02`, `CERES-PF-03`, or `CERES-PF-04`.
+
+**Evidence:** `docs/pitfall-boundaries.v1.json`, `tests/pitfall_policy.rs`, `README.md`, `docs/METHODOLOGY.md`, and `docs/scenarium-adoption.md`.

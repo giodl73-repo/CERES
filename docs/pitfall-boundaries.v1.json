@@ -1,0 +1,64 @@
+{
+  "schema": "ceres.pitfall-boundaries.v1",
+  "repo": "CERES",
+  "purpose": "Keep CERES estimates, citations, simulations, and downstream reuse from being overread as procurement, validated evidence, or generic game/economy policy.",
+  "pitfalls": [
+    {
+      "id": "CERES-PF-02",
+      "status": "mitigated",
+      "boundary": "CERES numbers are research-paper-level estimates used to decide what to investigate next.",
+      "not_authorized": [
+        "supplier_quote",
+        "procurement_plan",
+        "municipal_approval",
+        "due_diligence_financial_model",
+        "investment_grade_feasibility",
+        "vendor_selection"
+      ],
+      "required_controls": [
+        "uncertainty_ranges",
+        "citation_gaps_visible",
+        "no_procurement_non_goal",
+        "independent_due_diligence_before_action"
+      ]
+    },
+    {
+      "id": "CERES-PF-03",
+      "status": "mitigated",
+      "boundary": "Schema completeness, green simulation runs, and structured outputs do not validate claims while citation placeholders or source-quality gaps remain.",
+      "not_authorized": [
+        "placeholder_as_validated_evidence",
+        "schema_completeness_as_source_review",
+        "simulation_pass_as_citation_closure",
+        "catalog_status_as_source_quality",
+        "pitch_claim_without_citation"
+      ],
+      "required_controls": [
+        "citation_auditor_review",
+        "source_quality_review",
+        "visible_citation_needed_markers",
+        "promotion_block_until_citations_close"
+      ]
+    },
+    {
+      "id": "CERES-PF-04",
+      "status": "mitigated",
+      "boundary": "Downstream systems may consume bounded CERES evidence, but CERES thresholds are not a generic economy, crafting, facility, or game API.",
+      "not_authorized": [
+        "generic_crafting_api",
+        "generic_economy_policy",
+        "consumer_release_approval",
+        "downstream_adoption_contract",
+        "game_balance_authority",
+        "route_or_identity_policy"
+      ],
+      "required_controls": [
+        "named_downstream_manifest",
+        "versioned_result_contract",
+        "consumer_owned_semantic_tests",
+        "ceres_owned_research_policy",
+        "neutral_foundation_for_shared_mechanics"
+      ]
+    }
+  ]
+}
