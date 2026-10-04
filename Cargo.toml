@@ -4,11 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-rally-core = { git = "https://github.com/giodl73-repo/RALLY.git", package = "rally-core", branch = "master" }
-rfacility-core = { git = "https://github.com/giodl73-repo/RLINE.git", package = "rfacility-core", branch = "master" }
+rally-core = { git = "https://github.com/giodl73-repo/RALLY.git", package = "rally-core", rev = "4d84433d8d113d5433fd2c97ef4d7e7aed55fbb0" }
+rfacility-core = { git = "https://github.com/giodl73-repo/RLINE.git", package = "rfacility-core", rev = "8426af135619224f073369e93aa05e79c8d45bf6" }
 scenarium = { git = "https://github.com/giodl73-repo/SCENARIUM.git", rev = "724c97d9b4619ac26aa21169d48f656f5fd9f4db" }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 serde_yaml = "0.9"
 
 [workspace]
+members = ["ceres-web"]

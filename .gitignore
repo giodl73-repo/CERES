@@ -48,3 +48,7 @@ venv/
 .env.local
 
 .cargo/config.toml
+
+/dist/
+/node_modules/
+/test-results/
