@@ -1,0 +1,2 @@
+import init,{evaluate_json} from './pkg/ceres_web.js';
+self.onmessage=async({data})=>{try{if(data.type==='init'){await init();self.postMessage({type:'ready'});}else{const started=performance.now(),result=JSON.parse(evaluate_json(data.entry,data.scale,data.participation,data.wage));self.postMessage({type:'result',id:data.id,result,ms:performance.now()-started});}}catch(e){self.postMessage({type:'error',id:data.id,message:String(e)});}};

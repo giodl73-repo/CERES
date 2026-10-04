@@ -10,6 +10,13 @@ repository-local review panels.
 
 ---
 
+## Browser sensitivity workbench
+
+[Explore two draft forge designs](https://giodl73-repo.github.io/CERES/) with
+native Rust/WASM market, co-op, and civic lenses. Adjust settlement scale, wage,
+and participation; share assumptions or download the evaluation. Draft status
+and citation gaps remain visible. [Architecture](docs/browser-explorer.md).
+
 ## What This Is
 
 CERES is a catalog-driven design and evaluation project for modern
