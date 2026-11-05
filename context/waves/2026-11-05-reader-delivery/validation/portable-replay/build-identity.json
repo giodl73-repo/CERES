@@ -1,0 +1,11 @@
+{
+  "output": "C:\\src\\ceres-self-service-20261105\\dist\\portable-replay-v1\\CERES",
+  "source_commit": "468383adf3d4c6f66710d0e93a348f104909e969",
+  "sizes": {
+    "runtime": 1164240,
+    "downloads": 8421669,
+    "total": 9585909
+  },
+  "source_sha256": "63f3fa444e73e8b4e8028e1ca5449d96e26c9a91cca34f58451f9b0317c834b8",
+  "manifest_sha256": "dfca34e316626899af4600a9461ce9f996edc4254cde86dbf73df8836b9cdb4b"
+}

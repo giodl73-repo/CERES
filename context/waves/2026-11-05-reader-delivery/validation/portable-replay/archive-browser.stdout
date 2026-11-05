@@ -1,0 +1,51 @@
+
+Running 43 tests using 1 worker
+
+
+
+
+
+[1A[2K[1/43] tests\browser\entry-admission.spec.js:5:1 › real worker retains all120 original successful native results
+[1A[2K[2/43] tests\browser\entry-admission.spec.js:23:1 › worker rejects fractional, out-of-width and nonnumber entries before ABI aliasing
+[1A[2K[3/43] tests\browser\explorer.spec.js:2:1 › actual Rust lenses respond to participation and share/export
+[1A[2K[4/43] tests\browser\explorer.spec.js:8:1 › mobile invalid query and WASM failure stay readable
+[1A[2K[5/43] tests\browser\lifecycle.spec.js:37:3 › desktop › all120 original native outcomes export with their actual UI inputs
+[1A[2K[6/43] tests\browser\lifecycle.spec.js:56:3 › desktop › cancel during boot terminates then retries with retained assumptions
+[1A[2K[7/43] tests\browser\lifecycle.spec.js:65:3 › desktop › cancel during compute terminates the actual worker and recovers
+[1A[2K[8/43] tests\browser\lifecycle.spec.js:71:3 › desktop › an edit terminates in-flight work and fences its old callback
+[1A[2K[9/43] tests\browser\lifecycle.spec.js:82:3 › desktop › wrong IDs/generations, duplicate ready/results and unknown packets cannot replace a result
+[1A[2K[10/43] tests\browser\lifecycle.spec.js:99:41 › desktop › boot 15-second deadline terminates and allows actual-WASM retry
+[1A[2K[11/43] tests\browser\lifecycle.spec.js:99:41 › desktop › compute 15-second deadline terminates and allows actual-WASM retry
+[1A[2K[12/43] tests\browser\lifecycle.spec.js:107:3 › desktop › actual WASM failure preserves editable assumptions and retries
+[1A[2K[13/43] tests\browser\lifecycle.spec.js:117:3 › desktop › malformed current results stop the worker and never become exports
+[1A[2K[14/43] tests\browser\lifecycle.spec.js:123:3 › desktop › message decoding errors terminate and recover
+[1A[2K[15/43] tests\browser\lifecycle.spec.js:129:3 › desktop › constructor failure offers retry without a page exception
+[1A[2K[16/43] tests\browser\lifecycle.spec.js:135:3 › desktop › a real Rust admission error clears output and recovers after correction
+[1A[2K[17/43] tests\browser\lifecycle.spec.js:143:3 › desktop › a worker crash after ready is terminated and retried
+[1A[2K[18/43] tests\browser\lifecycle.spec.js:150:3 › desktop › invalid shared assumptions are identified while original defaults remain usable
+[1A[2K[19/43] tests\browser\lifecycle.spec.js:156:3 › desktop › rapid edits clear old output and export only the latest snapshot
+[1A[2K[20/43] tests\browser\lifecycle.spec.js:169:3 › desktop › reset during computation terminates and evaluates the original defaults
+[1A[2K[21/43] tests\browser\lifecycle.spec.js:176:3 › desktop › keyboard own input matches native Rust and shares/reloads the same assumptions
+[1A[2K[22/43] tests\browser\lifecycle.spec.js:187:3 › desktop › an unannounced control edit cannot relabel an already completed export
+[1A[2K[23/43] tests\browser\lifecycle.spec.js:37:3 › mobile › all120 original native outcomes export with their actual UI inputs
+[1A[2K[24/43] tests\browser\lifecycle.spec.js:56:3 › mobile › cancel during boot terminates then retries with retained assumptions
+[1A[2K[25/43] tests\browser\lifecycle.spec.js:65:3 › mobile › cancel during compute terminates the actual worker and recovers
+[1A[2K[26/43] tests\browser\lifecycle.spec.js:71:3 › mobile › an edit terminates in-flight work and fences its old callback
+[1A[2K[27/43] tests\browser\lifecycle.spec.js:82:3 › mobile › wrong IDs/generations, duplicate ready/results and unknown packets cannot replace a result
+[1A[2K[28/43] tests\browser\lifecycle.spec.js:99:41 › mobile › boot 15-second deadline terminates and allows actual-WASM retry
+[1A[2K[29/43] tests\browser\lifecycle.spec.js:99:41 › mobile › compute 15-second deadline terminates and allows actual-WASM retry
+[1A[2K[30/43] tests\browser\lifecycle.spec.js:107:3 › mobile › actual WASM failure preserves editable assumptions and retries
+[1A[2K[31/43] tests\browser\lifecycle.spec.js:117:3 › mobile › malformed current results stop the worker and never become exports
+[1A[2K[32/43] tests\browser\lifecycle.spec.js:123:3 › mobile › message decoding errors terminate and recover
+[1A[2K[33/43] tests\browser\lifecycle.spec.js:129:3 › mobile › constructor failure offers retry without a page exception
+[1A[2K[34/43] tests\browser\lifecycle.spec.js:135:3 › mobile › a real Rust admission error clears output and recovers after correction
+[1A[2K[35/43] tests\browser\lifecycle.spec.js:143:3 › mobile › a worker crash after ready is terminated and retried
+[1A[2K[36/43] tests\browser\lifecycle.spec.js:150:3 › mobile › invalid shared assumptions are identified while original defaults remain usable
+[1A[2K[37/43] tests\browser\lifecycle.spec.js:156:3 › mobile › rapid edits clear old output and export only the latest snapshot
+[1A[2K[38/43] tests\browser\lifecycle.spec.js:169:3 › mobile › reset during computation terminates and evaluates the original defaults
+[1A[2K[39/43] tests\browser\lifecycle.spec.js:176:3 › mobile › keyboard own input matches native Rust and shares/reloads the same assumptions
+[1A[2K[40/43] tests\browser\lifecycle.spec.js:187:3 › mobile › an unannounced control edit cannot relabel an already completed export
+[1A[2K[41/43] tests\browser\notice-downloads.spec.js:6:1 › actual pinned Cargo/runtime notices download independently of a failed engine
+[1A[2K[42/43] tests\browser\source-downloads.spec.js:7:2 › desktop: complete source download is optional and survives failed WASM
+[1A[2K[43/43] tests\browser\source-downloads.spec.js:7:2 › mobile: complete source download is optional and survives failed WASM
+[1A[2K  43 passed (1.6m)
