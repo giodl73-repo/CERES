@@ -11,7 +11,16 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Playwright 1.58.2 does not support Ubuntu 26.04 (ubuntu-latest).
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,22 +36,59 @@ jobs:
           cargo install wasm-bindgen-cli --version 0.2.127 --locked
           npm ci
           npx playwright install --with-deps chromium
+      - name: Verify and restore locked Cargo inputs
+        run: |
+          python tests/input_custody.py
+          input_sha=$(cut -d' ' -f1 cargo-inputs/sha256.txt)
+          python tools/input-custody.py --sha256 "$input_sha" --inputs "$RUNNER_TEMP/ceres-inputs" --cargo-home "$RUNNER_TEMP/ceres-cargo-home"
+          echo "CARGO_HOME=$RUNNER_TEMP/ceres-cargo-home" >> "$GITHUB_ENV"
+          echo "CARGO_NET_OFFLINE=true" >> "$GITHUB_ENV"
+          echo "CARGO_INCREMENTAL=0" >> "$GITHUB_ENV"
       - name: Validate Rust
         run: |
-          cargo fmt -p ceres-web --check
-          cargo test --locked --workspace
-          cargo clippy --locked --no-deps -p ceres-web --all-targets --all-features -- -D warnings
+          cargo fmt --all --check
+          cargo test --locked --offline --workspace --all-targets
+          cargo clippy --locked --offline --no-deps --workspace --all-targets --all-features -- -D warnings
       - name: Build Pages and test browser
         run: |
           python tools/build-pages.py
+          python tests/source_custody.py
+          cargo build --locked --offline -p ceres-web --example reader-control
+          python tools/check-reader.py --site dist/CERES --output reader-parity.json
           npm test
+      - name: Rebuild complete source archive offline
+        run: |
+          manifest_sha=$(python -c "import hashlib,pathlib; print(hashlib.sha256(pathlib.Path('dist/CERES/BUILD-MANIFEST.json').read_bytes()).hexdigest())")
+          python tools/qualify-source.py --site dist/CERES --manifest-sha256 "$manifest_sha" --scratch "$RUNNER_TEMP/ceres-source-replay"
+      - uses: actions/upload-artifact@v4
+        if: runner.os == 'Linux'
+        with:
+          name: reader-parity
+          path: reader-parity.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-replay-${{ matrix.os }}
+          path: |
+            ${{ runner.temp }}/ceres-source-replay/*.json
+            ${{ runner.temp }}/ceres-source-replay/*.stdout
+            ${{ runner.temp }}/ceres-source-replay/*.stderr
+            reader-parity.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence-${{ matrix.os }}
+          path: |
+            test-results
+            ${{ runner.temp }}/ceres-source-replay/archive-browser-results
       - uses: actions/upload-pages-artifact@v3
+        if: runner.os == 'Linux'
         with:
           path: dist/CERES
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       pages: write
       id-token: write

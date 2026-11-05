@@ -1,0 +1,9 @@
+{
+  "run": "https://github.com/giodl73-repo/CERES/actions/runs/42054170874",
+  "head": "c41c0ac8ff492e84bfd47adecb13c970739df82a",
+  "conclusion": "failure",
+  "stage": "Install tools",
+  "cause": "Playwright 1.58.2 does not support chromium on ubuntu26.04-x64 selected by ubuntu-latest",
+  "correction": "Pin build and deploy runners to ubuntu-24.04; preserve pinned Playwright/browser, Rust sources, Cargo.lock and all controls.",
+  "rerun": "Pending; this correction is not hosted qualification."
+}

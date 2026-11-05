@@ -1,0 +1,402 @@
+{
+  "config": {
+    "configFile": "C:\\src\\ceres-self-service-qualification-20261105\\source-kit-qualification-v1\\browser.config.mjs",
+    "rootDir": "C:/src/ceres-self-service-20261105/tests/browser",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/src/ceres-self-service-qualification-20261105/source-kit-qualification-v1/browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/src/ceres-self-service-20261105/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "C:/src/ceres-self-service-qualification-20261105/source-kit-qualification-v1/browser-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": {
+      "command": "python -m http.server 8197 --bind 127.0.0.1 --directory C:/src/ceres-self-service-20261105/dist/source-kit-v1",
+      "url": "http://127.0.0.1:8197/CERES/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "entry-admission.spec.js",
+      "file": "entry-admission.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real worker retains all120 original successful native results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 750,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:10:44.506Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fb2ef1a1f3f58e968f5b-edf6a68e8011954bd918",
+          "file": "entry-admission.spec.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "worker rejects fractional, out-of-width and nonnumber entries before ABI aliasing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 272,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:10:45.561Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fb2ef1a1f3f58e968f5b-78bc980f4741fe2cdd9f",
+          "file": "entry-admission.spec.js",
+          "line": 23,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "explorer.spec.js",
+      "file": "explorer.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual Rust lenses respond to participation and share/export",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1995,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:10:45.886Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b5cd556296eb404e6882-a4d80a1f208800034284",
+          "file": "explorer.spec.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "mobile invalid query and WASM failure stay readable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 705,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:10:47.898Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b5cd556296eb404e6882-6c5e80ffc25f70b59c6d",
+          "file": "explorer.spec.js",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "notice-downloads.spec.js",
+      "file": "notice-downloads.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual pinned Cargo/runtime notices download independently of a failed engine",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 470,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:10:48.640Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a99a9d88a5167514338d-1d6391dbed30eedfe524",
+          "file": "notice-downloads.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "source-downloads.spec.js",
+      "file": "source-downloads.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop: complete source download is optional and survives failed WASM",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 859,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js:24:26",
+                    "location": {
+                      "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js",
+                      "column": 26,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   const verified=spawnSync('python',['tools/receive-source.py','--source',target,'--sha256',build.source.sha256,'--commit',build.source_commit],{encoding:'utf8',timeout:30000});\n  23 |   expect(verified.status,verified.stderr).toBe(0);expect(JSON.parse(verified.stdout).git_blobs).toBeGreaterThanOrEqual(300);\n> 24 |   expect(sourceRequests).toHaveLength(1);\n     |                          ^\n  25 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();\n  26 |   await page.screenshot({path:info.outputPath('source-route.png'),fullPage:true});\n  27 |  });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js",
+                        "column": 26,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  22 |   const verified=spawnSync('python',['tools/receive-source.py','--source',target,'--sha256',build.source.sha256,'--commit',build.source_commit],{encoding:'utf8',timeout:30000});\n  23 |   expect(verified.status,verified.stderr).toBe(0);expect(JSON.parse(verified.stdout).git_blobs).toBeGreaterThanOrEqual(300);\n> 24 |   expect(sourceRequests).toHaveLength(1);\n     |                          ^\n  25 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();\n  26 |   await page.screenshot({path:info.outputPath('source-route.png'),fullPage:true});\n  27 |  });\n    at C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js:24:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:10:49.145Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\ceres-self-service-qualification-20261105\\source-kit-qualification-v1\\browser-results\\source-downloads-desktop-c-65618-al-and-survives-failed-WASM\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js",
+                    "column": 26,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1e33c1a99d6a3e53281b-ce4deb59770d90a3c7da",
+          "file": "source-downloads.spec.js",
+          "line": 7,
+          "column": 2
+        },
+        {
+          "title": "mobile: complete source download is optional and survives failed WASM",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1892,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js:24:26",
+                    "location": {
+                      "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js",
+                      "column": 26,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   const verified=spawnSync('python',['tools/receive-source.py','--source',target,'--sha256',build.source.sha256,'--commit',build.source_commit],{encoding:'utf8',timeout:30000});\n  23 |   expect(verified.status,verified.stderr).toBe(0);expect(JSON.parse(verified.stdout).git_blobs).toBeGreaterThanOrEqual(300);\n> 24 |   expect(sourceRequests).toHaveLength(1);\n     |                          ^\n  25 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();\n  26 |   await page.screenshot({path:info.outputPath('source-route.png'),fullPage:true});\n  27 |  });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js",
+                        "column": 26,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  22 |   const verified=spawnSync('python',['tools/receive-source.py','--source',target,'--sha256',build.source.sha256,'--commit',build.source_commit],{encoding:'utf8',timeout:30000});\n  23 |   expect(verified.status,verified.stderr).toBe(0);expect(JSON.parse(verified.stdout).git_blobs).toBeGreaterThanOrEqual(300);\n> 24 |   expect(sourceRequests).toHaveLength(1);\n     |                          ^\n  25 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();\n  26 |   await page.screenshot({path:info.outputPath('source-route.png'),fullPage:true});\n  27 |  });\n    at C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js:24:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:10:52.744Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\src\\ceres-self-service-qualification-20261105\\source-kit-qualification-v1\\browser-results\\source-downloads-mobile-co-f72f9-al-and-survives-failed-WASM\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\source-downloads.spec.js",
+                    "column": 26,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1e33c1a99d6a3e53281b-2f5835620bc8751f82b6",
+          "file": "source-downloads.spec.js",
+          "line": 7,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T16:10:41.722Z",
+    "duration": 14405.040999999997,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

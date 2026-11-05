@@ -1,0 +1,26 @@
+{
+  "input_capsule_sha256": "040960163dfb8d6207172daf40c21ca5478c894bd670b1d5430e519c27b444ad",
+  "input_capsule_bytes": 4830359,
+  "registry_archives": 27,
+  "git_repositories": 4,
+  "git_packages": 5,
+  "capsule_files": 1700,
+  "actual_registry_archive_members_preserved": true,
+  "complete_original_git_trees": true,
+  "git_vendor_origin": {
+    "exact_files": 108,
+    "cargo_normalized_manifests": 5,
+    "other_changes": 0
+  },
+  "custody_checks": 9,
+  "prior_hosted_foundation": {
+    "head": "e24440667f7fc32b710beb49955c6d7c680d19ad",
+    "run": "https://github.com/giodl73-repo/CERES/actions/runs/42055540998",
+    "conclusion": "success"
+  },
+  "new_hosted_capsule_pipeline": "Pending after push; no new hosted result asserted",
+  "source_download": "Complete source download/receiver manifest and Pages integration remain open. Capsule is tracked in source, not added to the current5MB site.",
+  "worker_lifecycle": "Open",
+  "windows_hosted_replay": "Open",
+  "default_main_live_delivery": "Open"
+}

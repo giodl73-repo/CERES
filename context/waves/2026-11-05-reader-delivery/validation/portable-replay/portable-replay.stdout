@@ -1,0 +1,14 @@
+checkout-metadata: exit 0
+checkout-cli-build: exit 0
+archive-inputs: exit 0
+archive-metadata: exit 0
+archive-tests: exit 0
+archive-format: exit 0
+archive-clippy: exit 0
+archive-native: exit 0
+archive-control: exit 0
+archive-site: exit 0
+archive-parity: exit 0
+archive-receivers: exit 0
+archive-browser: exit 0
+{"receipt": "C:\\src\\ceres-self-service-qualification-20261105\\portable-replay-local-v1\\replay\\receipt.json", "source_commit": "468383adf3d4c6f66710d0e93a348f104909e969", "browser_cases": 43}

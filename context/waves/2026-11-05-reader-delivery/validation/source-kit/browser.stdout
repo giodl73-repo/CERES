@@ -1,0 +1,67 @@
+
+
+Running 7 tests using 1 worker
+
+
+
+
+
+[1A[2K[1/7] tests\browser\entry-admission.spec.js:5:1 › real worker retains all120 original successful native results
+
+
+
+
+
+
+[1A[2K[2/7] tests\browser\entry-admission.spec.js:23:1 › worker rejects fractional, out-of-width and nonnumber entries before ABI aliasing
+
+
+
+
+
+
+[1A[2K[3/7] tests\browser\explorer.spec.js:2:1 › actual Rust lenses respond to participation and share/export
+
+
+
+
+
+
+
+[1A[2K[4/7] tests\browser\explorer.spec.js:8:1 › mobile invalid query and WASM failure stay readable
+
+
+
+
+
+
+
+
+
+
+
+[1A[2K[5/7] tests\browser\notice-downloads.spec.js:6:1 › actual pinned Cargo/runtime notices download independently of a failed engine
+
+
+
+
+
+
+
+[1A[2K[6/7] tests\browser\source-downloads.spec.js:7:2 › desktop: complete source download is optional and survives failed WASM
+
+
+
+
+
+
+
+[1A[2K[7/7] tests\browser\source-downloads.spec.js:7:2 › mobile: complete source download is optional and survives failed WASM
+
+
+
+
+
+
+
+[1A[2K  7 passed (11.1s)

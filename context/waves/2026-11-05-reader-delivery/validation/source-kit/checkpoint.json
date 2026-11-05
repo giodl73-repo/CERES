@@ -1,0 +1,44 @@
+{
+  "qualified_source": "5a069b0717b5df6b25c8bb881bd7a538e49363fd",
+  "source_git_blobs": 331,
+  "source_zip": {
+    "path": "downloads/ceres-source.zip",
+    "sha256": "78cc5fb8df562835f19097909a33a7c1e536a6f9cd25e030334b23391205c4f6",
+    "bytes": 6909718,
+    "git_blobs": 331
+  },
+  "checkout_sizes": {
+    "runtime": 1159873,
+    "downloads": 6999137,
+    "total": 8159010
+  },
+  "archive_sizes": {
+    "runtime": 1158913,
+    "downloads": 6999137,
+    "total": 8158050
+  },
+  "budgets": {
+    "runtime": 5000000,
+    "downloads": 12000000,
+    "total": 17000000
+  },
+  "checkout_manifest_sha256": "a829a49d03980ced3f8ca37d1faa2baad815c0d2e0b075de49908f314e79ef03",
+  "source_zip_exact_between_checkout_and_archive": true,
+  "native_tests": 7,
+  "custody_checks": 10,
+  "source_receiver_checks": 15,
+  "typed_native_wasm_controls": 135,
+  "raw_js_abi_seams": 4,
+  "browser_cases": 7,
+  "original_cli_controls": 30,
+  "original_generated_files": 3,
+  "new_input_tree_and_cargo_home": true,
+  "offline_acquisition": true,
+  "shared_compiled_target_reused": true,
+  "tools_not_bundled": true,
+  "complete_source_download_receiver_local": true,
+  "all_original_rust_catalog_manifests_pins_unchanged": true,
+  "full_worker_lifecycle": false,
+  "hosted_windows_linux_archive_replay": false,
+  "default_main_live_delivery": false
+}

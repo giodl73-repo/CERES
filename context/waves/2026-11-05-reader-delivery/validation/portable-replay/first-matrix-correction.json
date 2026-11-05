@@ -1,0 +1,11 @@
+{
+  "run": "https://github.com/giodl73-repo/CERES/actions/runs/42079307196",
+  "head": "47e08ee613bedd18f021be3c97f4097a49bd0d3f",
+  "linux_checkout_archive": "success",
+  "windows": "failed before Rust/browser in positive input restore assertion",
+  "cause": "The restored directory was correct, but a substring assertion compared RUNNER~1 lexical temp spelling with the canonical runneradmin directory.",
+  "correction": "Parse TOML and compare resolved path plus samefile filesystem identity; preserve every restored-byte check. Also reject actual linked parents before path resolution, with a new negative control on both hosts.",
+  "input_custody_checks": 11,
+  "no_native_output_normalization": true,
+  "no_core_or_catalog_or_pin_change": true
+}

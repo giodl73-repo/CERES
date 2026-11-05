@@ -1,0 +1,46 @@
+{
+  "qualified_source": "ef39ce6d09c4080c40c2d6467964b2f8f0dd100e",
+  "source_git_blobs": 370,
+  "source_zip": {
+    "path": "downloads/ceres-source.zip",
+    "sha256": "2977605b03f1d8ff1388c07bbba563c5ce3835b325be68698b222b750d28a66d",
+    "bytes": 7210294,
+    "git_blobs": 370
+  },
+  "checkout_sizes": {
+    "runtime": 1164240,
+    "downloads": 7311493,
+    "total": 8475733
+  },
+  "archive_sizes": {
+    "runtime": 1163216,
+    "downloads": 7311493,
+    "total": 8474709
+  },
+  "source_zip_exact_between_checkout_and_archive": true,
+  "native_tests": 7,
+  "input_custody_checks": 10,
+  "source_receiver_checks": 18,
+  "typed_native_wasm_controls": 135,
+  "raw_js_abi_seams": 4,
+  "browser_cases": 43,
+  "ui_native_outcomes_per_viewport": 120,
+  "actual_json_downloads": 240,
+  "original_cli_controls": 30,
+  "original_generated_files": 3,
+  "boot_compute_deadline_ms": 15000,
+  "cancellation_terminates_actual_worker": true,
+  "generation_request_fencing": true,
+  "immutable_completed_input_result_export": true,
+  "actual_rust_error_and_worker_crash_recovery": true,
+  "keyboard_native_own_input_and_share_reload": true,
+  "all_external_manifests_in_independent_inputs": true,
+  "new_inputs_and_cargo_home": true,
+  "offline_acquisition": true,
+  "shared_compiled_target_reused": true,
+  "tools_not_bundled": true,
+  "all_original_rust_catalog_manifests_pins_unchanged": true,
+  "local_worker_lifecycle_qualified": true,
+  "hosted_windows_linux_archive_replay": false,
+  "default_main_live_delivery": false
+}

@@ -1,0 +1,686 @@
+{
+  "rows": [
+    {
+      "package": "rally-core",
+      "path": "Cargo.lock",
+      "original_path": "Cargo.lock",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "Cargo.toml",
+      "original_path": "Cargo.toml",
+      "kind": "cargo-normalized-manifest"
+    },
+    {
+      "package": "rally-core",
+      "path": "CLAUDE.md",
+      "original_path": "CLAUDE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "LICENSE",
+      "original_path": "LICENSE",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "PRODUCT_PLAN.md",
+      "original_path": "PRODUCT_PLAN.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "README.md",
+      "original_path": "README.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".roles/ROLE.md",
+      "original_path": ".roles/ROLE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "contracts/consumer-surfaces.json",
+      "original_path": "contracts/consumer-surfaces.json",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "docs/consumer-compatibility.md",
+      "original_path": "docs/consumer-compatibility.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "docs/proof-surface.md",
+      "original_path": "docs/proof-surface.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "docs/scenarium-compatibility.md",
+      "original_path": "docs/scenarium-compatibility.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "src/lib.rs",
+      "original_path": "src/lib.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "tests/consumer_contracts.rs",
+      "original_path": "tests/consumer_contracts.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "tests/scenarium_compat.rs",
+      "original_path": "tests/scenarium_compat.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "tests/support/scenarium_adapter.rs",
+      "original_path": "tests/support/scenarium_adapter.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "fixtures/proof/accepted-report.json",
+      "original_path": "fixtures/proof/accepted-report.json",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "fixtures/proof/rejected-report.json",
+      "original_path": "fixtures/proof/rejected-report.json",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "fixtures/scenarium/compatibility.v1.json",
+      "original_path": "fixtures/scenarium/compatibility.v1.json",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "docs/adoption/amaze-extraction.md",
+      "original_path": "docs/adoption/amaze-extraction.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "docs/adoption/quest-compatibility.md",
+      "original_path": "docs/adoption/quest-compatibility.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "docs/rune/README.md",
+      "original_path": "docs/rune/README.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "docs/rune/simulation_contracts.json",
+      "original_path": "docs/rune/simulation_contracts.json",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/PHASES.md",
+      "original_path": "context/waves/PHASES.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/WAVE.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/WAVE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/cannonball-run-foundation/WAVE.md",
+      "original_path": "context/waves/cannonball-run-foundation/WAVE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/dakar-rally-quest-rust-conversion/ROLE_REVIEW.md",
+      "original_path": "context/waves/dakar-rally-quest-rust-conversion/ROLE_REVIEW.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/dakar-rally-quest-rust-conversion/WAVE.md",
+      "original_path": "context/waves/dakar-rally-quest-rust-conversion/WAVE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/mille-miglia-amaze-extraction/ROLE_REVIEW.md",
+      "original_path": "context/waves/mille-miglia-amaze-extraction/ROLE_REVIEW.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/mille-miglia-amaze-extraction/WAVE.md",
+      "original_path": "context/waves/mille-miglia-amaze-extraction/WAVE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/mille-miglia-amaze-extraction/pulses/pulse-01.md",
+      "original_path": "context/waves/mille-miglia-amaze-extraction/pulses/pulse-01.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/mille-miglia-amaze-extraction/pulses/pulse-02.md",
+      "original_path": "context/waves/mille-miglia-amaze-extraction/pulses/pulse-02.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/mille-miglia-amaze-extraction/pulses/pulse-03.md",
+      "original_path": "context/waves/mille-miglia-amaze-extraction/pulses/pulse-03.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/dakar-rally-quest-rust-conversion/pulses/pulse-01.md",
+      "original_path": "context/waves/dakar-rally-quest-rust-conversion/pulses/pulse-01.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/dakar-rally-quest-rust-conversion/pulses/pulse-02.md",
+      "original_path": "context/waves/dakar-rally-quest-rust-conversion/pulses/pulse-02.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/dakar-rally-quest-rust-conversion/pulses/pulse-03.md",
+      "original_path": "context/waves/dakar-rally-quest-rust-conversion/pulses/pulse-03.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/cannonball-run-foundation/pulses/pulse-01.md",
+      "original_path": "context/waves/cannonball-run-foundation/pulses/pulse-01.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/cannonball-run-foundation/pulses/pulse-02.md",
+      "original_path": "context/waves/cannonball-run-foundation/pulses/pulse-02.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/cannonball-run-foundation/pulses/pulse-03.md",
+      "original_path": "context/waves/cannonball-run-foundation/pulses/pulse-03.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-01.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-01.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-02.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-02.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-03.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-03.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-04.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-04.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-05.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-05.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-06.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-06.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-07.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-07.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-08.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-08.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-09.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-09.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-10.md",
+      "original_path": "context/waves/24-hours-of-le-mans-hunt-tigris-simulators/pulses/pulse-10.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".roles/parliament/evidence-packet-reviewer.md",
+      "original_path": ".roles/parliament/evidence-packet-reviewer.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".roles/parliament/harness-boundary-engineer.md",
+      "original_path": ".roles/parliament/harness-boundary-engineer.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".roles/parliament/simulation-auditor.md",
+      "original_path": ".roles/parliament/simulation-auditor.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".roles/stakeholders/consumer-advocate.md",
+      "original_path": ".roles/stakeholders/consumer-advocate.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".roles/stakeholders/privacy-reviewer.md",
+      "original_path": ".roles/stakeholders/privacy-reviewer.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".github/workflows/rust.yml",
+      "original_path": ".github/workflows/rust.yml",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".claude/skills/rally-pulse/SKILL.md",
+      "original_path": ".claude/skills/rally-pulse/SKILL.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".claude/skills/rally-research/SKILL.md",
+      "original_path": ".claude/skills/rally-research/SKILL.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rally-core",
+      "path": ".claude/skills/rally-wave/SKILL.md",
+      "original_path": ".claude/skills/rally-wave/SKILL.md",
+      "kind": "exact"
+    },
+    {
+      "package": "rfacility-core",
+      "path": "Cargo.toml",
+      "original_path": "crates/rfacility-core/Cargo.toml",
+      "kind": "cargo-normalized-manifest"
+    },
+    {
+      "package": "rfacility-core",
+      "path": "src/lib.rs",
+      "original_path": "crates/rfacility-core/src/lib.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-core",
+      "path": "Cargo.toml",
+      "original_path": "crates/rune-core/Cargo.toml",
+      "kind": "cargo-normalized-manifest"
+    },
+    {
+      "package": "rune-core",
+      "path": "src/lib.rs",
+      "original_path": "crates/rune-core/src/lib.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "Cargo.toml",
+      "original_path": "crates/rune-derive/Cargo.toml",
+      "kind": "cargo-normalized-manifest"
+    },
+    {
+      "package": "rune-derive",
+      "path": "src/lib.rs",
+      "original_path": "crates/rune-derive/src/lib.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/compile.rs",
+      "original_path": "crates/rune-derive/tests/compile.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/derive_contract.rs",
+      "original_path": "crates/rune-derive/tests/derive_contract.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/fail_missing_id.rs",
+      "original_path": "crates/rune-derive/tests/ui/fail_missing_id.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/fail_missing_id.stderr",
+      "original_path": "crates/rune-derive/tests/ui/fail_missing_id.stderr",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/fail_missing_version.rs",
+      "original_path": "crates/rune-derive/tests/ui/fail_missing_version.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/fail_missing_version.stderr",
+      "original_path": "crates/rune-derive/tests/ui/fail_missing_version.stderr",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/fail_unsupported_attribute.rs",
+      "original_path": "crates/rune-derive/tests/ui/fail_unsupported_attribute.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/fail_unsupported_attribute.stderr",
+      "original_path": "crates/rune-derive/tests/ui/fail_unsupported_attribute.stderr",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/fail_unsupported_field_attribute.rs",
+      "original_path": "crates/rune-derive/tests/ui/fail_unsupported_field_attribute.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/fail_unsupported_field_attribute.stderr",
+      "original_path": "crates/rune-derive/tests/ui/fail_unsupported_field_attribute.stderr",
+      "kind": "exact"
+    },
+    {
+      "package": "rune-derive",
+      "path": "tests/ui/pass_contract.rs",
+      "original_path": "crates/rune-derive/tests/ui/pass_contract.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "Cargo.lock",
+      "original_path": "Cargo.lock",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "Cargo.toml",
+      "original_path": "Cargo.toml",
+      "kind": "cargo-normalized-manifest"
+    },
+    {
+      "package": "scenarium",
+      "path": "CLAUDE.md",
+      "original_path": "CLAUDE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "LICENSE",
+      "original_path": "LICENSE",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "PRODUCT_PLAN.md",
+      "original_path": "PRODUCT_PLAN.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "README.md",
+      "original_path": "README.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": ".roles/ROLE.md",
+      "original_path": ".roles/ROLE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/signals-interchange.md",
+      "original_path": "docs/signals-interchange.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "src/compare.rs",
+      "original_path": "src/compare.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "src/document.rs",
+      "original_path": "src/document.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "src/error.rs",
+      "original_path": "src/error.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "src/evidence.rs",
+      "original_path": "src/evidence.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "src/lib.rs",
+      "original_path": "src/lib.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "src/model.rs",
+      "original_path": "src/model.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "src/seed.rs",
+      "original_path": "src/seed.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "tests/contract.rs",
+      "original_path": "tests/contract.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "tests/signals_interchange.rs",
+      "original_path": "tests/signals_interchange.rs",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "tests/fixtures/scenario.v1.json",
+      "original_path": "tests/fixtures/scenario.v1.json",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "tests/fixtures/signals-artifact.v1.json",
+      "original_path": "tests/fixtures/signals-artifact.v1.json",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/CODE_RIGOR.md",
+      "original_path": "docs/vtrace/CODE_RIGOR.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/EVIDENCE.md",
+      "original_path": "docs/vtrace/EVIDENCE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/IMPLEMENTATION_PLAN.md",
+      "original_path": "docs/vtrace/IMPLEMENTATION_PLAN.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/MISSION.md",
+      "original_path": "docs/vtrace/MISSION.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/README.md",
+      "original_path": "docs/vtrace/README.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/REQUIREMENTS.md",
+      "original_path": "docs/vtrace/REQUIREMENTS.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/REVIEW.md",
+      "original_path": "docs/vtrace/REVIEW.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/SPECIFICATION_BASELINE.md",
+      "original_path": "docs/vtrace/SPECIFICATION_BASELINE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/TRACE.md",
+      "original_path": "docs/vtrace/TRACE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/VALIDATION.md",
+      "original_path": "docs/vtrace/VALIDATION.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/VERIFICATION.md",
+      "original_path": "docs/vtrace/VERIFICATION.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "docs/vtrace/WORK_PACKAGES.md",
+      "original_path": "docs/vtrace/WORK_PACKAGES.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "context/waves/PHASES.md",
+      "original_path": "context/waves/PHASES.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "context/waves/2026-08-19-foundation/WAVE.md",
+      "original_path": "context/waves/2026-08-19-foundation/WAVE.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "context/waves/2026-08-19-foundation/pulses/pulse-01.md",
+      "original_path": "context/waves/2026-08-19-foundation/pulses/pulse-01.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": "context/waves/2026-08-19-foundation/pulses/pulse-02.md",
+      "original_path": "context/waves/2026-08-19-foundation/pulses/pulse-02.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": ".github/workflows/ci.yml",
+      "original_path": ".github/workflows/ci.yml",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": ".claude/skills/scenarium-pulse/SKILL.md",
+      "original_path": ".claude/skills/scenarium-pulse/SKILL.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": ".claude/skills/scenarium-research/SKILL.md",
+      "original_path": ".claude/skills/scenarium-research/SKILL.md",
+      "kind": "exact"
+    },
+    {
+      "package": "scenarium",
+      "path": ".claude/skills/scenarium-wave/SKILL.md",
+      "original_path": ".claude/skills/scenarium-wave/SKILL.md",
+      "kind": "exact"
+    }
+  ],
+  "counts": {
+    "cargo-normalized-manifest": 5,
+    "exact": 108
+  }
+}

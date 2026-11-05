@@ -1,0 +1,57 @@
+[
+  {
+    "command": "original-metadata",
+    "argv": [
+      "cargo",
+      "+1.95.0",
+      "metadata",
+      "--locked",
+      "--offline",
+      "--format-version",
+      "1"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": "original-tests",
+    "argv": [
+      "cargo",
+      "+1.95.0",
+      "test",
+      "--workspace",
+      "--all-targets",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": "original-format",
+    "argv": [
+      "cargo",
+      "+1.95.0",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": "original-clippy",
+    "argv": [
+      "cargo",
+      "+1.95.0",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0
+  }
+]

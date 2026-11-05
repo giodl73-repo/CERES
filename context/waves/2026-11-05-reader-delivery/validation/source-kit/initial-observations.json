@@ -1,0 +1,23 @@
+{
+  "initial_source": "9a49124a0784afb24457b760a1438eedb271c0db",
+  "initial_browser_stats": {
+    "startTime": "2026-11-05T16:10:41.722Z",
+    "duration": 14405.040999999997,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "cause": "Both source downloads and CLI ZIP verification succeeded, then expected page request count1 was0. Browser download events are a separate observation from ordinary page request events.",
+  "correction": "Track unsolicited download events as well as normal source requests before action; assert exactly one named download after keyboard activation. Preserve actual byte SHA and complete source receiver checks.",
+  "corrected_source": "5a069b0717b5df6b25c8bb881bd7a538e49363fd",
+  "corrected_stats": {
+    "startTime": "2026-11-05T16:13:04.747Z",
+    "duration": 11129.888,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "no_product_or_input_policy_changed": true
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "Selected notice files in a new core.autocrlf=true checkout using shared Git objects; not independent source bootstrap or full build",
+  "commands": [
+    [
+      "git",
+      "clone",
+      "--shared",
+      "--branch",
+      "feat/reproducible-reader-delivery",
+      "--no-checkout",
+      "C:\\src\\ceres-self-service-20261105",
+      "C:\\src\\ceres-self-service-qualification-20261105\\notice-byte-clone-v2"
+    ],
+    [
+      "git",
+      "-C",
+      "C:\\src\\ceres-self-service-qualification-20261105\\notice-byte-clone-v2",
+      "-c",
+      "core.autocrlf=true",
+      "checkout",
+      "HEAD",
+      "--",
+      ".gitattributes",
+      "DEPENDENCY-NOTICES.txt",
+      "notices/manifest.json",
+      "notices/rust-1.95.0-COPYRIGHT-library.html"
+    ]
+  ],
+  "all_notice_bytes_exact": true
+}

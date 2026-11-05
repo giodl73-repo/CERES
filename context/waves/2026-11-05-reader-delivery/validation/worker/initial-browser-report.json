@@ -1,0 +1,1447 @@
+{
+  "config": {
+    "configFile": "C:\\src\\ceres-self-service-qualification-20261105\\worker-qualification-v1\\browser.config.mjs",
+    "rootDir": "C:/src/ceres-self-service-20261105/tests/browser",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/src/ceres-self-service-qualification-20261105/worker-qualification-v1/browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/src/ceres-self-service-20261105/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "C:/src/ceres-self-service-qualification-20261105/worker-qualification-v1/browser-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": {
+      "command": "python -m http.server 8197 --bind 127.0.0.1 --directory C:/src/ceres-self-service-20261105/dist/worker-v1",
+      "url": "http://127.0.0.1:8197/CERES/",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "entry-admission.spec.js",
+      "file": "entry-admission.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real worker retains all120 original successful native results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 518,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:43:24.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fb2ef1a1f3f58e968f5b-edf6a68e8011954bd918",
+          "file": "entry-admission.spec.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "worker rejects fractional, out-of-width and nonnumber entries before ABI aliasing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 230,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:43:24.958Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fb2ef1a1f3f58e968f5b-78bc980f4741fe2cdd9f",
+          "file": "entry-admission.spec.js",
+          "line": 23,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "explorer.spec.js",
+      "file": "explorer.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual Rust lenses respond to participation and share/export",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1946,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:43:25.228Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b5cd556296eb404e6882-a4d80a1f208800034284",
+          "file": "explorer.spec.js",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "mobile invalid query and WASM failure stay readable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 465,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:43:27.183Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b5cd556296eb404e6882-6c5e80ffc25f70b59c6d",
+          "file": "explorer.spec.js",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "lifecycle.spec.js",
+      "file": "lifecycle.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "desktop",
+          "file": "lifecycle.spec.js",
+          "line": 34,
+          "column": 7,
+          "specs": [
+            {
+              "title": "all120 original native outcomes export with their actual UI inputs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30585,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:43:27.704Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-1af324d9b6f23c4c2ee4",
+              "file": "lifecycle.spec.js",
+              "line": 37,
+              "column": 3
+            },
+            {
+              "title": "cancel during boot terminates then retries with retained assumptions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 509,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:43:58.304Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-d37829a39b3cdb8561f0",
+              "file": "lifecycle.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "cancel during compute terminates the actual worker and recovers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 514,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:43:58.828Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-29258c20994532a8460b",
+              "file": "lifecycle.spec.js",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "an edit terminates in-flight work and fences its old callback",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 446,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:43:59.357Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-0c1f20a3a61a63febf1f",
+              "file": "lifecycle.spec.js",
+              "line": 71,
+              "column": 3
+            },
+            {
+              "title": "wrong IDs/generations, duplicate ready/results and unknown packets cannot replace a result",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 382,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:43:59.812Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-17c641f2ed592da698e6",
+              "file": "lifecycle.spec.js",
+              "line": 82,
+              "column": 3
+            },
+            {
+              "title": "boot 15-second deadline terminates and allows actual-WASM retry",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 549,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:00.208Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-614f2d610be7b5ef9822",
+              "file": "lifecycle.spec.js",
+              "line": 99,
+              "column": 41
+            },
+            {
+              "title": "compute 15-second deadline terminates and allows actual-WASM retry",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 518,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:00.770Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-41a6fbc746a24445408c",
+              "file": "lifecycle.spec.js",
+              "line": 99,
+              "column": 41
+            },
+            {
+              "title": "actual WASM failure preserves editable assumptions and retries",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 628,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:01.300Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-e3bfed31045e37bab0d6",
+              "file": "lifecycle.spec.js",
+              "line": 107,
+              "column": 3
+            },
+            {
+              "title": "malformed current results stop the worker and never become exports",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 406,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:01.940Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-690d2da67f6c94d041e4",
+              "file": "lifecycle.spec.js",
+              "line": 117,
+              "column": 3
+            },
+            {
+              "title": "message decoding errors terminate and recover",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5236,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#status')\nExpected substring: \u001b[32m\"unreadable message\"\u001b[39m\nReceived string:    \u001b[31m\"Evaluating…\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#status')\u001b[22m\n\u001b[2m    9 × locator resolved to <p id=\"status\" role=\"status\" aria-live=\"polite\">Evaluating…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Evaluating…\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#status')\nExpected substring: \u001b[32m\"unreadable message\"\u001b[39m\nReceived string:    \u001b[31m\"Evaluating…\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#status')\u001b[22m\n\u001b[2m    9 × locator resolved to <p id=\"status\" role=\"status\" aria-live=\"polite\">Evaluating…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Evaluating…\"\u001b[22m\n\n    at C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js:126:42",
+                        "location": {
+                          "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js",
+                          "column": 42,
+                          "line": 126
+                        },
+                        "snippet": "  124 |    await firstWorker(page,held);await page.goto('/CERES/');await expect(page.locator('#status')).toHaveText('Evaluating…');\n  125 |    await page.evaluate(()=>window.__workers[0].dispatchEvent(new Event('messageerror')));\n> 126 |    await expect(page.locator('#status')).toContainText('unreadable message');await stopped(page);await page.locator('#retry').click();await evaluated(page);\n      |                                          ^\n  127 |   });\n  128 |\n  129 |   test('constructor failure offers retry without a page exception',async({page})=>{"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js",
+                            "column": 42,
+                            "line": 126
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#status')\nExpected substring: \u001b[32m\"unreadable message\"\u001b[39m\nReceived string:    \u001b[31m\"Evaluating…\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#status')\u001b[22m\n\u001b[2m    9 × locator resolved to <p id=\"status\" role=\"status\" aria-live=\"polite\">Evaluating…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Evaluating…\"\u001b[22m\n\n\n  124 |    await firstWorker(page,held);await page.goto('/CERES/');await expect(page.locator('#status')).toHaveText('Evaluating…');\n  125 |    await page.evaluate(()=>window.__workers[0].dispatchEvent(new Event('messageerror')));\n> 126 |    await expect(page.locator('#status')).toContainText('unreadable message');await stopped(page);await page.locator('#retry').click();await evaluated(page);\n      |                                          ^\n  127 |   });\n  128 |\n  129 |   test('constructor failure offers retry without a page exception',async({page})=>{\n    at C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js:126:42"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:02.357Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\src\\ceres-self-service-qualification-20261105\\worker-qualification-v1\\browser-results\\lifecycle-desktop-message--05722-rrors-terminate-and-recover\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js",
+                        "column": 42,
+                        "line": 126
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-9a01a58ea0f8689fe753",
+              "file": "lifecycle.spec.js",
+              "line": 123,
+              "column": 3
+            },
+            {
+              "title": "constructor failure offers retry without a page exception",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1070,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:11.427Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-59f5a547b644ac000cb5",
+              "file": "lifecycle.spec.js",
+              "line": 129,
+              "column": 3
+            },
+            {
+              "title": "rapid edits clear old output and export only the latest snapshot",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 741,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:12.665Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-fb1b49bf924106abdc0b",
+              "file": "lifecycle.spec.js",
+              "line": 135,
+              "column": 3
+            },
+            {
+              "title": "reset during computation terminates and evaluates the original defaults",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 481,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:13.422Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-5e942628984fa9de6511",
+              "file": "lifecycle.spec.js",
+              "line": 148,
+              "column": 3
+            },
+            {
+              "title": "keyboard own input matches native Rust and shares/reloads the same assumptions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 999,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:13.912Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-4da2f24308a3c1b042b9",
+              "file": "lifecycle.spec.js",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "an unannounced control edit cannot relabel an already completed export",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 554,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:14.920Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-f2bf9c0020fd48bd73b6",
+              "file": "lifecycle.spec.js",
+              "line": 165,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "mobile",
+          "file": "lifecycle.spec.js",
+          "line": 34,
+          "column": 7,
+          "specs": [
+            {
+              "title": "all120 original native outcomes export with their actual UI inputs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30186,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:15.482Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-5b052283da5071dd7e7e",
+              "file": "lifecycle.spec.js",
+              "line": 37,
+              "column": 3
+            },
+            {
+              "title": "cancel during boot terminates then retries with retained assumptions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 524,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:45.678Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-31d2387e2d52a20cb640",
+              "file": "lifecycle.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "cancel during compute terminates the actual worker and recovers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 545,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:46.217Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-91cf3395a977361f7940",
+              "file": "lifecycle.spec.js",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "an edit terminates in-flight work and fences its old callback",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 403,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:46.778Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-fb8f8ce0ce2e73747246",
+              "file": "lifecycle.spec.js",
+              "line": 71,
+              "column": 3
+            },
+            {
+              "title": "wrong IDs/generations, duplicate ready/results and unknown packets cannot replace a result",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 383,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:47.197Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-0061d48995ae409961ee",
+              "file": "lifecycle.spec.js",
+              "line": 82,
+              "column": 3
+            },
+            {
+              "title": "boot 15-second deadline terminates and allows actual-WASM retry",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 455,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:47.590Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-94ec989b68db73ece19f",
+              "file": "lifecycle.spec.js",
+              "line": 99,
+              "column": 41
+            },
+            {
+              "title": "compute 15-second deadline terminates and allows actual-WASM retry",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 508,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:48.057Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-027e91a1147ea8779270",
+              "file": "lifecycle.spec.js",
+              "line": 99,
+              "column": 41
+            },
+            {
+              "title": "actual WASM failure preserves editable assumptions and retries",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 833,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:48.580Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-a42890fbf8b50e692302",
+              "file": "lifecycle.spec.js",
+              "line": 107,
+              "column": 3
+            },
+            {
+              "title": "malformed current results stop the worker and never become exports",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 408,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:49.429Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-9838d5270dfce71272e6",
+              "file": "lifecycle.spec.js",
+              "line": 117,
+              "column": 3
+            },
+            {
+              "title": "message decoding errors terminate and recover",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5242,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#status')\nExpected substring: \u001b[32m\"unreadable message\"\u001b[39m\nReceived string:    \u001b[31m\"Evaluating…\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#status')\u001b[22m\n\u001b[2m    9 × locator resolved to <p id=\"status\" role=\"status\" aria-live=\"polite\">Evaluating…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Evaluating…\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#status')\nExpected substring: \u001b[32m\"unreadable message\"\u001b[39m\nReceived string:    \u001b[31m\"Evaluating…\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#status')\u001b[22m\n\u001b[2m    9 × locator resolved to <p id=\"status\" role=\"status\" aria-live=\"polite\">Evaluating…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Evaluating…\"\u001b[22m\n\n    at C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js:126:42",
+                        "location": {
+                          "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js",
+                          "column": 42,
+                          "line": 126
+                        },
+                        "snippet": "  124 |    await firstWorker(page,held);await page.goto('/CERES/');await expect(page.locator('#status')).toHaveText('Evaluating…');\n  125 |    await page.evaluate(()=>window.__workers[0].dispatchEvent(new Event('messageerror')));\n> 126 |    await expect(page.locator('#status')).toContainText('unreadable message');await stopped(page);await page.locator('#retry').click();await evaluated(page);\n      |                                          ^\n  127 |   });\n  128 |\n  129 |   test('constructor failure offers retry without a page exception',async({page})=>{"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js",
+                            "column": 42,
+                            "line": 126
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#status')\nExpected substring: \u001b[32m\"unreadable message\"\u001b[39m\nReceived string:    \u001b[31m\"Evaluating…\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#status')\u001b[22m\n\u001b[2m    9 × locator resolved to <p id=\"status\" role=\"status\" aria-live=\"polite\">Evaluating…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Evaluating…\"\u001b[22m\n\n\n  124 |    await firstWorker(page,held);await page.goto('/CERES/');await expect(page.locator('#status')).toHaveText('Evaluating…');\n  125 |    await page.evaluate(()=>window.__workers[0].dispatchEvent(new Event('messageerror')));\n> 126 |    await expect(page.locator('#status')).toContainText('unreadable message');await stopped(page);await page.locator('#retry').click();await evaluated(page);\n      |                                          ^\n  127 |   });\n  128 |\n  129 |   test('constructor failure offers retry without a page exception',async({page})=>{\n    at C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js:126:42"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:49.851Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\src\\ceres-self-service-qualification-20261105\\worker-qualification-v1\\browser-results\\lifecycle-mobile-message-d-3247c-rrors-terminate-and-recover\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\src\\ceres-self-service-20261105\\tests\\browser\\lifecycle.spec.js",
+                        "column": 42,
+                        "line": 126
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-bd7790d325b7b4dffb56",
+              "file": "lifecycle.spec.js",
+              "line": 123,
+              "column": 3
+            },
+            {
+              "title": "constructor failure offers retry without a page exception",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1040,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:44:58.893Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-6410888c4fa53287f8ca",
+              "file": "lifecycle.spec.js",
+              "line": 129,
+              "column": 3
+            },
+            {
+              "title": "rapid edits clear old output and export only the latest snapshot",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 728,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:45:00.116Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-338e9531ffae8d9c4f48",
+              "file": "lifecycle.spec.js",
+              "line": 135,
+              "column": 3
+            },
+            {
+              "title": "reset during computation terminates and evaluates the original defaults",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 489,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:45:00.863Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-6369f6aefd0a92dbfa3b",
+              "file": "lifecycle.spec.js",
+              "line": 148,
+              "column": 3
+            },
+            {
+              "title": "keyboard own input matches native Rust and shares/reloads the same assumptions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1077,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:45:01.361Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-d3f1117da8f4f90e3a5e",
+              "file": "lifecycle.spec.js",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "an unannounced control edit cannot relabel an already completed export",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 646,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-05T16:45:02.452Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "82f819fc370d5b5a8454-b8c07cbb1968b4afea3e",
+              "file": "lifecycle.spec.js",
+              "line": 165,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "notice-downloads.spec.js",
+      "file": "notice-downloads.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual pinned Cargo/runtime notices download independently of a failed engine",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 533,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:45:03.145Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a99a9d88a5167514338d-1d6391dbed30eedfe524",
+          "file": "notice-downloads.spec.js",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "source-downloads.spec.js",
+      "file": "source-downloads.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "desktop: complete source download is optional and survives failed WASM",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1259,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:45:03.720Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1e33c1a99d6a3e53281b-ce4deb59770d90a3c7da",
+          "file": "source-downloads.spec.js",
+          "line": 7,
+          "column": 2
+        },
+        {
+          "title": "mobile: complete source download is optional and survives failed WASM",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-05T16:45:04.995Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1e33c1a99d6a3e53281b-2f5835620bc8751f82b6",
+          "file": "source-downloads.spec.js",
+          "line": 7,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-05T16:43:21.860Z",
+    "duration": 105744.12199999999,
+    "expected": 35,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

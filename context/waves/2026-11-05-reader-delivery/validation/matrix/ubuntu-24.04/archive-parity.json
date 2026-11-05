@@ -1,0 +1,2390 @@
+{
+  "schema": "ceres.original-reader-parity.v1",
+  "controls": 135,
+  "all_exact": true,
+  "rows": [
+    {
+      "args": [
+        "0",
+        "village",
+        "0.001",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.001",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.001",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.001",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.001",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.025",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.025",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.025",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.025",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.1",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.1",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.1",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.1",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.1",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.2",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.2",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.2",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.2",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "village",
+        "0.2",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":2.52,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=2.52, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.001",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.001",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.001",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.001",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.001",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.1",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.1",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.1",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.1",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.1",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.2",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.2",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.2",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.2",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.2",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.001",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.001",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.001",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.001",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.001",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.025",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.025",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.025",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.025",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.1",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.1",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.1",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.1",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.1",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.2",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.2",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=48000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.2",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.2",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=62000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "small_city",
+        "0.2",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=200000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.07,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.07, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.001",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.001",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.001",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.001",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.001",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.025",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.025",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.025",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.025",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=31.2, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.1",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.1",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.1",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.1",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.1",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.2",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.2",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.2",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.2",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "village",
+        "0.2",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=250.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":11.733333333333334,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=11.73, threshold=120, hrs/capita=0.000 vs threshold=2\"},\"population\":1250.0,\"households\":500.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.001",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.001",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.001",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.001",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.001",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=10.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.025",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.025",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.025",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.025",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.1",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.1",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.1",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.1",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.1",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=850.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.2",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.2",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.2",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.2",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "town",
+        "0.2",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1700.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.001",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.001",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.001",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.001",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.001",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"fail\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=45.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.025",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.025",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.025",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.025",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=1125.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.1",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.1",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.1",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.1",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.1",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=4500.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.2",
+        "10000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.2",
+        "48000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.2",
+        "56000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.2",
+        "62000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "1",
+        "small_city",
+        "0.2",
+        "200000"
+      ],
+      "native": {
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}",
+        "ok": true
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=9000.0, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.32592592592592595,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2\"},\"population\":45000.0,\"households\":18000.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "2",
+        "town",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "4294967295",
+        "town",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "planet",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "error": "Unknown settlement scale",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Unknown settlement scale"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.0009",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.20001",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "NaN",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "inf",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "-inf",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "0"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "9999"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "200001"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "NaN"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "inf"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    },
+    {
+      "args": [
+        "0",
+        "town",
+        "0.025",
+        "-inf"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": false,
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000"
+      },
+      "exact": true
+    }
+  ],
+  "imports": [
+    {
+      "module": "./ceres_web_bg.js",
+      "name": "__wbindgen_init_externref_table",
+      "kind": "function"
+    },
+    {
+      "module": "./ceres_web_bg.js",
+      "name": "__wbindgen_cast_0000000000000001",
+      "kind": "function"
+    }
+  ],
+  "raw_js_integer_abi_seams": [
+    {
+      "args": [
+        "4294967296",
+        "town",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": false
+    },
+    {
+      "args": [
+        "4294967297",
+        "town",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": false
+    },
+    {
+      "args": [
+        "1.5",
+        "town",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "transport_error": true,
+        "exit": 1,
+        "stdout": "",
+        "stderr": "invalid typed control argument\n"
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"win\",\"primary_metric\":0.17857015307033522,\"metric_name\":\"payback_years\",\"notes\":\"\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":52.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=52, total_annual_cost=10300\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":1.7254901960784315,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=1.73, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": false
+    },
+    {
+      "args": [
+        "18446744073709551615",
+        "town",
+        "0.025",
+        "56000"
+      ],
+      "native": {
+        "error": "Choose a sample, participation 0.1–20%, and wage $10,000–200,000",
+        "ok": false
+      },
+      "wasm": {
+        "ok": true,
+        "json": "{\"market\":{\"verdict\":\"fail\",\"primary_metric\":0.20286244105935808,\"metric_name\":\"payback_years\",\"notes\":\"wage_verdict=fail (take_home=18913 vs median=56000)\"},\"coop\":{\"verdict\":\"win\",\"primary_metric\":15.0,\"metric_name\":\"break_even_members\",\"notes\":\"feasible_pool=212.5, break_even=15, total_annual_cost=2830\"},\"civic\":{\"verdict\":\"fail\",\"primary_metric\":0.37058823529411766,\"metric_name\":\"per_household_cost\",\"notes\":\"per_hh=0.37, threshold=100, hrs/capita=0.000 vs threshold=2\"},\"population\":8500.0,\"households\":3400.0,\"status\":\"draft catalog sensitivity; not validated\"}"
+      },
+      "exact": false
+    }
+  ],
+  "abi_seams_are_ui_admitted": false,
+  "wasm_sha256": "9fda8e732d0bb30550ac0c173e55b74be283c89942ae49d56710580c0d925e9b",
+  "wasm_bytes": 414658,
+  "scope": "Original typed reader parity and separately observed raw JS integer conversion, not economic/catalog/source/delivery validation"
+}

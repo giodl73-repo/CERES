@@ -1,0 +1,35 @@
+   Compiling unicode-ident v1.0.24
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling serde_core v1.0.228
+   Compiling wasm-bindgen-shared v0.2.127
+   Compiling serde v1.0.228
+   Compiling zmij v1.0.21
+   Compiling rustversion v1.0.23
+   Compiling itoa v1.0.18
+   Compiling serde_json v1.0.149
+   Compiling thiserror v2.0.18
+   Compiling bumpalo v3.20.3
+   Compiling hashbrown v0.17.1
+   Compiling memchr v2.8.0
+   Compiling equivalent v1.0.2
+   Compiling unsafe-libyaml v0.2.11
+   Compiling ryu v1.0.23
+   Compiling cfg-if v1.0.5
+   Compiling once_cell v1.21.4
+   Compiling indexmap v2.14.0
+   Compiling wasm-bindgen v0.2.127
+   Compiling syn v2.0.117
+   Compiling wasm-bindgen-macro-support v0.2.127
+   Compiling serde_derive v1.0.228
+   Compiling thiserror-impl v2.0.18
+   Compiling rune-derive v0.1.0 (https://github.com/giodl73-repo/RUNE.git?rev=ad0097001138c63c12d23e5caef861eac0f5aed6#ad009700)
+   Compiling wasm-bindgen-macro v0.2.127
+   Compiling rune-core v0.1.0 (https://github.com/giodl73-repo/RUNE.git?rev=ad0097001138c63c12d23e5caef861eac0f5aed6#ad009700)
+   Compiling rfacility-core v0.1.0 (https://github.com/giodl73-repo/RLINE.git?rev=8426af135619224f073369e93aa05e79c8d45bf6#8426af13)
+   Compiling scenarium v0.1.0 (https://github.com/giodl73-repo/SCENARIUM.git?rev=724c97d9b4619ac26aa21169d48f656f5fd9f4db#724c97d9)
+   Compiling serde_yaml v0.9.34+deprecated
+   Compiling rally-core v0.1.0 (https://github.com/giodl73-repo/RALLY.git?rev=4d84433d8d113d5433fd2c97ef4d7e7aed55fbb0#4d84433d)
+   Compiling ceres v0.1.0 (C:\src\ceres-self-service-20261105)
+   Compiling ceres-web v0.1.0 (C:\src\ceres-self-service-20261105\ceres-web)
+    Finished `release` profile [optimized] target(s) in 25.34s

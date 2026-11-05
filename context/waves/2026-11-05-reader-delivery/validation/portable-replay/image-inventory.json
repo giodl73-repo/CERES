@@ -1,0 +1,11 @@
+{
+  "files": [
+    "desktop-failed-engine.png",
+    "desktop-own-input.png",
+    "mobile-failed-engine.png",
+    "mobile-own-input.png",
+    "desktop-source-route.png",
+    "mobile-source-route.png"
+  ],
+  "inspection": "Archive screenshots retained; worker visual review already covers identical UI source at ef39ce6d. No new independent design approval."
+}
