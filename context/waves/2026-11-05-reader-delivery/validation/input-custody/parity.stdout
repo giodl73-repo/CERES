@@ -1,0 +1,1 @@
+{"controls":135,"all_exact":true,"imports":[{"module":"./ceres_web_bg.js","name":"__wbindgen_init_externref_table","kind":"function"},{"module":"./ceres_web_bg.js","name":"__wbindgen_cast_0000000000000001","kind":"function"}],"raw_js_abi_differences":4,"wasm_sha256":"85f04735de4e158a294153fe28fcd0335e6785ec29a3f7508fba31f0ec852c2c","wasm_bytes":416654}

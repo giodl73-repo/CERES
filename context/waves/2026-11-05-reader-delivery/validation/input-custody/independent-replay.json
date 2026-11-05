@@ -1,0 +1,141 @@
+{
+  "schema": "ceres.independent-input-replay.v1",
+  "source_commit": "e24440667f7fc32b710beb49955c6d7c680d19ad",
+  "source_zip_sha256": "fb3f1fcb8aeb7ddbffda8719701293f76d0027fb024a77828a953abeec8360cd",
+  "source_zip_bytes": 2115856,
+  "outside_git": true,
+  "independent_input_tree": true,
+  "new_cargo_home": true,
+  "owner_registry_and_git_cache_unused": true,
+  "package_acquisition_offline": true,
+  "shared_compiled_target_reused": "C:/src/.tracker-cargo-target",
+  "installed_toolchain_not_bundled": true,
+  "packages": 32,
+  "commands": [
+    {
+      "name": "metadata",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "metadata",
+        "--all-features",
+        "--locked",
+        "--offline",
+        "--format-version",
+        "1"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "tests",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "test",
+        "--workspace",
+        "--all-targets",
+        "--locked",
+        "--offline"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "fmt",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "clippy",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "clippy",
+        "--workspace",
+        "--all-targets",
+        "--all-features",
+        "--no-deps",
+        "--locked",
+        "--offline",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "control",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "build",
+        "-p",
+        "ceres-web",
+        "--example",
+        "reader-control",
+        "--locked",
+        "--offline"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "wasm",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "build",
+        "--release",
+        "--target",
+        "wasm32-unknown-unknown",
+        "-p",
+        "ceres-web",
+        "--lib",
+        "--features",
+        "wasm",
+        "--locked",
+        "--offline"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "bindgen",
+      "command": [
+        "C:/src/TRACKER/.local-tools/wasm-bindgen-0.2.127-x86_64-pc-windows-msvc/wasm-bindgen.exe",
+        "C:/src/.tracker-cargo-target/wasm32-unknown-unknown/release/ceres_web.wasm",
+        "--target",
+        "web",
+        "--out-dir",
+        "C:\\src\\ceres-self-service-qualification-20261105\\independent-input-replay-v1\\pkg"
+      ],
+      "exit": 0
+    }
+  ],
+  "scope": "Native/WASM input-independence proof. Not complete source-download packaging, receiver safety, worker lifecycle or hosted delivery.",
+  "parity_summary": {
+    "controls": 135,
+    "all_exact": true,
+    "imports": [
+      {
+        "module": "./ceres_web_bg.js",
+        "name": "__wbindgen_init_externref_table",
+        "kind": "function"
+      },
+      {
+        "module": "./ceres_web_bg.js",
+        "name": "__wbindgen_cast_0000000000000001",
+        "kind": "function"
+      }
+    ],
+    "wasm_sha256": "85f04735de4e158a294153fe28fcd0335e6785ec29a3f7508fba31f0ec852c2c",
+    "wasm_bytes": 416654
+  },
+  "raw_js_abi_differences": 4,
+  "original_wasm_sha256": "e92d6a7f9c22a6e5d29f8e6ec99ea1ac692b8bcb912da5dba4df791cc8631dce",
+  "wasm_binary_identity": false,
+  "qualification_limit": "Exact typed behavior preserved; independent input location rebuild produces different module bytes. Original and rebuilt modules retained. No byte-reproducibility claim."
+}

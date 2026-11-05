@@ -28,15 +28,29 @@ jobs:
           cargo install wasm-bindgen-cli --version 0.2.127 --locked
           npm ci
           npx playwright install --with-deps chromium
+      - name: Verify and restore locked Cargo inputs
+        run: |
+          python tests/input_custody.py
+          input_sha=$(cut -d' ' -f1 cargo-inputs/sha256.txt)
+          python tools/input-custody.py --sha256 "$input_sha" --inputs "$RUNNER_TEMP/ceres-inputs" --cargo-home "$RUNNER_TEMP/ceres-cargo-home"
+          echo "CARGO_HOME=$RUNNER_TEMP/ceres-cargo-home" >> "$GITHUB_ENV"
+          echo "CARGO_NET_OFFLINE=true" >> "$GITHUB_ENV"
+          echo "CARGO_INCREMENTAL=0" >> "$GITHUB_ENV"
       - name: Validate Rust
         run: |
-          cargo fmt -p ceres-web --check
-          cargo test --locked --workspace
-          cargo clippy --locked --no-deps -p ceres-web --all-targets --all-features -- -D warnings
+          cargo fmt --all --check
+          cargo test --locked --offline --workspace --all-targets
+          cargo clippy --locked --offline --no-deps --workspace --all-targets --all-features -- -D warnings
       - name: Build Pages and test browser
         run: |
           python tools/build-pages.py
+          cargo build --locked --offline -p ceres-web --example reader-control
+          node tools/check-reader.mjs dist/CERES/pkg/ceres_web.js target/debug/examples/reader-control reader-parity.json
           npm test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reader-parity
+          path: reader-parity.json
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/CERES
