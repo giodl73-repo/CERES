@@ -51,8 +51,12 @@ def verify(raw, expected_sha, lock):
         value = data[row['path']]
         if len(value) != row['bytes'] or digest(value) != row['sha256']:
             raise ValueError('Input file hash mismatch: ' + row['path'])
-    if digest(lock) != manifest['lock_sha256']:
+    # Git stores canonical LF; ordinary Windows checkouts can contain CRLF.
+    canonical_lock = lock.replace(b'\r\n', b'\n')
+    if digest(canonical_lock) != manifest['lock_sha256']:
         raise ValueError('Cargo.lock differs from captured lock')
+    if hashlib.sha1(b'blob ' + str(len(canonical_lock)).encode() + b'\0' + canonical_lock).hexdigest() != manifest['lock_git_blob']:
+        raise ValueError('Cargo.lock Git blob differs')
     packages = {(p['name'], p['version'], p['source']): p for p in tomllib.loads(lock.decode())['package'] if p.get('source')}
     expected = {(p['name'], p['version'], p['source']) for p in manifest['registry']}
     for repo in manifest['git_sources']:

@@ -49,6 +49,11 @@ class CustodyChecks(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Cargo.lock differs'):
             custody.verify(self.raw, self.sha, self.lock + b'\n')
 
+    def test_windows_and_canonical_lock_line_endings(self):
+        canonical = self.lock.replace(b'\r\n', b'\n')
+        custody.verify(self.raw, self.sha, canonical)
+        custody.verify(self.raw, self.sha, canonical.replace(b'\n', b'\r\n'))
+
     def test_unsafe_archive_path(self):
         raw = self.modified('../escape', b'unsafe', False)
         with self.assertRaisesRegex(ValueError, 'Unsafe input path'):

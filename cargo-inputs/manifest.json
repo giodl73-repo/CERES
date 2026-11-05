@@ -1,6 +1,8 @@
 {
   "schema": "ceres.cargo-inputs.v1",
-  "lock_sha256": "a763c8e85db50129a22f795089b982b5389d64aa19df6722144ca055293de43c",
+  "lock_sha256": "ce838283331a0f910a105f0e7be6b527f24f5b15955163c7d0ba86d12160904f",
+  "lock_git_blob": "3047f7b9d3b3929d7483f2ca537cbc3e5d7bf9f0",
+  "lock_line_endings": "Only CRLF-to-LF checkout conversion is admitted; canonical SHA and Git blob must match.",
   "registry": [
     {
       "name": "bumpalo",

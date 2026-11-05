@@ -44,3 +44,8 @@ checkout; they do not independently authenticate an upstream author or validate
 the draft equipment economics. CERES's existing software/content scope and all
 third-party grants remain distinct. This dependency capsule alone does not
 qualify a complete source download, browser lifecycle, hosted replay or release.
+
+Lock identity is the canonical Git LF blob and SHA. Verification admits only
+Windows checkout CRLF-to-LF conversion; both forms are tested, and altered lock
+content is rejected. Source ZIP export must disable Git checkout conversion and
+verify every exported blob before claiming exact source custody.
