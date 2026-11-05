@@ -96,6 +96,38 @@ These instructions support software inspection/replay. Worker lifecycle,
 Windows/Linux hosted archive replay and default-branch/live release evidence
 must be checked in the current delivery wave before calling a release qualified.
 
+## Complete checkout versus archive replay
+
+With a freshly built site and the same installed prerequisites, the portable
+qualifier verifies the site, restores its complete source outside Git, restores
+all dependency inputs into a new Cargo home, and runs native, actual WASM,
+receiver and browser checks against the archive build:
+
+```powershell
+$manifestSha = (Get-FileHash dist/CERES/BUILD-MANIFEST.json -Algorithm SHA256).Hash.ToLowerInvariant()
+python tools/qualify-source.py --site dist/CERES --manifest-sha256 $manifestSha --scratch C:/scratch/ceres-replay
+```
+
+Use a new scratch folder outside source and compiled target. The manifest SHA
+here identifies a locally built test fixture; external artifact reception still
+requires the independently trusted CI/release receipt described above. The
+qualifier preserves full stdout/stderr/exits and generated files for all30
+original CLI controls on both paths, verifies the unchanged original8-file
+native contract, and compares source ZIP bytes without normalizing outputs.
+Seven native tests,135 typed native/WASM controls,18 receivers and43 archive
+browser cases run. The120 UI results/downloads per viewport remain separate from
+the four raw JavaScript integer ABI seams. Installed pinned npm/browser tools are
+copied/reused; Cargo inputs and home are independent. Compiled target reuse and
+different module hashes are explicit. Reports are retained under scratch.
+
+The workflow pins Ubuntu24.04 and Windows2022 with an explicit Bash shell, using
+the supported [runner labels](https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job)
+and [Windows Bash behavior](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax).
+Both jobs must succeed before the Linux Pages artifact can deploy. A PR can build
+GitHub's merge commit; its actual source identity must remain distinct from the
+PR branch even when their complete trees match. Hosted results remain unqualified
+until the current run and downloaded evidence are inspected.
+
 Archive builds reject files outside the exact source manifest, except documented
 generated `dist/`, `target/`, `node_modules/`, `test-results/` and Python bytecode
 cache directories. In particular, an unlisted `.cargo/config.toml` is rejected

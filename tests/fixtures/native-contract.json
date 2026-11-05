@@ -1,0 +1,55 @@
+{
+  "schema": "ceres.original-native-contract.v1",
+  "original_runtime_head": "5a69e2dd729858531e27017c6f3b8da89f9e58a2",
+  "files": [
+    {
+      "path": "src/lib.rs",
+      "git_blob": "bf72331f9db9cd5fd401b3c0d7c53f29ca95499b",
+      "bytes": 29285,
+      "sha256": "740fe0badb86f0c7b7a81ffb8bf945c4258c47ecb6ee037f00c5daacc0de24a0"
+    },
+    {
+      "path": "src/main.rs",
+      "git_blob": "955b7738f3a8088368fd7fa9c6ca6968a691dad2",
+      "bytes": 4281,
+      "sha256": "0751d92d52c2dfe18d24a783c1fbc9097220d94993733cf36ccd82a06b044e68"
+    },
+    {
+      "path": "ceres-web/src/lib.rs",
+      "git_blob": "235cbea3d23744e394e927c239574d79a0054abb",
+      "bytes": 3151,
+      "sha256": "0387e358b4ef69b7ac8b1471da329601da85e19c4ae8d4392c79eb042d43491d"
+    },
+    {
+      "path": "Cargo.toml",
+      "git_blob": "4831105c0eb49cc1d71e594965dc80dbd968bb38",
+      "bytes": 608,
+      "sha256": "17dce6960ba836d4062dfbce060a686f2ace9543300a794dbaa9e216f02fd701"
+    },
+    {
+      "path": "ceres-web/Cargo.toml",
+      "git_blob": "f67718b3d5cb3b3353abdfa573e4873311cd8599",
+      "bytes": 280,
+      "sha256": "e93b763d84adf3ddd41dec7c42a60494a4604a908751647a782994a103c844fd"
+    },
+    {
+      "path": "Cargo.lock",
+      "git_blob": "3047f7b9d3b3929d7483f2ca537cbc3e5d7bf9f0",
+      "bytes": 7709,
+      "sha256": "ce838283331a0f910a105f0e7be6b527f24f5b15955163c7d0ba86d12160904f"
+    },
+    {
+      "path": "catalog/smithing/entries/001-backyard-propane-compact.md",
+      "git_blob": "162d8b6bc5bb28c770e1aeaa65f39010a6369a8e",
+      "bytes": 41585,
+      "sha256": "65f02f91b0c81ae8f9648640876d3763d1101c5a589ce5507db719167d4b2735"
+    },
+    {
+      "path": "catalog/smithing/entries/002-induction-modular-small-repair.md",
+      "git_blob": "6225f4201e41323947c1c2919acf38902e51e359",
+      "bytes": 53318,
+      "sha256": "d8c19c19a25de6f334617db5ae054d5bb320b90b950d8076856dec12c2fb476c"
+    }
+  ],
+  "scope": "Original native Rust, Cargo manifests/lock and bundled draft inputs, unchanged by the delivery work; fingerprints are identity, not economic/catalog validation."
+}

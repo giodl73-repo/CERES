@@ -12,7 +12,15 @@ concurrency:
 jobs:
   build:
     # Playwright 1.58.2 does not support Ubuntu 26.04 (ubuntu-latest).
-    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -46,13 +54,35 @@ jobs:
           python tools/build-pages.py
           python tests/source_custody.py
           cargo build --locked --offline -p ceres-web --example reader-control
-          node tools/check-reader.mjs dist/CERES/pkg/ceres_web.js target/debug/examples/reader-control reader-parity.json
+          python tools/check-reader.py --site dist/CERES --output reader-parity.json
           npm test
+      - name: Rebuild complete source archive offline
+        run: |
+          manifest_sha=$(python -c "import hashlib,pathlib; print(hashlib.sha256(pathlib.Path('dist/CERES/BUILD-MANIFEST.json').read_bytes()).hexdigest())")
+          python tools/qualify-source.py --site dist/CERES --manifest-sha256 "$manifest_sha" --scratch "$RUNNER_TEMP/ceres-source-replay"
       - uses: actions/upload-artifact@v4
+        if: runner.os == 'Linux'
         with:
           name: reader-parity
           path: reader-parity.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-replay-${{ matrix.os }}
+          path: |
+            ${{ runner.temp }}/ceres-source-replay/*.json
+            ${{ runner.temp }}/ceres-source-replay/*.stdout
+            ${{ runner.temp }}/ceres-source-replay/*.stderr
+            reader-parity.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence-${{ matrix.os }}
+          path: |
+            test-results
+            ${{ runner.temp }}/ceres-source-replay/archive-browser-results
       - uses: actions/upload-pages-artifact@v3
+        if: runner.os == 'Linux'
         with:
           path: dist/CERES
   deploy:
