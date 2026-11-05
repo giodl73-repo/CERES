@@ -6,3 +6,6 @@
 /context/waves/2026-11-05-reader-delivery/validation/dependency-grants/*/LICENSE -text -whitespace
 
 /context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/tests.stdout -text -whitespace
+
+/context/waves/2026-11-05-reader-delivery/validation/source-kit/*.stdout -text -whitespace
+/context/waves/2026-11-05-reader-delivery/validation/source-kit/*.stderr -text -whitespace

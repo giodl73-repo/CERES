@@ -1,0 +1,2325 @@
+{
+  "schema": "ceres.source.v1",
+  "source_commit": "5a069b0717b5df6b25c8bb881bd7a538e49363fd",
+  "commit_object_hex": "7472656520643839613065393666666165666431343061623132386263623631363737626433376662393738620a706172656e7420396134393132346130373834616662323434353762373630613134333865656462323731633064620a617574686f722047696f2044656c6c612d4c6962657261203c67696f646c373340676d61696c2e636f6d3e2031373933383935313434202d303830300a636f6d6d69747465722047696f2044656c6c612d4c6962657261203c67696f646c373340676d61696c2e636f6d3e2031373933383935313434202d303830300a677067736967202d2d2d2d2d424547494e20535348205349474e41545552452d2d2d2d2d0a2055314e4955306c48414141414151414141444d414141414c63334e6f4c57566b4d6a55314d546b4141414167586f6a5838346436505345377475666b51616b6f7a69685163510a204f626a374a67553774654948393538756741414141445a326c30414141414141414141415a7a614745314d544941414142544141414143334e7a6143316c5a4449314e5445350a2041414141514242734575664361592b6f4d326673516e544f5069547675774e4d495a714f664a53353862587a445265696f5366656357426f4b727a6a644431347838797558530a206d6359356a4633636c4761486d465678356f5451303d0a202d2d2d2d2d454e4420535348205349474e41545552452d2d2d2d2d0a0a746573743a206f62736572766520636f6d706c65746520736f7572636520646f776e6c6f616473207468726f75676820646f776e6c6f6164206576656e74730a",
+  "git_files": [
+    {
+      "path": ".fletch/registries/ceres-smithing-baking-assets.json",
+      "mode": "100644",
+      "git_blob": "d5c60304cf35ba51d3274f29791af20062fed03e",
+      "bytes": 1749,
+      "sha256": "8f3a724297321b31887192dc18dfe00155def4e39969911d6c5f9cc9b390c6af"
+    },
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "git_blob": "9c47239d105d8407b7f06de8b2fc612ad04efd02",
+      "bytes": 515,
+      "sha256": "91f7eff3fd8b2f6040538540efbba165d54cda416cff716b6f875b121a3514ee"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "mode": "100644",
+      "git_blob": "79acce6f326c8a140eab59c00f9b3756b393d589",
+      "bytes": 2417,
+      "sha256": "b23f95b680bedf9c8f4317dfd3e6f0a19c98438917ecb753d4a4505ccb8f3b54"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "git_blob": "98787d9080546c4d4079a704b15661fd1ecd5dcb",
+      "bytes": 691,
+      "sha256": "552e3579e6cd7ad13a9806849368370a63dbc4a3456e0a5bc3395a241c1bab9d"
+    },
+    {
+      "path": ".roles/ROLE.md",
+      "mode": "100644",
+      "git_blob": "76aa64adcb55d9b33d36f4d5a29ab0f446f761bf",
+      "bytes": 7147,
+      "sha256": "d4af000c291d9e99a436ba365f8009859302a5249618840d87fd83427b395a62"
+    },
+    {
+      "path": ".roles/board/ROLE.md",
+      "mode": "100644",
+      "git_blob": "5d5627c36963a9007e820035188300fde8f4e0a5",
+      "bytes": 2583,
+      "sha256": "5a4186120458e2cf19ddb6515c8d7377e430e406ef6b2bafc8508a47f7a32cf8"
+    },
+    {
+      "path": ".roles/editorial/E-1-citation-auditor.md",
+      "mode": "100644",
+      "git_blob": "9e5acb80b3922513eeec9deb92ae2fe1c3cee8e4",
+      "bytes": 4071,
+      "sha256": "291d85805984cbebe3d7d4c8312d7d13138bd37f370e2b7514f960a7f0d72660"
+    },
+    {
+      "path": ".roles/editorial/E-2-scope-keeper.md",
+      "mode": "100644",
+      "git_blob": "8fd8e1a18f627fa679fdd201b16279407c426098",
+      "bytes": 4180,
+      "sha256": "ce9fcb3a096d73fd3a2bf2ef999fbef86b97354e326e815427f98f2e01cf320b"
+    },
+    {
+      "path": ".roles/editorial/E-3-numeracy-checker.md",
+      "mode": "100644",
+      "git_blob": "fe3d6d55efb7fc0dd64d005026f6b388d7b7f0a1",
+      "bytes": 4369,
+      "sha256": "4009a6d5111c3ea6e916f650321f24c80e6036e2b1bfc25f26925ca634955c30"
+    },
+    {
+      "path": ".roles/editorial/ROLE.md",
+      "mode": "100644",
+      "git_blob": "100a24552737d7065617f15084c0fd937e755b0a",
+      "bytes": 1552,
+      "sha256": "965d23cd0aaaa511a98775a933ac59ca9a99f9b26813738e5926436ab9df806e"
+    },
+    {
+      "path": ".roles/panel/P-1-market-economist.md",
+      "mode": "100644",
+      "git_blob": "20ca100e50b7116915a064152f4f319f9c390987",
+      "bytes": 5853,
+      "sha256": "837b32540c68d0f4a86e3e1c3c57f749e7cdad7b18af4e8ac8cf636df3edc925"
+    },
+    {
+      "path": ".roles/panel/P-2-commons-theorist.md",
+      "mode": "100644",
+      "git_blob": "17b34ad6fd49fbc0dab70c773ac88e6e81a055fb",
+      "bytes": 6207,
+      "sha256": "6098ae4ddfcc4df5384ee798387929ff28339de864c37568866e2a28421258f7"
+    },
+    {
+      "path": ".roles/panel/P-3-civic-steward.md",
+      "mode": "100644",
+      "git_blob": "e8e2c090c0bd710a0cc592b273c108cb1452a280",
+      "bytes": 6744,
+      "sha256": "c682710d2767441446a007a14a8ff3b31fc221fabfd333e09b41001b4304f3e9"
+    },
+    {
+      "path": ".roles/panel/P-4-craft-practitioner.md",
+      "mode": "100644",
+      "git_blob": "f62f8331e730131b52eba2f9f845f4458a6db0aa",
+      "bytes": 6336,
+      "sha256": "2dacdfd998bfb0f467fdd08869d4ea213b0eb775b6cc4001403ea896869b0279"
+    },
+    {
+      "path": ".roles/panel/P-5-historian.md",
+      "mode": "100644",
+      "git_blob": "3215a6463e37db1fd883d45aaf8eec6314dec02f",
+      "bytes": 7285,
+      "sha256": "c137cde68cd2f8d9423c8a6842b9c2871e4515f585bc4598c2eb5675e3a4c4f3"
+    },
+    {
+      "path": ".roles/panel/P-6-skeptical-funder.md",
+      "mode": "100644",
+      "git_blob": "c5f33be3c0e30f755603f952dbbf8fb0ea7607cd",
+      "bytes": 6496,
+      "sha256": "1c7b6ce111029dd676b2f0efa7a12ea13fa71d2fefefc714572a70c397140e77"
+    },
+    {
+      "path": ".roles/panel/ROLE.md",
+      "mode": "100644",
+      "git_blob": "fa6bb938c72a4f30f6688a87132c9ccab8b7a2cf",
+      "bytes": 1740,
+      "sha256": "5885e487d9b2b824660f46d0645bc7b66e4d55d5eb2b6760b2b37564b237d1ee"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "git_blob": "75f1b12750e588737d74db396aad085ac5cfb6b3",
+      "bytes": 8468,
+      "sha256": "c160bef71a074a4d7be398e2bfb40d0a0b744c7b7dc6db7cb75662153b5a7c8f"
+    },
+    {
+      "path": "Cargo.lock",
+      "mode": "100644",
+      "git_blob": "3047f7b9d3b3929d7483f2ca537cbc3e5d7bf9f0",
+      "bytes": 7709,
+      "sha256": "ce838283331a0f910a105f0e7be6b527f24f5b15955163c7d0ba86d12160904f"
+    },
+    {
+      "path": "Cargo.toml",
+      "mode": "100644",
+      "git_blob": "4831105c0eb49cc1d71e594965dc80dbd968bb38",
+      "bytes": 608,
+      "sha256": "17dce6960ba836d4062dfbce060a686f2ace9543300a794dbaa9e216f02fd701"
+    },
+    {
+      "path": "DEPENDENCY-NOTICES.txt",
+      "mode": "100644",
+      "git_blob": "6287f14cf9b789f1d3dfafe9157f6b6c131915d3",
+      "bytes": 289249,
+      "sha256": "fe178f6b0b9a3dbf10b58b580e45886846b3f8ddf60f0234571fa700aaa099f8"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "git_blob": "89b10b7698ea9590cf19cfad3a691a6b7e7f9985",
+      "bytes": 2170,
+      "sha256": "8cd40621cab132a87ff85b226101d6eac79f832bc8c8b714a5acab9c63b90390"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "git_blob": "19ed54da0394970e1877c8c0707b48ece33df73d",
+      "bytes": 12311,
+      "sha256": "a7587844c2bbf3c581a99c0ee8d186097ccb8c7a512d37d4d2af07305fa0f05a"
+    },
+    {
+      "path": "TRACKER.md",
+      "mode": "100644",
+      "git_blob": "df0ef638391f01dcb0608e2f7eb94209413fda98",
+      "bytes": 14063,
+      "sha256": "1da543b7c95843ef3c21fbbc664e8a36010cac22086c19a5300a83c0b5a1cee7"
+    },
+    {
+      "path": "agents/README.md",
+      "mode": "100644",
+      "git_blob": "fa373106cf785ef7046f08d33c050c7e43914f1a",
+      "bytes": 294,
+      "sha256": "5d492fc57950e7660922a12cc4113f9209a1f81604693f7b1ec16588d58278f8"
+    },
+    {
+      "path": "cargo-inputs/README.md",
+      "mode": "100644",
+      "git_blob": "bf3289c0c7c26c836edd655b14997bd3df1271cc",
+      "bytes": 2775,
+      "sha256": "0f38b06028dad1df9e19fa91f43d3a961f257fe7a118a5c0bd18ac0b7f13044e"
+    },
+    {
+      "path": "cargo-inputs/inputs.zip",
+      "mode": "100644",
+      "git_blob": "982395f1f7b3d6c6e74fd5af016d60273c8c477f",
+      "bytes": 4830483,
+      "sha256": "c27c7321b2fc45991db6e464cc100b9b64b3bdf5ac570bc2caebf34b2d8be97c"
+    },
+    {
+      "path": "cargo-inputs/manifest.json",
+      "mode": "100644",
+      "git_blob": "b38c75d52da0b5b7399fdc935c248b8f616b5d98",
+      "bytes": 613961,
+      "sha256": "9c14b9ead27437762da33193f677a94427e57ef05df8a800b36924f034f5529a"
+    },
+    {
+      "path": "cargo-inputs/sha256.txt",
+      "mode": "100644",
+      "git_blob": "f7787cfb7bcc1e082b268754b10e9a32783931cb",
+      "bytes": 77,
+      "sha256": "ef2707d2a36891752901c58ee038306f0b86babd1a7dca217daa29acc4a20edd"
+    },
+    {
+      "path": "catalog/README.md",
+      "mode": "100644",
+      "git_blob": "9bfeeee4ff1d36f55d69c21ec0a27a7c76f1e243",
+      "bytes": 708,
+      "sha256": "6c3b01e7f028ae7785fe0a5f3d47666afec7285543ad2d67c38ea00fcf58ab06"
+    },
+    {
+      "path": "catalog/SCHEMA.md",
+      "mode": "100644",
+      "git_blob": "513ef672e22c306fcdee0c0f70cd8d96abc105f6",
+      "bytes": 60148,
+      "sha256": "3396c871690c167612365fd0d56b8262df28a49e9d10d26f2b1d8bc6dec7de47"
+    },
+    {
+      "path": "catalog/artisan-square/README.md",
+      "mode": "100644",
+      "git_blob": "4d7b4547c3e6deccebb71418aee472941d57feb7",
+      "bytes": 3443,
+      "sha256": "4b8e7c0a5fa9ddf57d47a570b772e0101b6d9fe69700cf16f62cb55d9b747683"
+    },
+    {
+      "path": "catalog/artisan-square/SCHEMA.md",
+      "mode": "100644",
+      "git_blob": "24c2c628bad425bf24cb82d171781c6aefa74371",
+      "bytes": 25494,
+      "sha256": "4f4fae42a61cddfe68f38f1ad98f0e076bf6652c5cbdd6901253d9dbba386c13"
+    },
+    {
+      "path": "catalog/artisan-square/entries/.gitkeep",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "catalog/baking/README.md",
+      "mode": "100644",
+      "git_blob": "477b3969e5ca276cd3f0180dd263e1fafc54c2f7",
+      "bytes": 11258,
+      "sha256": "a80abc48b8ae56b16109322228b33209f889a6253015a61aed70630084f50ffb"
+    },
+    {
+      "path": "catalog/baking/SCHEMA.md",
+      "mode": "100644",
+      "git_blob": "45eabea17e93e9bde7b27c66dfdcf3b2b16158f6",
+      "bytes": 21232,
+      "sha256": "c6ba0291b9a3fc6bfbbf83586b81dfc9c98ceabeb4cb457bec75d73c52d0caf8"
+    },
+    {
+      "path": "catalog/baking/entries/.gitkeep",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "catalog/baking/entries/001-sourdough-artisan-micro.md",
+      "mode": "100644",
+      "git_blob": "6170f2ecf64f98f681596f7109dc922c296f6254",
+      "bytes": 58579,
+      "sha256": "239b1eff9a1a78e46077a45136add33108b187948681b5de75c7b02aa8524432"
+    },
+    {
+      "path": "catalog/baking/entries/002-heritage-grain-subscription.md",
+      "mode": "100644",
+      "git_blob": "bbe6b6bf5d6ab8abbad4513b0eae593830ef6b60",
+      "bytes": 33353,
+      "sha256": "034813f77aa398e368a9fb125d759c05687f0fd8a89672710bfe6b37b72a0879"
+    },
+    {
+      "path": "catalog/baking/entries/003-community-grain-share.md",
+      "mode": "100644",
+      "git_blob": "085f123e9fc926e0d89232ccf081a049eb10489d",
+      "bytes": 35328,
+      "sha256": "7001696245d2c7ea32e435e04078199e1487869bcfc01774052c94edbf411c26"
+    },
+    {
+      "path": "catalog/baking/entries/004-wholesale-artisan-loaf.md",
+      "mode": "100644",
+      "git_blob": "3ab22d4d2159d6800a99a28e5f428718d7e7eb2c",
+      "bytes": 25965,
+      "sha256": "c119837799931ca2247b6aa91343c3d9f506ccfd08f6dd134469e6dc654702c4"
+    },
+    {
+      "path": "catalog/baking/entries/005-mobile-popup-bakery.md",
+      "mode": "100644",
+      "git_blob": "f447bd83863835d3e885fc040035c1a1e9bd3758",
+      "bytes": 32416,
+      "sha256": "1dcf7cf4d87a13ba7c7c1cd137507924526b609c66e591f102a460d969cbffb2"
+    },
+    {
+      "path": "catalog/baking/entries/006-french-pastry-viennoiserie.md",
+      "mode": "100644",
+      "git_blob": "d53e6ada8b3617990e7c69741ac7647ffde77a25",
+      "bytes": 31213,
+      "sha256": "788ba5af482f29a94ad59c210aed1c0c3c1eb57a642a66febdab78a7ef3f45b8"
+    },
+    {
+      "path": "catalog/baking/entries/007-japanese-wagashi-confection.md",
+      "mode": "100644",
+      "git_blob": "ac549b04cd167ee989f37a3122734c7e95e817ce",
+      "bytes": 75003,
+      "sha256": "60382173cecaa076d63171d4f973644d6bb473a8e19fc70eeec82ae8a097c9f6"
+    },
+    {
+      "path": "catalog/baking/entries/008-ethnic-cultural-specialty.md",
+      "mode": "100644",
+      "git_blob": "94e64d7f7c42a388cddc125fb26e882f7c699db8",
+      "bytes": 73833,
+      "sha256": "6f8b3d1d88ed37ca609cc3d7544df39bb82248f17c5f6f93b348b35ef56e66b1"
+    },
+    {
+      "path": "catalog/baking/entries/009-custom-cake-studio.md",
+      "mode": "100644",
+      "git_blob": "d194b6305becf047be2b527ff9d020f5ad85b970",
+      "bytes": 49104,
+      "sha256": "0b6b3c4db4f0a97ba52ce1d3033e3e54e5c5deb88c263d49b684c9f8d5238ec4"
+    },
+    {
+      "path": "catalog/baking/entries/010-civic-neighborhood-bakery.md",
+      "mode": "100644",
+      "git_blob": "2fe09cd4f11ed8e392aff7961a780a879cfbb738",
+      "bytes": 78090,
+      "sha256": "7dd3849417b6ad496042352037cb91370944063e8ff07e1558edcb29d7bcbeb6"
+    },
+    {
+      "path": "catalog/baking/entries/011-apprentice-training-bakery.md",
+      "mode": "100644",
+      "git_blob": "442e311884c23039420d03a6a0b3de4bb2815ae6",
+      "bytes": 106893,
+      "sha256": "3cb07ab647b8d3a7f3acd095ca50ec60f93b23eca933d483838e6e0492edafa4"
+    },
+    {
+      "path": "catalog/baking/entries/012-community-kitchen-collective.md",
+      "mode": "100644",
+      "git_blob": "2b4dc11843aba2350c852926bf6f5c9c750c04a9",
+      "bytes": 89818,
+      "sha256": "77c991f93ce04944ff417a96544981017247da4c2ad1f44568927b07a2158ef5"
+    },
+    {
+      "path": "catalog/baking/entries/013-farm-to-table-integrated-bakery.md",
+      "mode": "100644",
+      "git_blob": "c2626d813fc513304e051553c52e19bdc4984908",
+      "bytes": 87383,
+      "sha256": "e5f17e728d20a3e5448ccad1d99163aa0ebc7c847d88c4020b4e98e893fe3b91"
+    },
+    {
+      "path": "catalog/baking/entries/014-apartment-home-micro-bakery.md",
+      "mode": "100644",
+      "git_blob": "8c1dc366e5df428c57afd3397bfc0b40b9fd5c37",
+      "bytes": 56542,
+      "sha256": "ac93bd9b3d13eab1e48f7e9303a1c0e134dedd3a96c064b84cbac90b6b3c3f3c"
+    },
+    {
+      "path": "catalog/baking/entries/015-wood-fired-community-oven.md",
+      "mode": "100644",
+      "git_blob": "710c418473d3e0652b6e8de6518ebeff5655606d",
+      "bytes": 87400,
+      "sha256": "6bca544b80a6e57ca97088641fbc6d31dd039ce6827a44ffee18a0a540d6dad1"
+    },
+    {
+      "path": "catalog/smithing/README.md",
+      "mode": "100644",
+      "git_blob": "374b1d8b20be27f824a749561812ef322a1be85c",
+      "bytes": 11994,
+      "sha256": "73e5853c20b2c6ea412519c7e2c6244214f3d9e8a04eaa08844538aea3acbfaf"
+    },
+    {
+      "path": "catalog/smithing/SCHEMA.md",
+      "mode": "100644",
+      "git_blob": "49f03c97eb901f1941f8f9eb3fa60663025790bf",
+      "bytes": 19626,
+      "sha256": "11e8cc91207ed6cb7a645a3be1065d5337a69cd51f3f0367d6807ba55bee6138"
+    },
+    {
+      "path": "catalog/smithing/entries/001-backyard-propane-compact.md",
+      "mode": "100644",
+      "git_blob": "162d8b6bc5bb28c770e1aeaa65f39010a6369a8e",
+      "bytes": 41585,
+      "sha256": "65f02f91b0c81ae8f9648640876d3763d1101c5a589ce5507db719167d4b2735"
+    },
+    {
+      "path": "catalog/smithing/entries/002-induction-modular-small-repair.md",
+      "mode": "100644",
+      "git_blob": "6225f4201e41323947c1c2919acf38902e51e359",
+      "bytes": 53318,
+      "sha256": "d8c19c19a25de6f334617db5ae054d5bb320b90b950d8076856dec12c2fb476c"
+    },
+    {
+      "path": "catalog/smithing/entries/003-shared-toollibrary-coal.md",
+      "mode": "100644",
+      "git_blob": "478a243c0deb449f137454e36496cad62880c5cc",
+      "bytes": 42499,
+      "sha256": "21410a57e9a22ce43a9de04e3e9bfc98b4a9a9d704b87872de04cb8f8e1daa99"
+    },
+    {
+      "path": "catalog/smithing/entries/004-community-civic-makerspace.md",
+      "mode": "100644",
+      "git_blob": "ba8ecb9fdd8fd512b8b246058065753ed93f146d",
+      "bytes": 54438,
+      "sha256": "164d330ca1b02cdd899754c83d73b9741fa6c8d8a010e172ec6428cb07dc7e29"
+    },
+    {
+      "path": "catalog/smithing/entries/005-frontier-revival-coal-repair.md",
+      "mode": "100644",
+      "git_blob": "07979a725d3b8ed3e2d0f9a2caab10eb80ee1b54",
+      "bytes": 30616,
+      "sha256": "5fbb2b0ac99d5c7a9b161dd5e30634debeebbbef95a8fa1c679e3f07bc01f57b"
+    },
+    {
+      "path": "catalog/smithing/entries/006-induction-bladesmith.md",
+      "mode": "100644",
+      "git_blob": "a5949b7a0530198233f54a20f07136c5cd6616e4",
+      "bytes": 72175,
+      "sha256": "45383aaccb8309bbae2d699240d19926b8ee5d24c0d38333ebbcd1339f1c4e4b"
+    },
+    {
+      "path": "catalog/smithing/entries/007-containerized-mobile-forge.md",
+      "mode": "100644",
+      "git_blob": "07d81d321d0abd55073f3c601a99ab60bf60eb57",
+      "bytes": 31406,
+      "sha256": "c2de20ce327edd598936d071185ddcca06901f01fb11dbaedd9f7fc4bc927b0f"
+    },
+    {
+      "path": "catalog/smithing/entries/008-traditional-charcoal-village.md",
+      "mode": "100644",
+      "git_blob": "6b4a1247de9a2770e89fde587d364ed99e5264cb",
+      "bytes": 35632,
+      "sha256": "f1d990a932502ca9839eb1e3c4fb4a08328e1c198af19ef5798c5e7499e6fbcf"
+    },
+    {
+      "path": "catalog/smithing/entries/009-coop-apprentice-training.md",
+      "mode": "100644",
+      "git_blob": "25f635be7b0cbf04f4ddafe18a5544a601255ff1",
+      "bytes": 71168,
+      "sha256": "c46c37cfff05c354bcd31eec820f0100b3b4267b4b151e75ea157137f3b2db1e"
+    },
+    {
+      "path": "catalog/smithing/entries/010-architectural-ironwork-bespoke.md",
+      "mode": "100644",
+      "git_blob": "072958c0bd8f22ac40fcbad21229079b86f3d489",
+      "bytes": 64844,
+      "sha256": "4d0dfcc05cf21fc76ab0e85b57feef629297de6fa11f3888269d36a08075e47e"
+    },
+    {
+      "path": "catalog/smithing/entries/011-municipal-civic-training.md",
+      "mode": "100644",
+      "git_blob": "1dbc25037f094ce51f0bd1cd03d8df30ad6b29e4",
+      "bytes": 83746,
+      "sha256": "45a4e3c7ea5fd51f4577945b1dc24997b47418726601d17b844cda398cc8fc06"
+    },
+    {
+      "path": "catalog/smithing/entries/012-farriery-specialist-propane.md",
+      "mode": "100644",
+      "git_blob": "86fe98727f71ddfc50df0267cd272a18b12be3ef",
+      "bytes": 29040,
+      "sha256": "6a747f9a08eb77f8396d630a6f6e4edf90b7c6bba5f1a82d758bb93aabdc6f40"
+    },
+    {
+      "path": "catalog/smithing/entries/013-restoration-specialist-heritage.md",
+      "mode": "100644",
+      "git_blob": "6e2eb2cb78223accf7ff87ce7743f0053f43030c",
+      "bytes": 80007,
+      "sha256": "a5040e25105c230e8e8d0fb4871c4580870a0100f3b24b18b6840c56bcdf4924"
+    },
+    {
+      "path": "catalog/smithing/entries/014-electric-induction-gig-repair.md",
+      "mode": "100644",
+      "git_blob": "8ddb912260b77d839a1e1f02f0c7756e22630d66",
+      "bytes": 51455,
+      "sha256": "248d555b27fa050927b524b60cda17eeb53d10fe3b5a1d6a4b345f2bcf5cbb85"
+    },
+    {
+      "path": "catalog/smithing/entries/015-toollibrary-member-induction.md",
+      "mode": "100644",
+      "git_blob": "d60509dbb9bf5ec75d043fefca382d5a932a20ce",
+      "bytes": 68714,
+      "sha256": "9ecd6e2ebcf22a9e0ee72dbafd0b50a1710546be7ea9a914c1d07e78388dcd56"
+    },
+    {
+      "path": "catalog/weaving/README.md",
+      "mode": "100644",
+      "git_blob": "f94bbea4fc12ebb40382defc624545df592e85c3",
+      "bytes": 11281,
+      "sha256": "e5abe4a120c04d2675fbad3f3ea2aa2f86a796807dc2e693b0ece455b81241c3"
+    },
+    {
+      "path": "catalog/weaving/SCHEMA.md",
+      "mode": "100644",
+      "git_blob": "4761191cab11d3c801126983d435c31185045cb6",
+      "bytes": 25191,
+      "sha256": "20ed4241d5a9ae069c267e64a03a1251aa3bb61f775f6e42ad9a420fd21b6f45"
+    },
+    {
+      "path": "catalog/weaving/entries/.gitkeep",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "catalog/weaving/entries/001-handwoven-tapestry-studio.md",
+      "mode": "100644",
+      "git_blob": "be5991aec804f8835d66333c0be3427abbaadf27",
+      "bytes": 37520,
+      "sha256": "84ca786302cd2ddf33ca68a0e618e5cb8172c71074dd767a3ef3683eb6414930"
+    },
+    {
+      "path": "catalog/weaving/entries/002-heritage-wool-natural-dye.md",
+      "mode": "100644",
+      "git_blob": "56a61aeeb22929d6cd5b28404730ba0fc4c9e066",
+      "bytes": 28900,
+      "sha256": "12037fcc8c4fa4b498d0505177d14a0bea656ab0f8c3cd5a24fcce58047f6481"
+    },
+    {
+      "path": "catalog/weaving/entries/003-architectural-textile-studio.md",
+      "mode": "100644",
+      "git_blob": "6afe05f0c96355b52d9a3248737c9137ca747de8",
+      "bytes": 75375,
+      "sha256": "ab2076043d9bfccfeae8bf52c9097ca71be53f29cbf1b33608da0a25c1b1b307"
+    },
+    {
+      "path": "catalog/weaving/entries/004-natural-fiber-fashion.md",
+      "mode": "100644",
+      "git_blob": "c28e18ed61d69315488965bfa2bdf7dbee8615b8",
+      "bytes": 24025,
+      "sha256": "506a9dbbaceb8c01ed20d4a498869d589144f9c57088a30d904ddc7a1b36757c"
+    },
+    {
+      "path": "catalog/weaving/entries/005-custom-rug-upholstery.md",
+      "mode": "100644",
+      "git_blob": "ed0bde16142e9fc5555f5a7f7416d40740bbcd74",
+      "bytes": 61741,
+      "sha256": "40e545078c23a7e4bd8bbacb8fdbe3555bb80cfd68ea7b03b9bddde51d03f386"
+    },
+    {
+      "path": "catalog/weaving/entries/006-traditional-ethnic-weaving.md",
+      "mode": "100644",
+      "git_blob": "c30bd832433b4297bcd9fe3929813a452c14bf82",
+      "bytes": 53656,
+      "sha256": "e8032ab1878a15791619269e245eed1f6695883c76f1d4a6f418286efb1f360a"
+    },
+    {
+      "path": "catalog/weaving/entries/007-coverlet-americana-revival.md",
+      "mode": "100644",
+      "git_blob": "87ab156ccf288f95741aa83e6ba03386106c9fc5",
+      "bytes": 80061,
+      "sha256": "0b6fd723319be0adeea5c031d3e5984f75f37ea4c36236cb05273f2ce414ce48"
+    },
+    {
+      "path": "catalog/weaving/entries/008-japanese-textile-studio.md",
+      "mode": "100644",
+      "git_blob": "4b28917d32769c2a82f484433614b74f70219eed",
+      "bytes": 34942,
+      "sha256": "1389d214814a689ae9fb6dba50ba3470512c958ed61f0c64a972f54b10d27f7c"
+    },
+    {
+      "path": "catalog/weaving/entries/009-rigid-heddle-tool-library.md",
+      "mode": "100644",
+      "git_blob": "e13ae7c4d34a88ab188ededf5500e8d6d2610e20",
+      "bytes": 77083,
+      "sha256": "3aaf2a9ebc1c54605a48566a3e58878bdff49a90aa15deda4505737a841cd1c4"
+    },
+    {
+      "path": "catalog/weaving/entries/010-community-fiber-arts-center.md",
+      "mode": "100644",
+      "git_blob": "c8d4ff9c390927ce503bfeb671f7939abc89eadc",
+      "bytes": 60705,
+      "sha256": "226a8f115267c93ae282de4b5e2aa366d420b4caf0ba8f04ddd718cda81aa493"
+    },
+    {
+      "path": "catalog/weaving/entries/011-therapeutic-weaving-workshop.md",
+      "mode": "100644",
+      "git_blob": "b687e5743f4af41cc749f988ada4024760ab773e",
+      "bytes": 68004,
+      "sha256": "86ab59eb85334b8b145f33e0b16ccb04260ef785832e7b761305864ea8be1cd2"
+    },
+    {
+      "path": "catalog/weaving/entries/012-apprentice-training-loom-studio.md",
+      "mode": "100644",
+      "git_blob": "b8cf05ac48a411b4564c4b9dac1adbf1d6c63154",
+      "bytes": 95594,
+      "sha256": "cccbc3fbb906ac5e95c08d72deb41908d22e6ca5632a97a6d7ccf2e86d6c779b"
+    },
+    {
+      "path": "catalog/weaving/entries/013-production-weaving-cooperative.md",
+      "mode": "100644",
+      "git_blob": "9772c15a50e5c0473a703493005cfabfc7cf4312",
+      "bytes": 78226,
+      "sha256": "671b7e8f6de545e4b6c90d721105844e6ac1e7fd394c5399ea602de0025ac913"
+    },
+    {
+      "path": "catalog/weaving/entries/014-backstrap-home-studio.md",
+      "mode": "100644",
+      "git_blob": "383049c3a011a57d040633256d4541f1446a6d54",
+      "bytes": 65432,
+      "sha256": "a8353ea683a0795a78960f54e5bcce950da5c8b12be6e37770a084651943c837"
+    },
+    {
+      "path": "catalog/weaving/entries/015-artist-designer-collaboration-studio.md",
+      "mode": "100644",
+      "git_blob": "92acfc9337e4cf7aab6404f85468f3d1d8c8b0c5",
+      "bytes": 61147,
+      "sha256": "8f2c22e4de21eac26d2b599706f9bcb5fc9bbb387ff03a10742255192703f8c2"
+    },
+    {
+      "path": "ceres-web/Cargo.toml",
+      "mode": "100644",
+      "git_blob": "f67718b3d5cb3b3353abdfa573e4873311cd8599",
+      "bytes": 280,
+      "sha256": "e93b763d84adf3ddd41dec7c42a60494a4604a908751647a782994a103c844fd"
+    },
+    {
+      "path": "ceres-web/examples/reader-control.rs",
+      "mode": "100644",
+      "git_blob": "76dd8ae0d0497f4fc6406cb50ab13448cdb8e387",
+      "bytes": 1147,
+      "sha256": "718d466e3f97b00e24680719054b3a1218206b238b60f76f4d74fc5a383348fb"
+    },
+    {
+      "path": "ceres-web/src/lib.rs",
+      "mode": "100644",
+      "git_blob": "235cbea3d23744e394e927c239574d79a0054abb",
+      "bytes": 3151,
+      "sha256": "0387e358b4ef69b7ac8b1471da329601da85e19c4ae8d4392c79eb042d43491d"
+    },
+    {
+      "path": "context/waves/2026-05-18-fletch-registry/WAVE.md",
+      "mode": "100644",
+      "git_blob": "b12fcedfba4fef387f638eebe534ad3917163da5",
+      "bytes": 564,
+      "sha256": "94c667ccf2e3f22ca3e6e37c9c4d7a74c6e475de951653c4f30b5f872413bddd"
+    },
+    {
+      "path": "context/waves/2026-05-18-fletch-registry/pulses/pulse-01.md",
+      "mode": "100644",
+      "git_blob": "528622ee434bfd769cf274e80b0aae29979380fa",
+      "bytes": 572,
+      "sha256": "6c229db12d0971daa9879a927cca12520acf546aae238e9750b3a5fd78692c73"
+    },
+    {
+      "path": "context/waves/2026-10-04-production-explorer/README.md",
+      "mode": "100644",
+      "git_blob": "484f08aeb5a85c964cf38afb2478db11fd90f5dd",
+      "bytes": 663,
+      "sha256": "d24a31ff8fad8ebf6bf9dfe516ed85da4199fa9e44ada9cde1397fadbf81c7bc"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/FOUNDATION.md",
+      "mode": "100644",
+      "git_blob": "363d2b7bcfa35cb1ecdccded452339d487ae105d",
+      "bytes": 4935,
+      "sha256": "8b89bc2fd9299bb7123d3f8e1c07a061f64252b435bfaed1b93a27ed0cf8949a"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/INPUT-CUSTODY.md",
+      "mode": "100644",
+      "git_blob": "5f2a2f4e26cc592ddbb4ac885f852789921b88b4",
+      "bytes": 4463,
+      "sha256": "4a2833056d325635bef4e56c960bc24f1dd99ce85f6d393778594257bee3b517"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/README.md",
+      "mode": "100644",
+      "git_blob": "57abe5ef2cf62cbf934ec6a0826f4fb4744eb4a5",
+      "bytes": 658,
+      "sha256": "e14d3f238d777d3c1b85d1f4f4d0f1bf15510c115c33745219d8520e0bdfd4f9"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/review-inputs.json",
+      "mode": "100644",
+      "git_blob": "dcedcff3d1a33dd4fb379a1cd38195631cfcbc0e",
+      "bytes": 1304,
+      "sha256": "0f03577f516d73094b54197bdfefa77d64b1fe44ac3c1c3300f6dccb2a8ccee9"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/source-layout-review-inputs.json",
+      "mode": "100644",
+      "git_blob": "16755c7883f3c7db19c3d2603c7f049dae863d72",
+      "bytes": 1233,
+      "sha256": "fc242535a5d4ea0996c9a699dc87e04d84f127690b7a5bce60dfeda76fd93491"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/baseline-installed-browser-report.json",
+      "mode": "100644",
+      "git_blob": "1971ccb25c6a3a84362b044ea07c7f2bc7a9fe66",
+      "bytes": 4078,
+      "sha256": "b9fca063bb7a791b0f43240b7b3bd47afe75081a41f702676f4e15e3b5e6ca50"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/ci-runner-failure.json",
+      "mode": "100644",
+      "git_blob": "0133b23827da7aa3e1d9ca278bae2b164ef5d51b",
+      "bytes": 502,
+      "sha256": "7628a12b2fe76f3a7cf45d1e620583216fb5968b0c7214d6f962f9202d403282"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/command-logs.json",
+      "mode": "100644",
+      "git_blob": "c398ed64d059f8a82ed8f9af24d74dd57363d472",
+      "bytes": 17326,
+      "sha256": "2b7593a0e1099adf52b7ed5831c8585050c96d3d17c8f5842f779d41612d9370"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/dependency-grants.json",
+      "mode": "100644",
+      "git_blob": "679474300f44816a44787275180668a10d2d7253",
+      "bytes": 8919,
+      "sha256": "93a81bf255c82deafb7990955d67cd2fe107ac1858b1343027674de1675a3dfd"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/dependency-grants/4d84433/LICENSE",
+      "mode": "100644",
+      "git_blob": "9bd104156fdf7dbd548ddd07c8332696060940e4",
+      "bytes": 2170,
+      "sha256": "5ae422017d097b8e1d984dc5c08c7938ead1dbfafb39fde971118cadf1563452"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/dependency-grants/724c97d/LICENSE",
+      "mode": "100644",
+      "git_blob": "20f3e62489d3b774d12a3861df28b28a238f9132",
+      "bytes": 1074,
+      "sha256": "f6234867426ba87cee76105c748459ffef97afcb10707a015d8631f33ebc9286"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/dependency-grants/8426af1/LICENSE",
+      "mode": "100644",
+      "git_blob": "14313fed9d18cdf3a5d7fa4079a0d0f6e704487c",
+      "bytes": 1065,
+      "sha256": "3ed96fbbbd3dcce032cbb405d9bec8e4dd156a5a0221ceea6190fba3de57dc5f"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/dependency-grants/ad00970/LICENSE",
+      "mode": "100644",
+      "git_blob": "e707a76ce49914fd2d4a292fd792a6223f998988",
+      "bytes": 1073,
+      "sha256": "ea9e81bc2d37f6ea5cadfeb461f68500d8cc29bcc4fdd3053b532129387ce1c8"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/bindgen.stderr",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/bindgen.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/clippy.stderr",
+      "mode": "100644",
+      "git_blob": "6b578db99ad3bbe8e5ecb1cceb0c3b3c8cb34c7a",
+      "bytes": 1786,
+      "sha256": "3e7ade8c520f5d230a25623553a06e763dbb11c3f54e6085ce4a893fd14571cd"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/clippy.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/control.stderr",
+      "mode": "100644",
+      "git_blob": "874901d7f99823b00530ab9ddf51f592f111c9ff",
+      "bytes": 201,
+      "sha256": "2b874cc40dc58f482bf0cf81cb6063983f13d2439c6e1f531d9138a02b9b6fd2"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/control.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/fmt.stderr",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/fmt.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/parity.stderr",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/parity.stdout",
+      "mode": "100644",
+      "git_blob": "6c7bb03a91087cc845721dd62823b164bf33380f",
+      "bytes": 355,
+      "sha256": "43919a1ee43c0a7442d29d7cf7c93d5f98157922a7cb71c2733b4a742a4543a8"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/qualification.json",
+      "mode": "100644",
+      "git_blob": "46f26b09ba500fb5c2d940cfee6181ed0b3b19ee",
+      "bytes": 94331,
+      "sha256": "adaaa54c2fec9cb0ed76241ba7e63ced463b147c75cbea8c5701508520733e5f"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/restore.stderr",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/restore.stdout",
+      "mode": "100644",
+      "git_blob": "e3303c0f657bf37c88644b3b9ba1a14f52919126",
+      "bytes": 68,
+      "sha256": "6c3904a2fe5f4bf963abecc5b1fb87ac3e2163bdd8098c2ef46d30ae5bbeb72a"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/tests.stderr",
+      "mode": "100644",
+      "git_blob": "7ff9e017192053f749e183592003ed7b6ccbb1fd",
+      "bytes": 2007,
+      "sha256": "b24c443e402975218aaaa0c0a928793c56fc09bfff1c3777cf6c4d009415ec76"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/tests.stdout",
+      "mode": "100644",
+      "git_blob": "27e05a33e7aa01cc22fd0d101d4713ad3413e10c",
+      "bytes": 880,
+      "sha256": "f295a6b487d0a6d9093b5ee3acdf3423864bd970ba8adcab2cd7b4a52056cae1"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/wasm.stderr",
+      "mode": "100644",
+      "git_blob": "8368264533cc0d49cd10d42eb7248ad6c4719a73",
+      "bytes": 1837,
+      "sha256": "b509f01d5f9735049aabd6cd1f525414194e3c7686efb60660b393390a36f294"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/wasm.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/final-foundation-browser-report.json",
+      "mode": "100644",
+      "git_blob": "cf335c8dd42f733ab6263020bf70a1d9cffecbe5",
+      "bytes": 7578,
+      "sha256": "74c67e5afabb0a832ec2cd709f61419c9cc1eff9cf0a1d7dbc04c30b1a72ca6c"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/guarded-browser-report.json",
+      "mode": "100644",
+      "git_blob": "8accd1a1aa12dedc4b497555bf167d8ab49319a8",
+      "bytes": 6315,
+      "sha256": "d24c64d1227397fc0b02a760d034c6ac28cd43511b13a56859264f687e4eec25"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/initial-observations.json",
+      "mode": "100644",
+      "git_blob": "8b43bff5c81742660a853fa1dc9444efbf6b99b4",
+      "bytes": 1632,
+      "sha256": "755428f64af0e7a9ee1014d8ed2a195bf2e5cf38e365fd61994e8a5d01f425e5"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/archive-and-lock-corrections.json",
+      "mode": "100644",
+      "git_blob": "acceb517a902a0a7f6f1976d9592de5b7f21c54f",
+      "bytes": 14382,
+      "sha256": "840c8239db81b10734b2a8e5f364c66a93a7eaa87ff0743638861c0fb070964c"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/bindgen.stderr",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/bindgen.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/checkpoint.json",
+      "mode": "100644",
+      "git_blob": "ae887ef1a989905dda8b58b35ac9705ef12c67f7",
+      "bytes": 1012,
+      "sha256": "a02082d1925709f0d1231d7f7b146a8da7d042a5a731f42d3b4ab9881b05dfe8"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/clippy.stderr",
+      "mode": "100644",
+      "git_blob": "91db50ef4dec1ee9e1c1636d853b9784aa104143",
+      "bytes": 1780,
+      "sha256": "ae6731771390a324194edee5968ad8dc7bd57916ad93ee7c1a8227f46d7981c5"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/clippy.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/control.stderr",
+      "mode": "100644",
+      "git_blob": "786a6362446865d9922fe112673753a264e4cc3c",
+      "bytes": 198,
+      "sha256": "973d3107b453989ee8a7cc95707ee7d0f097050dbddb680ba542131932ececdd"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/control.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/fmt.stderr",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/fmt.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/independent-replay.json",
+      "mode": "100644",
+      "git_blob": "ff2acbbca41edc749bac6c7586813c0aa0408768",
+      "bytes": 3492,
+      "sha256": "6e02b3c0bc6faa518cdca7c2604409323ae8839c0c70eb9aa52f7ad2ce6cf866"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/parity.stderr",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/parity.stdout",
+      "mode": "100644",
+      "git_blob": "d4e102b4da62229bd0fbc79d8ec1e8c13bbfbb90",
+      "bytes": 355,
+      "sha256": "c21ec9d3ce35d811d4571ef5c359ba7cc8e36f5e68b7371be4a79a9d9617f2fa"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/tests.stderr",
+      "mode": "100644",
+      "git_blob": "37ab3adc803cbcf568ec1441b20cea9a7a1a7e30",
+      "bytes": 2001,
+      "sha256": "f91a9147cce35c04aaafd862400ec6e98e7a670482ec133299657e2f889114e4"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/tests.stdout",
+      "mode": "100644",
+      "git_blob": "27e05a33e7aa01cc22fd0d101d4713ad3413e10c",
+      "bytes": 880,
+      "sha256": "f295a6b487d0a6d9093b5ee3acdf3423864bd970ba8adcab2cd7b4a52056cae1"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/vendor-origin-audit.json",
+      "mode": "100644",
+      "git_blob": "d76a8f3b8efb912964e35db166f4eb6269ec491a",
+      "bytes": 20803,
+      "sha256": "d7f205f7c0c1fb9ca284d0d1196d545acff063b2b29950dd727d544d2ddbeb40"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/wasm.stderr",
+      "mode": "100644",
+      "git_blob": "f1d29c0bb10f89f3bf5da26b0cdc29be61138a5a",
+      "bytes": 1831,
+      "sha256": "d8edf9e135e3f21d6e3ff8699c9464e42fba7ca377471b726898df55797db774"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/input-custody/wasm.stdout",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/native-cli-replay.json",
+      "mode": "100644",
+      "git_blob": "18117959d404fcdf7b17d58ad37b6f3f9130eb4f",
+      "bytes": 182110,
+      "sha256": "33c613d38e063aaaf8ab8d8073fc6e14c962d44616a7e9a12c638ff074b33efe"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/notice-checkout.json",
+      "mode": "100644",
+      "git_blob": "b02749ca0b7b0d1e238da5c64c80336a5e494783",
+      "bytes": 815,
+      "sha256": "b82c84bd1a980236e2a4d30ceb9dcbd8f20c87bc4c43387c41bd18c22ebb472d"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/notice-coverage.json",
+      "mode": "100644",
+      "git_blob": "17d5a8f680b3354c217eadeef7535d2577be041e",
+      "bytes": 20647,
+      "sha256": "a4380b30a2a57bc3a6bf408cfedfbf4a9b19a161b2b20c45f2c98fdd066a0be8"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/notices-browser-report.json",
+      "mode": "100644",
+      "git_blob": "158b2720ecf35938804ce4b9a96d304f18469949",
+      "bytes": 7551,
+      "sha256": "495b0edd9d9f96f5f0c4874fe379216d18cd90bab6418f6b9c2bd87afe772346"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/original-cli-controls.json",
+      "mode": "100644",
+      "git_blob": "81a230f56f140670b975011fd042c1e3851832ff",
+      "bytes": 182765,
+      "sha256": "02d5c95d5ad63c0955be24e040a40557560fd7674061998c721c91d22e0b9cd7"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/original-commands.json",
+      "mode": "100644",
+      "git_blob": "66f190647d66fa0a53f9698f763d96fa7834ffc6",
+      "bytes": 874,
+      "sha256": "e0832f0e1b52d53a0bb57c2710e06401ab483b58cb8f6a3653b3b0b3b69f51e4"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/original-reader-parity-v2.json",
+      "mode": "100644",
+      "git_blob": "f8c9569c915350ba190d356d76cbcd99816667c0",
+      "bytes": 182178,
+      "sha256": "abcd787568b13e77d473aa6f769af906ec29e3a46a7a54fa15d7391dda13bf3f"
+    },
+    {
+      "path": "context/waves/2026-11-05-reader-delivery/validation/qualification.json",
+      "mode": "100644",
+      "git_blob": "3b2ef06cd337093e04725a9e6be2ca17f91d6353",
+      "bytes": 1477,
+      "sha256": "dadd49bd580da7c2b7690696604401a86d8274f742301c270927b1e7a31831ef"
+    },
+    {
+      "path": "corpus/canon/GLOSSARY.md",
+      "mode": "100644",
+      "git_blob": "a7916405c8c7267a308b62fadc5e023b5db35174",
+      "bytes": 20634,
+      "sha256": "64aab6146dc40ea9e9bba863b13ef5223b9b325132dc29a1381640e8bb986b52"
+    },
+    {
+      "path": "corpus/canon/PRINCIPLES.md",
+      "mode": "100644",
+      "git_blob": "1b545f59c360ee2d2a708b9d43d8e9ca1ee67f0d",
+      "bytes": 19423,
+      "sha256": "aebecb9b00bc704f6cc358bcb40e01d4f7e8001c4560f0487fe5f5d5deea8774"
+    },
+    {
+      "path": "corpus/canon/THEORY.md",
+      "mode": "100644",
+      "git_blob": "558f1d38ec280c70f4481852041d7456997fe861",
+      "bytes": 11612,
+      "sha256": "56c7edfe980cce2ee4c0b778d98aaa0b6e55d6dbbe36576ce80c4bcd1b79e7c5"
+    },
+    {
+      "path": "corpus/program/CURRENCIES.md",
+      "mode": "100644",
+      "git_blob": "4754232474b07d9191c33b9b614142932fe1f187",
+      "bytes": 14906,
+      "sha256": "2b2ea6c56dded08093770b4b26f52989bf41746d2fd86be929263548ab9f07e5"
+    },
+    {
+      "path": "corpus/program/ECONOMIC-LENSES.md",
+      "mode": "100644",
+      "git_blob": "2983625bb7a30a8a7c74d7145878cd4c801e4825",
+      "bytes": 16619,
+      "sha256": "db2d4ca465e83504b715eff4247cc47a1dafdf567b243a89c2a4592b0c432743"
+    },
+    {
+      "path": "corpus/program/SCALES.md",
+      "mode": "100644",
+      "git_blob": "b839a1597339dc05f4c537073d93b54b3421850f",
+      "bytes": 26516,
+      "sha256": "d9c18c6ddc88a232eaf126acf2d7768b4acd1a9bdcb5380e0d9be78833088933"
+    },
+    {
+      "path": "corpus/program/VALIDATION.md",
+      "mode": "100644",
+      "git_blob": "c850a93d16ec64a0fa426f006c2f51d42557d3d0",
+      "bytes": 16286,
+      "sha256": "b6f1fa5b1db62d04f1ae6b41b249c1bc76ccd4f9c37b9129f4f2e9ecc11eb6e5"
+    },
+    {
+      "path": "docs/METHODOLOGY.md",
+      "mode": "100644",
+      "git_blob": "3c8120c10540e71f4b076517761299273f7b4b1d",
+      "bytes": 30370,
+      "sha256": "f111e9d672ffdb705c747162aae339c2ee40b1fa2a0c0d3815747cf0ffa6520c"
+    },
+    {
+      "path": "docs/PIPELINE.md",
+      "mode": "100644",
+      "git_blob": "833e97b071a1a5b1c6af8c31d07c1882a3a15068",
+      "bytes": 23846,
+      "sha256": "f8eff603a338415de0af85caedfaeba1116c56c90d207bf0354f0490d910dded"
+    },
+    {
+      "path": "docs/REBUILD.md",
+      "mode": "100644",
+      "git_blob": "9be5e5654cc1057c8f9196c86bf3aae8bb109e0f",
+      "bytes": 5000,
+      "sha256": "e02b4dbdb022215b21a4038d5323974de1e6503d5897e79209f6d0fb9b77f204"
+    },
+    {
+      "path": "docs/STYLE-GUIDE.md",
+      "mode": "100644",
+      "git_blob": "0bfc2189370dec18e1b5d1697db038368b6da2a6",
+      "bytes": 22308,
+      "sha256": "095a1721cc451d52780518553d8c31ef8a5e7111778d71548d7f67815cd20bdc"
+    },
+    {
+      "path": "docs/browser-explorer.md",
+      "mode": "100644",
+      "git_blob": "150842b4ddb2ca8f06be0a48de7e3828df2904df",
+      "bytes": 1489,
+      "sha256": "7af4f7e39e8621b6beffbe389fd5036e5e5233913a729a768a4d0db42b67fc0c"
+    },
+    {
+      "path": "docs/capability-expansion.md",
+      "mode": "100644",
+      "git_blob": "2fd13b539b4df9b066a536a9c71d5c95d14ff436",
+      "bytes": 7990,
+      "sha256": "fbafc84e27e31b30c50ecaeaf3ca9a166cb16c6b0e1ea4203728daba4fd29c95"
+    },
+    {
+      "path": "docs/guides/.gitkeep",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/scenarium-adoption.md",
+      "mode": "100644",
+      "git_blob": "3328c8a4595fdacc79c3292d2f6521404964471d",
+      "bytes": 2324,
+      "sha256": "d1f57aa9076dbeaef1041930b22534472acc4c17775750ca60def467ad862469"
+    },
+    {
+      "path": "notices/manifest.json",
+      "mode": "100644",
+      "git_blob": "17d5a8f680b3354c217eadeef7535d2577be041e",
+      "bytes": 20647,
+      "sha256": "a4380b30a2a57bc3a6bf408cfedfbf4a9b19a161b2b20c45f2c98fdd066a0be8"
+    },
+    {
+      "path": "notices/rust-1.95.0-COPYRIGHT-library.html",
+      "mode": "100644",
+      "git_blob": "7be6c4bfe3dd71a7c0f938e36c18f29d77df52ca",
+      "bytes": 425661,
+      "sha256": "90567e2718bf7fd65a71a3a43c5596488e80e5f51ed02bfea6fec54458b5f3d1"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "git_blob": "fa7c43cc8f6b0dd8167bb6d993424264a5f73e1c",
+      "bytes": 2178,
+      "sha256": "04011c7bf895044ba6ca3c00f015520cb42667abe6e27b423bd6e1ac627894a9"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "git_blob": "d58550dc830a30a61cb3b79f97a22f6c274ec071",
+      "bytes": 180,
+      "sha256": "bb2be4a6154ebee40aa5d05a79a46ddebc70e0e7a36d3f290cc7ebbb12dc12c3"
+    },
+    {
+      "path": "plans/2026-04-18-plan-a-scaffolding.md",
+      "mode": "100644",
+      "git_blob": "8a020a6f84ea92fd09663cf35076ddb7f123f24f",
+      "bytes": 36562,
+      "sha256": "624f0049911bcc5f41f52615f614edea8127427b71d94aa51e9163d1d4527eee"
+    },
+    {
+      "path": "plans/2026-04-19-plan-b-research-smithing.md",
+      "mode": "100644",
+      "git_blob": "495b77bdd46486c89f0bf47da44ae56e46e22250",
+      "bytes": 31366,
+      "sha256": "53d51bedf3f2b995086d190e675c214de2637c4ed75b2243087e2de70edd0d40"
+    },
+    {
+      "path": "plans/2026-04-19-plan-c-catalog-smithing.md",
+      "mode": "100644",
+      "git_blob": "d87662a6f28020e3fb1def213efdb09c7289271a",
+      "bytes": 35867,
+      "sha256": "1dbf901553c3f9eb132029020880fdbe8ad1085fbe9e18c8221216077651c551"
+    },
+    {
+      "path": "plans/2026-04-19-plan-d-sim.md",
+      "mode": "100644",
+      "git_blob": "0c5d6c223704f6f93e40ee93a1de15dbcf8599bd",
+      "bytes": 9835,
+      "sha256": "4b14edd1aaddd5a631006de83cae3eb2a7a5cfb005ad1ca7f777ca9438f5fb2f"
+    },
+    {
+      "path": "plans/2026-04-19-plan-e-playbook.md",
+      "mode": "100644",
+      "git_blob": "333ef6a73d168af49dcefc71d43e3a1b8567712d",
+      "bytes": 16326,
+      "sha256": "4e0afd43c59fb7d2d0c95bf1fd6eacb8bfdd5a12db26e0275723d1a469e2b65a"
+    },
+    {
+      "path": "plans/2026-04-19-plan-f-research-baking.md",
+      "mode": "100644",
+      "git_blob": "3938ad0f057fc3f1c445998099a97c04a5ba071f",
+      "bytes": 2401,
+      "sha256": "0482d0c7f400f7b8e96e7359214cb1f7fae641aadb54c5251354614f5484770f"
+    },
+    {
+      "path": "plans/2026-04-19-plan-g-catalog-baking.md",
+      "mode": "100644",
+      "git_blob": "d737e68ef0590724ddcfae5d5017ab3403d1ab37",
+      "bytes": 25860,
+      "sha256": "0e8b4fbfa10762ab2faaee2dfd651edf3dbb6d26263ec69d995f815ccaf521e2"
+    },
+    {
+      "path": "plans/2026-04-19-plan-h-research-weaving.md",
+      "mode": "100644",
+      "git_blob": "e588464d7893fc7f9095fec2ef3af7ad1bb7bcfb",
+      "bytes": 2415,
+      "sha256": "6f52af91e0047b9b36ef7688770e325c3e0cfecd0a967653bbf27943dc2c497d"
+    },
+    {
+      "path": "plans/2026-04-19-plan-i-catalog-weaving.md",
+      "mode": "100644",
+      "git_blob": "e6bc603a96a49cefe384922d3e6cb3c91c8820c4",
+      "bytes": 27817,
+      "sha256": "62634fc041d25762b5b124c4c0e6442ce75153b4f93ba25e22906bd092748c5d"
+    },
+    {
+      "path": "plans/2026-04-19-plan-j-research-artisan-square.md",
+      "mode": "100644",
+      "git_blob": "89d7af78ccc26b2c132950622b16d7457a16168e",
+      "bytes": 26058,
+      "sha256": "4010b0c016f32be76f1122f7476aacbc83787c1e777393175cff65c27b8c91b6"
+    },
+    {
+      "path": "plans/2026-11-05-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "370c6e71c43f68b2a3cbaa7eb54bbd010a0a22f7",
+      "bytes": 9265,
+      "sha256": "8817035f7af5e852d61ddf0764c224328b3f8e72fb20884f53248a939c9c4d2d"
+    },
+    {
+      "path": "plans/README.md",
+      "mode": "100644",
+      "git_blob": "ce410d995c5f6a0e6f0cbb36c57c441c56abadbb",
+      "bytes": 13122,
+      "sha256": "3d82ce845179a50a6affc38742bb1a93968ca4296e92df5742fc3f8d7169e7c3"
+    },
+    {
+      "path": "playbook/README.md",
+      "mode": "100644",
+      "git_blob": "ae25c97906a1e43dface1fbd2a314b0deec87480",
+      "bytes": 433,
+      "sha256": "ef2e6ab092b80d6063e53a65b34fcdb45eaf316dd7d2abdab33bbb319913ac5d"
+    },
+    {
+      "path": "playbook/baking/small-city.md",
+      "mode": "100644",
+      "git_blob": "da9e4f785988477df646a68c74599651db44ee77",
+      "bytes": 32710,
+      "sha256": "12dd53456486dac1c296a157b37a294b25e01d09b7a7bcd5b0d26eaca34b72ea"
+    },
+    {
+      "path": "playbook/baking/town.md",
+      "mode": "100644",
+      "git_blob": "c68903712d8651b16c5002534c5db5d45fb9897b",
+      "bytes": 29803,
+      "sha256": "cbc4fd4d64c29b1159b8363b18c1cc2c0cfbc61273977df57d8e9219e4dd1161"
+    },
+    {
+      "path": "playbook/baking/village.md",
+      "mode": "100644",
+      "git_blob": "0ed55fe7c6c97279b8e222582b9cee754f082539",
+      "bytes": 28850,
+      "sha256": "5f8a82e96f671899982054e6ec5016f1a84474519a5793daca58e20536484a59"
+    },
+    {
+      "path": "playbook/pitch/PITCH-NARRATIVE.md",
+      "mode": "100644",
+      "git_blob": "13bda057efdbcc0694fafcdb7885b2195321e309",
+      "bytes": 51985,
+      "sha256": "f700179101d249c0ddbed78371691b78d3053bce4f52ffdf170c1b91c9c5f993"
+    },
+    {
+      "path": "playbook/pitch/README.md",
+      "mode": "100644",
+      "git_blob": "b863b31f01670a74deac369d43c51b22ad9e6319",
+      "bytes": 283,
+      "sha256": "645cc3242a3c1e1ab7a38510c6dac2d610d4d1feea82921f60da3ebfadf4f98d"
+    },
+    {
+      "path": "playbook/smithing/small-city.md",
+      "mode": "100644",
+      "git_blob": "468026b5154132cac3ebcdef2e3f296307fd06c1",
+      "bytes": 23742,
+      "sha256": "3a09a1b6371630542e6eab2885e512e166c0ed7808f6cc3f066c8aa7511d6e57"
+    },
+    {
+      "path": "playbook/smithing/town.md",
+      "mode": "100644",
+      "git_blob": "fb83247805f7350bd02871517bdee3bd357a88c4",
+      "bytes": 17425,
+      "sha256": "623823a9e8f73d86928213996eb411e7dca527845ca04627d36c40a25d12ac36"
+    },
+    {
+      "path": "playbook/smithing/village.md",
+      "mode": "100644",
+      "git_blob": "8804d718415a4f01bf4230e7ab45d7a7e68dec4c",
+      "bytes": 27005,
+      "sha256": "a63c0456806bf38084d1b1ac506df5d7b69511bfe078862d367d665ecafb5a05"
+    },
+    {
+      "path": "playbook/weaving/small-city.md",
+      "mode": "100644",
+      "git_blob": "9cba86deadebf9fd46cf7a2e06c2950a8d06937f",
+      "bytes": 27942,
+      "sha256": "fffe51a563b2d55b2ed98d03d58866a95d3dc30c602447165ab38691af3850f4"
+    },
+    {
+      "path": "playbook/weaving/town.md",
+      "mode": "100644",
+      "git_blob": "57cf0265ccb5adf730ea03b976f6cda7b1479bfe",
+      "bytes": 24283,
+      "sha256": "94989b130d8b82a604af490dd0786b33d3460242b54dce39b69869993f233c01"
+    },
+    {
+      "path": "playbook/weaving/village.md",
+      "mode": "100644",
+      "git_blob": "f4358cf9addb0dc341130325f061d41201147f5b",
+      "bytes": 23553,
+      "sha256": "6e3fecb0a9cb78b8da8253f426a7a6dcaacb2045b2243bdf7a0850db266d68d8"
+    },
+    {
+      "path": "playwright.config.js",
+      "mode": "100644",
+      "git_blob": "3171cf9be850fc4d5b27ad0965c3e0d7a3345448",
+      "bytes": 438,
+      "sha256": "572d912ed70956aa214a69e61aa9ff0e397ce8467a5b653d73fd9520b326eaba"
+    },
+    {
+      "path": "proof.toml",
+      "mode": "100644",
+      "git_blob": "3a0d6caf98e7b6bc0d215aa41a5de1f03123bd4b",
+      "bytes": 496,
+      "sha256": "91cc869c7c1063573f5ea4da860f7d0c89ae3c2aab3c0c77ad3732472ba69adc"
+    },
+    {
+      "path": "repo-map.toml",
+      "mode": "100644",
+      "git_blob": "096865c2e0b2f029e526d90c8c05dc27f790d340",
+      "bytes": 899,
+      "sha256": "c3d813aca6e57a42c367ce282689df196a90b6c895e12c84cb8f1219e31c22e9"
+    },
+    {
+      "path": "research/README.md",
+      "mode": "100644",
+      "git_blob": "28974739319d2157769f6412e5dca715c8be610d",
+      "bytes": 354,
+      "sha256": "ec0a01f66cd86e11e8cb7186829abd092685a3a46f0e9a41a3807dc85a1d9007"
+    },
+    {
+      "path": "research/cultures/README.md",
+      "mode": "100644",
+      "git_blob": "7e04a67671a5bf9b717ba1a38e6e3f960708045f",
+      "bytes": 476,
+      "sha256": "ea99cea2360670410a632c2a60a40d85c3e533f368729dc428a692557f9e990f"
+    },
+    {
+      "path": "research/cultures/american-frontier/baking.md",
+      "mode": "100644",
+      "git_blob": "e43f6e2720f37c27ec16c927582e1c6412017279",
+      "bytes": 43582,
+      "sha256": "4469c6b80e443d75409061f8b4886c317ad1b70c7073050b54acf31aedff04e5"
+    },
+    {
+      "path": "research/cultures/american-frontier/smithing.md",
+      "mode": "100644",
+      "git_blob": "b7a482eee62e9743114f4f039a8f39c3e85e4980",
+      "bytes": 21542,
+      "sha256": "714e4a92ff6ba8815810edf383e4b8e028a3358c17fb29d3ef32287d2ea1c4a2"
+    },
+    {
+      "path": "research/cultures/american-frontier/weaving.md",
+      "mode": "100644",
+      "git_blob": "f4874e9a07d35058c5ee392468452358c79066f9",
+      "bytes": 46328,
+      "sha256": "0967c49a55755247cc7654e04c7caa658e136555a0504627f30b8c6302852fd1"
+    },
+    {
+      "path": "research/cultures/medieval-northern-europe/baking.md",
+      "mode": "100644",
+      "git_blob": "9324135f4ba9108b7cd136a7aca9a0befd5c06f9",
+      "bytes": 36963,
+      "sha256": "73ec6bfee0412cc873ec67a44b55ee4f00d9d1cea2cea3faf193dc991fe28f59"
+    },
+    {
+      "path": "research/cultures/medieval-northern-europe/smithing.md",
+      "mode": "100644",
+      "git_blob": "80045168c2d88f1ab5632bbf31403f00a513325f",
+      "bytes": 28114,
+      "sha256": "41370604e3ae998f52373827c9b3a55c423657dafcd53b5dff7357691c16a6db"
+    },
+    {
+      "path": "research/cultures/medieval-northern-europe/weaving.md",
+      "mode": "100644",
+      "git_blob": "66a1b591ee0ad1265fd8adaf83c524bb76a63890",
+      "bytes": 48933,
+      "sha256": "2f9d78180429f9fc9b26643309f987883858b891e42b49c95a51d314a763f161"
+    },
+    {
+      "path": "research/cultures/song-china/baking.md",
+      "mode": "100644",
+      "git_blob": "fd28db2458306c7855d284053dab83c0163e642e",
+      "bytes": 45517,
+      "sha256": "1a5db80f75de7000388ee286de603c93e23990e0981338cb79851a37e7f85031"
+    },
+    {
+      "path": "research/cultures/song-china/smithing.md",
+      "mode": "100644",
+      "git_blob": "2324e944ef928d663a32c986d6218fbbb4cfca20",
+      "bytes": 25577,
+      "sha256": "38446a6797a383194f2fafac3bd36ee7a57a9bdab42a974ac8ec73e2f9d89583"
+    },
+    {
+      "path": "research/cultures/song-china/weaving.md",
+      "mode": "100644",
+      "git_blob": "5e5877c07dae4531874a5822a74b4976bc7f12de",
+      "bytes": 47784,
+      "sha256": "2b1382486f5fe59c0b98268418ea68f995f13c7e0d3142e8f8d046c7dbb5ab23"
+    },
+    {
+      "path": "research/cultures/tokugawa-japan/baking.md",
+      "mode": "100644",
+      "git_blob": "6b89853cc9dacb0fd6e0c49cbf313d7ab20597e0",
+      "bytes": 49889,
+      "sha256": "79e534264e7ca09ac28d120092770571596c63cbb3e97cfb01cee10849d0114a"
+    },
+    {
+      "path": "research/cultures/tokugawa-japan/smithing.md",
+      "mode": "100644",
+      "git_blob": "c44c54d021bf341a9cfe16076f740fefef45c06c",
+      "bytes": 24431,
+      "sha256": "9da13fac10c98f3ac4a2146d44f555119e5a6ebb50dc7609b6e1f200279a2fb0"
+    },
+    {
+      "path": "research/cultures/tokugawa-japan/weaving.md",
+      "mode": "100644",
+      "git_blob": "1f8662be8dd9266b0106ef128b9b88614808f296",
+      "bytes": 42478,
+      "sha256": "77d78628b22b0871630605d12602f1a0b19aba8ac403cfe85c5b2dd892f220c2"
+    },
+    {
+      "path": "research/trades/README.md",
+      "mode": "100644",
+      "git_blob": "20aedc225e6e1112851ff0c5f43f21320e3de12b",
+      "bytes": 475,
+      "sha256": "3d1b132ca989d22db7602ae11f01fc4813137c77997d93aedf7bb01b3dd43347"
+    },
+    {
+      "path": "research/trades/artisan-square/FACILITY-TYPES.md",
+      "mode": "100644",
+      "git_blob": "6d6f35c99fa0af258993f51de9459403d23922df",
+      "bytes": 39711,
+      "sha256": "f4e0bebf87e1fc5aa711dd7f1a69f6b65417c88cf567da159be9f2ecbe1085cc"
+    },
+    {
+      "path": "research/trades/artisan-square/MARKET-VERDICT.md",
+      "mode": "100644",
+      "git_blob": "d055752fa9c7f44da6debd6a25dccadeaf9ef8e9",
+      "bytes": 35935,
+      "sha256": "23620d4950e3449679d1151961bb9abbdb29d18298a897c165aab59b2e00482c"
+    },
+    {
+      "path": "research/trades/artisan-square/REQUIREMENTS.md",
+      "mode": "100644",
+      "git_blob": "eef5bcf84c567dfc0ef3f276a9d33d515d67a064",
+      "bytes": 42547,
+      "sha256": "288c98eaf744207c9f6088bd54cd997c48f5cd764d8bd71341cacae54b7dc95a"
+    },
+    {
+      "path": "research/trades/artisan-square/SOURCES.md",
+      "mode": "100644",
+      "git_blob": "4c21bded53e945a718b69b37faa627a71baae184",
+      "bytes": 38708,
+      "sha256": "85ece539f8b7e08142a4a84dd2b425aeda61353e0412e9abda8f4fa339afaddf"
+    },
+    {
+      "path": "research/trades/artisan-square/combined-campus.md",
+      "mode": "100644",
+      "git_blob": "8141d7cc4045a7e91be7282486ee2f41fa8db56a",
+      "bytes": 12819,
+      "sha256": "10b1a710462ab72b48c98847dce047cdf921ad9cac91453b9b58b36a025516fb"
+    },
+    {
+      "path": "research/trades/artisan-square/type-a-heavy.md",
+      "mode": "100644",
+      "git_blob": "ccb97f5e964be7d77a0519485d5eeb42bc5ef854",
+      "bytes": 19097,
+      "sha256": "59f5195dc82fc8d7fc2f0f959ed94a4b354cf4e65c62698e54e2b9792128122f"
+    },
+    {
+      "path": "research/trades/artisan-square/type-b-light.md",
+      "mode": "100644",
+      "git_blob": "c48b6039b785599bd6ce9ae17ed5344359dc8bbd",
+      "bytes": 31918,
+      "sha256": "523ac148804e23b54db0d70a836426ca998964ee5d0853dba56f33759dd481f9"
+    },
+    {
+      "path": "research/trades/baking/DECLINE-VERDICT.md",
+      "mode": "100644",
+      "git_blob": "9785771a35843a1fec40c88d448330dbc48a71f0",
+      "bytes": 43299,
+      "sha256": "3fdd03ea53c5792f84077c5312b1c30df77d9500e47d8981c5b7725fe6c6e614"
+    },
+    {
+      "path": "research/trades/baking/HISTORICAL-FORMS.md",
+      "mode": "100644",
+      "git_blob": "4ade7201001d2301b87ea126bca5db77a8c12dc1",
+      "bytes": 53435,
+      "sha256": "98b5c2e6c9a4565d4d08b67b1c33799abb628ef105519f10642bda51d504a5e7"
+    },
+    {
+      "path": "research/trades/baking/REQUIREMENTS.md",
+      "mode": "100644",
+      "git_blob": "3e93f4b41b68713d8291d7893b00b971551f17bd",
+      "bytes": 48498,
+      "sha256": "5456dd2742b532cfb5d39434640a85cd41f6ceefb7f6ca16af3d08620a64ffbc"
+    },
+    {
+      "path": "research/trades/baking/SOURCES.md",
+      "mode": "100644",
+      "git_blob": "24bf5258dc8769bba252249c6c6fd159ab4e9064",
+      "bytes": 53662,
+      "sha256": "397e359871f1c3d09859da2a543c85755d3f3d4f1ab2f13da35cdd26b7285869"
+    },
+    {
+      "path": "research/trades/smithing/DECLINE-VERDICT.md",
+      "mode": "100644",
+      "git_blob": "67db7bac857243b89761179282dc2264fe4b0dd9",
+      "bytes": 32545,
+      "sha256": "8736ad8bc48abcb881aecabda277a3df9d484c050a0b17061e033e9bf8be3be9"
+    },
+    {
+      "path": "research/trades/smithing/HISTORICAL-FORMS.md",
+      "mode": "100644",
+      "git_blob": "50377d5ac2198c451f8818bf66feaf5e18d01863",
+      "bytes": 41589,
+      "sha256": "6239bd0dc0fd174322a74119d56770b93a78908be20249c2d246fa345e83fda3"
+    },
+    {
+      "path": "research/trades/smithing/REQUIREMENTS.md",
+      "mode": "100644",
+      "git_blob": "adf3803c290ca2937cc93952a7ebcd0736137725",
+      "bytes": 42782,
+      "sha256": "ccbdaa5bd53ccab50bcc3a3861292deeebabfcbf0515cd58cd2d3ef73156e2c9"
+    },
+    {
+      "path": "research/trades/smithing/SOURCES.md",
+      "mode": "100644",
+      "git_blob": "1f5d4dca92d78f06c9b3f9745266e27130a7b7fc",
+      "bytes": 38897,
+      "sha256": "7cf5dcf06a142a910641263698de2c7d89ca5e9f0cbf804af6d72a1439c9f807"
+    },
+    {
+      "path": "research/trades/weaving/DECLINE-VERDICT.md",
+      "mode": "100644",
+      "git_blob": "01d1b6a11df236e750a3ba71ecea945d77d8ab7b",
+      "bytes": 41069,
+      "sha256": "e2fc08927d29b784a1e00493b9987e9f449e098b7171fb3ac7ca56d14e4c4437"
+    },
+    {
+      "path": "research/trades/weaving/HISTORICAL-FORMS.md",
+      "mode": "100644",
+      "git_blob": "6ad9ba70688dadf6734038452597c00fb751051d",
+      "bytes": 60304,
+      "sha256": "5a73d0feb69e84e1e481a4c13238c83f3f6df04872cfe7b39d592ccf55b25559"
+    },
+    {
+      "path": "research/trades/weaving/REQUIREMENTS.md",
+      "mode": "100644",
+      "git_blob": "e89d645b4ee5a4c3b3b199abad2fe7a89bd7af8c",
+      "bytes": 51545,
+      "sha256": "f858739de8dccd6c0cfb2d3ac7e1c6611385502ee90c897d575b337069f88e8b"
+    },
+    {
+      "path": "research/trades/weaving/SOURCES.md",
+      "mode": "100644",
+      "git_blob": "d915337ced5a5ae1ec91c79a888196750e8eb08c",
+      "bytes": 58640,
+      "sha256": "8a15186feb6fe3c1c7d881ea51a47bbe2f151e2c47a9368cc0184b664472d208"
+    },
+    {
+      "path": "reviews/ALIGNMENT-framework.md",
+      "mode": "100644",
+      "git_blob": "b5ecd5932ac07eed548bf7742d4ea2c7219db279",
+      "bytes": 31267,
+      "sha256": "da34c50ea7d522b5d62e34a06198ed5703d5b4f856c95b1ae12202b2e66a52dc"
+    },
+    {
+      "path": "reviews/CATALOG-AUDIT-plan-c.md",
+      "mode": "100644",
+      "git_blob": "ab22c712c8ba88d706dad59ca3478ebe0dbe8e6c",
+      "bytes": 24507,
+      "sha256": "f8d606034d8b7d8d1ccca64c33f0d864842eabeb952f6f26f2bfa23db5569772"
+    },
+    {
+      "path": "reviews/CATALOG-AUDIT-plan-g.md",
+      "mode": "100644",
+      "git_blob": "41bfaa5c102808d49853e8a339bb7546d2a919a9",
+      "bytes": 34658,
+      "sha256": "e07b96eddf6eb33011d0be7bc05aada4c536a75d62575083ef79a5e3f655cc1e"
+    },
+    {
+      "path": "reviews/CATALOG-AUDIT-plan-i.md",
+      "mode": "100644",
+      "git_blob": "1c70f80d311194c34dcc14772255f69e1695448d",
+      "bytes": 28854,
+      "sha256": "450096e55df515d8b8969451bca498c17767b737eb7c8f9d3f4baa6b5d0b4012"
+    },
+    {
+      "path": "reviews/CHAPTERS-REVIEW-plan-b.md",
+      "mode": "100644",
+      "git_blob": "f57e13a7b5a21d354220f1fb895a83d39786cc82",
+      "bytes": 45112,
+      "sha256": "b39368490236805e4dc2b0b7420c560081a8ed7c70c4ee51159902a335072df9"
+    },
+    {
+      "path": "reviews/CHECK-ceres-design.md",
+      "mode": "100644",
+      "git_blob": "4c48db7a9f2d7c5df93b1bc8ad9c85e31fab71bf",
+      "bytes": 11521,
+      "sha256": "d8afa74595f6ca8bbb4ba7e5822b1b75def63a7e5aa77972ac0d42353db7ec32"
+    },
+    {
+      "path": "reviews/CHECK-plan-a-scaffolding.md",
+      "mode": "100644",
+      "git_blob": "d88b5cc5e68a2aa09d4ededb8bf9a2ebbd168b19",
+      "bytes": 6118,
+      "sha256": "66eee1521f655c419811d7450f005fb14a169442ad1106273bd40dcaaa8554d7"
+    },
+    {
+      "path": "reviews/CHECK-plan-b-citations.md",
+      "mode": "100644",
+      "git_blob": "1330ceca9dd2017406cd99ad7f997ba40684a48f",
+      "bytes": 11482,
+      "sha256": "96140b2d2f66e45afc815ea580b4e8ecfe39722e2eb2cfe47c73bd59e82b9214"
+    },
+    {
+      "path": "reviews/PLAN-E-REVIEW.md",
+      "mode": "100644",
+      "git_blob": "676ae7a5b21c864d5849dcf7b47f057d0393aced",
+      "bytes": 16481,
+      "sha256": "3eeccbe7d6ca535b6b284e6e527965f88879524e3f7d554ed6f463fcc784081a"
+    },
+    {
+      "path": "reviews/R1-P1-market-economist-ceres-design.md",
+      "mode": "100644",
+      "git_blob": "41735f5db067a3d8a65ccebac533a15b16a8eeca",
+      "bytes": 2565,
+      "sha256": "515d5963ebc9d46b44f3b07629f0bef4a9ffcc8f856b29784eb349e2b2136ec0"
+    },
+    {
+      "path": "reviews/R1-P1-market-economist-pitch-v2.md",
+      "mode": "100644",
+      "git_blob": "25cea0bbee267677f7427d29c673c3e7db5e5b70",
+      "bytes": 7142,
+      "sha256": "d3cd2b0b8f44ed075276f3c240b9ea825bf5d70d9fd005cbe5bb219f641b21d6"
+    },
+    {
+      "path": "reviews/R1-P1-market-economist-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "d30d21ebb34aa20d25f6d9202514e803098ec6b8",
+      "bytes": 1214,
+      "sha256": "6e9325db3c4685b23742c44aa0040aee453594766fc9575ebc443547b05b6d30"
+    },
+    {
+      "path": "reviews/R1-P2-commons-theorist-ceres-design.md",
+      "mode": "100644",
+      "git_blob": "e0269b93053d038b24645c3990328ec7a54c7a05",
+      "bytes": 2732,
+      "sha256": "2a1e3bd17fe3480624dc521f8f9913e12202c08e0b0622f16af8d10859eff8e7"
+    },
+    {
+      "path": "reviews/R1-P2-commons-theorist-pitch-v2.md",
+      "mode": "100644",
+      "git_blob": "b291641a456cf3b5bb806ff97b676f3bd3a09c58",
+      "bytes": 6824,
+      "sha256": "684c0de6652d42b46ece9ae65698249dcc5c937b7545039c6e360645525d3406"
+    },
+    {
+      "path": "reviews/R1-P2-commons-theorist-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "c19b5b64731f040686e6459d4167ed53a59f3f22",
+      "bytes": 1138,
+      "sha256": "9ba532913bc3bdfafcf83bff141a1d36484eafc5cec4ae4b132353f39fac80c8"
+    },
+    {
+      "path": "reviews/R1-P3-civic-steward-ceres-design.md",
+      "mode": "100644",
+      "git_blob": "935914c384ce2956b585eba6ad13417ef03b6da0",
+      "bytes": 2810,
+      "sha256": "9534f07f9ea8bb6923b9a1d355bd98668151ce1233ffac302afe334efb3e073f"
+    },
+    {
+      "path": "reviews/R1-P3-civic-steward-pitch-v2.md",
+      "mode": "100644",
+      "git_blob": "8df260b4e97d1c0ea252cb827e2b9cec8397986a",
+      "bytes": 7075,
+      "sha256": "bc6856f414f65ccc567058030418bff024c6634d7ff572c7e04b912c0112b75e"
+    },
+    {
+      "path": "reviews/R1-P3-civic-steward-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "6594c9b7d934833e415a572ef9c69c29d2b3d702",
+      "bytes": 1109,
+      "sha256": "7dc8f615d190c64a7e8b2937419522850efc519bac8dc0aeab15710a2095b467"
+    },
+    {
+      "path": "reviews/R1-P4-craft-practitioner-ceres-design.md",
+      "mode": "100644",
+      "git_blob": "f05a1e9bf4c1a9713ad02e2007f7900a8ef34e12",
+      "bytes": 2962,
+      "sha256": "9406c5769fd2f8bb0f2f45011408e46774a1cfad9f7c6cdc2f23e4388e010042"
+    },
+    {
+      "path": "reviews/R1-P4-craft-practitioner-pitch-v2.md",
+      "mode": "100644",
+      "git_blob": "d48fb83ab5f750e50bf61488aec9a0fdf9d467a2",
+      "bytes": 7555,
+      "sha256": "15f25c3c142afa4eadd65950eca6b91fc00b076361364b98cf05b7e264e1292e"
+    },
+    {
+      "path": "reviews/R1-P4-craft-practitioner-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "cfbedb07ad0ce88ce2f08787877263d358747b87",
+      "bytes": 1125,
+      "sha256": "a47944d728da802f48b546ce6cbe75580e124c0643430b38ac74148949111587"
+    },
+    {
+      "path": "reviews/R1-P5-historian-ceres-design.md",
+      "mode": "100644",
+      "git_blob": "63d04c6f17ad4286ce38136d23d2f039b1c70d0b",
+      "bytes": 3771,
+      "sha256": "b64206c3af04943b79e76473dd2c1f74fa36b871ca13cb4ce8c5836e88181c8d"
+    },
+    {
+      "path": "reviews/R1-P5-historian-pitch-v2.md",
+      "mode": "100644",
+      "git_blob": "467718b1cd7054a642f58048a4ab8bcbe06106b6",
+      "bytes": 8284,
+      "sha256": "248960e20f098344bde51a250e690d490352c71b3c89685cd7fcdf69592163f7"
+    },
+    {
+      "path": "reviews/R1-P5-historian-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "dd9580d754379f89bcbe8610c1d29f9579742a00",
+      "bytes": 1099,
+      "sha256": "8ef14886b5d3b1de6af6e580666b8c3a6928413ebc6d390969ec8be29b659f39"
+    },
+    {
+      "path": "reviews/R1-P6-skeptical-funder-ceres-design.md",
+      "mode": "100644",
+      "git_blob": "df352fa0f6f6a4ea231f7d01a929eeac9b312f18",
+      "bytes": 4187,
+      "sha256": "7b00cd0e29b287d35234fdb616df7246729b4021ff99855b27f0bda2f5cbe9ea"
+    },
+    {
+      "path": "reviews/R1-P6-skeptical-funder-pitch-v2.md",
+      "mode": "100644",
+      "git_blob": "6fdade580f8c3fda1727956d71bd4b6dc443b38c",
+      "bytes": 8829,
+      "sha256": "af01d3c89d3fbb9bdeeb32103ef0bde5d1a511b8bb073c478e13a573e373973e"
+    },
+    {
+      "path": "reviews/R1-P6-skeptical-funder-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "9644dd5ec87c01c40c01f883ac1283c2c92e9dae",
+      "bytes": 1174,
+      "sha256": "c7ea0ff9a463e3cd1dd2c5daf31033fd60b02ed2beb3428ad7dae491c6186520"
+    },
+    {
+      "path": "reviews/R2-P1-market-economist-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "6dd12fefdf1b48aa3bb2eeb72636b0d60eb1ac2d",
+      "bytes": 1066,
+      "sha256": "a5c5c32e30d7c7006737122f12ea272d15f0fa1f8ab8c6995d53f72c4b93905e"
+    },
+    {
+      "path": "reviews/R2-P2-commons-theorist-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "23e5cfa456530f048a2d4d6dce04736eb5aca550",
+      "bytes": 1154,
+      "sha256": "070f40f9b6b4083193a8399a773a47f4de0b0c95f5a483669fba372d55fc869b"
+    },
+    {
+      "path": "reviews/R2-P3-civic-steward-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "b7aab2ad918f39d638173e230eeff1e297a9f7da",
+      "bytes": 1088,
+      "sha256": "89462a8aa445fc7449afd531a01e775a53170e7926899e8b0e652f7b7f404e5d"
+    },
+    {
+      "path": "reviews/R2-P4-craft-practitioner-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "40cd21d608b75bd99c19a2dcc6b340e0dff83f12",
+      "bytes": 1213,
+      "sha256": "e3ca9aed81ba11edcef37a70596f8375c01e42adc8bc8c879a666ebeaefafac2"
+    },
+    {
+      "path": "reviews/R2-P5-historian-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "6d728ce279b969a669563ae11ea0f70d06773b85",
+      "bytes": 1120,
+      "sha256": "5cbf2fbdca14e3031490182e3f4ca90d5274fa920ee92724545c295ca3c78410"
+    },
+    {
+      "path": "reviews/R2-P6-skeptical-funder-wasm-self-service.md",
+      "mode": "100644",
+      "git_blob": "7958e76dd0a0d49dd247041b8ecf754e9a46113f",
+      "bytes": 1282,
+      "sha256": "b5c9bdeb36b89cd61dec915c0f6f05d6c52cfd6d6dfc0bcdc8108cd54999fef8"
+    },
+    {
+      "path": "reviews/SYNTHESIS-REVIEW-plan-b.md",
+      "mode": "100644",
+      "git_blob": "91f913cece5a596e2bf38e1536acaabe7c52626d",
+      "bytes": 51113,
+      "sha256": "ec4095706dc6b604de3313717baf392149057ceae14972061d88d8b750154f38"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "mode": "100644",
+      "git_blob": "62ac40ab4205dc98bdab314e91970f848911c2fb",
+      "bytes": 123,
+      "sha256": "5b80f5d572322f87ec024fa217a17ff345a59e0ad63a090646b3dacade08587e"
+    },
+    {
+      "path": "scoring/RUBRIC.md",
+      "mode": "100644",
+      "git_blob": "6c5fa971f3672c5a7fb0bab244a9db5ca8f3d9d2",
+      "bytes": 40337,
+      "sha256": "2c1cd46771fefec55a0da4bc10b797fbe579eca845f4698bbf3bf944f22434ca"
+    },
+    {
+      "path": "scripts/build-guides.sh",
+      "mode": "100644",
+      "git_blob": "109811f6ac53f8fbdae72ad7f5d10e3b2930f0d7",
+      "bytes": 917,
+      "sha256": "6bc4e7e36e98911c2d53ed205088999ae5e637a74f0f2ef72a6511d6f920c433"
+    },
+    {
+      "path": "scripts/new-trade.py",
+      "mode": "100644",
+      "git_blob": "e66cdb8a50d73b1edddcf62d618d8b8bb0a552ad",
+      "bytes": 19138,
+      "sha256": "2ba3e73c76364af301ad3cba7c1270b54092a2560f17b1ee26022f9a6bfa3da7"
+    },
+    {
+      "path": "simulations/README.md",
+      "mode": "100644",
+      "git_blob": "57605fbb7e826bcf21216ca14869a8b2630e54d5",
+      "bytes": 686,
+      "sha256": "261d0818a31c9b7baae61d41582cd78ef05bb68f739fb64d081ac068d84cd3e8"
+    },
+    {
+      "path": "simulations/tier-a-comparator/README.md",
+      "mode": "100644",
+      "git_blob": "0395e5d273cd4f0e52d87df9974348d5ea721fae",
+      "bytes": 4233,
+      "sha256": "3b6f1483216b9e1eb9d57102cea4b685c40cadd1acb79a923b4fa23893ce87ae"
+    },
+    {
+      "path": "simulations/tier-a-comparator/pyproject.toml",
+      "mode": "100644",
+      "git_blob": "c95f4126325b12ee6c4cb9774dedb42c3604f133",
+      "bytes": 344,
+      "sha256": "5f3978f1bf9af9c2f75c3599300e96af155c73952f85ce4137308d211ba138ae"
+    },
+    {
+      "path": "simulations/tier-a-comparator/results/.gitkeep",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "simulations/tier-a-comparator/results/CIVIC-LENS-DIAGNOSTIC.md",
+      "mode": "100644",
+      "git_blob": "3206acdf6dd4e8005f8a02b0d48b8c763479c27b",
+      "bytes": 15994,
+      "sha256": "cde90d1f386fd723a932af1b54c40ea42e44a59d174bb5c12fbba24ab3d5ae9c"
+    },
+    {
+      "path": "simulations/tier-a-comparator/results/SUMMARY.md",
+      "mode": "100644",
+      "git_blob": "142aa812844a629e3d9415d849c705c896a9d249",
+      "bytes": 1746,
+      "sha256": "4322e5e117725bafa7e7032aefb88996f9528a3813ed0047b2e515a3add6d0c2"
+    },
+    {
+      "path": "simulations/tier-a-comparator/results/baking/SUMMARY.md",
+      "mode": "100644",
+      "git_blob": "9d1483fe868ac2830d41cb324ffc353ada3a8a58",
+      "bytes": 1736,
+      "sha256": "e11b7e0cf6d676782a208f4807fda12742044c7ce71e18df9d90392e0b0a27c0"
+    },
+    {
+      "path": "simulations/tier-a-comparator/results/smithing/SUMMARY.md",
+      "mode": "100644",
+      "git_blob": "142aa812844a629e3d9415d849c705c896a9d249",
+      "bytes": 1746,
+      "sha256": "4322e5e117725bafa7e7032aefb88996f9528a3813ed0047b2e515a3add6d0c2"
+    },
+    {
+      "path": "simulations/tier-a-comparator/results/weaving/SUMMARY.md",
+      "mode": "100644",
+      "git_blob": "9b26f50908c4f25ee4a2f217451710cf7058aabc",
+      "bytes": 1758,
+      "sha256": "2162438a5c37fe5332e1ce7f40788006ee2a7eef5b6f680ed09f7b623ca6abff"
+    },
+    {
+      "path": "simulations/tier-a-comparator/src/tier_a/__init__.py",
+      "mode": "100644",
+      "git_blob": "3dc1f76bc69e3f559bee6253b24fc93acee9e1f9",
+      "bytes": 22,
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+    },
+    {
+      "path": "simulations/tier-a-comparator/src/tier_a/cli.py",
+      "mode": "100644",
+      "git_blob": "bc6c2ff4f7e1555e13ecd47dd57428893103066b",
+      "bytes": 5966,
+      "sha256": "8fb50dddac052b9887814804177d75df608cb387d767c2a12be2a1143a251a98"
+    },
+    {
+      "path": "simulations/tier-a-comparator/src/tier_a/io_catalog.py",
+      "mode": "100644",
+      "git_blob": "a2d2d4a3e180fdfa8a69fe57429952bf9284b869",
+      "bytes": 4224,
+      "sha256": "0dcdacd79fe4bcdc2a6a96dd6beb4968bd063b9049b22247432e0b1f59966c87"
+    },
+    {
+      "path": "simulations/tier-a-comparator/src/tier_a/lenses.py",
+      "mode": "100644",
+      "git_blob": "4b07b5a206f984ae03f39592053a332359466d85",
+      "bytes": 10597,
+      "sha256": "fe75a3593be7736fa2a9afa0460838eb12ef1f08f2681791365051328aeba6d2"
+    },
+    {
+      "path": "simulations/tier-a-comparator/src/tier_a/runner.py",
+      "mode": "100644",
+      "git_blob": "2d3ae1ffb3660ca2de25e64203c1f2b8f36acfc4",
+      "bytes": 3262,
+      "sha256": "6272316dd2627eeddf98389b3e77d0f9f50d03e108ff6d5273ae00e3e591db02"
+    },
+    {
+      "path": "simulations/tier-a-comparator/src/tier_a/scales.py",
+      "mode": "100644",
+      "git_blob": "d9171e0fac78b281e65cab86b59e425b8ce59f83",
+      "bytes": 2028,
+      "sha256": "7bea54e94fbbee6797bd93b6fbfb11e3447059619e62bd96cf6cda81c512bfe8"
+    },
+    {
+      "path": "simulations/tier-a-comparator/tests/__init__.py",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "simulations/tier-a-comparator/tests/conftest.py",
+      "mode": "100644",
+      "git_blob": "f7ac04c8ade0218d97ddb11b37201e89201eae8b",
+      "bytes": 2763,
+      "sha256": "2e2132e64bc6a83914b90d4641fc6787bc673ad373592c58f6f578568d95bfeb"
+    },
+    {
+      "path": "simulations/tier-a-comparator/tests/test_io_catalog.py",
+      "mode": "100644",
+      "git_blob": "2a5b3ac1fe2358372b496a80f974cada4253f6d1",
+      "bytes": 4028,
+      "sha256": "ba0bd49dbfa822d1840393b3a2d915d9b2fa91879e40d13ccfe95dd3491ab8a4"
+    },
+    {
+      "path": "simulations/tier-a-comparator/tests/test_lenses.py",
+      "mode": "100644",
+      "git_blob": "5ed793e4d2908c94ab44c277ef0e838b567d8e56",
+      "bytes": 21503,
+      "sha256": "98a82b76561f307d10962f0d508575b81a697fa7beacb7d8be744bc19cf6344c"
+    },
+    {
+      "path": "simulations/tier-a-comparator/tests/test_runner.py",
+      "mode": "100644",
+      "git_blob": "6df21cbbe3d41d5c412d5998b2333865a5d443a3",
+      "bytes": 3359,
+      "sha256": "568233f30b9657377109c8c7796211b2e3b4749af76ac06406fa74dd69eaed52"
+    },
+    {
+      "path": "simulations/tier-a-comparator/tests/test_scales.py",
+      "mode": "100644",
+      "git_blob": "67b9cd8b1e650a9cdeba55ae3a55fff8192f696e",
+      "bytes": 1852,
+      "sha256": "151dd5341a5dd987037a97fc04999eae106a630ed00ff2387477efbaf590b56e"
+    },
+    {
+      "path": "simulations/tier-b-system-dynamics/README.md",
+      "mode": "100644",
+      "git_blob": "21574f4d76a26f5947bd00dca2d40823d6c122e9",
+      "bytes": 406,
+      "sha256": "9c17473d882999c54329637eded1496ca344ddd147de504967b66c666df73289"
+    },
+    {
+      "path": "simulations/tier-c-agent-based/README.md",
+      "mode": "100644",
+      "git_blob": "e217dfcd99abdd7838a1e3e1b05849e89ad29681",
+      "bytes": 467,
+      "sha256": "c606fb61ac92a956232d7aff52fc1562ec2d6f2e1e9b3167b510b7078b5a007c"
+    },
+    {
+      "path": "skills/README.md",
+      "mode": "100644",
+      "git_blob": "ae0cc0fbc82627c61e1fbdb1c404e11dafda7366",
+      "bytes": 1578,
+      "sha256": "46607f7c1be4f282c745f6e7b96a0c5e67fe4d5381cfa2f899bce65ded675604"
+    },
+    {
+      "path": "skills/ceres-board/SKILL.md",
+      "mode": "100644",
+      "git_blob": "e0f209b98c687135fff8db9257688050c73a7926",
+      "bytes": 3998,
+      "sha256": "5cbc2df5df5cda36e8ee478ef55eb7cf9ee1e3b126b9edd6ef3bd68069e691ec"
+    },
+    {
+      "path": "skills/ceres-check/SKILL.md",
+      "mode": "100644",
+      "git_blob": "c889fa0fb24a3e5b0d4edf0d81fdcc61725d25a6",
+      "bytes": 11586,
+      "sha256": "1c0ed1531c1aa89c4dc1661fc24d33123c9a1c33ebe8f80347c956b8233f96d4"
+    },
+    {
+      "path": "skills/ceres-editorial/SKILL.md",
+      "mode": "100644",
+      "git_blob": "230deb9fc7e0b2f969e75393ee4b190c72f83c4e",
+      "bytes": 4824,
+      "sha256": "d9c03894211e0b12ea6e03f37e5f5148b1b13e5c2de22a227706e8c92ada2920"
+    },
+    {
+      "path": "skills/ceres-panel/SKILL.md",
+      "mode": "100644",
+      "git_blob": "67550b75052c3c909d794d0c614ea4667e798d88",
+      "bytes": 5438,
+      "sha256": "7b7458ed04b50226df415550eea2f314e75599954aeb0fb7832c5a6dcf80eaeb"
+    },
+    {
+      "path": "sources/README.md",
+      "mode": "100644",
+      "git_blob": "dc71733be473edf798d03ca5bc0000dad6cb347c",
+      "bytes": 274,
+      "sha256": "8c6c67c5aaade1d1c881102fecf0a044803665c75c132c087d0f1e6607a1562d"
+    },
+    {
+      "path": "specs/2026-04-18-ceres-design.md",
+      "mode": "100644",
+      "git_blob": "dcf255c5e68b80ffae3cbd6ee8ae19a7ff17fbe8",
+      "bytes": 36646,
+      "sha256": "5bbaf5e89ea63ff72cf645ac561a7e4a73d899a134c9bc887c39e3f71af02364"
+    },
+    {
+      "path": "specs/2026-04-19-artisan-square-design.md",
+      "mode": "100644",
+      "git_blob": "34e31918eb563df485bb9185b3154faea4f27a0a",
+      "bytes": 17019,
+      "sha256": "4941186ff36cd6d6c4a7ab70fb822710eb73a5500ced66637a2d0b63f93068c3"
+    },
+    {
+      "path": "src/data/.gitkeep",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/guides/.gitkeep",
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/guides/01-overview.source.md",
+      "mode": "100644",
+      "git_blob": "a434cb925860cdd0a657839ad5b98056e23be23e",
+      "bytes": 6178,
+      "sha256": "c676305178d84609c28c9dca4418e7c197de52376d3ea321f8008efb7b7e113c"
+    },
+    {
+      "path": "src/guides/02-reading-entries.source.md",
+      "mode": "100644",
+      "git_blob": "62edd06808fcd7150ce3ac7521038b944cebbd8d",
+      "bytes": 8536,
+      "sha256": "620b1ef11707f392e0c18dfe7600e26bd6a98e776ecf14de0226ff7009e70961"
+    },
+    {
+      "path": "src/guides/03-economic-lenses.source.md",
+      "mode": "100644",
+      "git_blob": "47474785aa154208f3e4edf4d37b9c68ca33089f",
+      "bytes": 10798,
+      "sha256": "2e8ca7c9cf4d820937379e6387bd4a3bc1acf78462b299bdfde462fb9f1e0f94"
+    },
+    {
+      "path": "src/guides/04-authoring-entries.source.md",
+      "mode": "100644",
+      "git_blob": "93b45de28a8c2cab363b5014b118ada4d376bf16",
+      "bytes": 9939,
+      "sha256": "95d1bbef84afdd68a6d6eee7f64bc1603579737367ada1eb2ab6b9d09daa7d16"
+    },
+    {
+      "path": "src/guides/05-review-process.source.md",
+      "mode": "100644",
+      "git_blob": "18f308ce196fd0577dc3acc2fa747bddcab70aaa",
+      "bytes": 9006,
+      "sha256": "d32b33a5c7fcac2d2bfc6b81788f3cead61b3e9c03f499fa651fd4085338ac9e"
+    },
+    {
+      "path": "src/guides/06-pipeline.source.md",
+      "mode": "100644",
+      "git_blob": "e9e47ed4b4993bc13bf499d4eb5bb5851baf3976",
+      "bytes": 9590,
+      "sha256": "ab91c6f9e562103bca90f74f6d995a58850d4bb991cc5a973f7c06b395a8ae6b"
+    },
+    {
+      "path": "src/guides/07-adding-a-trade.source.md",
+      "mode": "100644",
+      "git_blob": "13256ac0c08622ed8813945b97bd7995d91fb902",
+      "bytes": 11153,
+      "sha256": "f30b9c12bab0436f50b5bf70728983f3d792a47a530540fe56a754565f9fbd8d"
+    },
+    {
+      "path": "src/lib.rs",
+      "mode": "100644",
+      "git_blob": "bf72331f9db9cd5fd401b3c0d7c53f29ca95499b",
+      "bytes": 29285,
+      "sha256": "740fe0badb86f0c7b7a81ffb8bf945c4258c47ecb6ee037f00c5daacc0de24a0"
+    },
+    {
+      "path": "src/main.rs",
+      "mode": "100644",
+      "git_blob": "955b7738f3a8088368fd7fa9c6ca6968a691dad2",
+      "bytes": 4281,
+      "sha256": "0751d92d52c2dfe18d24a783c1fbc9097220d94993733cf36ccd82a06b044e68"
+    },
+    {
+      "path": "tests/browser/entry-admission.spec.js",
+      "mode": "100644",
+      "git_blob": "0e3d644dbd99adbfcc936160d16c8fe6f8224118",
+      "bytes": 2720,
+      "sha256": "d9d9f28bc5199770b59ed19b2ea196bdf8cc6b5fa2df4126f1649827201a106b"
+    },
+    {
+      "path": "tests/browser/explorer.spec.js",
+      "mode": "100644",
+      "git_blob": "9320205132b694fbaa49206f647bd8a4c9770aed",
+      "bytes": 1534,
+      "sha256": "b1fbccd4cf69e6cada051a3360d019816e336aeadaa6c3528d1408d3f577c28e"
+    },
+    {
+      "path": "tests/browser/notice-downloads.spec.js",
+      "mode": "100644",
+      "git_blob": "b73187359c68db34d1881f14d0c14967f36ec179",
+      "bytes": 1092,
+      "sha256": "d9cf5cb8442d42414d35fb58064a84969e279bc05d625137ef027c32697f3e8f"
+    },
+    {
+      "path": "tests/browser/source-downloads.spec.js",
+      "mode": "100644",
+      "git_blob": "2c3dba77079e8fc699a2466dc8745083743f905a",
+      "bytes": 2320,
+      "sha256": "53e4883fb830fd581a376ac17f891766fbb093523de2550420acc57f1d3846d9"
+    },
+    {
+      "path": "tests/fixtures/reader-original.json",
+      "mode": "100644",
+      "git_blob": "3c136cc1bf1e40c6b184376938df07e2cfee9562",
+      "bytes": 107230,
+      "sha256": "25b8a6d25eeeede4a30ad260e6796fd7710873f3920c9b6d986d6129b9cc9481"
+    },
+    {
+      "path": "tests/input_custody.py",
+      "mode": "100644",
+      "git_blob": "be1602a4328af4da4db2450b3a1cd5fa5310c11f",
+      "bytes": 5108,
+      "sha256": "bd64a5c4a3ebf23faf7074d9b5813a0fcef03e3f3960ba3fb41c95b07f6017f4"
+    },
+    {
+      "path": "tests/source_custody.py",
+      "mode": "100644",
+      "git_blob": "603b905f5fdb55f1a26295931b08bc3c25645728",
+      "bytes": 8373,
+      "sha256": "18c48258b1e1b1b3b6fa8f00ead3a66f3b5c0272bc6582372b61a000d02281cd"
+    },
+    {
+      "path": "tools/build-pages.py",
+      "mode": "100644",
+      "git_blob": "fb921e83e544a662b039d1787380285ce8bdc561",
+      "bytes": 4467,
+      "sha256": "5f2cb8a8adc625f4e0b546525d1329bcebad15e3b10233a19cd67a446e400268"
+    },
+    {
+      "path": "tools/check-reader.mjs",
+      "mode": "100644",
+      "git_blob": "d7cc0a5cce1a4cccad8bf945adb0bd28e2977fde",
+      "bytes": 3086,
+      "sha256": "0774a4a096e992a480f9b18a121f49a81468b09baf8f592ca5d7130835e9d2bf"
+    },
+    {
+      "path": "tools/input-custody.py",
+      "mode": "100644",
+      "git_blob": "ff355e4548ab73b51442cac85d73f48e213f5080",
+      "bytes": 9017,
+      "sha256": "862c5aa019b9dd12367b0ad331798c40292cb6493ab39cfca5102b3f150dfd3f"
+    },
+    {
+      "path": "tools/package-source.py",
+      "mode": "100644",
+      "git_blob": "d850e40070175823dd1b4efb71cdf8abd0467fc9",
+      "bytes": 536,
+      "sha256": "2611498afe337bf896245bf0dd87e68c2956f84318b3906a273a56e11a970084"
+    },
+    {
+      "path": "tools/receive-site.py",
+      "mode": "100644",
+      "git_blob": "a40234c65725ee101f751dce86687d61c80c25e7",
+      "bytes": 995,
+      "sha256": "fb5435eb48556cf375b635e869a4159d5dfa12014870b90af0be596cac48fb83"
+    },
+    {
+      "path": "tools/receive-source.py",
+      "mode": "100644",
+      "git_blob": "2a4556587ef41a25541b9f19e56eccbd9463a4f2",
+      "bytes": 1069,
+      "sha256": "28d66fbc42c0c9f947e49b504c633439cb82f6b4df28b3f91d3e131b728913b8"
+    },
+    {
+      "path": "tools/repo_map.py",
+      "mode": "100644",
+      "git_blob": "67a3e1c48d2ef1ac019f58c4659b7129d73cdb17",
+      "bytes": 8564,
+      "sha256": "c2deedd87e67a266b06667c9bcee7161540b9750947c2a458ae3668336659a88"
+    },
+    {
+      "path": "tools/source_custody.py",
+      "mode": "100644",
+      "git_blob": "ac5ac29c17ff2542ab21263c25513e913cf0c93c",
+      "bytes": 12476,
+      "sha256": "810f0fbb694810d3051a2f05a56146926b900a004693ab64a6ac61ce19191d56"
+    },
+    {
+      "path": "web/app.js",
+      "mode": "100644",
+      "git_blob": "ac37afb8e6f0b7d742fe15f9acf19cf089e19c4e",
+      "bytes": 5014,
+      "sha256": "a0ee981ce710d7f0c86a78a1a3687058c387808b1a0404ca2cd6a0e13c0f267f"
+    },
+    {
+      "path": "web/index.html",
+      "mode": "100644",
+      "git_blob": "9e378197b1eda0a8dee14b8c5d6e41756f273a86",
+      "bytes": 4131,
+      "sha256": "af376f81ce7a9efbde30aa848137d6fa7f3ce909179a13afdbe515e3d75fb7ec"
+    },
+    {
+      "path": "web/style.css",
+      "mode": "100644",
+      "git_blob": "ec128518a338bd75aef4ea146ff267581183b3cf",
+      "bytes": 3846,
+      "sha256": "481cb9b106a2ba52ff3ae5cdb13b7e8ad0e74d71d9c4eadcd11fa60131372af2"
+    },
+    {
+      "path": "web/worker.js",
+      "mode": "100644",
+      "git_blob": "87892b69aa1be12d4629e3434cc2084bf543ebec",
+      "bytes": 682,
+      "sha256": "565173b852e8ab438a9c0c36d01fe64cf81dac768bcb706fa299c21e8c19e113"
+    }
+  ],
+  "scope": "Complete original Git tree plus locked dependency capsule; original grants apply. Installed toolchains are not bundled. Integrity is not economic or author certification."
+}
