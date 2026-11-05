@@ -132,6 +132,27 @@ for(const[name,viewport]of [['desktop',{width:1280,height:900}],['mobile',{width
    await page.locator('#retry').click();await evaluated(page);expect(errors).toEqual([]);
   });
 
+  test('a real Rust admission error clears output and recovers after correction',async({page})=>{
+   await page.goto('/CERES/');await evaluated(page);
+   await page.locator('#scale').evaluate(select=>{select.add(new Option('Invalid test value','planet'));select.value='planet';select.dispatchEvent(new Event('change'));});
+   await expect(page.locator('#status')).toHaveText('Unknown settlement scale');await stopped(page);
+   await page.locator('#scale').selectOption('village');await page.locator('#retry').click();await evaluated(page);
+   expect((await exported(page)).result).toEqual(fixture('0','village'));
+  });
+
+  test('a worker crash after ready is terminated and retried',async({page})=>{
+   const errors=[];page.on('pageerror',e=>errors.push(e.message));
+   await firstWorker(page,"self.onmessage=({data})=>{if(data.type==='init')self.postMessage({type:'ready',generation:data.generation});else throw new Error('Controlled worker crash');};");
+   await page.goto('/CERES/');await expect(page.locator('#status')).toContainText('could not load or continue');await stopped(page);
+   expect(await page.evaluate(()=>window.__workers[0].closed)).toBe(1);await page.locator('#retry').click();await evaluated(page);expect(errors).toEqual([]);
+  });
+
+  test('invalid shared assumptions are identified while original defaults remain usable',async({page})=>{
+   await page.goto('/CERES/?entry=9&scale=planet&participation=NaN&wage=-1');await evaluated(page);
+   await expect(page.locator('#share-status')).toContainText('Invalid link assumptions were ignored');
+   const data=await exported(page);expect(data.inputs).toEqual({entry:'0',scale:'town',participation:'2.5',wage:'56000'});expect(data.result).toEqual(fixture());
+  });
+
   test('rapid edits clear old output and export only the latest snapshot',async({page})=>{
    await page.goto('/CERES/');await evaluated(page);
    const cleared=await page.evaluate(()=>{

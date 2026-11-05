@@ -124,11 +124,18 @@ $('#export').onclick=()=>{
  const link=document.createElement('a');link.href=url;link.download='ceres-draft-evaluation.json';link.click();
  setTimeout(()=>URL.revokeObjectURL(url),1000);
 };
-const params=new URLSearchParams(location.search);
+const params=new URLSearchParams(location.search),rejected=[];
 for(const[id,min,max,step]of [['entry',0,1,1],['participation',0.1,20,0.1],['wage',10000,200000,1000]]){
  const n=Number(params.get(id));
- if(params.has(id)&&Number.isFinite(n)&&n>=min&&n<=max&&Math.abs(n/step-Math.round(n/step))<1e-8)$(`#${id}`).value=n;
+ if(params.has(id)){
+  if(Number.isFinite(n)&&n>=min&&n<=max&&Math.abs(n/step-Math.round(n/step))<1e-8)$(`#${id}`).value=n;
+  else rejected.push(id);
+ }
 }
-if(['village','town','small_city'].includes(params.get('scale')))$('#scale').value=params.get('scale');
+if(params.has('scale')){
+ if(['village','town','small_city'].includes(params.get('scale')))$('#scale').value=params.get('scale');
+ else rejected.push('scale');
+}
+if(rejected.length)$('#share-status').textContent=`Invalid link assumptions were ignored (${rejected.join(', ')}). Defaults are shown for those fields.`;
 for(const id of [...fields,'reset','share'])$(`#${id}`).disabled=false;
 start();
