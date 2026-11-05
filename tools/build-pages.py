@@ -30,6 +30,8 @@ def main():
     for name in ("index.html", "style.css", "app.js", "worker.js"):
         shutil.copy2(ROOT / "web" / name, output / name)
     shutil.copy2(ROOT / "LICENSE", output / "LICENSE")
+    shutil.copy2(ROOT / "DEPENDENCY-NOTICES.txt", output / "DEPENDENCY-NOTICES.txt")
+    shutil.copy2(ROOT / "notices/rust-1.95.0-COPYRIGHT-library.html", output / "RUST-RUNTIME-NOTICES.html")
     (output / ".nojekyll").touch()
     size = sum(path.stat().st_size for path in output.rglob("*") if path.is_file())
     if size >= 5_000_000:
