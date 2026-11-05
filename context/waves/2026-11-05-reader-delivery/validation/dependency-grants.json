@@ -1,0 +1,266 @@
+{
+  "schema": "ceres.existing-dependency-grants.v1",
+  "scope": "Actual existing pinned root notices; source-input/package custody and full file/notices verification remain open. No new grant or global license inheritance.",
+  "external_packages": [
+    {
+      "name": "bumpalo",
+      "version": "3.20.3",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "cfg-if",
+      "version": "1.0.5",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "equivalent",
+      "version": "1.0.2",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "Apache-2.0 OR MIT"
+    },
+    {
+      "name": "hashbrown",
+      "version": "0.17.1",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "indexmap",
+      "version": "2.14.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "Apache-2.0 OR MIT"
+    },
+    {
+      "name": "itoa",
+      "version": "1.0.18",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "Unlicense OR MIT"
+    },
+    {
+      "name": "once_cell",
+      "version": "1.21.4",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "proc-macro2",
+      "version": "1.0.106",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "quote",
+      "version": "1.0.45",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "rally-core",
+      "version": "0.1.0",
+      "source": "git+https://github.com/giodl73-repo/RALLY.git?rev=4d84433d8d113d5433fd2c97ef4d7e7aed55fbb0#4d84433d8d113d5433fd2c97ef4d7e7aed55fbb0",
+      "declared_license": null
+    },
+    {
+      "name": "rfacility-core",
+      "version": "0.1.0",
+      "source": "git+https://github.com/giodl73-repo/RLINE.git?rev=8426af135619224f073369e93aa05e79c8d45bf6#8426af135619224f073369e93aa05e79c8d45bf6",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "rune-core",
+      "version": "0.1.0",
+      "source": "git+https://github.com/giodl73-repo/RUNE.git?rev=ad0097001138c63c12d23e5caef861eac0f5aed6#ad0097001138c63c12d23e5caef861eac0f5aed6",
+      "declared_license": null
+    },
+    {
+      "name": "rune-derive",
+      "version": "0.1.0",
+      "source": "git+https://github.com/giodl73-repo/RUNE.git?rev=ad0097001138c63c12d23e5caef861eac0f5aed6#ad0097001138c63c12d23e5caef861eac0f5aed6",
+      "declared_license": null
+    },
+    {
+      "name": "rustversion",
+      "version": "1.0.23",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "ryu",
+      "version": "1.0.23",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "Apache-2.0 OR BSL-1.0"
+    },
+    {
+      "name": "scenarium",
+      "version": "0.1.0",
+      "source": "git+https://github.com/giodl73-repo/SCENARIUM.git?rev=724c97d9b4619ac26aa21169d48f656f5fd9f4db#724c97d9b4619ac26aa21169d48f656f5fd9f4db",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "serde",
+      "version": "1.0.228",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "serde_core",
+      "version": "1.0.228",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "serde_derive",
+      "version": "1.0.228",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "serde_json",
+      "version": "1.0.149",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "serde_yaml",
+      "version": "0.9.34+deprecated",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "syn",
+      "version": "2.0.117",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "thiserror",
+      "version": "2.0.18",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "thiserror-impl",
+      "version": "2.0.18",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "unicode-ident",
+      "version": "1.0.24",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "(MIT OR Apache-2.0) AND Unicode-3.0"
+    },
+    {
+      "name": "unsafe-libyaml",
+      "version": "0.2.11",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "wasm-bindgen",
+      "version": "0.2.127",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "wasm-bindgen-macro",
+      "version": "0.2.127",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "wasm-bindgen-macro-support",
+      "version": "0.2.127",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "wasm-bindgen-shared",
+      "version": "0.2.127",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT OR Apache-2.0"
+    },
+    {
+      "name": "zmij",
+      "version": "1.0.21",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declared_license": "MIT"
+    }
+  ],
+  "git_sources": [
+    {
+      "source": "git+https://github.com/giodl73-repo/RALLY.git",
+      "commit": "4d84433d8d113d5433fd2c97ef4d7e7aed55fbb0",
+      "packages": [
+        "rally-core"
+      ],
+      "notices": [
+        {
+          "path": "LICENSE",
+          "git_blob": "9bd104156fdf7dbd548ddd07c8332696060940e4",
+          "sha256": "5ae422017d097b8e1d984dc5c08c7938ead1dbfafb39fde971118cadf1563452",
+          "bytes": 2170,
+          "preserved_local_file": "C:\\src\\ceres-self-service-qualification-20261105\\dependency-grants\\4d84433\\LICENSE"
+        }
+      ]
+    },
+    {
+      "source": "git+https://github.com/giodl73-repo/RLINE.git",
+      "commit": "8426af135619224f073369e93aa05e79c8d45bf6",
+      "packages": [
+        "rfacility-core"
+      ],
+      "notices": [
+        {
+          "path": "LICENSE",
+          "git_blob": "14313fed9d18cdf3a5d7fa4079a0d0f6e704487c",
+          "sha256": "3ed96fbbbd3dcce032cbb405d9bec8e4dd156a5a0221ceea6190fba3de57dc5f",
+          "bytes": 1065,
+          "preserved_local_file": "C:\\src\\ceres-self-service-qualification-20261105\\dependency-grants\\8426af1\\LICENSE"
+        }
+      ]
+    },
+    {
+      "source": "git+https://github.com/giodl73-repo/RUNE.git",
+      "commit": "ad0097001138c63c12d23e5caef861eac0f5aed6",
+      "packages": [
+        "rune-core",
+        "rune-derive"
+      ],
+      "notices": [
+        {
+          "path": "LICENSE",
+          "git_blob": "e707a76ce49914fd2d4a292fd792a6223f998988",
+          "sha256": "ea9e81bc2d37f6ea5cadfeb461f68500d8cc29bcc4fdd3053b532129387ce1c8",
+          "bytes": 1073,
+          "preserved_local_file": "C:\\src\\ceres-self-service-qualification-20261105\\dependency-grants\\ad00970\\LICENSE"
+        }
+      ]
+    },
+    {
+      "source": "git+https://github.com/giodl73-repo/SCENARIUM.git",
+      "commit": "724c97d9b4619ac26aa21169d48f656f5fd9f4db",
+      "packages": [
+        "scenarium"
+      ],
+      "notices": [
+        {
+          "path": "LICENSE",
+          "git_blob": "20f3e62489d3b774d12a3861df28b28a238f9132",
+          "sha256": "f6234867426ba87cee76105c748459ffef97afcb10707a015d8631f33ebc9286",
+          "bytes": 1074,
+          "preserved_local_file": "C:\\src\\ceres-self-service-qualification-20261105\\dependency-grants\\724c97d\\LICENSE"
+        }
+      ]
+    }
+  ],
+  "original_lock_unchanged": true
+}

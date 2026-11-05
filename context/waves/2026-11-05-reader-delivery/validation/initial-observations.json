@@ -1,0 +1,24 @@
+{
+  "initial_offline_metadata": "Exact pinned Git source not present in owner cache; acquired existing locked inputs with process-scoped owner credentials, then offline commands passed",
+  "initial_browser_environment": {
+    "report_sha256": "5395ee3a95895063b979a28e78673111c9c4ad758d418d738c0df16827120986",
+    "problem": "Pinned Playwright1.58.2 headless shell1208 missing; installed exact matching Chromium145.0.7632.6 then original2 cases pass",
+    "product_test_execution": false
+  },
+  "initial_parity_wrapper": {
+    "report_sha256": "b788ce541203cbc8a154121a8e5b4b78cadb534e41ce752ae83701e74cd22744",
+    "wrapper_comparison_failed": true,
+    "all_original_payload_and_error_strings_already_equal": true,
+    "fix": "Compare exact Rust payload/error strings rather than order of keys in JS observation envelope; no numeric tolerance or Rust payload normalization"
+  },
+  "copied_notice_whitespace": {
+    "scope": "Original upstream bytes retain trailing whitespace; exact notice paths only have -text -whitespace attributes, implementation files remain under normal checks"
+  },
+  "scope": "Initial observations retained locally; later successful receipts do not relabel failed/environment observations",
+  "initial_notice_git_normalization": {
+    "first_checkout_verified": false,
+    "problem": "Aggregate notices were added before -text attributes, normalizing16 existing upstream line endings in the initial Git blob",
+    "fix": "Scoped byte-preservation attributes plus explicit git add --renormalize; new selected-file Windows checkout matches both original hashes",
+    "second_checkout_verified": true
+  }
+}
