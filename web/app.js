@@ -65,9 +65,9 @@ function start(){
   event.preventDefault?.();
   if(w===worker&&gen===generation)fail('Evaluator could not load or continue. Retry or read the catalog.');
  };
- w.onmessageerror=()=>{
+ w.addEventListener('messageerror',()=>{
   if(w===worker&&gen===generation)fail('Evaluator returned an unreadable message. Retry or read the catalog.');
- };
+ });
  w.onmessage=({data})=>{
   if(w!==worker||gen!==generation||!data||typeof data!=='object'||data.generation!==gen)return;
   if(data.type==='ready'){

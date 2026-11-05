@@ -156,7 +156,8 @@ for(const[name,viewport]of [['desktop',{width:1280,height:900}],['mobile',{width
    await page.goto('/CERES/');await evaluated(page);await page.locator('#participation').focus();await page.keyboard.press('ArrowRight');
    await expect(page.locator('#participation')).toHaveValue('2.6');await evaluated(page);
    const control=path.resolve(process.env.CARGO_TARGET_DIR??'target','debug/examples/reader-control'+(process.platform==='win32'?'.exe':''));
-   const native=spawnSync(control,['0','town','0.026','56000'],{encoding:'utf8',timeout:15000});expect(native.status,native.stderr).toBe(0);
+   const submitted=await latest(page);
+   const native=spawnSync(control,[String(submitted.entry),submitted.scale,String(submitted.participation),String(submitted.wage)],{encoding:'utf8',timeout:15000});expect(native.status,native.stderr).toBe(0);
    const result=JSON.parse(JSON.parse(native.stdout).json);let data=await exported(page);expect(data.inputs.participation).toBe('2.6');expect(data.result).toEqual(result);
    await page.locator('#share').click();await expect(page.locator('#share-status')).toContainText('address bar');await page.reload();await evaluated(page);
    data=await exported(page);expect(data.inputs.participation).toBe('2.6');expect(data.result).toEqual(result);
