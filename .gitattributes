@@ -4,3 +4,5 @@
 /context/waves/2026-11-05-reader-delivery/validation/input-custody/tests.stdout -text -whitespace
 /notices/rust-1.95.0-COPYRIGHT-library.html -text -whitespace
 /context/waves/2026-11-05-reader-delivery/validation/dependency-grants/*/LICENSE -text -whitespace
+
+/context/waves/2026-11-05-reader-delivery/validation/exact-bootstrap/tests.stdout -text -whitespace
