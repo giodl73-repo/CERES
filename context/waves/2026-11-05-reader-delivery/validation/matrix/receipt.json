@@ -1,0 +1,576 @@
+{
+  "schema": "ceres.hosted-matrix.v1",
+  "checked_at": "2026-11-05T18:29:21.591682+00:00",
+  "run": "https://github.com/giodl73-repo/CERES/actions/runs/42082630488",
+  "head": "58c96dcc67050f9479904fab6de09b37fcff334c",
+  "actual_built_source": "7bbd7d278b83c5e020b0f0f5a1674c7774049ff7",
+  "complete_tree": "b8c22b6fe250aa20dacc833830103285db0098ff",
+  "platforms": {
+    "ubuntu-24.04": {
+      "receipt": {
+        "schema": "ceres.source-replay.v1",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "source_commit": "7bbd7d278b83c5e020b0f0f5a1674c7774049ff7",
+        "source_files": 714,
+        "original_native_contract": "5a69e2dd729858531e27017c6f3b8da89f9e58a2",
+        "source_zip_sha256": "27ee32e77309968e99225fe9c751cba4f79d102b942096f81feb70f590884a51",
+        "source_zip_exact": true,
+        "site_manifest_sha256": "fbefea1c306e31ed0dde8dc9a9eeaefd57cdcca8dc95973d3bf9e250c97a81ca",
+        "original_cli_controls": 30,
+        "all_cli_outputs_exits_exact": true,
+        "generated_files": [
+          {
+            "path": "catalog.packet.json",
+            "bytes": 686,
+            "sha256": "5942d81f63d6490d01bf8385cae7ab2d4af4f38e85f081bb49f6ede93fc4e982"
+          },
+          {
+            "path": "compare.packet.json",
+            "bytes": 1394,
+            "sha256": "631682c5cdfc22931c38247096d5f70ff307582156060157f9e26363640c9043"
+          },
+          {
+            "path": "events.jsonl",
+            "bytes": 27466,
+            "sha256": "fbf58bf726fb8ddec8ee15a0e6c0288f42e4703af954832d0ec7d3a1530a9018"
+          }
+        ],
+        "independent_input_packages": 32,
+        "new_cargo_home": true,
+        "acquisition_offline": true,
+        "shared_compiled_target_reused": "/home/runner/work/CERES/CERES/target",
+        "installed_toolchains_and_npm_browser_reused": true,
+        "input_custody_checks": 11,
+        "native_tests": 7,
+        "source_receiver_checks": 18,
+        "typed_native_wasm_controls": 135,
+        "typed_all_exact": true,
+        "checkout_wasm": {
+          "path": "pkg/ceres_web_bg.wasm",
+          "bytes": 414402,
+          "sha256": "91a2993564b0e2d068e077bc616e9371c0b1b3498ff37aab9fe5b305450a5db2"
+        },
+        "archive_wasm": {
+          "path": "pkg/ceres_web_bg.wasm",
+          "bytes": 414658,
+          "sha256": "9fda8e732d0bb30550ac0c173e55b74be283c89942ae49d56710580c0d925e9b"
+        },
+        "module_byte_identity": false,
+        "browser_stats": {
+          "startTime": "2026-11-05T18:20:37.485Z",
+          "duration": 52968.938,
+          "expected": 43,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "commands": [
+          {
+            "name": "checkout-metadata",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "metadata",
+              "--locked",
+              "--offline",
+              "--no-deps",
+              "--format-version",
+              "1"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "checkout-cli-build",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "build",
+              "-p",
+              "ceres",
+              "--bin",
+              "ceres",
+              "--locked",
+              "--offline"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-inputs",
+            "command": [
+              "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+              "tools/input-custody.py",
+              "--sha256",
+              "c27c7321b2fc45991db6e464cc100b9b64b3bdf5ac570bc2caebf34b2d8be97c",
+              "--inputs",
+              "/home/runner/work/_temp/ceres-source-replay/inputs",
+              "--cargo-home",
+              "/home/runner/work/_temp/ceres-source-replay/cargo-home"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-metadata",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "metadata",
+              "--all-features",
+              "--locked",
+              "--offline",
+              "--format-version",
+              "1"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-input-checks",
+            "command": [
+              "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+              "tests/input_custody.py"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-tests",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "test",
+              "--workspace",
+              "--all-targets",
+              "--locked",
+              "--offline"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-format",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "fmt",
+              "--all",
+              "--check"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-clippy",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "clippy",
+              "--workspace",
+              "--all-targets",
+              "--all-features",
+              "--no-deps",
+              "--locked",
+              "--offline",
+              "--",
+              "-D",
+              "warnings"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-native",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "build",
+              "-p",
+              "ceres",
+              "--bin",
+              "ceres",
+              "--locked",
+              "--offline"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-control",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "build",
+              "-p",
+              "ceres-web",
+              "--example",
+              "reader-control",
+              "--locked",
+              "--offline"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-site",
+            "command": [
+              "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+              "tools/build-pages.py",
+              "--expected-source-head",
+              "7bbd7d278b83c5e020b0f0f5a1674c7774049ff7",
+              "--output",
+              "/home/runner/work/_temp/ceres-source-replay/source/dist/qualification/CERES"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-parity",
+            "command": [
+              "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+              "tools/check-reader.py",
+              "--site",
+              "/home/runner/work/_temp/ceres-source-replay/source/dist/qualification/CERES",
+              "--output",
+              "/home/runner/work/_temp/ceres-source-replay/archive-parity.json"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-receivers",
+            "command": [
+              "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+              "tests/source_custody.py"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-browser",
+            "command": [
+              "node",
+              "/home/runner/work/_temp/ceres-source-replay/source/node_modules/playwright/cli.js",
+              "test",
+              "--config",
+              "/home/runner/work/_temp/ceres-source-replay/archive-browser.config.mjs"
+            ],
+            "exit": 0
+          }
+        ],
+        "scope": "Checkout versus receiver-restored outside-Git source, independent Cargo inputs, actual native/WASM and archive browser replay. Not economics/catalog promotion or live release."
+      },
+      "checkout_identity": {
+        "output": "/home/runner/work/CERES/CERES/dist/CERES",
+        "source_commit": "7bbd7d278b83c5e020b0f0f5a1674c7774049ff7",
+        "sizes": {
+          "runtime": 1162439,
+          "downloads": 9253888,
+          "total": 10416327
+        },
+        "source_sha256": "27ee32e77309968e99225fe9c751cba4f79d102b942096f81feb70f590884a51",
+        "manifest_sha256": "fbefea1c306e31ed0dde8dc9a9eeaefd57cdcca8dc95973d3bf9e250c97a81ca"
+      },
+      "generated_files_match_retained_originals": true,
+      "metadata_external_packages": 32,
+      "service_artifact": {
+        "id": 13441537301,
+        "sha256": "2b0788e22d269ef7607e279a6e750abf614d5508d326ebbc977b2b347b149b6e",
+        "bytes": 52384,
+        "api_digest": "sha256:2b0788e22d269ef7607e279a6e750abf614d5508d326ebbc977b2b347b149b6e"
+      }
+    },
+    "windows-2022": {
+      "receipt": {
+        "schema": "ceres.source-replay.v1",
+        "platform": "Windows-2022Server-10.0.20348-SP0",
+        "source_commit": "7bbd7d278b83c5e020b0f0f5a1674c7774049ff7",
+        "source_files": 714,
+        "original_native_contract": "5a69e2dd729858531e27017c6f3b8da89f9e58a2",
+        "source_zip_sha256": "27ee32e77309968e99225fe9c751cba4f79d102b942096f81feb70f590884a51",
+        "source_zip_exact": true,
+        "site_manifest_sha256": "bf29c4ca8077856a19efd200ba0aaf10bf41afe4c57c384000b4a9fedc5aeb96",
+        "original_cli_controls": 30,
+        "all_cli_outputs_exits_exact": true,
+        "generated_files": [
+          {
+            "path": "catalog.packet.json",
+            "bytes": 686,
+            "sha256": "5942d81f63d6490d01bf8385cae7ab2d4af4f38e85f081bb49f6ede93fc4e982"
+          },
+          {
+            "path": "compare.packet.json",
+            "bytes": 1394,
+            "sha256": "631682c5cdfc22931c38247096d5f70ff307582156060157f9e26363640c9043"
+          },
+          {
+            "path": "events.jsonl",
+            "bytes": 27466,
+            "sha256": "fbf58bf726fb8ddec8ee15a0e6c0288f42e4703af954832d0ec7d3a1530a9018"
+          }
+        ],
+        "independent_input_packages": 32,
+        "new_cargo_home": true,
+        "acquisition_offline": true,
+        "shared_compiled_target_reused": "D:\\a\\CERES\\CERES\\target",
+        "installed_toolchains_and_npm_browser_reused": true,
+        "input_custody_checks": 11,
+        "native_tests": 7,
+        "source_receiver_checks": 18,
+        "typed_native_wasm_controls": 135,
+        "typed_all_exact": true,
+        "checkout_wasm": {
+          "path": "pkg/ceres_web_bg.wasm",
+          "bytes": 415481,
+          "sha256": "48721c8e3d55743c1e7e2a110e1ecf1b05bcb9947dd2b3f3fa58a34730797c08"
+        },
+        "archive_wasm": {
+          "path": "pkg/ceres_web_bg.wasm",
+          "bytes": 414402,
+          "sha256": "9225dbc7119baaa66cef87588aa385a7996411f6acfa298693f52d75da501fd4"
+        },
+        "module_byte_identity": false,
+        "browser_stats": {
+          "startTime": "2026-11-05T18:26:16.894Z",
+          "duration": 65434.848000000005,
+          "expected": 43,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "commands": [
+          {
+            "name": "checkout-metadata",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "metadata",
+              "--locked",
+              "--offline",
+              "--no-deps",
+              "--format-version",
+              "1"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "checkout-cli-build",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "build",
+              "-p",
+              "ceres",
+              "--bin",
+              "ceres",
+              "--locked",
+              "--offline"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-inputs",
+            "command": [
+              "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+              "tools/input-custody.py",
+              "--sha256",
+              "c27c7321b2fc45991db6e464cc100b9b64b3bdf5ac570bc2caebf34b2d8be97c",
+              "--inputs",
+              "D:\\a\\_temp\\ceres-source-replay\\inputs",
+              "--cargo-home",
+              "D:\\a\\_temp\\ceres-source-replay\\cargo-home"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-metadata",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "metadata",
+              "--all-features",
+              "--locked",
+              "--offline",
+              "--format-version",
+              "1"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-input-checks",
+            "command": [
+              "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+              "tests/input_custody.py"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-tests",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "test",
+              "--workspace",
+              "--all-targets",
+              "--locked",
+              "--offline"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-format",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "fmt",
+              "--all",
+              "--check"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-clippy",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "clippy",
+              "--workspace",
+              "--all-targets",
+              "--all-features",
+              "--no-deps",
+              "--locked",
+              "--offline",
+              "--",
+              "-D",
+              "warnings"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-native",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "build",
+              "-p",
+              "ceres",
+              "--bin",
+              "ceres",
+              "--locked",
+              "--offline"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-control",
+            "command": [
+              "cargo",
+              "+1.95.0",
+              "build",
+              "-p",
+              "ceres-web",
+              "--example",
+              "reader-control",
+              "--locked",
+              "--offline"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-site",
+            "command": [
+              "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+              "tools/build-pages.py",
+              "--expected-source-head",
+              "7bbd7d278b83c5e020b0f0f5a1674c7774049ff7",
+              "--output",
+              "D:\\a\\_temp\\ceres-source-replay\\source\\dist\\qualification\\CERES"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-parity",
+            "command": [
+              "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+              "tools/check-reader.py",
+              "--site",
+              "D:\\a\\_temp\\ceres-source-replay\\source\\dist\\qualification\\CERES",
+              "--output",
+              "D:\\a\\_temp\\ceres-source-replay\\archive-parity.json"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-receivers",
+            "command": [
+              "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+              "tests/source_custody.py"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "archive-browser",
+            "command": [
+              "node",
+              "D:\\a\\_temp\\ceres-source-replay\\source\\node_modules\\playwright\\cli.js",
+              "test",
+              "--config",
+              "D:\\a\\_temp\\ceres-source-replay\\archive-browser.config.mjs"
+            ],
+            "exit": 0
+          }
+        ],
+        "scope": "Checkout versus receiver-restored outside-Git source, independent Cargo inputs, actual native/WASM and archive browser replay. Not economics/catalog promotion or live release."
+      },
+      "checkout_identity": {
+        "output": "D:\\a\\CERES\\CERES\\dist\\CERES",
+        "source_commit": "7bbd7d278b83c5e020b0f0f5a1674c7774049ff7",
+        "sizes": {
+          "runtime": 1163516,
+          "downloads": 9253888,
+          "total": 10417404
+        },
+        "source_sha256": "27ee32e77309968e99225fe9c751cba4f79d102b942096f81feb70f590884a51",
+        "manifest_sha256": "bf29c4ca8077856a19efd200ba0aaf10bf41afe4c57c384000b4a9fedc5aeb96"
+      },
+      "generated_files_match_retained_originals": true,
+      "metadata_external_packages": 32,
+      "service_artifact": {
+        "id": 13441957931,
+        "sha256": "c0f8ca7abbb1d4b421a89f5a7a9a21e7ccaa1ea9d3a3907d089d6c20ae5bc986",
+        "bytes": 52467,
+        "api_digest": "sha256:c0f8ca7abbb1d4b421a89f5a7a9a21e7ccaa1ea9d3a3907d089d6c20ae5bc986"
+      }
+    }
+  },
+  "artifacts": {
+    "github-pages": {
+      "id": 13441962159,
+      "sha256": "409d47703265e034f2a29a67e3b67ef18f945429ef7bd2647b90a26b3fbde102",
+      "bytes": 9142721,
+      "api_digest": "sha256:409d47703265e034f2a29a67e3b67ef18f945429ef7bd2647b90a26b3fbde102"
+    },
+    "source-replay-windows-2022": {
+      "id": 13441957931,
+      "sha256": "c0f8ca7abbb1d4b421a89f5a7a9a21e7ccaa1ea9d3a3907d089d6c20ae5bc986",
+      "bytes": 52467,
+      "api_digest": "sha256:c0f8ca7abbb1d4b421a89f5a7a9a21e7ccaa1ea9d3a3907d089d6c20ae5bc986"
+    },
+    "source-replay-ubuntu-24.04": {
+      "id": 13441537301,
+      "sha256": "2b0788e22d269ef7607e279a6e750abf614d5508d326ebbc977b2b347b149b6e",
+      "bytes": 52384,
+      "api_digest": "sha256:2b0788e22d269ef7607e279a6e750abf614d5508d326ebbc977b2b347b149b6e"
+    },
+    "reader-parity": {
+      "id": 13441192630,
+      "sha256": "7d7b51b99e9d48a6cfd4c75f229cb8b3b6589b283a01d10e519b2b6ed7f105d0",
+      "bytes": 3544,
+      "api_digest": "sha256:7d7b51b99e9d48a6cfd4c75f229cb8b3b6589b283a01d10e519b2b6ed7f105d0"
+    }
+  },
+  "linux_pages_manifest_sha256": "fbefea1c306e31ed0dde8dc9a9eeaefd57cdcca8dc95973d3bf9e250c97a81ca",
+  "linux_pages_source": {
+    "path": "downloads/ceres-source.zip",
+    "sha256": "27ee32e77309968e99225fe9c751cba4f79d102b942096f81feb70f590884a51",
+    "bytes": 9044508,
+    "git_blobs": 714
+  },
+  "linux_pages_sizes": {
+    "runtime": 1162439,
+    "downloads": 9253888,
+    "total": 10416327
+  },
+  "linux_pages_receiver_verified": true,
+  "checkout_and_archive_browser_cases_per_os": 43,
+  "source_commit_identities_not_retagged": true,
+  "scope": "Hosted Windows2022 and Ubuntu24 checkout/archive replay, independently downloaded per-OS receipts/parity and Linux Pages artifact receiver. Final role/default-main/live release remains open."
+}

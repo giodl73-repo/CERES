@@ -1,0 +1,32 @@
+{
+  "plan_sha256": "58f3cc61659dae1e7beb894893349c4bda2db11eee27b56f9a672408626d26cf",
+  "matrix_run": "https://github.com/giodl73-repo/CERES/actions/runs/42082630488",
+  "tested_head": "58c96dcc67050f9479904fab6de09b37fcff334c",
+  "roles": [
+    {
+      "role": ".roles/panel/P-1-market-economist.md",
+      "sha256": "8cbe3904eb83724ddae10acab88691cf51fc47b459e024be577acf663a27de0e"
+    },
+    {
+      "role": ".roles/panel/P-2-commons-theorist.md",
+      "sha256": "16ae8a3da0123949ad43ec89a3d7f9264362d847ac915f23f6d7da6053355297"
+    },
+    {
+      "role": ".roles/panel/P-3-civic-steward.md",
+      "sha256": "bc59cdefba7d2a92b50ac7203068853762842f88a4b89599521211fb58b6dfa9"
+    },
+    {
+      "role": ".roles/panel/P-4-craft-practitioner.md",
+      "sha256": "948df7baa9a02bb56ed2c680ed99fc7a3cdf2ddc3426e29d7d13928017c607a3"
+    },
+    {
+      "role": ".roles/panel/P-5-historian.md",
+      "sha256": "2a335621892aa40f74e443b2e52578bdb4379f55c2da33ae86d1613d85dfa631"
+    },
+    {
+      "role": ".roles/panel/P-6-skeptical-funder.md",
+      "sha256": "a9bdddc48d6f4b32a323c4e005e294844aee320256987485cb74a213ef1b98c1"
+    }
+  ],
+  "scope": "R3 single-agent simulated composites, no independent human/catalog/funding validation or numeric scoring"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "name": "checkout-metadata",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "metadata",
+      "--locked",
+      "--offline",
+      "--no-deps",
+      "--format-version",
+      "1"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "checkout-cli-build",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "build",
+      "-p",
+      "ceres",
+      "--bin",
+      "ceres",
+      "--locked",
+      "--offline"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-inputs",
+    "command": [
+      "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+      "tools/input-custody.py",
+      "--sha256",
+      "c27c7321b2fc45991db6e464cc100b9b64b3bdf5ac570bc2caebf34b2d8be97c",
+      "--inputs",
+      "D:\\a\\_temp\\ceres-source-replay\\inputs",
+      "--cargo-home",
+      "D:\\a\\_temp\\ceres-source-replay\\cargo-home"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-metadata",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "metadata",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--format-version",
+      "1"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-input-checks",
+    "command": [
+      "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+      "tests/input_custody.py"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-tests",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "test",
+      "--workspace",
+      "--all-targets",
+      "--locked",
+      "--offline"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-format",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-clippy",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-native",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "build",
+      "-p",
+      "ceres",
+      "--bin",
+      "ceres",
+      "--locked",
+      "--offline"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-control",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "build",
+      "-p",
+      "ceres-web",
+      "--example",
+      "reader-control",
+      "--locked",
+      "--offline"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-site",
+    "command": [
+      "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+      "tools/build-pages.py",
+      "--expected-source-head",
+      "7bbd7d278b83c5e020b0f0f5a1674c7774049ff7",
+      "--output",
+      "D:\\a\\_temp\\ceres-source-replay\\source\\dist\\qualification\\CERES"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-parity",
+    "command": [
+      "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+      "tools/check-reader.py",
+      "--site",
+      "D:\\a\\_temp\\ceres-source-replay\\source\\dist\\qualification\\CERES",
+      "--output",
+      "D:\\a\\_temp\\ceres-source-replay\\archive-parity.json"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-receivers",
+    "command": [
+      "C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\python.exe",
+      "tests/source_custody.py"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "archive-browser",
+    "command": [
+      "node",
+      "D:\\a\\_temp\\ceres-source-replay\\source\\node_modules\\playwright\\cli.js",
+      "test",
+      "--config",
+      "D:\\a\\_temp\\ceres-source-replay\\archive-browser.config.mjs"
+    ],
+    "exit": 0
+  }
+]

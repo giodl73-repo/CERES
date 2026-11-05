@@ -1,7 +1,7 @@
 ---
 title: Reproducible CERES reader delivery
 date: 2026-11-05
-status: draft
+status: reviewed
 subsystem: browser-delivery
 primary_artifact_type: implementation-plan
 spec: specs/2026-04-18-ceres-design.md
@@ -17,7 +17,7 @@ repeat unvalidated assumptions perfectly. Therefore delivery proof must not be
 presented as a funding decision, economic validation, equipment safety evidence,
 governance design, historical certification or catalog lifecycle promotion.
 This is an additive software delivery plan, not a new catalog/research/playbook
-plan or an amendment to economic formulas in the design spec sections6–8.
+plan or an amendment to economic formulas in the design spec sections6â€“8.
 
 ## 2. Original task and native boundary
 
@@ -151,3 +151,22 @@ Rebuild using installed prerequisites and explicitly reused compiled target.
 
 Review this amendment with all six simulated composite voices before changing
 the builder budget. No catalog/schema/economic/research spec change or promotion.
+
+## 10. Execution evidence and remaining release gate
+
+Implementation/source `58c96dcc67050f9479904fab6de09b37fcff334c` passes hosted Ubuntu24.04 and Windows2022
+checkout and complete receiver-restored archive replay in Actions run42082630488.
+Each platform executes7 native tests/fmt/strict Clippy,11 input-custody checks,
+18 receivers,135 typed native/WASM pairs and43 browser cases on each built path.
+All30 checkout/archive CLI outputs/exits and3 files are exact; local Windows
+also matches the original frozen controls. All32 archive Cargo manifests resolve
+in new inputs/Cargo home offline. Installed tools/npm/browser and compiled target
+reuse are explicit. Actual CI merge source identity, per-OS module hashes,
+full-tree agreement and downloaded artifact/manifest/receipt checks are recorded
+in context/waves/2026-11-05-reader-delivery/validation/matrix/receipt.json.
+R3 reviews are simulated composites by the implementing agent, not independent
+human/economic/catalog approval. This implementation plan is reviewed, not a
+validated catalog/research artifact. Default-main deployment, anonymous live
+behavior/download/exact-artifact verification and separate TRACKER snapshot
+remain open. New evidence-only commits retain distinct tested implementation
+heads and must not retag the old receipts as a new exact-head run.
