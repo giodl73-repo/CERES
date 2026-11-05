@@ -9,3 +9,6 @@
 
 /context/waves/2026-11-05-reader-delivery/validation/source-kit/*.stdout -text -whitespace
 /context/waves/2026-11-05-reader-delivery/validation/source-kit/*.stderr -text -whitespace
+
+/context/waves/2026-11-05-reader-delivery/validation/worker/*.stdout -text -whitespace
+/context/waves/2026-11-05-reader-delivery/validation/worker/*.stderr -text -whitespace

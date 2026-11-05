@@ -1,0 +1,103 @@
+{
+  "schema": "ceres.site.v1",
+  "source_commit": "ef39ce6d09c4080c40c2d6467964b2f8f0dd100e",
+  "source": {
+    "path": "downloads/ceres-source.zip",
+    "sha256": "2977605b03f1d8ff1388c07bbba563c5ce3835b325be68698b222b750d28a66d",
+    "bytes": 7210294,
+    "git_blobs": 370
+  },
+  "wasm": {
+    "path": "pkg/ceres_web_bg.wasm",
+    "bytes": 415182,
+    "sha256": "946a9bbd313feaf1af2bf5eee128cbce2844a2df001bb5c575040962ee25286b"
+  },
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app.js",
+      "bytes": 8805,
+      "sha256": "d36d12d76e9d999a7427463a266e1efe78d05030d076f858b6df6a0e9d69acca"
+    },
+    {
+      "path": "DEPENDENCY-NOTICES.txt",
+      "bytes": 289249,
+      "sha256": "fe178f6b0b9a3dbf10b58b580e45886846b3f8ddf60f0234571fa700aaa099f8"
+    },
+    {
+      "path": "downloads/ceres-source.zip",
+      "bytes": 7210294,
+      "sha256": "2977605b03f1d8ff1388c07bbba563c5ce3835b325be68698b222b750d28a66d"
+    },
+    {
+      "path": "downloads/SOURCE-MANIFEST.json",
+      "bytes": 101199,
+      "sha256": "e05d3eb8fefc752020feba5df99bcd21b513541091eccf558c05da90b1bc2060"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4400,
+      "sha256": "de38acbc791c08ca958fec11130c85d90f73874c5c7491d9e192d7ccf8878966"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 2170,
+      "sha256": "8cd40621cab132a87ff85b226101d6eac79f832bc8c8b714a5acab9c63b90390"
+    },
+    {
+      "path": "pkg/ceres_web.d.ts",
+      "bytes": 1683,
+      "sha256": "57330ef0da835cafd1c2e8a6b6a8c535ee8a24c316c1a5335252121f1b081f02"
+    },
+    {
+      "path": "pkg/ceres_web.js",
+      "bytes": 7380,
+      "sha256": "2bc1f436ac5fd5f87da6fec7be452ce1d3578404f17cc82c5e917412c709feb6"
+    },
+    {
+      "path": "pkg/ceres_web_bg.wasm",
+      "bytes": 415182,
+      "sha256": "946a9bbd313feaf1af2bf5eee128cbce2844a2df001bb5c575040962ee25286b"
+    },
+    {
+      "path": "pkg/ceres_web_bg.wasm.d.ts",
+      "bytes": 591,
+      "sha256": "5de44393769ab857e9343e2d6451bac593674e3796ca335b97ee0036fe80450f"
+    },
+    {
+      "path": "RUST-RUNTIME-NOTICES.html",
+      "bytes": 425661,
+      "sha256": "90567e2718bf7fd65a71a3a43c5596488e80e5f51ed02bfea6fec54458b5f3d1"
+    },
+    {
+      "path": "style.css",
+      "bytes": 3846,
+      "sha256": "481cb9b106a2ba52ff3ae5cdb13b7e8ad0e74d71d9c4eadcd11fa60131372af2"
+    },
+    {
+      "path": "worker.js",
+      "bytes": 1056,
+      "sha256": "70fddae68fc8d7e5e41f95100ee9993362061d093632561d0964b1f705d4701b"
+    }
+  ],
+  "sizes": {
+    "runtime": 1163216,
+    "downloads": 7311493,
+    "total": 8474709
+  },
+  "budgets": {
+    "runtime": 5000000,
+    "downloads": 12000000,
+    "total": 17000000
+  },
+  "tools": {
+    "rustc": "rustc 1.95.0 (59807616e 2026-04-14)\nbinary: rustc\ncommit-hash: 59807616e1fa2540724bfbac14d7976d7e4a3860\ncommit-date: 2026-04-14\nhost: x86_64-pc-windows-msvc\nrelease: 1.95.0\nLLVM version: 22.1.2\n",
+    "wasm_bindgen": "wasm-bindgen 0.2.127",
+    "python": "3.14.10"
+  },
+  "scope": "Artifact/source integrity, not author, draft economics or historical certification. Toolchains not bundled."
+}

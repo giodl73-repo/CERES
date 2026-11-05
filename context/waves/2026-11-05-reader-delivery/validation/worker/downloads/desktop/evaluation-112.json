@@ -1,0 +1,32 @@
+{
+  "inputs": {
+    "entry": "1",
+    "scale": "small_city",
+    "participation": "10",
+    "wage": "56000"
+  },
+  "result": {
+    "market": {
+      "verdict": "win",
+      "primary_metric": 0.17857015307033522,
+      "metric_name": "payback_years",
+      "notes": ""
+    },
+    "coop": {
+      "verdict": "win",
+      "primary_metric": 52,
+      "metric_name": "break_even_members",
+      "notes": "feasible_pool=4500.0, break_even=52, total_annual_cost=10300"
+    },
+    "civic": {
+      "verdict": "fail",
+      "primary_metric": 0.32592592592592595,
+      "metric_name": "per_household_cost",
+      "notes": "per_hh=0.33, threshold=80, hrs/capita=0.000 vs threshold=2"
+    },
+    "population": 45000,
+    "households": 18000,
+    "status": "draft catalog sensitivity; not validated"
+  },
+  "source_commit": "ef39ce6d09c4080c40c2d6467964b2f8f0dd100e"
+}

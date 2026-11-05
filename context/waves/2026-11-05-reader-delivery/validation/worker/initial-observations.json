@@ -1,0 +1,30 @@
+{
+  "initial_source": "c9f8df7",
+  "initial_stats": {
+    "startTime": "2026-11-05T16:43:21.860Z",
+    "duration": 105744.12199999999,
+    "expected": 35,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "cause": "Worker.onmessageerror was an ordinary expando in the installed Chromium runtime; synthetic messageerror did not invoke it. Other35 cases passed, including all120 exports on each viewport.",
+  "runtime_probe": {
+    "browser": "145.0.7632.6",
+    "supported": false,
+    "property": 0,
+    "listener": 1
+  },
+  "correction": "Register addEventListener(messageerror) on the actual Worker; preserve the same error termination/retry requirement.",
+  "corrected37_source": "a0c034a971bf61910083f13b30ba50d673cf8a7b",
+  "final43_source": "ef39ce6d09c4080c40c2d6467964b2f8f0dd100e",
+  "added_cases": "Actual Rust error after ready, actual worker crash and invalid shared-assumption feedback on both viewports",
+  "final_stats": {
+    "startTime": "2026-11-05T16:56:07.740Z",
+    "duration": 121444.279,
+    "expected": 43,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
