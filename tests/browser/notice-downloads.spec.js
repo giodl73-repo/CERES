@@ -10,5 +10,5 @@ test('actual pinned Cargo/runtime notices download independently of a failed eng
   const pending=page.waitForEvent('download');await page.getByRole('link',{name,exact:true}).click();const download=await pending;
   expect(sha(await fs.readFile(await download.path()))).toBe(expected);
  }
- await expect(page.getByRole('link',{name:'Repository ZIP (branch; dependencies not bundled)',exact:true})).toHaveAttribute('href','https://github.com/giodl73-repo/CERES/archive/refs/heads/main.zip');
+ await expect(page.getByRole('link',{name:'Complete source ZIP · includes build inputs',exact:true})).toHaveAttribute('href','downloads/ceres-source.zip');
 });

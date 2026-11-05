@@ -44,6 +44,7 @@ jobs:
       - name: Build Pages and test browser
         run: |
           python tools/build-pages.py
+          python tests/source_custody.py
           cargo build --locked --offline -p ceres-web --example reader-control
           node tools/check-reader.mjs dist/CERES/pkg/ceres_web.js target/debug/examples/reader-control reader-parity.json
           npm test

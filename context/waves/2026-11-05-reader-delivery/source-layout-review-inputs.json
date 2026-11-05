@@ -1,0 +1,31 @@
+{
+  "plan": "plans/2026-11-05-wasm-self-service.md",
+  "plan_sha256": "b0e3212cd504e7309a264db95a8318021277a9c5ffbced148dc0cfd7890bf87b",
+  "scope": "Round2 section9 source layout amendment, single implementing agent simulated composites; no independent human, numeric rubric score, catalog promotion or funding approval",
+  "roles": [
+    {
+      "role": ".roles/panel/P-1-market-economist.md",
+      "sha256": "8cbe3904eb83724ddae10acab88691cf51fc47b459e024be577acf663a27de0e"
+    },
+    {
+      "role": ".roles/panel/P-2-commons-theorist.md",
+      "sha256": "16ae8a3da0123949ad43ec89a3d7f9264362d847ac915f23f6d7da6053355297"
+    },
+    {
+      "role": ".roles/panel/P-3-civic-steward.md",
+      "sha256": "bc59cdefba7d2a92b50ac7203068853762842f88a4b89599521211fb58b6dfa9"
+    },
+    {
+      "role": ".roles/panel/P-4-craft-practitioner.md",
+      "sha256": "948df7baa9a02bb56ed2c680ed99fc7a3cdf2ddc3426e29d7d13928017c607a3"
+    },
+    {
+      "role": ".roles/panel/P-5-historian.md",
+      "sha256": "2a335621892aa40f74e443b2e52578bdb4379f55c2da33ae86d1613d85dfa631"
+    },
+    {
+      "role": ".roles/panel/P-6-skeptical-funder.md",
+      "sha256": "a9bdddc48d6f4b32a323c4e005e294844aee320256987485cb74a213ef1b98c1"
+    }
+  ]
+}

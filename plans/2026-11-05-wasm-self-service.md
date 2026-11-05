@@ -124,3 +124,30 @@ and corrected reruns separately. Reverting delivery/test/tool changes must leave
 original core math, catalogs, simulation outputs and legacy grants unchanged.
 Protected canonical checkout, TRACKER23 entries, shared target, historical
 research/data and other owner sessions remain untouched.
+
+## 9. Source download layout and explicit budget review
+
+The exact-source bootstrap at9499757890b1c0da98b632c8da7dbf685e802a95
+measured6,853,502 bytes for the full source ZIP, including the4,830,483-byte
+input capsule (validation/exact-bootstrap/qualification.json). It cannot fit
+with the runtime under the original5MB total. Keep all source, content, original
+manifests, prior grants and validation records. Serve the complete pinned ZIP
+under `downloads/`, fetched only on request. Keep the runtime and its independent
+notices/build/source links below5,000,000 bytes; cap all optional download files
+together at12,000,000 bytes and the entire site at17,000,000 bytes. These are
+delivery limits justified by the measured complete package plus bounded growth,
+not economics or a promise about download time. Report each category separately.
+No source-kit fetch on page load, no CDN/account/API, no removed license/code.
+
+Bind the whole Git tree and exact commit object, every original file blob/mode,
+locked input capsule and notices in a standalone source manifest. The receiver
+must verify a trusted external build-manifest SHA, every deployed file and the
+runtime/source identities before any restoration. Reject unsafe/duplicate paths,
+corrupt files/manifest/module/source, Git tree omissions or altered modes, existing
+or linked destinations and compiled-target overlap. Test valid outside-Git source
+restoration/bootstrap and deliberate failures. A manifest proves integrity against
+its supplied trusted identity, not author authentication or equipment feasibility.
+Rebuild using installed prerequisites and explicitly reused compiled target.
+
+Review this amendment with all six simulated composite voices before changing
+the builder budget. No catalog/schema/economic/research spec change or promotion.
