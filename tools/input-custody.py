@@ -110,6 +110,14 @@ def verify(raw, expected_sha, lock):
 
 
 def restore(data, inputs, cargo_home):
+    # Inspect lexical parents before resolve() follows links; 8.3 aliases are
+    # ordinary filesystem names and remain valid canonicalized destinations.
+    for destination in [inputs, cargo_home]:
+        lexical = Path(os.path.abspath(destination))
+        for part in [lexical, *lexical.parents]:
+            if part.exists() or part.is_symlink():
+                if part.is_symlink() or getattr(part.lstat(), 'st_file_attributes', 0) & 0x400:
+                    raise ValueError('Destination parent is a link or junction')
     inputs = inputs.resolve(); cargo_home = cargo_home.resolve()
     repo = Path(__file__).resolve().parents[1]
     for dest in [inputs, cargo_home]:

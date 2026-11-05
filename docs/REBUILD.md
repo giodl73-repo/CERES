@@ -114,7 +114,7 @@ requires the independently trusted CI/release receipt described above. The
 qualifier preserves full stdout/stderr/exits and generated files for all30
 original CLI controls on both paths, verifies the unchanged original8-file
 native contract, and compares source ZIP bytes without normalizing outputs.
-Seven native tests,135 typed native/WASM controls,18 receivers and43 archive
+Eleven input-custody checks,7 native tests,135 typed native/WASM controls,18 receivers and43 archive
 browser cases run. The120 UI results/downloads per viewport remain separate from
 the four raw JavaScript integer ABI seams. Installed pinned npm/browser tools are
 copied/reused; Cargo inputs and home are independent. Compiled target reuse and

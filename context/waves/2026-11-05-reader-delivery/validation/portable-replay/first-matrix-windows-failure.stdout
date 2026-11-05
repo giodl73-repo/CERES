@@ -1,0 +1,29 @@
+build (windows-2022)	Verify and restore locked Cargo inputs	﻿2026-11-05T18:00:04.5136523Z ##[group]Run python tests/input_custody.py
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5137022Z ^[[36;1mpython tests/input_custody.py^[[0m
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5137372Z ^[[36;1minput_sha=$(cut -d' ' -f1 cargo-inputs/sha256.txt)^[[0m
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5138038Z ^[[36;1mpython tools/input-custody.py --sha256 "$input_sha" --inputs "$RUNNER_TEMP/ceres-inputs" --cargo-home "$RUNNER_TEMP/ceres-cargo-home"^[[0m
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5138743Z ^[[36;1mecho "CARGO_HOME=$RUNNER_TEMP/ceres-cargo-home" >> "$GITHUB_ENV"^[[0m
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5139138Z ^[[36;1mecho "CARGO_NET_OFFLINE=true" >> "$GITHUB_ENV"^[[0m
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5139472Z ^[[36;1mecho "CARGO_INCREMENTAL=0" >> "$GITHUB_ENV"^[[0m
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5153684Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5154107Z env:
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5154375Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.12.10\x64
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5154848Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.12.10\x64/lib/pkgconfig
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5155359Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5155772Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5156167Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:04.5156477Z ##[endgroup]
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9356741Z ........F.
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9357564Z ======================================================================
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9358677Z FAIL: test_verified_restore (__main__.CustodyChecks.test_verified_restore)
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9360067Z ----------------------------------------------------------------------
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9360802Z Traceback (most recent call last):
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9361317Z   File "D:\a\CERES\CERES\tests\input_custody.py", line 90, in test_verified_restore
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9361838Z     self.assertIn((inputs / 'vendor').as_posix(), config)
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9367727Z AssertionError: 'C:/Users/RUNNER~1/AppData/Local/Temp/tmpvtp8jptc/inputs/vendor' not found in '[source.crates-io]\nreplace-with = "vendored-sources"\n\n[source."git+https://github.com/giodl73-repo/RALLY.git?rev=4d84433d8d113d5433fd2c97ef4d7e7aed55fbb0"]\ngit = "https://github.com/giodl73-repo/RALLY.git"\nrev = "4d84433d8d113d5433fd2c97ef4d7e7aed55fbb0"\nreplace-with = "vendored-sources"\n\n[source."git+https://github.com/giodl73-repo/RLINE.git?rev=8426af135619224f073369e93aa05e79c8d45bf6"]\ngit = "https://github.com/giodl73-repo/RLINE.git"\nrev = "8426af135619224f073369e93aa05e79c8d45bf6"\nreplace-with = "vendored-sources"\n\n[source."git+https://github.com/giodl73-repo/RUNE.git?rev=ad0097001138c63c12d23e5caef861eac0f5aed6"]\ngit = "https://github.com/giodl73-repo/RUNE.git"\nrev = "ad0097001138c63c12d23e5caef861eac0f5aed6"\nreplace-with = "vendored-sources"\n\n[source."git+https://github.com/giodl73-repo/SCENARIUM.git?rev=724c97d9b4619ac26aa21169d48f656f5fd9f4db"]\ngit = "https://github.com/giodl73-repo/SCENARIUM.git"\nrev = "724c97d9b4619ac26aa21169d48f656f5fd9f4db"\nreplace-with = "vendored-sources"\n\n[source.vendored-sources]\ndirectory = "C:/Users/runneradmin/AppData/Local/Temp/tmpvtp8jptc/inputs/vendor"\n\n[net]\noffline = true\n'
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9372582Z 
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9372804Z ----------------------------------------------------------------------
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9373154Z Ran 10 tests in 3.914s
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9373295Z 
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9373385Z FAILED (failures=1)
+build (windows-2022)	Verify and restore locked Cargo inputs	2026-11-05T18:00:10.9619441Z ##[error]Process completed with exit code 1.

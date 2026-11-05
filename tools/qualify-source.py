@@ -94,6 +94,7 @@ def main():
     if len(packages) != 32 or any(not Path(p['manifest_path']).is_relative_to(scratch / 'inputs/vendor') for p in packages):
         raise ValueError('Archive dependencies did not resolve from independent inputs')
     for name, command in [
+        ('archive-input-checks', [sys.executable, 'tests/input_custody.py']),
         ('archive-tests', ['cargo', '+1.95.0', 'test', '--workspace', '--all-targets', '--locked', '--offline']),
         ('archive-format', ['cargo', '+1.95.0', 'fmt', '--all', '--check']),
         ('archive-clippy', ['cargo', '+1.95.0', 'clippy', '--workspace', '--all-targets', '--all-features', '--no-deps', '--locked', '--offline', '--', '-D', 'warnings']),
@@ -158,7 +159,7 @@ def main():
                    source_zip_sha256=site['source']['sha256'], source_zip_exact=True, site_manifest_sha256=args.manifest_sha256,
                    original_cli_controls=30, all_cli_outputs_exits_exact=True, generated_files=[dict(path=n, bytes=len(v), sha256=digest(v)) for n, v in sorted(after_files.items())],
                    independent_input_packages=32, new_cargo_home=True, acquisition_offline=True, shared_compiled_target_reused=str(target),
-                   installed_toolchains_and_npm_browser_reused=True, native_tests=7, source_receiver_checks=18, typed_native_wasm_controls=parity['controls'],
+                   installed_toolchains_and_npm_browser_reused=True, input_custody_checks=11, native_tests=7, source_receiver_checks=18, typed_native_wasm_controls=parity['controls'],
                    typed_all_exact=parity['all_exact'], checkout_wasm=site['wasm'], archive_wasm=archive_identity['wasm'],
                    module_byte_identity=site['wasm']['sha256'] == archive_identity['wasm']['sha256'], browser_stats=stats, commands=commands,
                    scope='Checkout versus receiver-restored outside-Git source, independent Cargo inputs, actual native/WASM and archive browser replay. Not economics/catalog promotion or live release.')

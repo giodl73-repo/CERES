@@ -4,8 +4,11 @@ import io
 import json
 from pathlib import Path
 import tempfile
+import tomllib
 import unittest
 import zipfile
+import os
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('custody', ROOT / 'tools/input-custody.py')
@@ -87,7 +90,9 @@ class CustodyChecks(unittest.TestCase):
                 if path.startswith('vendor/'):
                     self.assertEqual((inputs / path).read_bytes(), value)
             config = (home / 'config.toml').read_text()
-            self.assertIn((inputs / 'vendor').as_posix(), config)
+            configured = Path(tomllib.loads(config)['source']['vendored-sources']['directory'])
+            self.assertEqual(configured.resolve(), (inputs / 'vendor').resolve())
+            self.assertTrue(configured.samefile(inputs / 'vendor'))
             self.assertIn('offline = true', config)
             self.assertFalse((home / 'registry').exists()); self.assertFalse((home / 'git').exists())
 
@@ -97,6 +102,21 @@ class CustodyChecks(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'must be separate'):
                 custody.restore(self.data, inputs, inputs / 'home')
             self.assertFalse(inputs.exists())
+
+    def test_linked_parent_rejected_before_path_resolution(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / 'target'; target.mkdir(); marker = target / 'keep'; marker.write_text('keep')
+            link = Path(tmp) / 'link'
+            if os.name == 'nt':
+                p = subprocess.run(['cmd', '/c', 'mklink', '/J', str(link), str(target)], capture_output=True)
+                self.assertEqual(p.returncode, 0, p.stderr.decode())
+            else:
+                link.symlink_to(target, target_is_directory=True)
+            home = Path(tmp) / 'home'
+            with self.assertRaisesRegex(ValueError, 'link or junction'):
+                custody.restore(self.data, link / 'inputs', home)
+            self.assertFalse(home.exists()); self.assertFalse((target / 'inputs').exists())
+            self.assertEqual(marker.read_text(), 'keep')
 
 
 if __name__ == '__main__':
