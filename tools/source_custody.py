@@ -105,6 +105,24 @@ def verify_source(raw, expected_head):
     return verify_source_data(data, modes, expected_head), data, modes
 
 
+def check_source_files(repo, expected):
+    """Reject unlisted build/config inputs; permit only documented generated caches."""
+    expected = set(expected) | {SOURCE_MANIFEST}
+    generated = {'dist', 'target', 'node_modules', 'test-results', '.git'}
+    for base, directories, files in os.walk(repo, followlinks=False):
+        parent = Path(base)
+        directories[:] = [name for name in directories
+                          if name != '__pycache__' and not (parent == repo and name in generated)]
+        for name in [*directories, *files]:
+            path = parent / name
+            if path.is_symlink() or getattr(path.lstat(), 'st_file_attributes', 0) & 0x400:
+                raise ValueError('Source contains link/junction')
+        for name in files:
+            relative = (parent / name).relative_to(repo).as_posix()
+            if relative != '.git' and relative not in expected:
+                raise ValueError('Unexpected source/config file: ' + relative)
+
+
 def git_source(repo, head):
     if subprocess.check_output(['git', 'status', '--porcelain'], cwd=repo):
         raise ValueError('Commit source changes before export')
@@ -120,6 +138,7 @@ def git_source(repo, head):
         if kind != 'blob':
             raise ValueError('Unbundled Gitlink or unsupported object')
         rows.append(dict(path=name.decode('utf-8'), mode=mode, git_blob=blob))
+    check_source_files(repo, [r['path'] for r in rows])
     # Read raw Git objects, bypassing checkout/export filters on every platform.
     raw = subprocess.check_output(['git', 'cat-file', '--batch'], input=''.join(r['git_blob'] + '\n' for r in rows).encode(), cwd=repo)
     stream = io.BytesIO(raw); data = {}
@@ -146,6 +165,7 @@ def source_data(repo, expected_head):
     manifest = json.loads((repo / SOURCE_MANIFEST).read_bytes())
     rows = manifest['git_files']
     validate_paths([r['path'] for r in rows])
+    check_source_files(repo, [r['path'] for r in rows])
     data = {r['path']: (repo / r['path']).read_bytes() for r in rows}
     data[SOURCE_MANIFEST] = (repo / SOURCE_MANIFEST).read_bytes()
     modes = {row['path']: int(row['mode'], 8) for row in rows}; modes[SOURCE_MANIFEST] = 0o100644
@@ -186,8 +206,11 @@ def new_destination(path, repo=None):
         raise ValueError('Use a new destination; existing files are preserved')
     if repo and (path == repo or path in repo.parents):
         raise ValueError('Destination overlaps source root')
+    targets = [repo / 'target'] if repo else []
     if os.environ.get('CARGO_TARGET_DIR'):
-        target = Path(os.environ['CARGO_TARGET_DIR']).resolve()
+        targets.append(Path(os.environ['CARGO_TARGET_DIR']))
+    for configured in targets:
+        target = configured.resolve()
         if path in [target, *target.parents] or target in path.parents:
             raise ValueError('Destination overlaps compiled target')
     return path

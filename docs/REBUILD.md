@@ -75,7 +75,7 @@ from the source ZIP without Git, into a **new** folder under `dist`:
 
 ```powershell
 python tools/build-pages.py --expected-source-head <source-commit> --output dist/rebuild/CERES
-node tools/check-reader.mjs dist/rebuild/CERES/pkg/ceres_web.js <compiled-target>/debug/examples/reader-control.exe reader-parity.json
+node tools/check-reader.mjs dist/rebuild/CERES/pkg/ceres_web.js <compiled-target>/debug/examples/reader-control.exe dist/reader-parity.json
 ```
 
 On Unix, omit `.exe`. The native control path follows your actual Cargo target.
@@ -95,3 +95,9 @@ in implementation-plan section9 and measured separately in `BUILD-MANIFEST.json`
 These instructions support software inspection/replay. Worker lifecycle,
 Windows/Linux hosted archive replay and default-branch/live release evidence
 must be checked in the current delivery wave before calling a release qualified.
+
+Archive builds reject files outside the exact source manifest, except documented
+generated `dist/`, `target/`, `node_modules/`, `test-results/` and Python bytecode
+cache directories. In particular, an unlisted `.cargo/config.toml` is rejected
+before build. Receiver destinations may not overlap the default repository
+`target/` or an explicit `CARGO_TARGET_DIR`.

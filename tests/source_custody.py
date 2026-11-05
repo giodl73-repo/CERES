@@ -135,6 +135,31 @@ class SourceChecks(unittest.TestCase):
                 custody.restore_source(self.data, self.modes, link / 'source')
             self.assertEqual(marker.read_text(), 'keep'); self.assertFalse((target / 'source').exists())
 
+    def test_default_target_overlap_without_environment_override(self):
+        old = os.environ.pop('CARGO_TARGET_DIR', None)
+        try:
+            with self.assertRaisesRegex(ValueError, 'compiled target'):
+                custody.new_destination(ROOT / 'target/unwanted-receiver-source', ROOT)
+        finally:
+            if old is not None: os.environ['CARGO_TARGET_DIR'] = old
+
+    def test_archive_rebuild_rejects_unlisted_cargo_config(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source = custody.restore_source(self.data, self.modes, Path(tmp) / 'source')
+            (source / '.cargo').mkdir(exist_ok=True)
+            config = source / '.cargo/config.toml'; config.write_text('[build]\nrustflags = ["--cfg", "unlisted"]\n')
+            with self.assertRaisesRegex(ValueError, 'Unexpected source/config file: .cargo/config.toml'):
+                custody.source_data(source, self.head)
+            self.assertTrue(config.exists())
+
+    def test_documented_generated_outputs_are_not_source_inputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source = custody.restore_source(self.data, self.modes, Path(tmp) / 'source')
+            for directory in ['dist', 'target', 'node_modules', 'test-results', 'tools/__pycache__']:
+                path = source / directory; path.mkdir(parents=True, exist_ok=True); (path / 'generated.bin').write_bytes(b'generated')
+            data, modes = custody.source_data(source, self.head)
+            self.assertEqual(data, self.data); self.assertEqual(modes, self.modes)
+
     def test_valid_receiver_restores_every_source_file(self):
         with tempfile.TemporaryDirectory() as tmp:
             dest = Path(tmp) / 'source'
