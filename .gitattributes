@@ -12,3 +12,4 @@
 
 /context/waves/2026-11-05-reader-delivery/validation/worker/*.stdout -text -whitespace
 /context/waves/2026-11-05-reader-delivery/validation/worker/*.stderr -text -whitespace
+/context/waves/2026-11-05-reader-delivery/validation/worker/downloads/**/*.json -text
